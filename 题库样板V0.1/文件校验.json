@@ -1,0 +1,31 @@
+{
+  "validation": {
+    "soups": 3,
+    "question_cases": 72,
+    "solution_cases": 18,
+    "format_cases": 7,
+    "html_files": 8,
+    "checks": "结构、引用、相对链接及汤面页不含完整私有材料检查通过；不代表语义审核或盲玩通过",
+    "surface_narrative_only": true,
+    "relabelled_irrelevant_cases": 8,
+    "playtest_records": 2,
+    "revision": "0.1.3",
+    "s02_ambiguity_review_cases": 3,
+    "content_direction_confirmed": "混合题库；选题前标注恐怖强度",
+    "setting_visibility": "分类只供内部使用；公开HTML与JSON不含分类值"
+  },
+  "sha256": {
+    "S01主持资料.html": "ddf1a592f372c468e6b0b5e8b139450333ca13318ca8aa2d7fbdc24dabf73ff1",
+    "S02主持资料.html": "377c6f9344aa87746a05f032337860ec857540b8674afed695e25c62475b3e7d",
+    "S03主持资料.html": "f2903cbea50bab7a4d404f8c02f17a08f2a5139d4ad80f90c5f4969a8a56d3ca",
+    "index.html": "870f17feda45a18c1ff413bfd0d230328c9c92ec0bf43feb981d8125c0a2ba98",
+    "使用说明.txt": "ee8e218a072c188bb6b73b05d692f1bde98d89af9d93b39ed617e00ac2d5e9e5",
+    "参考与审题说明.html": "439ed0e51228df36f554b091245219e12f4c8d230d7daa6d4f1126485d4c2a41",
+    "提问与解答评测草案.csv": "2cea9fccca098e0c867843154e3e0af6758b34bece0289691d6d1c59f8da163a",
+    "样板主持数据.json": "0bc0efbaccdfb02a0b80bae70375b9233433c0eae9b8137787651fe88ea72da9",
+    "第二道试玩复盘.html": "b88ab79c7c93a2afceec28aa148e566c770a4acd185b1b2632efccc31c23e728",
+    "题库内容方向反馈.html": "a9b582ab575915eeb75a3ae72277cfc0ce7c899f13abac53831464a3b32b61cb",
+    "首次试玩复盘.html": "465c0cd2bcbe011dce9e063dbb5adacdd9845ddb24bf533c6d472aabdde9d828",
+    "汤面数据.json": "d1c745f2f71719b0a5cc28adaa3a13dd20f8e5bef2fbd76c283ff9c0126df093"
+  }
+}

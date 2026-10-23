@@ -1,0 +1,26 @@
+{
+  "validation": {
+    "soups": 2,
+    "question_cases": 40,
+    "solution_cases": 12,
+    "format_cases": 6,
+    "public_pages": 3,
+    "private_html": 3,
+    "status": "结构、引用及公开页面不载入私有材料检查通过；语义为作者自检，待用户评审与盲玩。",
+    "revision": "0.1.1",
+    "S05_difficulty": "入门候选，仅据用户读面初评暂定",
+    "setting_visibility": "分类只供内部使用；公开HTML与JSON不含分类值"
+  },
+  "sha256": {
+    "index.html": "9af80f7f468176cd40588c9b1b795de71f58053226662ec9b102f261c5fb88c3",
+    "主持资料/S04主持稿.html": "28c313ee6731a8be8d1b27f9839ea6108f8bc9587a47c11b3949edad0df14d6f",
+    "主持资料/S05主持稿.html": "3b2ca6a9f1eebcfc109e557350589c5457eef034a09fd17c518551856fff33b1",
+    "主持资料/主持数据.json": "33c41bcc0cbc04f044c2ed0175b7d947fcee53bdd9e37fa2a0932ba5bd0ee11d",
+    "主持资料/内容自检与待审项.html": "a4849cb2aa622271470a6a2e110d910242db7526192a41eaca6290e8f1c1b6cb",
+    "主持资料/判题对照草案.csv": "f95a5599bf3277d3f52423d74f628e1473f68e0c3973380cbb5b4681d4e13c4c",
+    "使用说明.txt": "a7fc87ab10c6bdd116429567a5b79f17dcee2d59d97f0363acbf62998c14ff02",
+    "单题汤面/S04.html": "1a0506048d276f56099d574bf59cef91ff9ba2b2e871addbab0e90d264bf2deb",
+    "单题汤面/S05.html": "1b8aa96167fa287435e3a76240dcd0298dced761bc2d3b859c6f0cdc3e2a65c6",
+    "汤面数据.json": "bd6619822f34586905526120aa029f9224b6d5248e40fa6afcff069912530d8d"
+  }
+}

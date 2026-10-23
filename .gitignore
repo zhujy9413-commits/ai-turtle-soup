@@ -1,0 +1,10 @@
+.DS_Store
+._*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+node_modules/
+work/
+*.log
