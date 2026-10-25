@@ -1,0 +1,72 @@
+{
+  "independent_blind_review": false,
+  "cases": [
+    {
+      "id": "R-01",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "expected_template": "scope",
+      "supporting_facts": [
+        "F11"
+      ],
+      "rationale": "已知展示失败回归：原问题逐字不变。"
+    },
+    {
+      "id": "R-02",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "expected_template": "scope",
+      "supporting_facts": [
+        "F06",
+        "F12"
+      ],
+      "rationale": "上一轮冻结但未执行的范围控制，非自然问题准确率样本。"
+    },
+    {
+      "id": "R-03",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "expected_template": "scope",
+      "supporting_facts": [
+        "F03"
+      ],
+      "rationale": "跨题范围控制；两种范围会改变判断，不能抢答。"
+    },
+    {
+      "id": "R-04",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "expected_template": "narration",
+      "supporting_facts": [],
+      "rationale": "公开旁白被误读为发声，先处理阅读前提，不泄漏回声机制。"
+    },
+    {
+      "id": "R-05",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "expected_template": null,
+      "supporting_facts": [
+        "F06",
+        "F12",
+        "F13"
+      ],
+      "rationale": "明确实际范围，应直接回答，不能过度澄清。"
+    },
+    {
+      "id": "R-06",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "expected_template": null,
+      "supporting_facts": [
+        "F06"
+      ],
+      "rationale": "明确假设范围，应按条件推演，不能用实际结尾否定。"
+    }
+  ]
+}

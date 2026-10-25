@@ -1,0 +1,46 @@
+{
+  "experiment": "clarification_guard_v01",
+  "signature": "5e5d922b7bdf6be6b2d494e4df91f5f1964fe05e069ddfa08c6d8ee985666ebe",
+  "candidate_prompt_version": "V0.1.7",
+  "new_attempts": 7,
+  "unique_questions": 6,
+  "action_label_matches": 6,
+  "expected_clarification_template_matches": 6,
+  "strict_output_schema_passes": 7,
+  "actual_clarifications": 4,
+  "clarifications_outside_whitelist": 0,
+  "display_passes": 6,
+  "known_failure_repeat": {
+    "tested": true,
+    "same_request": true,
+    "same_player_display": true
+  },
+  "bounded_regression_passed": false,
+  "global_acceptance_passed": false,
+  "cumulative_attempts": 150,
+  "remaining_calls": 0,
+  "cumulative_original_price_estimate_cny": 0.11928640000000003,
+  "new_original_price_estimate_cny": 0.006771600000000001,
+  "invoice_verified": false,
+  "changes": [
+    "提示词明确公开信息边界和模板选择规则",
+    "严格JSON Schema将clarification限定为空或7个固定短句",
+    "程序只展示符合模板契约的澄清，不直接展示任意模型字符串"
+  ],
+  "limitations": [
+    "6条独立问题加1次原问题重复；已知回归和跨题范围控制占多数，不能估计整体准确率。",
+    "沿用三题故事与事件表，提示词和输出约束同时改变，不能把结果归因于单个因素。",
+    "不包含自然省略假设标记的全部难例、澄清后的连续会话或完整题库回归。",
+    "单次模板选择正确不等于所有情况都能正确澄清；重复也仅两次。"
+  ],
+  "credential_cleanup": {
+    "temporary_credential_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "platform_key_changed": false,
+    "at": 1792919281.785367
+  },
+  "conclusion": "原澄清剧透问题两次均使用安全范围模板；4次实际澄清均在白名单内。7次中6次符合动作/答案/预期模板，R-03应澄清却按实际剧情回答否，整体回归未通过。",
+  "next_validation": "先处理R-03的范围识别偏差，再为候选修正冻结下一轮材料。若继续实测，建议另行确认新增12次上限，覆盖已知失败、新的混合范围问法、带公开历史的范围定位，以及清楚问题的直接回答控制。具体材料需在实际调用前锁定。未获得新增次数授权前不调用。",
+  "budget_note": "7次已用完，累计150次；本次自由澄清文案限制已有定向证据，但范围识别仍有1条失败，不能宣布整体通过。新增12次只是建议，不是已经获准的预算或已冻结用例。"
+}

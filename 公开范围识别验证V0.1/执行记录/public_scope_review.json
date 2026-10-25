@@ -1,0 +1,13 @@
+{
+  "experiment": "public_scope_gate_v01",
+  "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+  "blocked": true,
+  "execution_closed": true,
+  "reason": "本组12次定向回归完成；累计162次已用满，禁止新增调用。",
+  "bounded_regression_passed": true,
+  "global_acceptance_passed": false,
+  "new_api_attempts": 12,
+  "scope_attempts": 8,
+  "judge_attempts": 4,
+  "remaining_calls": 0
+}

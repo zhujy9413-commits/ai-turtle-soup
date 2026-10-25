@@ -1,0 +1,144 @@
+{
+  "cases": [
+    {
+      "id": "P-01",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "history_source": "empty",
+      "category": "known_failure",
+      "current_message": {
+        "id": "P-01-U",
+        "text": "我没分清是在问原故事那条消息，还是“妹妹确实亲手输入发送、无人代发”的假设：这条消息是妹妹自己发的吗？"
+      }
+    },
+    {
+      "id": "P-02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "history_source": "empty",
+      "category": "new_mixed_scope",
+      "current_message": {
+        "id": "P-02-U",
+        "text": "我把实际天亮后的结果和“当夜一直没有有效应答、没有固定”的假设弄混了，还没选定问哪一种：病痛到天亮撤回了吗？"
+      }
+    },
+    {
+      "id": "P-03",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [
+        {
+          "id": "H-U",
+          "role": "user",
+          "text": "我想对照故事实际结尾，以及“咳嗽后人已离屋且没有回来”的假设。"
+        },
+        {
+          "id": "H-A",
+          "role": "assistant",
+          "text": "你问的是故事实际发生的情况，还是假设条件下的情况？"
+        }
+      ],
+      "history_source": "synthetic_public_fixture",
+      "category": "unresolved_public_history",
+      "current_message": {
+        "id": "P-03-U",
+        "text": "这两种情况我还没有选好要问哪一个：警方到场时，他还在屋里吗？"
+      }
+    },
+    {
+      "id": "P-04",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "history_source": "empty",
+      "category": "actual_control",
+      "current_message": {
+        "id": "P-04-U",
+        "text": "按故事实际经过，到了天亮，病痛已经自动回到女人身上了吗？"
+      }
+    },
+    {
+      "id": "P-05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "history_source": "empty",
+      "category": "hypothetical_control",
+      "current_message": {
+        "id": "P-05-U",
+        "text": "假设午夜暂时转移已发生，但直到天亮我都没有有效应答，也没有固定，病痛会在天亮自动退回女人身上吗？"
+      }
+    },
+    {
+      "id": "P-06",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [
+        {
+          "id": "H-U",
+          "role": "user",
+          "text": "我想对照故事实际的出差消息，以及“消息确实由妹妹本人亲手输入发送、没有人代发”的假设。"
+        },
+        {
+          "id": "H-A",
+          "role": "assistant",
+          "text": "你问的是故事实际发生的情况，还是假设条件下的情况？"
+        }
+      ],
+      "history_source": "synthetic_public_fixture",
+      "category": "resolved_public_history",
+      "current_message": {
+        "id": "P-06-U",
+        "text": "只谈后一种假设：消息由妹妹本人亲手输入并发送，没有人代发。在这个假设中，发送者是妹妹吗？"
+      }
+    },
+    {
+      "id": "P-07",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "history_source": "empty",
+      "category": "wrong_guess_actual_control",
+      "current_message": {
+        "id": "P-07-U",
+        "text": "按原故事实际发生的情况，出差消息是妹妹本人亲手发送的吗？"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "case_id": "P-01",
+      "repeat": 1
+    },
+    {
+      "case_id": "P-02",
+      "repeat": 1
+    },
+    {
+      "case_id": "P-03",
+      "repeat": 1
+    },
+    {
+      "case_id": "P-04",
+      "repeat": 1
+    },
+    {
+      "case_id": "P-05",
+      "repeat": 1
+    },
+    {
+      "case_id": "P-06",
+      "repeat": 1
+    },
+    {
+      "case_id": "P-07",
+      "repeat": 1
+    },
+    {
+      "case_id": "P-01",
+      "repeat": 2
+    }
+  ]
+}

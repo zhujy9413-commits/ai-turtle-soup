@@ -1,0 +1,450 @@
+{
+  "semantic_cases": [
+    {
+      "case_id": "S02-01",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-02",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-03",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-04",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-05",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-06",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-07",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-08",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-09",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-10",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-11",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-12",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-13",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-14",
+      "story_id": "S02",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-15",
+      "story_id": "S02",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-16",
+      "story_id": "S02",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-17",
+      "story_id": "S02",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S02-18",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-01",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-03",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-04",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-06",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-07",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-08",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-09",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-10",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-11",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-12",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-13",
+      "story_id": "S06",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-14",
+      "story_id": "S06",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-15",
+      "story_id": "S06",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S06-16",
+      "story_id": "S06",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-01",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-02",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-03",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-04",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-05",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-06",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-07",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-08",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-09",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-10",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "new_path": "公开范围识别→必要时汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-11",
+      "story_id": "S07",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-12",
+      "story_id": "S07",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-13",
+      "story_id": "S07",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    },
+    {
+      "case_id": "S07-14",
+      "story_id": "S07",
+      "channel": "formal_solution",
+      "new_path": "正式还原→按实际汤底判定",
+      "model_execution_status": "未在本原型真实执行",
+      "fixture_gameplay_is_not_model_pass": true
+    }
+  ],
+  "semantic_count": 48,
+  "control_cases": [
+    {
+      "id": "C01",
+      "given": "单人点击提示，已用0层",
+      "expected": "直接返回本题固定第1层原文；发布期间冻结时间，结束继续。",
+      "mapped_tests": "test_only_three_hints_and_no_private_hints_before_publication",
+      "status": "单人提示程序检查已执行"
+    },
+    {
+      "id": "C02",
+      "given": "两名有资格玩家，本轮提示1赞成1反对",
+      "expected": "未过半，不公布提示、不消耗层级；投票过程计时。",
+      "mapped_tests": "",
+      "status": "多人投票留待完整内测版，单人原型不覆盖"
+    },
+    {
+      "id": "C03",
+      "given": "三名有资格玩家，含申请者2票同意",
+      "expected": "仅公布下一层一次；以本次资格人数快照计算，旁观者不计票。",
+      "mapped_tests": "",
+      "status": "多人资格快照留待完整内测版，单人原型不覆盖"
+    },
+    {
+      "id": "C04",
+      "given": "同一个提示请求重复送达",
+      "expected": "幂等，只消耗一次层级和发布一次；冻结时间按并集结算。",
+      "mapped_tests": "test_idempotent_request_does_not_duplicate_hint",
+      "status": "幂等程序检查已执行"
+    },
+    {
+      "id": "C05",
+      "given": "已经公开三层，再次申请提示",
+      "expected": "显示预设提示已用完，继续推理或按既定结束流程；不得第4次调用模型临场补线索。",
+      "mapped_tests": "test_only_three_hints_and_no_private_hints_before_publication",
+      "status": "三层上限程序检查已执行"
+    },
+    {
+      "id": "C06",
+      "given": "自由讨论文字已经说中全故事",
+      "expected": "仍为讨论，不能自动判通关；只有正式还原提交进入判定。",
+      "mapped_tests": "",
+      "status": "单人无独立讨论区，保留为多人验收；单人正式提问不自动通关在流程中保持"
+    },
+    {
+      "id": "C07",
+      "given": "模型输出非法JSON、超时、或answer额外解释",
+      "expected": "本次不对玩家展示原始输出、不扣游戏提问额度；实际模型费入账并停止无界重试。",
+      "mapped_tests": "test_unknown_and_failure_release_last_attempt",
+      "status": "超时/失败返还已用模拟检查；真实模型格式与费用联调尚未执行"
+    },
+    {
+      "id": "C08",
+      "given": "成功还原后触发全房揭晓与复盘",
+      "expected": "揭晓固定汤底原文；复盘引用真实消息ID，不虚构贡献，结束后返回房间。",
+      "mapped_tests": "test_manual_reveal_confirmation_and_review_completion / test_review_highlights_are_actual_messages_not_invented",
+      "status": "单人收尾与消息可追溯已检查；多人全房同步未覆盖"
+    }
+  ],
+  "control_count": 8,
+  "scope": "仅迁移映射，不将模拟回复或旧版本成绩计算为V0.1.8真实模型通过",
+  "provider_calls": 0
+}

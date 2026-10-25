@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-25",
+  "version": "五项修订V0.3",
+  "method": "内置 image_gen__imagegen 编辑现有主视觉；没有使用游戏主持模型",
+  "input": "public/art/night-door.png",
+  "output": "public/art/night-door-red.png",
+  "prompt": "Use case: lighting-weather. Edit the referenced image only. This is the approved hero artwork for a psychological horror mystery game. Preserve the exact room, door, furniture, wall texture, viewpoint, framing, 16:9 composition, deep shadows and negative space on the left. Change the pale warm yellow-white light seeping from underneath and along the right-hand gap of the closed door into a faint, low-saturation deep blood-red / oxblood light, with physically consistent restrained red spill onto the nearby floorboards and inner door edge. The sliver is the only clearly red luminous source. Remove the sunny amber warmth from the rest of the scene: make surrounding wood, walls and ambient shadows cooler charcoal gray, still realistic and richly textured. Keep the scene dim, oppressive, understated and readable, not neon, not bright red, no new light sources. Do not add or remove objects. No people, faces, figures, gore, actual blood pools or splatter, lettering, logos, UI, or watermark. Maintain the original photographic quality.",
+  "constraints": "保留原有房间、门、构图与负空间，只调整光线和色调；原图保留。"
+}

@@ -1,0 +1,24 @@
+{
+  "experiment": "public_scope_gate_v01",
+  "model": "qwen3.7-flash-2026-07-15",
+  "initial_cumulative_calls": 150,
+  "new_api_call_limit": 12,
+  "cumulative_call_limit": 162,
+  "cumulative_cny_limit": 5,
+  "unique_questions": 7,
+  "question_executions": 8,
+  "planned_public_scope_calls": 8,
+  "planned_hidden_story_judge_calls": 4,
+  "authorization": "用户同意追加12次，累计费用上限仍5元。两类调用都占新增12次，不重置历史。",
+  "change": "公开范围先单独识别，不传汤底；未选定时直接固定澄清；选定后以可信scope字段送入V0.1.8候选主持。",
+  "tradeoff": "明确范围的提问需要串行两次调用，增加费用与等待；未选定范围仅一次调用。本轮只验证判定，不作全游戏延迟承诺。",
+  "stop_policy": "每个范围响应先复核；动作/范围/展示偏差暂停人工复核，保留失败，不自动重试。结构、模型、鉴权、未知费用或剧透停止。原已停止的实验不重开。",
+  "limitations": [
+    "7条独立问题和1次已知失败重复，不能估计全量自然玩家准确率。",
+    "测试夹具的公开历史不是线上真实对话，未覆盖所有省略假设词的自然歧义。",
+    "包含简单条件直接给出事实的控制题，不能据此证明复杂反事实推理。",
+    "不与旧版在全套同一题组做配对对照，不能报告提升百分比或单一根因。",
+    "范围识别看不到汤底可减少隐藏事实干扰，但不保证它在所有问题上都会选对范围。"
+  ],
+  "credential_policy": "本轮完成后删除临时密钥，平台Key与钥匙串不作变更。"
+}

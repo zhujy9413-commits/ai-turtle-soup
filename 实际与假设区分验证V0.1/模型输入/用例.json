@@ -1,0 +1,486 @@
+{
+  "cases": [
+    {
+      "id": "C02-01",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-01-U",
+        "text": "在这个故事实际结尾，警察确实在屋里找到那个咳嗽的人了吗？"
+      },
+      "category": "actual",
+      "pair": "S02-P1"
+    },
+    {
+      "id": "C06-01",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-01-U",
+        "text": "天亮后的实际结局里，我的病痛已经自动退回女人身上了吗？"
+      },
+      "category": "actual",
+      "pair": "S06-P1"
+    },
+    {
+      "id": "C07-01",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C07-01-U",
+        "text": "实际那条出差消息的发送者，是控制妹妹的男人吗？"
+      },
+      "category": "actual",
+      "pair": "S07-P1"
+    },
+    {
+      "id": "C02-02",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-02-U",
+        "text": "另设一个情况：那个人咳嗽后已经离开屋子，警方到场前始终没有回来。在这个假设中，警方到场时他还藏在屋内吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S02-P1"
+    },
+    {
+      "id": "C06-02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-02-U",
+        "text": "如果暂时转移已经发生，但我直到天亮始终没有有效回应，病痛会在天亮退回女人身上吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S06-P1"
+    },
+    {
+      "id": "C07-02",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C07-02-U",
+        "text": "只讨论一个与原剧情不同的假设：出差消息确实由妹妹本人亲手输入并发送，没有任何人代发。在这个假设中，发送者仍是那个男人吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S07-P1"
+    },
+    {
+      "id": "C02-03",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-03-U",
+        "text": "实际听到的那声咳嗽回声，原声来自屋内的活人吗？"
+      },
+      "category": "actual",
+      "pair": "S02-P2"
+    },
+    {
+      "id": "C06-03",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-03-U",
+        "text": "实际把我叫醒并呼唤我姓名的，是原来的女病人吗？"
+      },
+      "category": "actual",
+      "pair": "S06-P2"
+    },
+    {
+      "id": "C07-03",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C07-03-U",
+        "text": "第三晚抓门声响起时，实际的我仍不知道床下藏了人吗？"
+      },
+      "category": "actual",
+      "pair": "S07-P2"
+    },
+    {
+      "id": "C02-04",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-04-U",
+        "text": "如果屋内没有活人发声，只有手机播放了一段咳嗽录音，这段录音会触发同一种六十秒回声吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S02-P2"
+    },
+    {
+      "id": "C06-04",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-04-U",
+        "text": "只作假设：午夜的暂时转移已发生，之后只有真正的护士叫我的名字，我清醒回应了她，没有回应女人。这样就能固定转移吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S06-P2"
+    },
+    {
+      "id": "C07-04",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C07-04-U",
+        "text": "只作假设：第三晚我已经低头看清床下是男人，知道那里有人。在这个假设里，还能说我当时不知道床下有人吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S07-P2"
+    },
+    {
+      "id": "C02-05",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-05-U",
+        "text": "按当晚实际经过，咳嗽回声的原声是我自己在屋内发出的吗？"
+      },
+      "category": "actual",
+      "pair": "S02-P3"
+    },
+    {
+      "id": "C06-05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-05-U",
+        "text": "按实际事件顺序，在我应答姓名之前，女人已恢复行动能力了吗？"
+      },
+      "category": "actual",
+      "pair": "S06-P3"
+    },
+    {
+      "id": "C07-05",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C07-05-U",
+        "text": "我没说是在问原故事的消息，还是在问“妹妹本人亲手输入发送、无人代发”的假设：发送者是男人吗？"
+      },
+      "category": "underspecified_scope_control",
+      "pair": null
+    },
+    {
+      "id": "C02-06",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-06-U",
+        "text": "只改发声者和地点：假设我本人在屋内咳嗽一次，其他人都没有发声。六十秒后那一次回声的原声会是我的吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S02-P3"
+    },
+    {
+      "id": "C06-06",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-06-U",
+        "text": "如果午夜钟响时我并未睡在那张病床上，此后只回应了女人呼名，也能凭这次回应直接转移她的病痛吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S06-P3"
+    },
+    {
+      "id": "C02-07",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-07-U",
+        "text": "按实际规则，仅听到咳嗽回声、还没有看到人，便足以证明他此刻绝不可能已离屋吗？"
+      },
+      "category": "actual",
+      "pair": "S02-P4"
+    },
+    {
+      "id": "C06-07",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-07-U",
+        "text": "故事实际发生的那次姓名应答，是我无意识的梦话吗？"
+      },
+      "category": "actual",
+      "pair": "S06-P4"
+    },
+    {
+      "id": "C02-08",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-08-U",
+        "text": "假设活人在屋内咳嗽，三十秒后离屋，原声之后没有其他声音。到第六十秒，屋子仍会重播这次咳嗽吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S02-P4"
+    },
+    {
+      "id": "C06-08",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-08-U",
+        "text": "假设暂时转移已经发生，天亮前我只在睡梦中无意识说出了回应，没有清醒应答，这样的梦话会固定转移吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S06-P4"
+    },
+    {
+      "id": "C02-09",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-09-U",
+        "text": "当晚实际听到的咳嗽回声，是在对应的原声发生之前出现的吗？"
+      },
+      "category": "actual",
+      "pair": "S02-P5"
+    },
+    {
+      "id": "C06-09",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-09-U",
+        "text": "按本局实际结尾，女人交给我呼叫铃的时候，我已经需要别人照料了吗？"
+      },
+      "category": "actual",
+      "pair": "S06-P5"
+    },
+    {
+      "id": "C02-10",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-10-U",
+        "text": "假设屋内活人在二十一点整咳嗽一次，依旧遵守原规则，那么这一次回声会在二十一点零一分出现吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S02-P5"
+    },
+    {
+      "id": "C06-10",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-10-U",
+        "text": "假设午夜转移已经发生，但当夜没有固定，直到天亮自行撤回。仅凭这一次已经撤回的转移，仍能断定我天亮后继续承受女人的病痛吗？"
+      },
+      "category": "explicit_hypothesis",
+      "pair": "S06-P5"
+    },
+    {
+      "id": "C02-11",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C02-11-U",
+        "text": "我还没说明是在问故事实际结尾，还是在问“咳嗽后已离屋且没回来”的假设：警方到场时他仍在屋里吗？"
+      },
+      "category": "underspecified_scope_control",
+      "pair": null
+    },
+    {
+      "id": "C06-11",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-11-U",
+        "text": "我这里没说明是在问实际结尾，还是在问“直到天亮没有有效应答、转移未固定”的假设：天亮时病痛回到女人身上了吗？"
+      },
+      "category": "underspecified_scope_control",
+      "pair": null
+    },
+    {
+      "id": "C06-12",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-12-U",
+        "text": "我没讲清说的是实际那次清醒回应，还是只有梦话的假设：这次回应会把暂时转移固定吗？"
+      },
+      "category": "underspecified_scope_control",
+      "pair": null
+    },
+    {
+      "id": "C06-13",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "C06-13-U",
+        "text": "我没指定是原故事那张病床，还是换成普通床的假设：只满足午夜离床和另一个活人睡在床上，就会暂时转移吗？"
+      },
+      "category": "underspecified_scope_control",
+      "pair": null
+    }
+  ],
+  "schedule": [
+    {
+      "case_id": "C02-01",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-01",
+      "repeat": 1
+    },
+    {
+      "case_id": "C07-01",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-02",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-02",
+      "repeat": 1
+    },
+    {
+      "case_id": "C07-02",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-03",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-03",
+      "repeat": 1
+    },
+    {
+      "case_id": "C07-03",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-04",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-04",
+      "repeat": 1
+    },
+    {
+      "case_id": "C07-04",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-05",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-05",
+      "repeat": 1
+    },
+    {
+      "case_id": "C07-05",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-06",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-06",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-07",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-07",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-08",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-08",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-09",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-09",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-10",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-10",
+      "repeat": 1
+    },
+    {
+      "case_id": "C02-11",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-11",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-12",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-13",
+      "repeat": 1
+    },
+    {
+      "case_id": "C06-01",
+      "repeat": 2
+    },
+    {
+      "case_id": "C06-02",
+      "repeat": 2
+    },
+    {
+      "case_id": "C02-01",
+      "repeat": 2
+    },
+    {
+      "case_id": "C07-01",
+      "repeat": 2
+    }
+  ]
+}

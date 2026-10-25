@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "id": "R-01",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "R-01-U",
+        "text": "我还没说明是在问故事实际结尾，还是在问“咳嗽后已离屋且没回来”的假设：警方到场时他仍在屋里吗？"
+      }
+    },
+    {
+      "id": "R-02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "R-02-U",
+        "text": "我这里没说明是在问实际结尾，还是在问“直到天亮没有有效应答、转移未固定”的假设：天亮时病痛回到女人身上了吗？"
+      }
+    },
+    {
+      "id": "R-03",
+      "story_id": "S07",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "R-03-U",
+        "text": "我没分清是在问原故事那条消息，还是“妹妹确实亲手输入发送、无人代发”的假设：这条消息是妹妹自己发的吗？"
+      }
+    },
+    {
+      "id": "R-04",
+      "story_id": "S02",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "R-04-U",
+        "text": "回我“我已经习惯了”的，是我自己的声音吗？"
+      }
+    },
+    {
+      "id": "R-05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "R-05-U",
+        "text": "按故事实际结尾，天亮时病痛已经自动回到女人身上了吗？"
+      }
+    },
+    {
+      "id": "R-06",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "R-06-U",
+        "text": "假设午夜暂时转移已经发生，但直到天亮我都没有有效应答、转移也没有固定，病痛会在天亮自动退回女人身上吗？"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "case_id": "R-01",
+      "repeat": 1
+    },
+    {
+      "case_id": "R-02",
+      "repeat": 1
+    },
+    {
+      "case_id": "R-03",
+      "repeat": 1
+    },
+    {
+      "case_id": "R-04",
+      "repeat": 1
+    },
+    {
+      "case_id": "R-05",
+      "repeat": 1
+    },
+    {
+      "case_id": "R-06",
+      "repeat": 1
+    },
+    {
+      "case_id": "R-01",
+      "repeat": 2
+    }
+  ]
+}

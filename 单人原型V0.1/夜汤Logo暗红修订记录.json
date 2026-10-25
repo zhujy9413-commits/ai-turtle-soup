@@ -1,0 +1,26 @@
+{
+  "version": "Logo V0.2 暗红笔触修订",
+  "date": "2026-10-25",
+  "tool": "内置 imagegen",
+  "intent": "在已有夜汤字标上加强汤字右下方暗红笔触",
+  "prompt": "Use case: precise-object-edit. Asset type: transparent Chinese wordmark logo, 夜汤. Input image 1 is the edit target, the approved existing logo. Make ONE localized change only: strengthen the dark oxblood-red brush accent on the LOWER RIGHT terminal strokes of the RIGHT-HAND character 汤. Extend the current tiny red trace inward across the outer lower-right sweeping stroke so it reads as a modest but clearly visible dark red ink patch even when this logo is only 132px wide. Roughly the outermost lower-right quarter of 汤's final stroke should have burgundy-red ink, feathered and dry-brushed naturally into the pale gray, with one short irregular tapered red trailing brush mark. Use deep oxblood (#7d2438) plus restrained slightly lighter dusty crimson (#a34759) within the stroke for visibility against near black; keep it dark and atmospheric. The accent should now be noticeable, about 8–12% of the total visible ink, without taking over the lettering. Preserve the EXACT Chinese text 夜汤, both characters' contours, fluid hand-lettering, composition, relative size, gray-white ink, existing dry brush texture and readability. Preserve the whole left character 夜 entirely. No new symbols, no extra text, no bowl, no stamp, no additional background, no blood pool, no gore, no new shadows or glow. Keep the original horizontal approximately 3:1 composition and genuinely transparent alpha background. Output only the edited standalone transparent logo.",
+  "edit_target": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1/验收/素材历史/夜汤字标V0.1.png",
+  "generated_source": "/Users/zhujiayi/.codex/generated_images/01a163b8-5aba-71e0-b015-578f97cf58cd/exec-31d5d481-68d2-4a92-b3ad-66a8efdeb01d.png",
+  "asset": "public/art/yetang-logo.png",
+  "transparent_background": true,
+  "format": "PNG位图，2172×724",
+  "sha256": "14ce1a9e7c3a62589a6b6fd413d4c111b1ec9bf513deeeaf1f9d1f8cbe747b44",
+  "checks": {
+    "model_api_calls": 0,
+    "gameplay_changes": false,
+    "javascript_syntax": "passed",
+    "desktop_header_width": 132,
+    "mobile_header_widths": {
+      "320": 102,
+      "390": 108
+    },
+    "logo_loaded": true,
+    "horizontal_overflow": false,
+    "browser_notes": "存在浏览器已注入扩展的脚本警告；字标加载和布局检查通过。"
+  }
+}

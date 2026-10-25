@@ -1,0 +1,104 @@
+{
+  "version": "0.1",
+  "date": "2026-10-25",
+  "model": "qwen3.7-flash-2026-07-15",
+  "api_host": "https://ws-6sartjfe1i7cpkgw.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "enable_thinking": false,
+  "max_completion_tokens": 512,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "turtle_host_verdict",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "answer",
+              "clarify",
+              "invalid",
+              "decline",
+              "incomplete",
+              "conflict",
+              "complete",
+              "content_gap"
+            ]
+          },
+          "answer": {
+            "type": "string",
+            "enum": [
+              "",
+              "是",
+              "否",
+              "无关",
+              "不清楚"
+            ]
+          },
+          "fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "covered_nodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "audit_flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "unsupported_detail",
+                "history_conflict",
+                "core_gap"
+              ]
+            }
+          },
+          "clarification": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "answer",
+          "clarification",
+          "fact_ids",
+          "covered_nodes",
+          "audit_flags"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "variants": {
+    "A": "原始故事和固定V0.1.6系统指令",
+    "B": "同样原始故事、同样指令，额外提供事件/状态/触发条件表"
+  },
+  "cases_per_variant": 18,
+  "repeats": 2,
+  "max_new_requests": 72,
+  "previous_request_attempts": 41,
+  "max_cumulative_requests_if_all_completed": 113,
+  "global_cap_cny": 5,
+  "global_max_requests": 150,
+  "stop_policy": "每配置遇到关键动作/答案不符立即停止该配置；异常、未知费用全局暂停。A复核完毕后才允许B；不自动重试、不自动补跑。",
+  "comparison_policy": "只比较同一问题、同一重复次数下的配对结果。某配置提前停止就标记覆盖不足，不计算全批提升比例。",
+  "quality_gate": "本轮18条各2次均无关键事实答反且同义正问一致、反向/边界校验符合，才讨论扩大回归。此门槛不能证明总体可靠或上线可用。",
+  "credential_policy": "沿用本机私有临时凭据；整轮两配置完成或停止后清理，不按每个子阶段清理。",
+  "schema_note": "内部事实引用仍限S06已有F编号；事件E编号不能混入fact_ids。",
+  "execution_status": {
+    "A": "stopped_after_critical_failure",
+    "A_executed": 20,
+    "A_matches": 19,
+    "B": "completed_current_scope",
+    "B_executed": 36,
+    "B_matches": 36,
+    "global_prototype_gate": false,
+    "local_temp_key_removed": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "0.1",
+  "date": "2026-10-25",
+  "status": "作者复核并锁定用于复现；未完成独立复核",
+  "sources": [
+    {
+      "story_id": "S02",
+      "path": "题库样板V0.1/样板主持数据.json",
+      "version": "0.1.4",
+      "sha256": "0bc0efbaccdfb02a0b80bae70375b9233433c0eae9b8137787651fe88ea72da9",
+      "model_snapshot_sha256": "d7968ce8b4ee136b0495c1b936825db04e269d9bcac58ce3a4fac3e25fcfa590"
+    },
+    {
+      "story_id": "S06",
+      "path": "进阶内容候选V0.1/主持资料/主持数据.json",
+      "version": "0.1.2",
+      "sha256": "922ee312608f988a1816b44483db62c3d223cc8a41d359159d0e1e18350824b0",
+      "model_snapshot_sha256": "97c8f96adb19df4a97793f8b2b1d3a09f2322453b47d35b7943017c8b0c30058"
+    },
+    {
+      "story_id": "S07",
+      "path": "惊悚内容候选V0.1/主持资料/主持数据.json",
+      "version": "0.1.2",
+      "sha256": "cd6a00ff377baee10af1f6a0e5f46913ad3e07b798379c636731d84208c5ef10",
+      "model_snapshot_sha256": "e6813cbbae99ec852248136c695d2b606d5851cdf4a088595894bbd52f973973"
+    }
+  ]
+}

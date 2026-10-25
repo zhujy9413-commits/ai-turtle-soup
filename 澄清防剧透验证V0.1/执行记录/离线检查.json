@@ -1,0 +1,10 @@
+{
+  "schema_rejects_original_leak": true,
+  "rejects_appended_text": true,
+  "rejects_empty_clarify": true,
+  "rejects_nonclarify_extra_text": true,
+  "allows_fixed_template_and_answer": true,
+  "stories_unchanged": true,
+  "network_calls": 0,
+  "credential_read": false
+}

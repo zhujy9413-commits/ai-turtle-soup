@@ -1,0 +1,8 @@
+{
+  "authorized_new_calls": 12,
+  "previous_max_calls": 150,
+  "new_max_calls": 162,
+  "cumulative_cny_cap": 5,
+  "authorization_source": "用户：同意追加12次，费用上限还是5元。先修正范围识别的问题，再继续验证吧。",
+  "client_date": "2026-10-25"
+}

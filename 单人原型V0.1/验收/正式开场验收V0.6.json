@@ -1,0 +1,72 @@
+{
+  "version": "正式开场V0.6",
+  "date": "2026-10-25",
+  "quote": "世界上最后一个人坐在房间中，突然响起了敲门声……",
+  "duration_seconds": 8.2,
+  "timing": {
+    "text_reveal_seconds": [
+      0.25,
+      1.8,
+      3.8
+    ],
+    "knocks_seconds": [
+      4.6,
+      5.15,
+      6.05
+    ]
+  },
+  "checks": {
+    "program_tests": {
+      "passed": 22,
+      "total": 22
+    },
+    "javascript_syntax": "passed",
+    "first_visit_gate_no_autoplay": true,
+    "silent_mode_does_not_load_audio": true,
+    "explicit_sound_click_plays_audio": true,
+    "mute_while_playing": true,
+    "skip_stops_and_unloads_audio": true,
+    "escape_closes": true,
+    "completed_sound_stops": true,
+    "reload_skips_repeated_opening_in_same_tab": true,
+    "audio_load_failure_continues_silent": true,
+    "reduced_motion_shows_all_text": true,
+    "background_handler_simulated_visibility_event": {
+      "pauses_audio": true,
+      "requires_manual_resume": true
+    },
+    "bgm_pauses_during_replay_and_resumes": true,
+    "no_sessions_created_during_opening": true,
+    "active_session_restores_in_fresh_tab_without_opening": true,
+    "active_session_draft_restored": "恢复验证用草稿",
+    "gate_and_quote_widths_without_overflow": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "new_static_routes": [
+      "/intro.js",
+      "/intro.css",
+      "/intro-knocks.wav"
+    ]
+  },
+  "audio": {
+    "file": "public/intro-knocks.wav",
+    "sample_rate": 24000,
+    "channels": 2,
+    "duration": 8.2,
+    "clipped": false,
+    "three_knock_peaks": [
+      0.46237,
+      0.40778,
+      0.52997
+    ],
+    "source": "开场音效来源V0.6.json"
+  },
+  "provider_calls": 0,
+  "limitations": [
+    "浏览器自动化前台策略不允许真实标签页前后台切换；暂停行为通过模拟visibilitychange事件验证，真实设备切后台行为未做实机验证。",
+    "测试浏览器存在已注入扩展的脚本警告，本轮列出的页面与流程检查通过。"
+  ]
+}

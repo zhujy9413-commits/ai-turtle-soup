@@ -1,0 +1,10 @@
+{
+  "source": "公开范围识别验证V0.1的三题故事快照，提示和问答夹具来自对应主持源资料",
+  "story_hashes": {
+    "S02": "c8ead476fda1819f7a1d843850068f63b5bf2b778f7775cffd9da9dd8c23c387",
+    "S06": "058bace68b8840236237d6ba7ba2c3f583f48165e96ac5c30114805ba361d2c0",
+    "S07": "a6915cee522d5020102d2d15a43ab17136d1ba31db4a9db63ca5797ac5116de8"
+  },
+  "simulated_host": true,
+  "real_model_calls": 0
+}

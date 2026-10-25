@@ -1,0 +1,20 @@
+{
+  "version": "V0.6.1 实录敲门音效",
+  "date": "2026-10-25",
+  "scope": "替换敲门音轨、更新来源记录与音频缓存版本；开场交互和时序保持不变",
+  "source_record": "开场音效来源V0.6.1.json",
+  "checks": {
+    "javascript_syntax": "passed",
+    "duration_seconds": 8.2,
+    "clipping": false,
+    "knock_peak_levels": [
+      0.64,
+      0.59,
+      0.66
+    ],
+    "served_audio_matches_file": true,
+    "browser_playback": "passed",
+    "stopped_after_end": true
+  },
+  "provider_calls": 0
+}

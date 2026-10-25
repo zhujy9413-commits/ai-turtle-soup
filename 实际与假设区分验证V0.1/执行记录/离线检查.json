@@ -1,0 +1,13 @@
+{
+  "no_network_calls": true,
+  "credential_read": false,
+  "checks": {
+    "29_unique_33_requests": true,
+    "gold_not_in_model_payload": true,
+    "all_payloads_under_32000_bytes": true,
+    "stories_and_prompt_unchanged": true,
+    "starting_calls_117": true,
+    "cap_150_cny_5": true
+  },
+  "signature": "b73b2afdd312aaac675fc8167eac62a0b0004235d3b8e7357b546d65decb40fa"
+}

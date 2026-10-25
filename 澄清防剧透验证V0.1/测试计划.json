@@ -1,0 +1,22 @@
+{
+  "experiment": "clarification_guard_v01",
+  "model": "qwen3.7-flash-2026-07-15",
+  "prompt_version": "V0.1.7候选",
+  "initial_cumulative_calls": 143,
+  "new_call_limit": 7,
+  "cumulative_call_limit": 150,
+  "cumulative_cny_limit": 5,
+  "changes": [
+    "提示词明确公开信息边界和模板选择规则",
+    "严格JSON Schema将clarification限定为空或7个固定短句",
+    "程序只展示符合模板契约的澄清，不直接展示任意模型字符串"
+  ],
+  "limitations": [
+    "6条独立问题加1次原问题重复；已知回归和跨题范围控制占多数，不能估计整体准确率。",
+    "沿用三题故事与事件表，提示词和输出约束同时改变，不能把结果归因于单个因素。",
+    "不包含自然省略假设标记的全部难例、澄清后的连续会话或完整题库回归。",
+    "单次模板选择正确不等于所有情况都能正确澄清；重复也仅两次。"
+  ],
+  "stop_policy": "动作、模板、格式、鉴权、费用或展示复核失败则暂停；不自动重试。旧测试停止状态不变。",
+  "credential_policy": "本轮结束删除本项目临时密钥；不存入交付包。"
+}

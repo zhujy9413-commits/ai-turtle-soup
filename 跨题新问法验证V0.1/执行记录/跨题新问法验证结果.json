@@ -1,0 +1,424 @@
+{
+  "date": "2026-10-25",
+  "experiment": "expanded_regression_v01",
+  "status": "not_passed_or_incomplete",
+  "model": "qwen3.7-flash-2026-07-15",
+  "enable_thinking": false,
+  "system_prompt_version": "0.1.6",
+  "story_snapshots_changed": false,
+  "plan": {
+    "cases": 24,
+    "repeats": 2,
+    "max_new_calls": 48
+  },
+  "actual_responses": 14,
+  "matches_action_answer": 13,
+  "by_story": {
+    "S02": {
+      "planned": 16,
+      "executed": 5,
+      "matches": 5,
+      "failures": 0
+    },
+    "S06": {
+      "planned": 16,
+      "executed": 5,
+      "matches": 4,
+      "failures": 1
+    },
+    "S07": {
+      "planned": 16,
+      "executed": 4,
+      "matches": 4,
+      "failures": 0
+    }
+  },
+  "repeat_checks": [],
+  "rows": [
+    {
+      "case_id": "X02-01",
+      "story_id": "S02",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "我进屋听到咳嗽时，对应的原声早已在六十秒前发出了吗？",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "action": "answer",
+      "answer": "是",
+      "player_display": "是",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F02",
+        "F08",
+        "F10"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "c042c8a5cfb51aef9f8ccce37b397b8497138e5309bc701160f08769110a56b3",
+      "latency_ms": 1953
+    },
+    {
+      "case_id": "X06-01",
+      "story_id": "S06",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "女人披白衣走到我床边时，病痛是否已经先转移给我？",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "action": "answer",
+      "answer": "是",
+      "player_display": "是",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F04",
+        "F11"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "c8a6bbc7fc8f7e243e5babee7c7c84017f04736de1f10d1cbb6796dd7f6b38d2",
+      "latency_ms": 3055
+    },
+    {
+      "case_id": "X07-01",
+      "story_id": "S07",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "那条假出差消息的真正发信人，是拿着妹妹手机的男人吗？",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "action": "answer",
+      "answer": "是",
+      "player_display": "是",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F03"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "1d0fa9e74ddc4dd35b05cdd0a73ef165ab1f03b5b9a72efa05909f40f8b8bdcb",
+      "latency_ms": 2202
+    },
+    {
+      "case_id": "X02-02",
+      "story_id": "S02",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "倒推那声咳嗽的回放，一分钟前屋里确实有个活人在发声，对吗？",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "action": "answer",
+      "answer": "是",
+      "player_display": "是",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F02",
+        "F03",
+        "F10"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "8f29d13632e601c98f2682928d8dabbe9f22c863925ac354fa141ed2737fd86d",
+      "latency_ms": 2602
+    },
+    {
+      "case_id": "X06-02",
+      "story_id": "S06",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "我误以为对方是护士，就算应了名字，也能避免固定吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F07"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "9c1b04beec5d028fa00259762b196d0e59512957b15aca030075b3da099e5bff",
+      "latency_ms": 2077
+    },
+    {
+      "case_id": "X07-02",
+      "story_id": "S07",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "妹妹还被关在卧室时，就知道我每晚把手伸到床下被男人舔吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F11"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "93521542f776e878201b53bf35b80fe7ae8ea7038bf4409ee8c90244517ec344",
+      "latency_ms": 1819
+    },
+    {
+      "case_id": "X02-03",
+      "story_id": "S02",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "只凭这声回放、不看其他证据，就能断定那个人此刻还没离开吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F08",
+        "F11"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "f50769a39928ac16447e808e5e293e10badb698b282800e7870904262a7caafe",
+      "latency_ms": 2197
+    },
+    {
+      "case_id": "X06-03",
+      "story_id": "S06",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "女人亲自叫了我的名字，但我只在梦里无意识嘟囔，这就足以固定吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F09"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "bf87dd1eb9f4f2c8200db5775093184dba62fca2dfd331dc98509288dc42da8d",
+      "latency_ms": 1875
+    },
+    {
+      "case_id": "X07-03",
+      "story_id": "S07",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "那三晚床下的触感出现之前，狗就已经死了吗？",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "action": "answer",
+      "answer": "是",
+      "player_display": "是",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F06"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "3af75591bb61798bbb38c77b6bc62ffb5314a49b7b0a1b3d388b40809d81ad2f",
+      "latency_ms": 1816
+    },
+    {
+      "case_id": "X02-04",
+      "story_id": "S02",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "假如有人站在门外说话，这间屋子也会按同一规则延迟重播吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F05"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "08e3ac066509a2903291196a81195db881e63e8952fbc913964b576a3ded7f6d",
+      "latency_ms": 2005
+    },
+    {
+      "case_id": "X06-04",
+      "story_id": "S06",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "午夜钟响时女人仍躺在病床上，即使我也在这张床上睡着，原病人离床这个条件也算满足了吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F04"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "703e1138b6947d2b7e1624d3d1165134df87c083798dfba4525d213d3db8bab9",
+      "latency_ms": 2127
+    },
+    {
+      "case_id": "X07-04",
+      "story_id": "S07",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "第三晚我没起身，是因为我早已知道床下是人并自愿配合吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F08",
+        "F10"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "c50396778fe76fdb069b49c73d9a847decb2687e0863d0f7ce49164bd815babf",
+      "latency_ms": 1687
+    },
+    {
+      "case_id": "X02-05",
+      "story_id": "S02",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "听见陌生咳嗽以前，我就已经摸清这种回声的规律了吗？",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "action": "answer",
+      "answer": "是",
+      "player_display": "是",
+      "matches_action_answer": true,
+      "fact_ids": [
+        "F07"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "作者复核：动作/四词与锁定预期及原故事对应事实一致。",
+      "request_sha256": "7346d9e8098b91a5e2680cb2a65daff7f6c89f9d7f2e59608cbb906945dd6a89",
+      "latency_ms": 1709
+    },
+    {
+      "case_id": "X06-05",
+      "story_id": "S06",
+      "repeat": 1,
+      "channel": "formal_question",
+      "question": "直到天亮都没有完成有效应答固定，暂时病痛会自动回到女人身上吗？",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "action": "answer",
+      "answer": "否",
+      "player_display": "否",
+      "matches_action_answer": false,
+      "fact_ids": [
+        "F06",
+        "F12"
+      ],
+      "covered_nodes": [],
+      "semantic_review": "未符合锁定的是标签；原问题缺少显式假设标记，条件/实际范围存在争议，不直接认定事实答反。主测试停止，独立补充范围诊断；不补算主测试通过。",
+      "request_sha256": "26aabbb4db71020d4ff2c53ae81066bda6ca17c87c851b160c7a5ffd10a54f5f",
+      "latency_ms": 1830
+    }
+  ],
+  "internal_trace_notes": [],
+  "original_full_48_suite_executed": false,
+  "global_prototype_gate_open": false,
+  "primary_case_dispute": {
+    "case_id": "X06-05",
+    "locked_expected": "是",
+    "actual": "否",
+    "review": "原问句未显式写如果或假设，条件式理解与实际经过式理解存在空间。保留未符合锁定预期，不算通过，也不认定为已证实汤底事实答反。",
+    "label_changed": false,
+    "independent_review": false
+  },
+  "limits": [
+    "新表达由同一作者依据已知汤底拟定并复核，不是独立盲测。",
+    "24条新表达中21条是正式问题、3条是完整还原；不覆盖所有不完整还原、攻击、投票计时或复盘边界。",
+    "每条最多2次重复，不证明确定性或总体准确率；这是固定输入回归，不是真实动态对局。",
+    "S06沿用上轮事件表，S02/S07仅将原事实组织为事件、条件与角色认知；未改故事。"
+  ],
+  "costs": {
+    "experiment_estimate_cny": 0.0124008,
+    "cumulative_original_price_estimate_cny": 0.08953960000000002,
+    "cumulative_attempts": 117,
+    "cumulative_model_responses": 115,
+    "authentication_rejections": 2,
+    "invoice_verified": false,
+    "limit_requests": 150,
+    "limit_cny": 5,
+    "remaining_attempts": 33,
+    "diagnostic_estimate_cny": 0.0059022,
+    "round_total_model_responses": 20
+  },
+  "local_temp_key_cleanup": "private_temp_file_and_pointer_removed; keychain_not_used; platform_key_unchanged",
+  "next_step": "保留结构化事件表，将实际经过、明确反事实、范围不明列为困难集，验证范围不明时先澄清；新方案最多使用现有33次剩余额度，不放行整局或开发。",
+  "scope_diagnostic": {
+    "planned": 6,
+    "executed": 6,
+    "matches": 6,
+    "not_counted_in_primary_passes": true,
+    "inference": "明确假设和实际经过均回答符合，支持前提范围识别是待补强点；无法仅凭输出断言模型内部推理原因。",
+    "rows": [
+      {
+        "case_id": "D-01",
+        "question": "假如这一晚我始终没有有意识地回应女人呼名，转移也没有被固定，到了天亮病痛会自动回到女人身上吗？",
+        "expected": "是",
+        "actual": "是",
+        "fact_ids": [
+          "F06"
+        ]
+      },
+      {
+        "case_id": "D-02",
+        "question": "只讨论一个与实际故事不同的假设：当夜没有有效应答，也没有固定。天亮会撤回暂时转移吗？",
+        "expected": "是",
+        "actual": "是",
+        "fact_ids": [
+          "F06"
+        ]
+      },
+      {
+        "case_id": "D-03",
+        "question": "如果当夜没有固定，天亮后暂时转到我身上的病痛会撤回吗？",
+        "expected": "是",
+        "actual": "是",
+        "fact_ids": [
+          "F06"
+        ]
+      },
+      {
+        "case_id": "D-04",
+        "question": "按故事实际经过，我已清醒回应女人呼名。到了天亮，病痛自动回到了女人身上吗？",
+        "expected": "否",
+        "actual": "否",
+        "fact_ids": [
+          "F06",
+          "F13"
+        ]
+      },
+      {
+        "case_id": "D-05",
+        "question": "在本局实际结尾，转移已被固定，我仍需别人照料吗？",
+        "expected": "是",
+        "actual": "是",
+        "fact_ids": [
+          "F13",
+          "F16"
+        ]
+      },
+      {
+        "case_id": "D-06",
+        "question": "我有一个反事实推测：没回应就没有固定，因此天亮会恢复转移前的病痛归属。这符合规则吗？",
+        "expected": "是",
+        "actual": "是",
+        "fact_ids": [
+          "F06"
+        ]
+      }
+    ]
+  }
+}

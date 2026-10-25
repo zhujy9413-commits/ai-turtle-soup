@@ -1,0 +1,206 @@
+{
+  "status": "主测试14条后因隐含反事实范围争议停止；另6条明确范围诊断符合；未开启第二遍。",
+  "account_status": {
+    "bailian": "北京业务空间地址此前已验证，当前凭据仅本轮临时保存。",
+    "deepseek": "用户表示也有账号，具体API平台与模型未核对"
+  },
+  "primary_model": "qwen3.7-flash-2026-07-15",
+  "fallback_policy": "若账号不可用该快照，先报告可用项，不静默换版本",
+  "region_proposal": "华北2（北京）",
+  "api_host": "https://ws-6sartjfe1i7cpkgw.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "enable_thinking": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "turtle_host_v018",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "answer",
+              "clarify",
+              "invalid",
+              "decline",
+              "incomplete",
+              "conflict",
+              "complete",
+              "content_gap"
+            ]
+          },
+          "answer": {
+            "type": "string",
+            "enum": [
+              "",
+              "是",
+              "否",
+              "无关",
+              "不清楚"
+            ]
+          },
+          "fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "covered_nodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "audit_flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "unsupported_detail",
+                "history_conflict",
+                "core_gap"
+              ]
+            }
+          },
+          "clarification": {
+            "type": "string",
+            "enum": [
+              "",
+              "你问的是故事实际发生的情况，还是假设条件下的情况？",
+              "你指的是哪方面的互换？",
+              "你指的是哪一个人或哪一个对象？",
+              "你指的是哪个时间段？",
+              "你想确认的是在什么条件下的情况？",
+              "这句在汤面中是旁白。你想确认哪一段实际发出的声音？",
+              "你指的是汤面中的哪一句或哪件事？"
+            ]
+          }
+        },
+        "required": [
+          "action",
+          "answer",
+          "clarification",
+          "fact_ids",
+          "covered_nodes",
+          "audit_flags"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "input_token_guard": 32000,
+  "output_token_limit_proposal": 512,
+  "sampling_parameters": "首测保持供应商默认并保存实际请求；对比时固定相同条件，不宣称完全确定性",
+  "network_tools": false,
+  "automatic_retries": 0,
+  "planned_model_runs": {
+    "new_cases": 24,
+    "repeats": 2,
+    "max_new_requests": 48,
+    "previous_attempts": 97,
+    "max_cumulative_attempts": 145,
+    "remaining_limit": 150
+  },
+  "smoke_cases": [
+    "X02-01",
+    "X06-01",
+    "X07-01",
+    "X02-02",
+    "X06-02",
+    "X07-02",
+    "X02-03",
+    "X06-03",
+    "X07-03",
+    "X02-04",
+    "X06-04",
+    "X07-04",
+    "X02-05",
+    "X06-05",
+    "X07-05",
+    "X02-06",
+    "X06-06",
+    "X07-06",
+    "X02-07",
+    "X06-07",
+    "X07-07",
+    "X02-08",
+    "X06-08",
+    "X07-08"
+  ],
+  "smoke_then_full": "本轮24条首遍和24条第二遍，不是原48条回归；首遍复核后才开第二遍。",
+  "budget_cap_cny_proposal": 5,
+  "budget_confirmed": true,
+  "reasoning": "先测选定主候选。DeepSeek作为后续对照选项，型号、能力、价格和预算另核对，尚未比较优劣。",
+  "api_key_policy": "优先读取DASHSCOPE_API_KEY；本机配置入口也可将密钥以0600权限暂存于私有系统临时目录，30分钟后不接受。密钥不进入聊天、交付目录或日志，测试完成后删除临时密钥。",
+  "budget_approval": {
+    "date": "2026-10-25",
+    "basis": "在已展示最多150次、封顶5元方案后，用户指示继续；随后明确选择华北2（北京）。",
+    "cap_cny": 5,
+    "max_requests": 150
+  },
+  "execution": {
+    "runner": "执行工具/运行扩展.py",
+    "setup": "配置百炼密钥.command",
+    "automatic_retries": 0,
+    "max_completion_tokens": 512,
+    "single_request_reserve_cny": 2,
+    "input_guard_note": "未接入官方分词器。发送前用32KB请求字节线防止意外增长，成功响应按usage核对32K token范围，超出即停止后续；字节数不是token计数。成本保护按官方最大输入区间预留2元，不依赖字节估算。",
+    "smoke_review": "本轮24条首遍审阅后才开第二遍；澄清文字单独停下审阅。",
+    "format_revision": "V0.1.2：模型不生成四词展示文案；answer直接用于展示，仅clarify单独提供澄清文字。",
+    "id_constraint": "V0.1.3：每次请求将fact_ids与covered_nodes的JSON Schema枚举限制为本题已有事实和节点编号。",
+    "state_path": "/Users/zhujiayi/Documents/ChatGPT/AI 海龟汤/work/model_api_execution_v014",
+    "clarification_revision": "V0.1.6：公开阅读和命题范围优先检查；禁止擅自补交换对象。"
+  },
+  "version": "expanded-0.1",
+  "full_cases": [
+    "X02-01",
+    "X06-01",
+    "X07-01",
+    "X02-02",
+    "X06-02",
+    "X07-02",
+    "X02-03",
+    "X06-03",
+    "X07-03",
+    "X02-04",
+    "X06-04",
+    "X07-04",
+    "X02-05",
+    "X06-05",
+    "X07-05",
+    "X02-06",
+    "X06-06",
+    "X07-06",
+    "X02-07",
+    "X06-07",
+    "X07-07",
+    "X02-08",
+    "X06-08",
+    "X07-08"
+  ],
+  "smoke_review": "自动检查不能代替语义审阅；逐条审阅澄清是否泄底、有无过度澄清、能否继续提问。",
+  "official_price_checked_at": "2026-10-25",
+  "endpoint_revision": {
+    "date": "2026-10-25",
+    "basis": "用户提供当前密钥对应API Host；已核对百炼北京业务空间域名迁移说明。",
+    "source": "https://help.aliyun.com/zh/model-studio/beijing-access-information",
+    "previous_request": "HTTP401，未返回usage，保留2元预留，不当作实付或模型结果。"
+  },
+  "experiment": "expanded_regression_v01",
+  "stop_policy": "关键错误或未知用量停止；首遍审阅后才开启第二遍；澄清文字单独停下审阅。",
+  "credential_policy": "本轮一次临时配置，整轮结束或停止后清理；不启用钥匙串。",
+  "latest_run": {
+    "primary_responses": 14,
+    "matches_locked_action_answer": 13,
+    "disputed_case": "X06-05",
+    "diagnostic_responses": 6,
+    "diagnostic_matches": 6,
+    "cumulative_attempts": 117,
+    "remaining_attempts": 33,
+    "original_price_estimate_cny": 0.0895396,
+    "invoice_verified": false,
+    "temporary_key_removed": true,
+    "keychain_used": false
+  }
+}

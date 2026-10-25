@@ -1,0 +1,41 @@
+{
+  "version": "V0.6.1 实录敲击版",
+  "asset": "public/intro-knocks.wav",
+  "origin": "stephan 的实录敲击，经剪辑与音量平衡；环境底噪由本项目生成",
+  "source_title": "Knocking on wood or door",
+  "author": "stephan",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Knocking_on_wood_or_door.ogg",
+  "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Knocking_on_wood_or_door.ogg",
+  "license": "Public domain / PD-author（作者放弃版权并允许任何用途，按来源页面声明）",
+  "license_checked_date": "2026-10-25",
+  "source_original": "assets/audio-sources/knocking-on-wood-or-door.ogg",
+  "source_sha1": "7fae9ee6914c84f37bdf558643a07efc5f7587b0",
+  "decoded_source": "assets/audio-sources/knocking-on-wood-or-door.wav",
+  "generator": "tools/generate_intro.py",
+  "source_trims_seconds": [
+    [
+      2.425,
+      2.64
+    ],
+    [
+      2.64,
+      2.845
+    ],
+    [
+      2.845,
+      3.3
+    ]
+  ],
+  "clip_placement_seconds": [
+    4.6,
+    5.15,
+    6.05
+  ],
+  "duration_seconds": 8.2,
+  "sample_rate": 24000,
+  "channels": 2,
+  "peak": 0.66,
+  "sha256": "224ae11d24fbc3e6396e0165465160cef60094e643a158448cb156415f415263",
+  "processing": "截取三次真实敲击，平衡音量、轻微切口淡化；未添加振荡器音色、低音增强或人工回声",
+  "history": "原合成音效和脚本保留在验收/素材历史目录"
+}

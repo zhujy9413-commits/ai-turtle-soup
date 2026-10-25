@@ -1,0 +1,18 @@
+{
+  "asset": "验收/素材历史/intro-knocks-synthetic-v0.6.wav",
+  "origin": "本项目原创程序合成",
+  "generator": "验收/素材历史/generate_intro_synthetic_v0.6.py",
+  "duration_seconds": 8.2,
+  "knocks_seconds": [
+    4.6,
+    5.15,
+    6.05
+  ],
+  "sample_rate": 24000,
+  "channels": 2,
+  "peak": 0.52998,
+  "rms": 0.02861,
+  "rights": "无需第三方音效素材；生成脚本随项目保留",
+  "content": "低音量环境底噪、短暂安静、三次带轻微房间反射的木门敲击；无人声，无音乐",
+  "status": "历史合成版，已被V0.6.1实录剪辑替换"
+}

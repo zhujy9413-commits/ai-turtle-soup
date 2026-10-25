@@ -1,0 +1,270 @@
+{
+  "version": "0.1",
+  "order": "按序号交错三道题，先测各题事实，再测边界与还原。",
+  "cases": [
+    {
+      "id": "X02-01",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X02-01-U",
+        "text": "我进屋听到咳嗽时，对应的原声早已在六十秒前发出了吗？"
+      }
+    },
+    {
+      "id": "X06-01",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X06-01-U",
+        "text": "女人披白衣走到我床边时，病痛是否已经先转移给我？"
+      }
+    },
+    {
+      "id": "X07-01",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X07-01-U",
+        "text": "那条假出差消息的真正发信人，是拿着妹妹手机的男人吗？"
+      }
+    },
+    {
+      "id": "X02-02",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X02-02-U",
+        "text": "倒推那声咳嗽的回放，一分钟前屋里确实有个活人在发声，对吗？"
+      }
+    },
+    {
+      "id": "X06-02",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X06-02-U",
+        "text": "我误以为对方是护士，就算应了名字，也能避免固定吗？"
+      }
+    },
+    {
+      "id": "X07-02",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X07-02-U",
+        "text": "妹妹还被关在卧室时，就知道我每晚把手伸到床下被男人舔吗？"
+      }
+    },
+    {
+      "id": "X02-03",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X02-03-U",
+        "text": "只凭这声回放、不看其他证据，就能断定那个人此刻还没离开吗？"
+      }
+    },
+    {
+      "id": "X06-03",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X06-03-U",
+        "text": "女人亲自叫了我的名字，但我只在梦里无意识嘟囔，这就足以固定吗？"
+      }
+    },
+    {
+      "id": "X07-03",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X07-03-U",
+        "text": "那三晚床下的触感出现之前，狗就已经死了吗？"
+      }
+    },
+    {
+      "id": "X02-04",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X02-04-U",
+        "text": "假如有人站在门外说话，这间屋子也会按同一规则延迟重播吗？"
+      }
+    },
+    {
+      "id": "X06-04",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X06-04-U",
+        "text": "午夜钟响时女人仍躺在病床上，即使我也在这张床上睡着，原病人离床这个条件也算满足了吗？"
+      }
+    },
+    {
+      "id": "X07-04",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X07-04-U",
+        "text": "第三晚我没起身，是因为我早已知道床下是人并自愿配合吗？"
+      }
+    },
+    {
+      "id": "X02-05",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X02-05-U",
+        "text": "听见陌生咳嗽以前，我就已经摸清这种回声的规律了吗？"
+      }
+    },
+    {
+      "id": "X06-05",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X06-05-U",
+        "text": "直到天亮都没有完成有效应答固定，暂时病痛会自动回到女人身上吗？"
+      }
+    },
+    {
+      "id": "X07-05",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X07-05-U",
+        "text": "第三晚门板的动静，是还活着的妹妹在设法让我注意到她吗？"
+      }
+    },
+    {
+      "id": "X02-06",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X02-06-U",
+        "text": "如果原声只是屋内手机播放的一段语音，也算合格的触发源吗？"
+      }
+    },
+    {
+      "id": "X06-06",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X06-06-U",
+        "text": "别人替我应了那声名字，而我本人还没醒，也能算有效应答固定吗？"
+      }
+    },
+    {
+      "id": "X07-06",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X07-06-U",
+        "text": "本局死亡的对象是人类吗？"
+      }
+    },
+    {
+      "id": "X02-07",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X02-07-U",
+        "text": "屋子那句“我已经习惯了”是陌生男人说的？"
+      }
+    },
+    {
+      "id": "X06-07",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X06-07-U",
+        "text": "呼叫铃交到我手里这一刻，才是病痛第一次转给我的时候吗？"
+      }
+    },
+    {
+      "id": "X07-07",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "X07-07-U",
+        "text": "我是在第三晚听见那次模糊抓门声时就立刻报警了吗？"
+      }
+    },
+    {
+      "id": "X02-08",
+      "story_id": "S02",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_solution",
+      "history": [],
+      "current_message": {
+        "id": "X02-08-U",
+        "text": "那栋房子只把屋内活人的现场声音延后六十秒重播一次。那声原始咳嗽产生时，我还没进家，咳嗽不是我刚发的，也不是电视录音；它说明一分钟前有别的活人在屋内。我担心有人闯进来，所以先退到屋外再报警。"
+      }
+    },
+    {
+      "id": "X06-08",
+      "story_id": "S06",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_solution",
+      "history": [],
+      "current_message": {
+        "id": "X06-08-U",
+        "text": "女人把我哄上特殊病床睡着，自己先离床。午夜我暂时承受她的病痛，她已经能走动；随后她穿白衣扮成护士叫我的名字。我刚醒来误认了她，清醒答应，使本来会在天亮撤回的转移固定。所以早上她能走，我得被照顾，她才给我铃并再找陪护。"
+      }
+    },
+    {
+      "id": "X07-08",
+      "story_id": "S07",
+      "split": "authored_new_regression_not_blind",
+      "channel": "formal_solution",
+      "history": [],
+      "current_message": {
+        "id": "X07-08-U",
+        "text": "妹妹并没出差，是男人控制她并把她关在卧室，用她的手机骗我不要进房间。狗早已被他杀死，他照着狗以前的习惯每晚躲床下舔我的手，让我误以为安全；门板动静其实是妹妹求救。我清晨听清呼救才报警，警方找到妹妹和藏着的男人，证明她一直没离家。"
+      }
+    }
+  ]
+}

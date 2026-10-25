@@ -1,0 +1,246 @@
+{
+  "version": "0.1",
+  "independent_review": false,
+  "cases": [
+    {
+      "id": "G01-1",
+      "group": "G01",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G01-2",
+      "group": "G01",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G01-3",
+      "group": "G01",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F04",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G02-1",
+      "group": "G02",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04",
+        "F07",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G02-2",
+      "group": "G02",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04",
+        "F07",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G02-3",
+      "group": "G02",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F04",
+        "F07",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G03-1",
+      "group": "G03",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F03",
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G03-2",
+      "group": "G03",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F03",
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G03-3",
+      "group": "G03",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F03",
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G04-1",
+      "group": "G04",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06",
+        "F07",
+        "F09"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G04-2",
+      "group": "G04",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06",
+        "F07",
+        "F09"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G04-3",
+      "group": "G04",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F06",
+        "F07",
+        "F09"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G05-1",
+      "group": "G05",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G05-2",
+      "group": "G05",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G05-3",
+      "group": "G05",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F06"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G06-1",
+      "group": "G06",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06",
+        "F07",
+        "F13"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G06-2",
+      "group": "G06",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06",
+        "F07",
+        "F13"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    },
+    {
+      "id": "G06-3",
+      "group": "G06",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F06",
+        "F07",
+        "F13"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "label_review": "作者依据原汤底事前锁定；不是独立盲测。"
+    }
+  ]
+}

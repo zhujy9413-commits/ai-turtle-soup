@@ -1,0 +1,31 @@
+{
+  "version": "标题笔触V0.4",
+  "date": "2026-10-25",
+  "scope": "主标题字体、两行层级、字距；首页说明与按钮字距微调；没有改写文案或修改局内流程",
+  "font": {
+    "family": "Long Cang",
+    "css_alias": "Night Hand",
+    "local_bytes": 9680,
+    "font_loaded_in_browser": true,
+    "font_route_status": 200,
+    "font_mime": "font/ttf",
+    "license_route_status": 200,
+    "source": "https://github.com/google/fonts/tree/main/ofl/longcang"
+  },
+  "checks": {
+    "javascript_syntax": "passed",
+    "http_and_privacy_tests": {
+      "passed": 2,
+      "total": 2
+    },
+    "widths_without_horizontal_overflow": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ]
+  },
+  "provider_calls": 0,
+  "notes": "用户的字僵硬反馈，本轮先以字体与排版处理；正文、规则和按钮没有使用手写字体。字体按当前标题字形取官方子集，后续改标题需相应更新字形。"
+}

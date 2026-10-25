@@ -1,0 +1,39 @@
+{
+  "status": "structured_temporal_candidate_passed_this_regression",
+  "actual_model_requests": 56,
+  "A": {
+    "planned": 36,
+    "executed": 20,
+    "matches": 19,
+    "critical_failures": 1,
+    "all_18_twice_completed": false,
+    "current_gate_passed": false,
+    "prompt_tokens": 62195,
+    "completion_tokens": 1253,
+    "original_price_estimate_cny": 0.0134414,
+    "latency_median_ms": 1735.5,
+    "latency_range_ms": [
+      1548,
+      2630
+    ]
+  },
+  "B": {
+    "planned": 36,
+    "executed": 36,
+    "matches": 36,
+    "critical_failures": 0,
+    "all_18_twice_completed": true,
+    "current_gate_passed": true,
+    "prompt_tokens": 168024,
+    "completion_tokens": 2313,
+    "original_price_estimate_cny": 0.03545519999999999,
+    "latency_median_ms": 1878.0,
+    "latency_range_ms": [
+      1563,
+      3809
+    ]
+  },
+  "full_48_started": false,
+  "may_start_prototype": false,
+  "local_temp_key_removed": true
+}

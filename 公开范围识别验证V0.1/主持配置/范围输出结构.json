@@ -1,0 +1,32 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "public_scope_v01",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "route": {
+          "type": "string",
+          "enum": [
+            "judge",
+            "clarify"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "enum": [
+            "actual",
+            "hypothetical",
+            "unresolved"
+          ]
+        }
+      },
+      "required": [
+        "route",
+        "scope"
+      ]
+    }
+  }
+}

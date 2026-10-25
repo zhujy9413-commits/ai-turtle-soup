@@ -1,0 +1,23 @@
+{
+  "version": "0.1.6",
+  "sha256": {
+    "index.html": "d4d96216132f3f29932532ecac4a31fb665aedb57739c5264b3f19567c3b10ea",
+    "主持配置/系统指令.txt": "9b02f06d49ec4ad800ca20176be310b3837a63b6222e7a949f800144e8e35bef",
+    "主持配置/调用方案待确认.json": "2e1aebf669295a13c1590cb3a24a637a68e5e8d0acba8a3b1889ea8b75250e57",
+    "主持配置/输出结构.schema.json": "f951e758eaaa241abfa88e2d10fbaaabf1c51978e7f40bbcb203741c852b644a",
+    "人工判分/标签变更记录.json": "c1b45a5dd8848ec16da8f8b8fe2e6e91ec607c2fa26b85c45283f2934a6373a7",
+    "人工判分/预期结果.json": "8b36011034d89368a3385cf7a295dbf5654ab8cd112c7271753d01ef3249aed2",
+    "执行工具/本机配置说明.txt": "bd3c48828bdb810e6f182d6e63fcc11c1eb898b80dc10fab8a9360f3554be4d6",
+    "执行工具/运行小样.py": "1d94b685ea71af64bc585b3b2bc282a5dddf9037691dad972a842c11fcbc9f81",
+    "执行工具/配置百炼密钥.py": "7c4eeee2138abb072f67d52783f4c367352d3ad9fc4335902cf12e963a27864e",
+    "来源锁定.json": "788b15f55d0d8eea938baa3697f1c60498706bcdf02febc6c605e57583f9ca08",
+    "模型输入/故事/S02.json": "d7968ce8b4ee136b0495c1b936825db04e269d9bcac58ce3a4fac3e25fcfa590",
+    "模型输入/故事/S06.json": "97c8f96adb19df4a97793f8b2b1d3a09f2322453b47d35b7943017c8b0c30058",
+    "模型输入/故事/S07.json": "e6813cbbae99ec852248136c695d2b606d5851cdf4a088595894bbd52f973973",
+    "模型输入/用例.json": "0e794f6ed24f2fd8f52fd1cf42fd43e5e5b8087babec46efd19629e065cbfbb7",
+    "配置百炼密钥.command": "cb94b7af0d35b983d507253671bcca26f1453979a305629f9c2059553e7ce078",
+    "执行记录/V0.1.4澄清失败记录.json": "765bff3a7cd2f782adccc426593e816b0cee096c66724834524c9244a0a11fbf",
+    "人工判分/争议用例复核.json": "8265c6f954912b118f67788cba0b93695ed04f3d28176778a411af0da2e33059",
+    "执行记录/V0.1.5范围歧义失败记录.json": "5f888110872965243744adb092f2b65a43eb6f3383c9597a731dc6416203c767"
+  }
+}

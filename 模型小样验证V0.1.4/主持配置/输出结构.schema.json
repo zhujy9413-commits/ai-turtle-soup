@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "enum": [
+        "answer",
+        "clarify",
+        "invalid",
+        "decline",
+        "incomplete",
+        "conflict",
+        "complete",
+        "content_gap"
+      ]
+    },
+    "answer": {
+      "type": "string",
+      "enum": [
+        "",
+        "是",
+        "否",
+        "无关",
+        "不清楚"
+      ]
+    },
+    "fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "covered_nodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audit_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "unsupported_detail",
+          "history_conflict",
+          "core_gap"
+        ]
+      }
+    },
+    "clarification": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "action",
+    "answer",
+    "clarification",
+    "fact_ids",
+    "covered_nodes",
+    "audit_flags"
+  ],
+  "additionalProperties": false
+}

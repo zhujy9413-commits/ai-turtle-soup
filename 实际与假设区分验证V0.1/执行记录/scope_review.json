@@ -1,0 +1,10 @@
+{
+  "experiment": "scope_validation_v01",
+  "signature": "b73b2afdd312aaac675fc8167eac62a0b0004235d3b8e7357b546d65decb40fa",
+  "blocked": true,
+  "approved": false,
+  "reason": "C02-11澄清泄漏S02.F11，按预先冻结计划停止；剩余7次不继续，也不重问到通过。",
+  "calls_used": 26,
+  "cumulative_calls": 143,
+  "remaining_calls": 7
+}

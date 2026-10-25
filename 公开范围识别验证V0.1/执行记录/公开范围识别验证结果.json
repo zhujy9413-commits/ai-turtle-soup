@@ -1,0 +1,889 @@
+{
+  "experiment": "public_scope_gate_v01",
+  "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+  "candidate_host_version": "V0.1.8",
+  "new_api_attempts": 12,
+  "scope_api_attempts": 8,
+  "scope_matches": 8,
+  "judge_api_attempts": 4,
+  "judge_matches": 4,
+  "unique_questions_tested": 7,
+  "question_executions": 8,
+  "complete_executions": 8,
+  "matched_executions": 8,
+  "known_failure_retest": {
+    "tested": true,
+    "same_request": true,
+    "same_scope_output": true,
+    "same_player_display": true
+  },
+  "bounded_regression_passed": true,
+  "global_acceptance_passed": false,
+  "cumulative_attempts": 162,
+  "authorized_cumulative_call_limit": 162,
+  "remaining_calls": 0,
+  "new_original_price_estimate_cny": 0.0054226000000000005,
+  "cumulative_original_price_estimate_cny": 0.12470900000000001,
+  "actual_invoice_verified": false,
+  "limits": [
+    "7条独立问题和1次已知失败重复，不能估计全量自然玩家准确率。",
+    "测试夹具的公开历史不是线上真实对话，未覆盖所有省略假设词的自然歧义。",
+    "包含简单条件直接给出事实的控制题，不能据此证明复杂反事实推理。",
+    "不与旧版在全套同一题组做配对对照，不能报告提升百分比或单一根因。",
+    "范围识别看不到汤底可减少隐藏事实干扰，但不保证它在所有问题上都会选对范围。"
+  ],
+  "runtime_tradeoff": "明确范围的提问需要串行两次调用，增加费用与等待；未选定范围仅一次调用。本轮只验证判定，不作全游戏延迟承诺。",
+  "independent_blind_review": false,
+  "credential_cleanup": {
+    "temporary_credential_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "platform_key_changed": false,
+    "at": 1792919934.1297479
+  },
+  "flows": [
+    {
+      "case_id": "P-01",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "known_failure",
+      "question": "我没分清是在问原故事那条消息，还是“妹妹确实亲手输入发送、无人代发”的假设：这条消息是妹妹自己发的吗？",
+      "history": [],
+      "history_source": "empty",
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "scope_output": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "api_calls": 1,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 1557,
+      "semantic_reviews": [
+        "人工复核：原R-03范围尚未选定，前置模块正确选择澄清；未调用汤底判定，展示仅安全短句。"
+      ]
+    },
+    {
+      "case_id": "P-02",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "new_mixed_scope",
+      "question": "我把实际天亮后的结果和“当夜一直没有有效应答、没有固定”的假设弄混了，还没选定问哪一种：病痛到天亮撤回了吗？",
+      "history": [],
+      "history_source": "empty",
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "scope_output": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "api_calls": 1,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 1455,
+      "semantic_reviews": [
+        "人工复核：玩家明示两个范围尚未选择，正确先澄清；没有透露天亮病痛归属。"
+      ]
+    },
+    {
+      "case_id": "P-03",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "unresolved_public_history",
+      "question": "这两种情况我还没有选好要问哪一个：警方到场时，他还在屋里吗？",
+      "history": [
+        {
+          "id": "H-U",
+          "role": "user",
+          "text": "我想对照故事实际结尾，以及“咳嗽后人已离屋且没有回来”的假设。"
+        },
+        {
+          "id": "H-A",
+          "role": "assistant",
+          "text": "你问的是故事实际发生的情况，还是假设条件下的情况？"
+        }
+      ],
+      "history_source": "synthetic_public_fixture",
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "scope_output": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "api_calls": 1,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 1801,
+      "semantic_reviews": [
+        "人工复核：公开历史列出两个范围，当前仍未选定，正确先澄清，没有确认警方是否找到人。"
+      ]
+    },
+    {
+      "case_id": "P-04",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "actual_control",
+      "question": "按故事实际经过，到了天亮，病痛已经自动回到女人身上了吗？",
+      "history": [],
+      "history_source": "empty",
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "scope_output": {
+        "route": "judge",
+        "scope": "actual"
+      },
+      "host_output": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F06",
+          "F13"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "api_calls": 2,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 4145,
+      "semantic_reviews": [
+        "人工复核：玩家已指定故事实际经过，范围为actual，应进入汤底判定，不额外澄清。",
+        "人工复核：实际结尾已固定，病痛天亮未自动退回；否与F06/F13一致，展示仅四词，无多余澄清。"
+      ]
+    },
+    {
+      "case_id": "P-05",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "hypothetical_control",
+      "question": "假设午夜暂时转移已发生，但直到天亮我都没有有效应答，也没有固定，病痛会在天亮自动退回女人身上吗？",
+      "history": [],
+      "history_source": "empty",
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "scope_output": {
+        "route": "judge",
+        "scope": "hypothetical"
+      },
+      "host_output": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F06"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "是",
+      "api_calls": 2,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 4279,
+      "semantic_reviews": [
+        "人工复核：玩家明确给定未固定的反事实条件，hypothetical正确，不能按实际已固定的结尾解释。",
+        "人工复核：未固定的假设下天亮撤回符合F06，回答是正确，与实际结尾回答否区分清楚。"
+      ]
+    },
+    {
+      "case_id": "P-06",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "resolved_public_history",
+      "question": "只谈后一种假设：消息由妹妹本人亲手输入并发送，没有人代发。在这个假设中，发送者是妹妹吗？",
+      "history": [
+        {
+          "id": "H-U",
+          "role": "user",
+          "text": "我想对照故事实际的出差消息，以及“消息确实由妹妹本人亲手输入发送、没有人代发”的假设。"
+        },
+        {
+          "id": "H-A",
+          "role": "assistant",
+          "text": "你问的是故事实际发生的情况，还是假设条件下的情况？"
+        }
+      ],
+      "history_source": "synthetic_public_fixture",
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "scope_output": {
+        "route": "judge",
+        "scope": "hypothetical"
+      },
+      "host_output": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "是",
+      "api_calls": 2,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 3197,
+      "semantic_reviews": [
+        "人工复核：公开历史虽列出两个范围，当前已明确选定后一种假设，正确放行hypothetical，不重复澄清。",
+        "人工复核：仅在玩家明确假设内，妹妹亲手发信故回答是；未把假设认证为实际剧情。依据来自公开假设，未硬引与该假设不符的F03，空fact_ids不计漏引固定事实。此为简单范围控制。"
+      ]
+    },
+    {
+      "case_id": "P-07",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "wrong_guess_actual_control",
+      "question": "按原故事实际发生的情况，出差消息是妹妹本人亲手发送的吗？",
+      "history": [],
+      "history_source": "empty",
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "scope_output": {
+        "route": "judge",
+        "scope": "actual"
+      },
+      "host_output": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "api_calls": 2,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 3933,
+      "semantic_reviews": [
+        "人工复核：玩家明确问实际经过，错误猜测仍是清楚的命题，actual并交给主持判定正确。",
+        "人工复核：按实际经过妹妹没有亲手发送消息，否与F03相符；没有把错误猜测退回为范围澄清。"
+      ]
+    },
+    {
+      "case_id": "P-01",
+      "repeat": 2,
+      "story_id": "S07",
+      "category": "known_failure",
+      "question": "我没分清是在问原故事那条消息，还是“妹妹确实亲手输入发送、无人代发”的假设：这条消息是妹妹自己发的吗？",
+      "history": [],
+      "history_source": "empty",
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "scope_output": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "api_calls": 1,
+      "complete": true,
+      "matched": true,
+      "summed_api_response_latency_ms": 1208,
+      "semantic_reviews": [
+        "人工复核：与首遍请求字节哈希相同，仍正确先澄清，范围输出和玩家展示均一致，没有调用隐藏汤底作答。"
+      ]
+    }
+  ],
+  "api_calls": [
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-01",
+      "repeat": 1,
+      "stage": "scope",
+      "story_id": "S07",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919736.6153028,
+      "request_sha256": "002611a91a4965fe82aa6b04cb414683e2751f4f8c8b825673ba5749a37dcb24",
+      "semantic_review": "人工复核：原R-03范围尚未选定，前置模块正确选择澄清；未调用汤底判定，展示仅安全短句。",
+      "raw_content": "{\n  \"route\": \"clarify\",\n  \"scope\": \"unresolved\"\n}",
+      "request_id": "0423f436-6f4d-9ad0-ace4-a66fef689d33",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 625,
+        "total_tokens": 646,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 625
+        }
+      },
+      "estimated_cny": 0.0001418,
+      "latency_ms": 1557,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-02",
+      "repeat": 1,
+      "stage": "scope",
+      "story_id": "S06",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919763.455313,
+      "request_sha256": "ce1549a8b9b3291e82a3f00006be744d126a6ec6aeeeb024df90fb92b6ae471c",
+      "semantic_review": "人工复核：玩家明示两个范围尚未选择，正确先澄清；没有透露天亮病痛归属。",
+      "raw_content": "{\n  \"route\": \"clarify\",\n  \"scope\": \"unresolved\"\n}",
+      "request_id": "da6178bf-4082-9ab2-bde3-ec271732a0f7",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 632,
+        "total_tokens": 653,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 632
+        }
+      },
+      "estimated_cny": 0.0001432,
+      "latency_ms": 1455,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-03",
+      "repeat": 1,
+      "stage": "scope",
+      "story_id": "S02",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919775.701441,
+      "request_sha256": "b4de70407cf54326c9d08360963de7936dce5825171e755c140433ef3981380f",
+      "semantic_review": "人工复核：公开历史列出两个范围，当前仍未选定，正确先澄清，没有确认警方是否找到人。",
+      "raw_content": "{\n  \"route\": \"clarify\",\n  \"scope\": \"unresolved\"\n}",
+      "request_id": "d381d920-b66a-9a20-a9f4-60b9003e8806",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 685,
+        "total_tokens": 706,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 685
+        }
+      },
+      "estimated_cny": 0.0001538,
+      "latency_ms": 1801,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-04",
+      "repeat": 1,
+      "stage": "scope",
+      "story_id": "S06",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919822.880327,
+      "request_sha256": "46dd10a2633232a2c11d98aef4101ceafa96ebc3ed7643053b8b307c3044bea4",
+      "semantic_review": "人工复核：玩家已指定故事实际经过，范围为actual，应进入汤底判定，不额外澄清。",
+      "raw_content": "{\n  \"route\": \"judge\",\n  \"scope\": \"actual\"\n}",
+      "request_id": "3a67db93-5982-944a-a2b7-5dde4208d429",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 616,
+        "total_tokens": 635,
+        "completion_tokens": 19,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 616
+        }
+      },
+      "estimated_cny": 0.0001384,
+      "latency_ms": 1354,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "judge",
+        "scope": "actual"
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-04",
+      "repeat": 1,
+      "stage": "judge",
+      "story_id": "S06",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919830.47549,
+      "request_sha256": "1b0c4bdaecb3b11d42350834bca7c968352a79fa718ccc83bea7a58e2e6f2b38",
+      "semantic_review": "人工复核：实际结尾已固定，病痛天亮未自动退回；否与F06/F13一致，展示仅四词，无多余澄清。",
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F06\",\n    \"F13\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "request_id": "3d002656-0151-9b38-816c-a87988beebde",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 5295,
+        "total_tokens": 5361,
+        "completion_tokens": 66,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 5295
+        }
+      },
+      "estimated_cny": 0.0011118,
+      "latency_ms": 2791,
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F06",
+          "F13"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-05",
+      "repeat": 1,
+      "stage": "scope",
+      "story_id": "S06",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919839.180841,
+      "request_sha256": "50b09e0e4a47ad74df4df7cc0e4d8556e1e595240eb37347cac24d613aa54182",
+      "semantic_review": "人工复核：玩家明确给定未固定的反事实条件，hypothetical正确，不能按实际已固定的结尾解释。",
+      "raw_content": "{\n  \"route\": \"judge\",\n  \"scope\": \"hypothetical\"\n}",
+      "request_id": "51b465c7-79f3-9e73-be63-3b643e3b9369",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 626,
+        "total_tokens": 647,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 626
+        }
+      },
+      "estimated_cny": 0.000142,
+      "latency_ms": 1262,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "judge",
+        "scope": "hypothetical"
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-05",
+      "repeat": 1,
+      "stage": "judge",
+      "story_id": "S06",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919856.134999,
+      "request_sha256": "4312787dc83db2b335480e2f18837d40207f0487c78e60205eab4edf1fa43e0d",
+      "semantic_review": "人工复核：未固定的假设下天亮撤回符合F06，回答是正确，与实际结尾回答否区分清楚。",
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F06\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "request_id": "7c6dd34b-dbe5-9f0b-9730-9c542ed9a7db",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 5307,
+        "total_tokens": 5366,
+        "completion_tokens": 59,
+        "prompt_tokens_details": {
+          "cached_tokens": 5120,
+          "text_tokens": 5307
+        }
+      },
+      "estimated_cny": 0.0011086000000000002,
+      "latency_ms": 3017,
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F06"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "是",
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-06",
+      "repeat": 1,
+      "stage": "scope",
+      "story_id": "S07",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919865.2065222,
+      "request_sha256": "c89911a069c99a999b9b74040fc286041b29517033f86d2286d748b9b895ef37",
+      "semantic_review": "人工复核：公开历史虽列出两个范围，当前已明确选定后一种假设，正确放行hypothetical，不重复澄清。",
+      "raw_content": "{\n  \"route\": \"judge\",\n  \"scope\": \"hypothetical\"\n}",
+      "request_id": "46e0994a-8eb5-91cc-83f8-cd050724eede",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 721,
+        "total_tokens": 742,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 721
+        }
+      },
+      "estimated_cny": 0.00016100000000000004,
+      "latency_ms": 1443,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "judge",
+        "scope": "hypothetical"
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-06",
+      "repeat": 1,
+      "stage": "judge",
+      "story_id": "S07",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919874.788448,
+      "request_sha256": "9535b5c9b2481c6cb1914108d06afd6d7a88c4975177b59a34548e460e0b25af",
+      "semantic_review": "人工复核：仅在玩家明确假设内，妹妹亲手发信故回答是；未把假设认证为实际剧情。依据来自公开假设，未硬引与该假设不符的F03，空fact_ids不计漏引固定事实。此为简单范围控制。",
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [],\n  \"covered_nodes\": [],\n  \"audit_flags\": [],\n  \"clarification\": \"\"\n}",
+      "request_id": "e3bd0ce3-cecc-9a86-aa1d-b866a71fc827",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 4952,
+        "total_tokens": 4999,
+        "completion_tokens": 47,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 4952
+        }
+      },
+      "estimated_cny": 0.001028,
+      "latency_ms": 1754,
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "是",
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-07",
+      "repeat": 1,
+      "stage": "scope",
+      "story_id": "S07",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919889.2667909,
+      "request_sha256": "eedccc043ff006d31083a5a434b366a9d9cde519d6dfc6e8bacbde326dba81bb",
+      "semantic_review": "人工复核：玩家明确问实际经过，错误猜测仍是清楚的命题，actual并交给主持判定正确。",
+      "raw_content": "{\n  \"route\": \"judge\",\n  \"scope\": \"actual\"\n}",
+      "request_id": "75e5c2f8-c2e8-9c41-b6eb-434210a03a3d",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 610,
+        "total_tokens": 629,
+        "completion_tokens": 19,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 610
+        }
+      },
+      "estimated_cny": 0.0001372,
+      "latency_ms": 1522,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "judge",
+        "scope": "actual"
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-07",
+      "repeat": 1,
+      "stage": "judge",
+      "story_id": "S07",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919897.5763378,
+      "request_sha256": "a670198a40e22175f241529a1752cdafc0378a7b34dd4bd067580098def2745c",
+      "semantic_review": "人工复核：按实际经过妹妹没有亲手发送消息，否与F03相符；没有把错误猜测退回为范围澄清。",
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F03\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "request_id": "09b4225b-e05a-9349-9872-1fae6b17986b",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 4839,
+        "total_tokens": 4898,
+        "completion_tokens": 59,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 4839
+        }
+      },
+      "estimated_cny": 0.001015,
+      "latency_ms": 2411,
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "action_scope_or_label_match": true
+    },
+    {
+      "experiment": "public_scope_gate_v01",
+      "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+      "case_id": "P-01",
+      "repeat": 2,
+      "stage": "scope",
+      "story_id": "S07",
+      "status": "done",
+      "reserved_cny": 2,
+      "started_at": 1792919907.0367732,
+      "request_sha256": "002611a91a4965fe82aa6b04cb414683e2751f4f8c8b825673ba5749a37dcb24",
+      "semantic_review": "人工复核：与首遍请求字节哈希相同，仍正确先澄清，范围输出和玩家展示均一致，没有调用隐藏汤底作答。",
+      "raw_content": "{\n  \"route\": \"clarify\",\n  \"scope\": \"unresolved\"\n}",
+      "request_id": "a7c63133-72a0-977b-980f-517ef6e27514",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 625,
+        "total_tokens": 646,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 625
+        }
+      },
+      "estimated_cny": 0.0001418,
+      "latency_ms": 1208,
+      "finish_reason": "stop",
+      "verdict": {
+        "route": "clarify",
+        "scope": "unresolved"
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "host_output": {
+        "action": "clarify",
+        "answer": "",
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "preliminary_errors": [],
+      "agent_reviewed": true,
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "action_scope_or_label_match": true
+    }
+  ],
+  "conclusion": "只看公开上下文的范围模块正确处理本组未选定与已选定范围，原R-03两次回归均先澄清；四条范围明确的提问保留正常作答。仅在本组固定回归下通过，未宣称整体准确率。"
+}

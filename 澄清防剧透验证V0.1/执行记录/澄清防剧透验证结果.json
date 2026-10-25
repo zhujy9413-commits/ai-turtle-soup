@@ -1,0 +1,311 @@
+{
+  "experiment": "clarification_guard_v01",
+  "signature": "5e5d922b7bdf6be6b2d494e4df91f5f1964fe05e069ddfa08c6d8ee985666ebe",
+  "candidate_prompt_version": "V0.1.7",
+  "new_attempts": 7,
+  "unique_questions": 6,
+  "action_label_matches": 6,
+  "expected_clarification_template_matches": 6,
+  "strict_output_schema_passes": 7,
+  "actual_clarifications": 4,
+  "clarifications_outside_whitelist": 0,
+  "display_passes": 6,
+  "known_failure_repeat": {
+    "tested": true,
+    "same_request": true,
+    "same_player_display": true
+  },
+  "bounded_regression_passed": false,
+  "global_acceptance_passed": false,
+  "cumulative_attempts": 150,
+  "remaining_calls": 0,
+  "cumulative_original_price_estimate_cny": 0.11928640000000003,
+  "new_original_price_estimate_cny": 0.006771600000000001,
+  "invoice_verified": false,
+  "changes": [
+    "提示词明确公开信息边界和模板选择规则",
+    "严格JSON Schema将clarification限定为空或7个固定短句",
+    "程序只展示符合模板契约的澄清，不直接展示任意模型字符串"
+  ],
+  "limitations": [
+    "6条独立问题加1次原问题重复；已知回归和跨题范围控制占多数，不能估计整体准确率。",
+    "沿用三题故事与事件表，提示词和输出约束同时改变，不能把结果归因于单个因素。",
+    "不包含自然省略假设标记的全部难例、澄清后的连续会话或完整题库回归。",
+    "单次模板选择正确不等于所有情况都能正确澄清；重复也仅两次。"
+  ],
+  "credential_cleanup": {
+    "temporary_credential_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "platform_key_changed": false,
+    "at": 1792919281.785367
+  },
+  "cases": [
+    {
+      "case_id": "R-01",
+      "repeat": 1,
+      "story_id": "S02",
+      "question": "我还没说明是在问故事实际结尾，还是在问“咳嗽后已离屋且没回来”的假设：警方到场时他仍在屋里吗？",
+      "expected": {
+        "id": "R-01",
+        "expected_action": "clarify",
+        "expected_label": "",
+        "required_audit_flags": [],
+        "expected_template": "scope",
+        "supporting_facts": [
+          "F11"
+        ],
+        "rationale": "已知展示失败回归：原问题逐字不变。"
+      },
+      "actual": {
+        "action": "clarify",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？"
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "action_label_match": true,
+      "template_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：原剧透问题现仅询问实际/假设范围，未确认警方是否找到人，符合公开信息边界。",
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "estimated_cny": 0.000864,
+      "request_sha256": "3d9b15f919c57146450a03e39bd6276ab083e5c02249c0e45f1bb317399883a0"
+    },
+    {
+      "case_id": "R-02",
+      "repeat": 1,
+      "story_id": "S06",
+      "question": "我这里没说明是在问实际结尾，还是在问“直到天亮没有有效应答、转移未固定”的假设：天亮时病痛回到女人身上了吗？",
+      "expected": {
+        "id": "R-02",
+        "expected_action": "clarify",
+        "expected_label": "",
+        "required_audit_flags": [],
+        "expected_template": "scope",
+        "supporting_facts": [
+          "F06",
+          "F12"
+        ],
+        "rationale": "上一轮冻结但未执行的范围控制，非自然问题准确率样本。"
+      },
+      "actual": {
+        "action": "clarify",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？"
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "action_label_match": true,
+      "template_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：仅询问实际与假设范围，未透露病痛转移结果或固定机制，模板选择符合锁定预期。",
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "estimated_cny": 0.0010682,
+      "request_sha256": "958ed0cd833498b88572c8017fb13c21d91780207a317385f74f72871728159f"
+    },
+    {
+      "case_id": "R-03",
+      "repeat": 1,
+      "story_id": "S07",
+      "question": "我没分清是在问原故事那条消息，还是“妹妹确实亲手输入发送、无人代发”的假设：这条消息是妹妹自己发的吗？",
+      "expected": {
+        "id": "R-03",
+        "expected_action": "clarify",
+        "expected_label": "",
+        "required_audit_flags": [],
+        "expected_template": "scope",
+        "supporting_facts": [
+          "F03"
+        ],
+        "rationale": "跨题范围控制；两种范围会改变判断，不能抢答。"
+      },
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "action_label_match": false,
+      "template_match": false,
+      "status": "reviewed_failure",
+      "semantic_review": "人工复核：玩家未选定实际/假设范围，两者会改变真假，应先澄清；模型直接按实际剧情回答否，范围识别失败。展示仅四词，没有自由澄清剧透。暂停复核后继续剩余独立固定用例，不重试此题、不改提示词或预期。",
+      "display_review": {
+        "passed": false,
+        "agent_reviewed": true,
+        "issue": "answered_with_unresolved_scope",
+        "no_free_text_clarification_leak": true,
+        "note": "严格格式合规，但应澄清却抢答，不能计为整体正确展示。"
+      },
+      "estimated_cny": 0.0009760000000000001,
+      "request_sha256": "86689e7f5bb18be3a0d9071197521804d1b7c23718c6075f60cf129716975fef"
+    },
+    {
+      "case_id": "R-04",
+      "repeat": 1,
+      "story_id": "S02",
+      "question": "回我“我已经习惯了”的，是我自己的声音吗？",
+      "expected": {
+        "id": "R-04",
+        "expected_action": "clarify",
+        "expected_label": "",
+        "required_audit_flags": [],
+        "expected_template": "narration",
+        "supporting_facts": [],
+        "rationale": "公开旁白被误读为发声，先处理阅读前提，不泄漏回声机制。"
+      },
+      "actual": {
+        "action": "clarify",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "这句在汤面中是旁白。你想确认哪一段实际发出的声音？"
+      },
+      "player_display": "这句在汤面中是旁白。你想确认哪一段实际发出的声音？",
+      "action_label_match": true,
+      "template_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：汤面中我已经习惯了确为叙述感受；模板只纠正这一公开阅读前提，未透露回声来源、延迟或入侵者信息。",
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "estimated_cny": 0.0008634000000000001,
+      "request_sha256": "c740f0318204adebb67ff2a0199c67c6089db82dfb95af7addc8a7ddd12e3486"
+    },
+    {
+      "case_id": "R-05",
+      "repeat": 1,
+      "story_id": "S06",
+      "question": "按故事实际结尾，天亮时病痛已经自动回到女人身上了吗？",
+      "expected": {
+        "id": "R-05",
+        "expected_action": "answer",
+        "expected_label": "否",
+        "required_audit_flags": [],
+        "expected_template": null,
+        "supporting_facts": [
+          "F06",
+          "F12",
+          "F13"
+        ],
+        "rationale": "明确实际范围，应直接回答，不能过度澄清。"
+      },
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F06",
+          "F13"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "action_label_match": true,
+      "template_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：范围明确，模型按实际结尾或给定反事实条件分别回答否/是，没有被白名单规则诱导为过度澄清；无额外展示文本。",
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "estimated_cny": 0.0010696000000000002,
+      "request_sha256": "cb725f8f0226df1b2ee5dabb50da30a60281686f50494e646f58205967570491"
+    },
+    {
+      "case_id": "R-06",
+      "repeat": 1,
+      "story_id": "S06",
+      "question": "假设午夜暂时转移已经发生，但直到天亮我都没有有效应答、转移也没有固定，病痛会在天亮自动退回女人身上吗？",
+      "expected": {
+        "id": "R-06",
+        "expected_action": "answer",
+        "expected_label": "是",
+        "required_audit_flags": [],
+        "expected_template": null,
+        "supporting_facts": [
+          "F06"
+        ],
+        "rationale": "明确假设范围，应按条件推演，不能用实际结尾否定。"
+      },
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F06"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "是",
+      "action_label_match": true,
+      "template_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：范围明确，模型按实际结尾或给定反事实条件分别回答否/是，没有被白名单规则诱导为过度澄清；无额外展示文本。",
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "estimated_cny": 0.0010664000000000001,
+      "request_sha256": "919eed949b7a494e56f8f42e16283a84456871dd01e34dd68adb6667e2d4775f"
+    },
+    {
+      "case_id": "R-01",
+      "repeat": 2,
+      "story_id": "S02",
+      "question": "我还没说明是在问故事实际结尾，还是在问“咳嗽后已离屋且没回来”的假设：警方到场时他仍在屋里吗？",
+      "expected": {
+        "id": "R-01",
+        "expected_action": "clarify",
+        "expected_label": "",
+        "required_audit_flags": [],
+        "expected_template": "scope",
+        "supporting_facts": [
+          "F11"
+        ],
+        "rationale": "已知展示失败回归：原问题逐字不变。"
+      },
+      "actual": {
+        "action": "clarify",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "你问的是故事实际发生的情况，还是假设条件下的情况？"
+      },
+      "player_display": "你问的是故事实际发生的情况，还是假设条件下的情况？",
+      "action_label_match": true,
+      "template_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：与首遍为同一模型请求字节哈希，仍仅询问实际/假设范围，展示完全一致，未确认警方找到人的隐藏结尾。",
+      "display_review": {
+        "passed": true,
+        "agent_reviewed": true
+      },
+      "estimated_cny": 0.000864,
+      "request_sha256": "3d9b15f919c57146450a03e39bd6276ab083e5c02249c0e45f1bb317399883a0"
+    }
+  ],
+  "conclusion": "原澄清剧透问题两次均使用安全范围模板；4次实际澄清均在白名单内。7次中6次符合动作/答案/预期模板，R-03应澄清却按实际剧情回答否，整体回归未通过。",
+  "next_validation": "先处理R-03的范围识别偏差，再为候选修正冻结下一轮材料。若继续实测，建议另行确认新增12次上限，覆盖已知失败、新的混合范围问法、带公开历史的范围定位，以及清楚问题的直接回答控制。具体材料需在实际调用前锁定。未获得新增次数授权前不调用。",
+  "budget_note": "7次已用完，累计150次；本次自由澄清文案限制已有定向证据，但范围识别仍有1条失败，不能宣布整体通过。新增12次只是建议，不是已经获准的预算或已冻结用例。"
+}

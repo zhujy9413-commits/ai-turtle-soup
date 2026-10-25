@@ -1,0 +1,318 @@
+{
+  "independent_blind_review": false,
+  "cases": [
+    {
+      "id": "C06-01",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F06",
+        "F12",
+        "F13"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C06-02",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F06"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C06-03",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F11",
+        "F12"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C06-04",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F07",
+        "F09"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C06-05",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F04",
+        "F11"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C06-06",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F04",
+        "F07"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C06-07",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F09",
+        "F12"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C06-08",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F07",
+        "F09"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C06-09",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F13"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C06-10",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F06"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C02-01",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F11"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C02-02",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F11"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C02-03",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F03",
+        "F10"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C02-04",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F03",
+        "F05"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C02-05",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F08",
+        "F10"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C02-06",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C02-07",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F02",
+        "F11"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C02-08",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F02",
+        "F03"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C02-09",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F02",
+        "F08",
+        "F10"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C02-10",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F02"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C07-01",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F03"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C07-02",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F03"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C07-03",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F08",
+        "F10"
+      ],
+      "rationale": "按原剧情的实际经过判定。"
+    },
+    {
+      "id": "C07-04",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F08",
+        "F10"
+      ],
+      "rationale": "在题目明确限定的假设内推演；不将其认证为原剧情事实。"
+    },
+    {
+      "id": "C06-11",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F06",
+        "F12"
+      ],
+      "rationale": "两个已明说的范围判定不同，先询问玩家所指范围；不得自行选择、答出两种隐藏结论。"
+    },
+    {
+      "id": "C06-12",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F07",
+        "F09",
+        "F12"
+      ],
+      "rationale": "两个已明说的范围判定不同，先询问玩家所指范围；不得自行选择、答出两种隐藏结论。"
+    },
+    {
+      "id": "C06-13",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F03",
+        "F04"
+      ],
+      "rationale": "两个已明说的范围判定不同，先询问玩家所指范围；不得自行选择、答出两种隐藏结论。"
+    },
+    {
+      "id": "C02-11",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F11"
+      ],
+      "rationale": "两个已明说的范围判定不同，先询问玩家所指范围；不得自行选择、答出两种隐藏结论。"
+    },
+    {
+      "id": "C07-05",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "required_audit_flags": [],
+      "supporting_facts": [
+        "F03"
+      ],
+      "rationale": "两个已明说的范围判定不同，先询问玩家所指范围；不得自行选择、答出两种隐藏结论。"
+    }
+  ]
+}

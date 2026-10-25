@@ -1,0 +1,13 @@
+{
+  "frozen_hashes_ok": true,
+  "source_syntax_ok": true,
+  "ended_configuration_blocked_before_credential_read": true,
+  "cumulative_162_limit_blocks_before_send": true,
+  "new_attempts_12": true,
+  "scope_8_judge_4": true,
+  "completed_flows_8": true,
+  "known_failure_repeat_identical": true,
+  "global_acceptance_still_false": true,
+  "temporary_key_removed": true,
+  "network_calls_in_check": 0
+}

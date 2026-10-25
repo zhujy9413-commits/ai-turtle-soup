@@ -1,0 +1,1747 @@
+{
+  "date": "2026-10-25",
+  "experiment": "temporal_consistency_v01",
+  "status": "structured_temporal_candidate_passed_this_regression",
+  "model": "qwen3.7-flash-2026-07-15",
+  "enable_thinking": false,
+  "temperature": "供应商默认，未宣称确定性",
+  "controlled_difference": "B仅在原始故事中增加事件顺序、状态和触发条件表；系统指令、原始故事、输出结构及用例一致。",
+  "variants": {
+    "A": {
+      "planned": 36,
+      "executed": 20,
+      "matches": 19,
+      "critical_failures": 1,
+      "all_18_twice_completed": false,
+      "current_gate_passed": false,
+      "rows": [
+        {
+          "case_id": "G01-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "5cf7c456413b601426d0ff7003be90182f6e4b6c179b105695addc7869ccce3b",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 2434,
+          "usage": {
+            "prompt_tokens": 3106,
+            "total_tokens": 3175,
+            "completion_tokens": 69,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3106
+            }
+          }
+        },
+        {
+          "case_id": "G01-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "1d51f19bd30ddced8e5769539ab7d23d9caa5eba6f236c1a20c11066daad39c9",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 2534,
+          "usage": {
+            "prompt_tokens": 3103,
+            "total_tokens": 3169,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3103
+            }
+          }
+        },
+        {
+          "case_id": "G01-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "adbafcc2b8d3220e53932ad8829c40d644a2a5d89551c521426e9600388ae90e",
+          "fact_ids": [
+            "F04",
+            "F07"
+          ],
+          "latency_ms": 1548,
+          "usage": {
+            "prompt_tokens": 3108,
+            "total_tokens": 3174,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3108
+            }
+          }
+        },
+        {
+          "case_id": "G02-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "ace1948bf197e3e4633a5c5732f64e76b99df87b8d95622042789088061b31ea",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 1752,
+          "usage": {
+            "prompt_tokens": 3106,
+            "total_tokens": 3165,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3106
+            }
+          }
+        },
+        {
+          "case_id": "G02-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "4c1933bf66795dfba16b841b0081a955d2f421f1d096f727ea8a8afe0597b4a2",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 1635,
+          "usage": {
+            "prompt_tokens": 3108,
+            "total_tokens": 3167,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3108
+            }
+          }
+        },
+        {
+          "case_id": "G02-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "dd95476671a66b3e41af2b71fe5844d3ed4736a3c9fd148f3be0743e72987396",
+          "fact_ids": [
+            "F04",
+            "F06"
+          ],
+          "latency_ms": 1726,
+          "usage": {
+            "prompt_tokens": 3106,
+            "total_tokens": 3170,
+            "completion_tokens": 64,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3106
+            }
+          }
+        },
+        {
+          "case_id": "G03-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "52b654d142900673f2ec7acdfd8d518d662d525da9fdd81a8294dd6c687e002f",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 1609,
+          "usage": {
+            "prompt_tokens": 3119,
+            "total_tokens": 3178,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3119
+            }
+          }
+        },
+        {
+          "case_id": "G03-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "03c346d5ad1b07138e15ce6f5d09a2e2d04ec232f5b3c97f35f7e0ba8d979e52",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 1789,
+          "usage": {
+            "prompt_tokens": 3116,
+            "total_tokens": 3175,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3116
+            }
+          }
+        },
+        {
+          "case_id": "G03-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "3041b0bf74a0708391bef7cfffb58de2f45787c0b1286b63d39e6b271aead3db",
+          "fact_ids": [
+            "F03"
+          ],
+          "latency_ms": 1745,
+          "usage": {
+            "prompt_tokens": 3105,
+            "total_tokens": 3164,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3105
+            }
+          }
+        },
+        {
+          "case_id": "G04-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "af3cce353b11bd436f4f300f2dfe7f49cb67085b76d936388c39a384d882d65d",
+          "fact_ids": [
+            "F06",
+            "F07"
+          ],
+          "latency_ms": 1688,
+          "usage": {
+            "prompt_tokens": 3119,
+            "total_tokens": 3183,
+            "completion_tokens": 64,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3119
+            }
+          }
+        },
+        {
+          "case_id": "G04-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "ef6453dbb5055a02b307afe577b87e88ddfaa14bee69c1db36bcfb6d24786b9e",
+          "fact_ids": [
+            "F06",
+            "F07"
+          ],
+          "latency_ms": 2630,
+          "usage": {
+            "prompt_tokens": 3115,
+            "total_tokens": 3183,
+            "completion_tokens": 68,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3115
+            }
+          }
+        },
+        {
+          "case_id": "G04-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "815db8d8c6be6929436157a340a5467da008b01f3ab5a898f82dbf9045040e90",
+          "fact_ids": [
+            "F09"
+          ],
+          "latency_ms": 1857,
+          "usage": {
+            "prompt_tokens": 3111,
+            "total_tokens": 3170,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3111
+            }
+          }
+        },
+        {
+          "case_id": "G05-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "9c4c079d9f5b365952d75690a5c114220af56bbf696a3d0d00400d95ff0e1bcc",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1725,
+          "usage": {
+            "prompt_tokens": 3110,
+            "total_tokens": 3171,
+            "completion_tokens": 61,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3110
+            }
+          }
+        },
+        {
+          "case_id": "G05-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "505f8ec560323f2121f137b77411aa4c57fd0b21b1a6b63f9ec1a164781cf187",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1881,
+          "usage": {
+            "prompt_tokens": 3110,
+            "total_tokens": 3169,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3110
+            }
+          }
+        },
+        {
+          "case_id": "G05-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "b3751749b10f62605aa0c28217d5f1f291324dde72e47414ee1f786225c3b8c0",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1571,
+          "usage": {
+            "prompt_tokens": 3111,
+            "total_tokens": 3170,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3111
+            }
+          }
+        },
+        {
+          "case_id": "G06-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "242c22cbeb737db0c44290329b37acdee944a0b9a06e78932cc512dccc2d3a8f",
+          "fact_ids": [
+            "F06",
+            "F07"
+          ],
+          "latency_ms": 1648,
+          "usage": {
+            "prompt_tokens": 3114,
+            "total_tokens": 3182,
+            "completion_tokens": 68,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3114
+            }
+          }
+        },
+        {
+          "case_id": "G06-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "8a2b5b654179de3130515705a6426735fcdf190b9b14d40b1800ab7b936e8504",
+          "fact_ids": [
+            "F06",
+            "F13"
+          ],
+          "latency_ms": 1629,
+          "usage": {
+            "prompt_tokens": 3112,
+            "total_tokens": 3178,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3112
+            }
+          }
+        },
+        {
+          "case_id": "G06-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "83312e01c477f80e5f50c4fd879dab84bcfca2f317ea5a8b332062a277d78eb8",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1649,
+          "usage": {
+            "prompt_tokens": 3107,
+            "total_tokens": 3166,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3107
+            }
+          }
+        },
+        {
+          "case_id": "G01-1",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "5cf7c456413b601426d0ff7003be90182f6e4b6c179b105695addc7869ccce3b",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 1809,
+          "usage": {
+            "prompt_tokens": 3106,
+            "total_tokens": 3172,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3106
+            }
+          }
+        },
+        {
+          "case_id": "G01-2",
+          "repeat": 2,
+          "answer": "否",
+          "matches": false,
+          "request_sha256": "1d51f19bd30ddced8e5769539ab7d23d9caa5eba6f236c1a20c11066daad39c9",
+          "fact_ids": [
+            "F04",
+            "F10"
+          ],
+          "latency_ms": 1915,
+          "usage": {
+            "prompt_tokens": 3103,
+            "total_tokens": 3167,
+            "completion_tokens": 64,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3103
+            }
+          }
+        }
+      ],
+      "prompt_tokens": 62195,
+      "completion_tokens": 1253,
+      "original_price_estimate_cny": 0.0134414,
+      "latency_median_ms": 1735.5,
+      "latency_range_ms": [
+        1548,
+        2630
+      ]
+    },
+    "B": {
+      "planned": 36,
+      "executed": 36,
+      "matches": 36,
+      "critical_failures": 0,
+      "all_18_twice_completed": true,
+      "current_gate_passed": true,
+      "rows": [
+        {
+          "case_id": "G01-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "944a11d6007e2c43bc0a7c6940afe2df8954def74f6b766005bb2065936c0f48",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 1703,
+          "usage": {
+            "prompt_tokens": 4663,
+            "total_tokens": 4726,
+            "completion_tokens": 63,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 4663
+            }
+          }
+        },
+        {
+          "case_id": "G01-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "4b65073d8660623f31e2fcc420b174170656ba1d530e33dc1c987a5589f8efa5",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 1663,
+          "usage": {
+            "prompt_tokens": 4660,
+            "total_tokens": 4726,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4660
+            }
+          }
+        },
+        {
+          "case_id": "G01-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "7b563a218d8758b79a005bcc1824fc2ea2353a52edc0a5201ca96e1d79832941",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 2118,
+          "usage": {
+            "prompt_tokens": 4665,
+            "total_tokens": 4728,
+            "completion_tokens": 63,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4665
+            }
+          }
+        },
+        {
+          "case_id": "G02-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "ec060de1e01b39f1d2943f270e9a86a22983e44dacb405f7179570e39a93e295",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 2164,
+          "usage": {
+            "prompt_tokens": 4663,
+            "total_tokens": 4732,
+            "completion_tokens": 69,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 4663
+            }
+          }
+        },
+        {
+          "case_id": "G02-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "5457e667c617ceebc79479a6704cbf0bbbda9a412a602df1d2a282a62c0e50a7",
+          "fact_ids": [
+            "F04",
+            "F12"
+          ],
+          "latency_ms": 2315,
+          "usage": {
+            "prompt_tokens": 4665,
+            "total_tokens": 4731,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4665
+            }
+          }
+        },
+        {
+          "case_id": "G02-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "94340445e17e43fdae60ab94191d4a41de31cc8e302c75ee3ca97ef5ab0d91cc",
+          "fact_ids": [
+            "F04",
+            "F07"
+          ],
+          "latency_ms": 2322,
+          "usage": {
+            "prompt_tokens": 4663,
+            "total_tokens": 4727,
+            "completion_tokens": 64,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4663
+            }
+          }
+        },
+        {
+          "case_id": "G03-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "a35d777d519d4d22e91e36ce83afb488e3b0478a35973a71c5c115058764925e",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 2473,
+          "usage": {
+            "prompt_tokens": 4676,
+            "total_tokens": 4737,
+            "completion_tokens": 61,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4676
+            }
+          }
+        },
+        {
+          "case_id": "G03-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "b80809d2d80502c128c3262f3989e4628b80659bea13d3c538eb79298a04bd72",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 2290,
+          "usage": {
+            "prompt_tokens": 4673,
+            "total_tokens": 4732,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4673
+            }
+          }
+        },
+        {
+          "case_id": "G03-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "c23b54bd16d2647dbab4ad8958c962142bd148c787bd5307fbb0ab93d780b875",
+          "fact_ids": [
+            "F03"
+          ],
+          "latency_ms": 1657,
+          "usage": {
+            "prompt_tokens": 4662,
+            "total_tokens": 4721,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4662
+            }
+          }
+        },
+        {
+          "case_id": "G04-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "61db5c60e7cc02b357810865179fd653f5ee9c2f2ac35fcbd68e98989638bb89",
+          "fact_ids": [
+            "F06",
+            "F07"
+          ],
+          "latency_ms": 1785,
+          "usage": {
+            "prompt_tokens": 4676,
+            "total_tokens": 4745,
+            "completion_tokens": 69,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4676
+            }
+          }
+        },
+        {
+          "case_id": "G04-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "f755d18dde29c88726467339cc02f8e4db16ca6509e9d2a4eec233261ea80008",
+          "fact_ids": [
+            "F06",
+            "F07"
+          ],
+          "latency_ms": 2000,
+          "usage": {
+            "prompt_tokens": 4672,
+            "total_tokens": 4741,
+            "completion_tokens": 69,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4672
+            }
+          }
+        },
+        {
+          "case_id": "G04-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "12d7bc9954edc3df5324d8f3f166557d5ccdcebde0a6cf97961e177ebadc327d",
+          "fact_ids": [
+            "F09"
+          ],
+          "latency_ms": 1860,
+          "usage": {
+            "prompt_tokens": 4668,
+            "total_tokens": 4729,
+            "completion_tokens": 61,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4668
+            }
+          }
+        },
+        {
+          "case_id": "G05-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "19de548cd3520af1bc4c2043819deba6008d7b077b0e7e2fc1412abe1e506143",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 3809,
+          "usage": {
+            "prompt_tokens": 4667,
+            "total_tokens": 4729,
+            "completion_tokens": 62,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4667
+            }
+          }
+        },
+        {
+          "case_id": "G05-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "8b238a0d7de2f1ad6581bec6f5449e3f9ce13871e6f5856d1355fb3efd0d4699",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1829,
+          "usage": {
+            "prompt_tokens": 4667,
+            "total_tokens": 4726,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4667
+            }
+          }
+        },
+        {
+          "case_id": "G05-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "583ef3d09d50072295873d90414e30254e825f6cb835e7391dd8f767414dd754",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 2116,
+          "usage": {
+            "prompt_tokens": 4668,
+            "total_tokens": 4727,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4668
+            }
+          }
+        },
+        {
+          "case_id": "G06-1",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "579d2f9fd3f95c12c66622a700dfa665a3f1b11a1c0491f1a5f808bad4856c59",
+          "fact_ids": [
+            "F06",
+            "F13"
+          ],
+          "latency_ms": 1854,
+          "usage": {
+            "prompt_tokens": 4671,
+            "total_tokens": 4740,
+            "completion_tokens": 69,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4671
+            }
+          }
+        },
+        {
+          "case_id": "G06-2",
+          "repeat": 1,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "49e96afd3c3d072fbbbf93e94373da1c2e616b540be6feb3ef16d97237f846d9",
+          "fact_ids": [
+            "F06",
+            "F13"
+          ],
+          "latency_ms": 1563,
+          "usage": {
+            "prompt_tokens": 4669,
+            "total_tokens": 4739,
+            "completion_tokens": 70,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4669
+            }
+          }
+        },
+        {
+          "case_id": "G06-3",
+          "repeat": 1,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "a2fa659ab9416a9fb70efd271725ab12b069085527aad4c24993bc5176dba672",
+          "fact_ids": [
+            "F06",
+            "F14"
+          ],
+          "latency_ms": 1775,
+          "usage": {
+            "prompt_tokens": 4664,
+            "total_tokens": 4732,
+            "completion_tokens": 68,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4664
+            }
+          }
+        },
+        {
+          "case_id": "G01-1",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "944a11d6007e2c43bc0a7c6940afe2df8954def74f6b766005bb2065936c0f48",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 1870,
+          "usage": {
+            "prompt_tokens": 4663,
+            "total_tokens": 4729,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4663
+            }
+          }
+        },
+        {
+          "case_id": "G01-2",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "4b65073d8660623f31e2fcc420b174170656ba1d530e33dc1c987a5589f8efa5",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 1687,
+          "usage": {
+            "prompt_tokens": 4660,
+            "total_tokens": 4728,
+            "completion_tokens": 68,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4660
+            }
+          }
+        },
+        {
+          "case_id": "G01-3",
+          "repeat": 2,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "7b563a218d8758b79a005bcc1824fc2ea2353a52edc0a5201ca96e1d79832941",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 1787,
+          "usage": {
+            "prompt_tokens": 4665,
+            "total_tokens": 4731,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4665
+            }
+          }
+        },
+        {
+          "case_id": "G02-1",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "ec060de1e01b39f1d2943f270e9a86a22983e44dacb405f7179570e39a93e295",
+          "fact_ids": [
+            "F04",
+            "F12"
+          ],
+          "latency_ms": 1727,
+          "usage": {
+            "prompt_tokens": 4663,
+            "total_tokens": 4727,
+            "completion_tokens": 64,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4663
+            }
+          }
+        },
+        {
+          "case_id": "G02-2",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "5457e667c617ceebc79479a6704cbf0bbbda9a412a602df1d2a282a62c0e50a7",
+          "fact_ids": [
+            "F04",
+            "F11"
+          ],
+          "latency_ms": 2404,
+          "usage": {
+            "prompt_tokens": 4665,
+            "total_tokens": 4731,
+            "completion_tokens": 66,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4665
+            }
+          }
+        },
+        {
+          "case_id": "G02-3",
+          "repeat": 2,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "94340445e17e43fdae60ab94191d4a41de31cc8e302c75ee3ca97ef5ab0d91cc",
+          "fact_ids": [
+            "F04",
+            "F07"
+          ],
+          "latency_ms": 1931,
+          "usage": {
+            "prompt_tokens": 4663,
+            "total_tokens": 4733,
+            "completion_tokens": 70,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4663
+            }
+          }
+        },
+        {
+          "case_id": "G03-1",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "a35d777d519d4d22e91e36ce83afb488e3b0478a35973a71c5c115058764925e",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 2091,
+          "usage": {
+            "prompt_tokens": 4676,
+            "total_tokens": 4733,
+            "completion_tokens": 57,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4676
+            }
+          }
+        },
+        {
+          "case_id": "G03-2",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "b80809d2d80502c128c3262f3989e4628b80659bea13d3c538eb79298a04bd72",
+          "fact_ids": [
+            "F04"
+          ],
+          "latency_ms": 2666,
+          "usage": {
+            "prompt_tokens": 4673,
+            "total_tokens": 4735,
+            "completion_tokens": 62,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4673
+            }
+          }
+        },
+        {
+          "case_id": "G03-3",
+          "repeat": 2,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "c23b54bd16d2647dbab4ad8958c962142bd148c787bd5307fbb0ab93d780b875",
+          "fact_ids": [
+            "F03"
+          ],
+          "latency_ms": 2144,
+          "usage": {
+            "prompt_tokens": 4662,
+            "total_tokens": 4723,
+            "completion_tokens": 61,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4662
+            }
+          }
+        },
+        {
+          "case_id": "G04-1",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "61db5c60e7cc02b357810865179fd653f5ee9c2f2ac35fcbd68e98989638bb89",
+          "fact_ids": [
+            "F06",
+            "F07"
+          ],
+          "latency_ms": 1938,
+          "usage": {
+            "prompt_tokens": 4676,
+            "total_tokens": 4746,
+            "completion_tokens": 70,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4676
+            }
+          }
+        },
+        {
+          "case_id": "G04-2",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "f755d18dde29c88726467339cc02f8e4db16ca6509e9d2a4eec233261ea80008",
+          "fact_ids": [
+            "F06",
+            "F07"
+          ],
+          "latency_ms": 1742,
+          "usage": {
+            "prompt_tokens": 4672,
+            "total_tokens": 4742,
+            "completion_tokens": 70,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4672
+            }
+          }
+        },
+        {
+          "case_id": "G04-3",
+          "repeat": 2,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "12d7bc9954edc3df5324d8f3f166557d5ccdcebde0a6cf97961e177ebadc327d",
+          "fact_ids": [
+            "F09"
+          ],
+          "latency_ms": 1935,
+          "usage": {
+            "prompt_tokens": 4668,
+            "total_tokens": 4729,
+            "completion_tokens": 61,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4668
+            }
+          }
+        },
+        {
+          "case_id": "G05-1",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "19de548cd3520af1bc4c2043819deba6008d7b077b0e7e2fc1412abe1e506143",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1721,
+          "usage": {
+            "prompt_tokens": 4667,
+            "total_tokens": 4730,
+            "completion_tokens": 63,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4667
+            }
+          }
+        },
+        {
+          "case_id": "G05-2",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "8b238a0d7de2f1ad6581bec6f5449e3f9ce13871e6f5856d1355fb3efd0d4699",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1886,
+          "usage": {
+            "prompt_tokens": 4667,
+            "total_tokens": 4726,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4667
+            }
+          }
+        },
+        {
+          "case_id": "G05-3",
+          "repeat": 2,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "583ef3d09d50072295873d90414e30254e825f6cb835e7391dd8f767414dd754",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1735,
+          "usage": {
+            "prompt_tokens": 4668,
+            "total_tokens": 4727,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4668
+            }
+          }
+        },
+        {
+          "case_id": "G06-1",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "579d2f9fd3f95c12c66622a700dfa665a3f1b11a1c0491f1a5f808bad4856c59",
+          "fact_ids": [
+            "F06",
+            "F13"
+          ],
+          "latency_ms": 2132,
+          "usage": {
+            "prompt_tokens": 4671,
+            "total_tokens": 4740,
+            "completion_tokens": 69,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4671
+            }
+          }
+        },
+        {
+          "case_id": "G06-2",
+          "repeat": 2,
+          "answer": "是",
+          "matches": true,
+          "request_sha256": "49e96afd3c3d072fbbbf93e94373da1c2e616b540be6feb3ef16d97237f846d9",
+          "fact_ids": [
+            "F06",
+            "F13"
+          ],
+          "latency_ms": 1744,
+          "usage": {
+            "prompt_tokens": 4669,
+            "total_tokens": 4738,
+            "completion_tokens": 69,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4669
+            }
+          }
+        },
+        {
+          "case_id": "G06-3",
+          "repeat": 2,
+          "answer": "否",
+          "matches": true,
+          "request_sha256": "a2fa659ab9416a9fb70efd271725ab12b069085527aad4c24993bc5176dba672",
+          "fact_ids": [
+            "F06"
+          ],
+          "latency_ms": 1837,
+          "usage": {
+            "prompt_tokens": 4664,
+            "total_tokens": 4721,
+            "completion_tokens": 57,
+            "prompt_tokens_details": {
+              "cached_tokens": 4480,
+              "text_tokens": 4664
+            }
+          }
+        }
+      ],
+      "prompt_tokens": 168024,
+      "completion_tokens": 2313,
+      "original_price_estimate_cny": 0.03545519999999999,
+      "latency_median_ms": 1878.0,
+      "latency_range_ms": [
+        1563,
+        3809
+      ]
+    }
+  },
+  "paired_results": [
+    {
+      "case_id": "G01-1",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G01-1",
+      "repeat": 2,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G01-2",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G01-2",
+      "repeat": 2,
+      "A_matches": false,
+      "B_matches": true
+    },
+    {
+      "case_id": "G01-3",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G02-1",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G02-2",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G02-3",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G03-1",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G03-2",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G03-3",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G04-1",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G04-2",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G04-3",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G05-1",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G05-2",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G05-3",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G06-1",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G06-2",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    },
+    {
+      "case_id": "G06-3",
+      "repeat": 1,
+      "A_matches": true,
+      "B_matches": true
+    }
+  ],
+  "paired_summary": {
+    "actual_pairs": 20,
+    "both_match": 19,
+    "only_B_matches": 1,
+    "only_A_matches": 0
+  },
+  "repeat_consistency": [
+    {
+      "variant": "A",
+      "case_id": "G01-1",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "A",
+      "case_id": "G01-2",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "否"
+      ],
+      "consistent": false
+    },
+    {
+      "variant": "B",
+      "case_id": "G01-1",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G01-2",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G01-3",
+      "same_request_bytes": true,
+      "answers": [
+        "否",
+        "否"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G02-1",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G02-2",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G02-3",
+      "same_request_bytes": true,
+      "answers": [
+        "否",
+        "否"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G03-1",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G03-2",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G03-3",
+      "same_request_bytes": true,
+      "answers": [
+        "否",
+        "否"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G04-1",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G04-2",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G04-3",
+      "same_request_bytes": true,
+      "answers": [
+        "否",
+        "否"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G05-1",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G05-2",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G05-3",
+      "same_request_bytes": true,
+      "answers": [
+        "否",
+        "否"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G06-1",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G06-2",
+      "same_request_bytes": true,
+      "answers": [
+        "是",
+        "是"
+      ],
+      "consistent": true
+    },
+    {
+      "variant": "B",
+      "case_id": "G06-3",
+      "same_request_bytes": true,
+      "answers": [
+        "否",
+        "否"
+      ],
+      "consistent": true
+    }
+  ],
+  "group_checks": [
+    {
+      "variant": "A",
+      "group": "G01",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "A",
+      "group": "G01",
+      "repeat": 2,
+      "complete": false,
+      "synonyms_agree": false,
+      "all_expected": null
+    },
+    {
+      "variant": "A",
+      "group": "G02",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "A",
+      "group": "G02",
+      "repeat": 2,
+      "complete": false,
+      "synonyms_agree": null,
+      "all_expected": null
+    },
+    {
+      "variant": "A",
+      "group": "G03",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "A",
+      "group": "G03",
+      "repeat": 2,
+      "complete": false,
+      "synonyms_agree": null,
+      "all_expected": null
+    },
+    {
+      "variant": "A",
+      "group": "G04",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "A",
+      "group": "G04",
+      "repeat": 2,
+      "complete": false,
+      "synonyms_agree": null,
+      "all_expected": null
+    },
+    {
+      "variant": "A",
+      "group": "G05",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "A",
+      "group": "G05",
+      "repeat": 2,
+      "complete": false,
+      "synonyms_agree": null,
+      "all_expected": null
+    },
+    {
+      "variant": "A",
+      "group": "G06",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "A",
+      "group": "G06",
+      "repeat": 2,
+      "complete": false,
+      "synonyms_agree": null,
+      "all_expected": null
+    },
+    {
+      "variant": "B",
+      "group": "G01",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G01",
+      "repeat": 2,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G02",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G02",
+      "repeat": 2,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G03",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G03",
+      "repeat": 2,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G04",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G04",
+      "repeat": 2,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G05",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G05",
+      "repeat": 2,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G06",
+      "repeat": 1,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    },
+    {
+      "variant": "B",
+      "group": "G06",
+      "repeat": 2,
+      "complete": true,
+      "synonyms_agree": true,
+      "all_expected": true
+    }
+  ],
+  "audit_notes": [],
+  "interpretation": [
+    "A在G01-2同一请求的两次重复中出现是/否不同，已按规则停止；不是固定重现每次都答反。",
+    "A提前停止，A/B覆盖数不同，只报告实际配对结果，不把19/20与B总结果直接换算成整批提升比例。",
+    "本轮由同一作者整理事实、拟题和复核，包含已知失败改写；不是独立盲测。",
+    "B若全通过，支持把事件/条件表作为下一轮输入候选，不证明总体准确率或消除所有随机错误。",
+    "尚未完成其他题目、开放问法、真实长对话、通关复盘、跨房隔离或8局并发测试；不放行游戏开发或上线。"
+  ],
+  "costs": {
+    "experiment_responses": 56,
+    "experiment_original_price_estimate_cny": 0.04889659999999999,
+    "cumulative_attempts": 97,
+    "cumulative_model_responses": 95,
+    "authentication_rejections": 2,
+    "cumulative_original_price_estimate_cny": 0.07123660000000001,
+    "invoice_verified": false,
+    "cap_cny": 5,
+    "max_requests": 150,
+    "remaining_request_slots": 53
+  },
+  "local_temp_key_cleanup": "private_temp_file_and_pointer_removed; platform_key_unchanged",
+  "sources": [
+    "https://help.aliyun.com/zh/model-studio/qwen3-7-flash",
+    "https://help.aliyun.com/zh/model-studio/model-pricing"
+  ]
+}

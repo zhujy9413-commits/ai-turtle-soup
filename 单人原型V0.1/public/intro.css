@@ -1,0 +1,23 @@
+html.intro-open{overflow:hidden}
+.night-intro{position:fixed;inset:0;margin:0;border:0;padding:0;width:100%;height:100dvh;max-width:none;max-height:none;background:#08080b;color:#c9c4cc;overflow:auto;isolation:isolate;font-family:var(--sans);overscroll-behavior:contain}
+.night-intro::backdrop{background:#08080b}
+.intro-scene{position:fixed;inset:0;z-index:-1;background:linear-gradient(90deg,#08080bf5 8%,#08080bcc 58%,#08080b88),url('/art/night-door-red.png') 68% center/cover;opacity:.7;pointer-events:none}
+.intro-frame{min-height:100%;max-width:1440px;padding:34px 64px 28px;margin:0 auto;display:flex;flex-direction:column}
+.intro-top{display:flex;align-items:center;justify-content:space-between;gap:20px}.intro-top img{width:144px;height:48px;object-fit:contain}
+.intro-skip,.intro-audio{background:transparent;color:#b1a3b0;font-family:var(--sans);font-weight:400;font-size:14px;padding:11px 5px;min-height:44px}.intro-skip:hover,.intro-audio:hover{color:#e1cedb}.intro-skip:focus-visible,.intro-audio:focus-visible{outline:2px solid #bd7890}
+.intro-gate,.intro-story{margin:auto 0;padding:65px 0 75px;max-width:1000px}
+.intro-kicker{color:#b58196;font-size:12px;letter-spacing:.2em;margin-bottom:28px}
+.intro-gate h1{font:400 62px/1.5 var(--display);letter-spacing:.035em;margin:0 0 25px;color:#c9c4cc}
+.intro-gate p{font-size:15px;line-height:2;color:#a79ca9}.intro-choices{display:flex;align-items:center;gap:20px;margin-top:36px}.intro-choices button{font-size:16px;min-height:50px;padding:12px 25px}
+.intro-bottom{display:flex;align-items:center;gap:22px;color:#928795;font-size:12px;min-height:44px}.intro-bottom label{display:flex;align-items:center;gap:12px}.intro-volume{accent-color:#a65a75;width:96px;min-height:32px}.intro-bottom>span{margin-left:auto;letter-spacing:.08em}
+.intro-story{width:100%}.intro-quote{min-height:315px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.intro-quote p{font:400 53px/1.65 var(--display);letter-spacing:.04em;margin:0;visibility:hidden;opacity:0;transform:translateY(7px);transition:opacity 1.1s ease,transform 1.1s ease;max-width:100%}
+.intro-quote p.is-shown{visibility:visible;opacity:1;transform:none}.intro-quote p:last-child{margin-top:12px}.intro-quote p span{color:#ba8196}
+.intro-after{min-height:110px;padding-top:32px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:12px}.intro-status{font-size:13px;color:#af91a4;line-height:1.7}.intro-status:empty{display:none}.intro-after .primary{font-size:16px;min-height:48px;padding:12px 28px}
+.night-intro [hidden]{display:none!important}
+.replay-intro{font:400 13px var(--sans);color:#a78e9f;background:transparent;padding:8px 0;min-height:40px}.replay-intro:hover{color:#d6acbf}
+@media(max-width:900px){.intro-frame{padding:26px 36px}.intro-gate h1{font-size:52px}.intro-quote p{font-size:43px}.intro-bottom>span{display:none}}
+@media(max-width:600px){.intro-frame{padding:22px 23px 20px}.intro-top img{width:117px;height:39px}.intro-skip{font-size:13px}.intro-gate,.intro-story{padding:45px 0}.intro-gate h1{font-size:43px}.intro-gate p{font-size:14px}.intro-choices{gap:13px;flex-wrap:wrap}.intro-choices button{font-size:15px;padding:12px 19px}.intro-quote{min-height:260px;gap:14px}.intro-quote p{font-size:clamp(25px,6.8vw,35px);line-height:1.85;letter-spacing:.015em}.intro-quote p:last-child{margin-top:15px}.intro-after{padding-top:25px;min-height:105px}.intro-bottom{gap:18px;flex-wrap:wrap}.intro-bottom label{gap:8px}.intro-volume{width:88px}.intro-audio{font-size:12px}}
+@media(max-width:380px){.intro-frame{padding:18px}.intro-gate h1{font-size:38px}.intro-quote p{font-size:24px;letter-spacing:0}.intro-choices button{padding:12px 15px;font-size:14px}.intro-bottom{gap:10px}.intro-volume{width:78px}}
+@media(max-height:580px){.intro-frame{padding-top:14px;padding-bottom:14px}.intro-gate,.intro-story{padding:25px 0}.intro-gate h1{font-size:37px}.intro-quote{min-height:180px}.intro-quote p{font-size:30px}.intro-after{min-height:70px;padding-top:15px}}
+@media(prefers-reduced-motion:reduce){.intro-quote p{transition:none;transform:none}}

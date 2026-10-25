@@ -1,0 +1,11 @@
+{
+  "experiment": "clarification_guard_v01",
+  "signature": "5e5d922b7bdf6be6b2d494e4df91f5f1964fe05e069ddfa08c6d8ee985666ebe",
+  "blocked": true,
+  "approved": false,
+  "reason": "7次已完成，R-03范围识别失败；累计150次已用满，禁止新增调用。旧版停止状态保持。",
+  "bounded_regression_passed": false,
+  "free_text_clarification_guard_regression_passed": true,
+  "global_acceptance_passed": false,
+  "remaining_calls": 0
+}

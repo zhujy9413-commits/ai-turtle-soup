@@ -1,0 +1,71 @@
+{
+  "id": "R02-05",
+  "question": {
+    "id": "R02-05",
+    "story_id": "S02",
+    "split": "new_regression_not_blind",
+    "channel": "formal_question",
+    "history": [],
+    "current_message": {
+      "id": "R02-05-U",
+      "text": "他发出的那个声音，是他的吗？"
+    }
+  },
+  "original_expected": {
+    "id": "R02-05",
+    "category": "澄清边界复测",
+    "expected_action": "clarify",
+    "expected_label": "",
+    "evidence_reference": [],
+    "expected_covered_nodes": [],
+    "required_audit_flags": [],
+    "semantic_review": "无公开上下文，无法定位人或声音；只要求指明所指。",
+    "severity": "major",
+    "label_review": "作者拟定；规则完成后编写的新回归，非独立盲测"
+  },
+  "response": {
+    "signature": "b7d9c63b73367c9ede5d40ac7e89d4da5d4bfbb0dc2bff070254246ae9095569",
+    "phase": "smoke",
+    "case_id": "R02-05",
+    "repeat": 1,
+    "status": "stopped",
+    "reserved_cny": 2.0,
+    "started_at": 1792915164.2827032,
+    "request_sha256": "5825030e002b4fa1f5ecc291435cb6d241382f7bf35a9ead4a0ed8230e65e37d",
+    "request_id": "231df9c4-0cc3-976f-832c-8e293c093abb",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "prompt_tokens": 2492,
+      "total_tokens": 2565,
+      "completion_tokens": 73,
+      "prompt_tokens_details": {
+        "cached_tokens": 2176,
+        "text_tokens": 2492
+      }
+    },
+    "estimated_cny": 0.0005568000000000001,
+    "latency_ms": 2110,
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F02\",\n    \"F03\",\n    \"F10\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "fact_ids": [
+        "F02",
+        "F03",
+        "F10"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "player_display": "是",
+    "preliminary_errors": [
+      "action_or_label_mismatch"
+    ],
+    "semantic_review": "pending_human_review"
+  },
+  "review": "题目近似同义反复，且汤面中的男性与咳嗽可成为指代候选；不足以要求唯一clarify。排除计分，不能算通过，也不能认定模型失败。此为看过输出后的作者复核，非独立复核。",
+  "replacement": "R07-05",
+  "prompt_changed": false
+}

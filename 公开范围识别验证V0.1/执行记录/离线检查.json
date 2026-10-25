@@ -1,0 +1,13 @@
+{
+  "scope_payload_only_public_fields": true,
+  "private_canary_excluded": true,
+  "expected_labels_not_sent": true,
+  "known_failure_question_unchanged": true,
+  "exact_repeat_identical_payload": true,
+  "trusted_scope_sent_to_judge": true,
+  "free_text_clarification_rejected": true,
+  "stories_unchanged": true,
+  "planned_total_calls_12": true,
+  "network_calls": 0,
+  "credential_read": false
+}

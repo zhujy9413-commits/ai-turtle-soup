@@ -1,0 +1,232 @@
+[
+  {
+    "experiment": "expanded_scope_diagnostic_v01",
+    "signature": "f8c71d2ffde5b0ae2b479d1705651b56f873f85e03e1606e568087e28ad1b066",
+    "case_id": "D-01",
+    "repeat": 1,
+    "status": "done",
+    "reserved_cny": 2,
+    "started_at": 1792917030.955553,
+    "request_sha256": "4d06c7345b856d064a1c58f675b529dd4dbc1b8cd1f752906d288e2cbae49ccb",
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F06\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+    "request_id": "757dcbcd-ff27-958e-8fe5-19f301436ee0",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "prompt_tokens": 4676,
+      "total_tokens": 4735,
+      "completion_tokens": 59,
+      "prompt_tokens_details": {
+        "cached_tokens": 4480,
+        "text_tokens": 4676
+      }
+    },
+    "estimated_cny": 0.0009824,
+    "latency_ms": 2010,
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "fact_ids": [
+        "F06"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "preliminary_errors": [],
+    "player_display": "是",
+    "semantic_review": "作者复核：明确假设与实际经过均按F06/F13等事实回答，未展示隐藏补充。"
+  },
+  {
+    "experiment": "expanded_scope_diagnostic_v01",
+    "signature": "f8c71d2ffde5b0ae2b479d1705651b56f873f85e03e1606e568087e28ad1b066",
+    "case_id": "D-02",
+    "repeat": 1,
+    "status": "done",
+    "reserved_cny": 2,
+    "started_at": 1792917032.971968,
+    "request_sha256": "04df9c78b5f69ab75bd0189612ac7da0c975a523ab9ee8b042d7c096d4335712",
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F06\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+    "request_id": "fe89fed1-3a8a-9506-aa5d-20f37b44fead",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "prompt_tokens": 4673,
+      "total_tokens": 4732,
+      "completion_tokens": 59,
+      "prompt_tokens_details": {
+        "cached_tokens": 4480,
+        "text_tokens": 4673
+      }
+    },
+    "estimated_cny": 0.0009818000000000001,
+    "latency_ms": 1924,
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "fact_ids": [
+        "F06"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "preliminary_errors": [],
+    "player_display": "是",
+    "semantic_review": "作者复核：明确假设与实际经过均按F06/F13等事实回答，未展示隐藏补充。"
+  },
+  {
+    "experiment": "expanded_scope_diagnostic_v01",
+    "signature": "f8c71d2ffde5b0ae2b479d1705651b56f873f85e03e1606e568087e28ad1b066",
+    "case_id": "D-03",
+    "repeat": 1,
+    "status": "done",
+    "reserved_cny": 2,
+    "started_at": 1792917034.902727,
+    "request_sha256": "b30378f3f29ba7593f4585ab37b01b24b12187c9d2f9019f495d20f5f8c08a77",
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F06\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": [],\n  \"clarification\": \"\"\n}",
+    "request_id": "94a31efe-b8c6-9d0c-8691-53f4a694dff1",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "prompt_tokens": 4666,
+      "total_tokens": 4723,
+      "completion_tokens": 57,
+      "prompt_tokens_details": {
+        "cached_tokens": 4480,
+        "text_tokens": 4666
+      }
+    },
+    "estimated_cny": 0.0009788000000000002,
+    "latency_ms": 2174,
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "fact_ids": [
+        "F06"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "preliminary_errors": [],
+    "player_display": "是",
+    "semantic_review": "作者复核：明确假设与实际经过均按F06/F13等事实回答，未展示隐藏补充。"
+  },
+  {
+    "experiment": "expanded_scope_diagnostic_v01",
+    "signature": "f8c71d2ffde5b0ae2b479d1705651b56f873f85e03e1606e568087e28ad1b066",
+    "case_id": "D-04",
+    "repeat": 1,
+    "status": "done",
+    "reserved_cny": 2,
+    "started_at": 1792917037.083127,
+    "request_sha256": "c3b0111e5bfb282c89f79b39516c31766c82f89e536841c7c09f42d90c10f303",
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F06\",\n    \"F13\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+    "request_id": "b42d4a24-f773-9d22-ab4a-bdc1af16ddc2",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "prompt_tokens": 4671,
+      "total_tokens": 4737,
+      "completion_tokens": 66,
+      "prompt_tokens_details": {
+        "cached_tokens": 4480,
+        "text_tokens": 4671
+      }
+    },
+    "estimated_cny": 0.000987,
+    "latency_ms": 2305,
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "否",
+      "fact_ids": [
+        "F06",
+        "F13"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "preliminary_errors": [],
+    "player_display": "否",
+    "semantic_review": "作者复核：明确假设与实际经过均按F06/F13等事实回答，未展示隐藏补充。"
+  },
+  {
+    "experiment": "expanded_scope_diagnostic_v01",
+    "signature": "f8c71d2ffde5b0ae2b479d1705651b56f873f85e03e1606e568087e28ad1b066",
+    "case_id": "D-05",
+    "repeat": 1,
+    "status": "done",
+    "reserved_cny": 2,
+    "started_at": 1792917039.397527,
+    "request_sha256": "00df0b952454632f231aa3218bce994db42d98876a4448699fa5a7d2ef04eba3",
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F13\",\n    \"F16\"\n  ]\n,\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+    "request_id": "c0a08788-2785-9894-9cbc-019316121474",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "prompt_tokens": 4664,
+      "total_tokens": 4732,
+      "completion_tokens": 68,
+      "prompt_tokens_details": {
+        "cached_tokens": 4480,
+        "text_tokens": 4664
+      }
+    },
+    "estimated_cny": 0.0009872000000000001,
+    "latency_ms": 1734,
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "fact_ids": [
+        "F13",
+        "F16"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "preliminary_errors": [],
+    "player_display": "是",
+    "semantic_review": "作者复核：明确假设与实际经过均按F06/F13等事实回答，未展示隐藏补充。"
+  },
+  {
+    "experiment": "expanded_scope_diagnostic_v01",
+    "signature": "f8c71d2ffde5b0ae2b479d1705651b56f873f85e03e1606e568087e28ad1b066",
+    "case_id": "D-06",
+    "repeat": 1,
+    "status": "done",
+    "reserved_cny": 2,
+    "started_at": 1792917041.140706,
+    "request_sha256": "78dbd22f10716789035e7b009d03c43f344c9c4d2f1ab73e331d221a18fce453",
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F06\"\n  ]\n  ,\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n  ,\n  \"clarification\": \"\"\n}",
+    "request_id": "f03a1b0f-6498-91ba-a10a-e236d74a7144",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "prompt_tokens": 4673,
+      "total_tokens": 4736,
+      "completion_tokens": 63,
+      "prompt_tokens_details": {
+        "cached_tokens": 4480,
+        "text_tokens": 4673
+      }
+    },
+    "estimated_cny": 0.000985,
+    "latency_ms": 2030,
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "fact_ids": [
+        "F06"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "preliminary_errors": [],
+    "player_display": "是",
+    "semantic_review": "作者复核：明确假设与实际经过均按F06/F13等事实回答，未展示隐藏补充。"
+  }
+]

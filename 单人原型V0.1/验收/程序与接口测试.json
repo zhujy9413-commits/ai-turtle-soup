@@ -1,0 +1,10 @@
+{
+  "tests_run": 20,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "duration_seconds": 0.561,
+  "provider_calls": 0,
+  "scope": "单人模拟流程与本机接口测试，不代表模型语义验收",
+  "output": "test_live_dispatch_never_reads_key_or_sends_request (test_game.BoundaryTests) ... ok\ntest_public_scope_shape_excludes_hidden_data_and_solution_is_actual (test_game.BoundaryTests) ... ok\ntest_clarification_does_not_charge_or_announce_hidden_answer (test_game.GameTests) ... ok\ntest_cold_reminder_once_and_no_auto_hint (test_game.GameTests) ... ok\ntest_correct_solution_on_last_attempt_wins_before_exhaustion (test_game.GameTests) ... ok\ntest_hypothetical_fixture_is_separate_from_actual_answer (test_game.GameTests) ... ok\ntest_idempotent_request_does_not_duplicate_hint (test_game.GameTests) ... ok\ntest_incomplete_solution_consumes_last_attempt (test_game.GameTests) ... ok\ntest_invalid_settings_and_busy_exclusion (test_game.GameTests) ... ok\ntest_manual_reveal_confirmation_and_review_completion (test_game.GameTests) ... ok\ntest_no_hidden_fields_before_reveal_and_owner_isolation (test_game.GameTests) ... ok\ntest_only_three_hints_and_no_private_hints_before_publication (test_game.GameTests) ... ok\ntest_opening_clock_and_background_elapsed (test_game.GameTests) ... ok\ntest_processing_freezes_entire_wait_and_charges_once (test_game.GameTests) ... ok\ntest_refresh_preserves_drafts_history_and_timer (test_game.GameTests) ... ok\ntest_restart_recovers_pending_without_retry_or_charge (test_game.GameTests) ... ok\ntest_review_highlights_are_actual_messages_not_invented (test_game.GameTests) ... ok\ntest_unknown_and_failure_release_last_attempt (test_game.GameTests) ... ok\ntest_public_routes_and_private_files_denied (test_game.HTTPTests) ... ok\ntest_session_cookie_and_live_mode_blocked (test_game.HTTPTests) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.561s\n\nOK\n"
+}

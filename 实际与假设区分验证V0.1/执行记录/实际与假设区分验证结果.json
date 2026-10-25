@@ -1,0 +1,907 @@
+{
+  "experiment": "scope_validation_v01",
+  "signature": "b73b2afdd312aaac675fc8167eac62a0b0004235d3b8e7357b546d65decb40fa",
+  "new_attempts": 26,
+  "planned_attempts": 33,
+  "unique_tested": 26,
+  "all_action_label_matches": 26,
+  "category_unique_results": {
+    "actual": {
+      "tested_unique": 12,
+      "label_match": 12
+    },
+    "explicit_hypothesis": {
+      "tested_unique": 12,
+      "label_match": 12
+    },
+    "underspecified_scope_control": {
+      "tested_unique": 2,
+      "label_match": 2
+    }
+  },
+  "paired_results": [
+    {
+      "pair": "S02-P1",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S02-P2",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S02-P3",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S02-P4",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S02-P5",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S06-P1",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S06-P2",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S06-P3",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S06-P4",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": false
+    },
+    {
+      "pair": "S06-P5",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S07-P1",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    },
+    {
+      "pair": "S07-P2",
+      "both_tested": true,
+      "both_match": true,
+      "expected_different_labels": true
+    }
+  ],
+  "exact_repeat_results": [],
+  "cumulative_attempts": 143,
+  "remaining_calls": 7,
+  "cumulative_original_price_estimate_cny": 0.11251480000000001,
+  "actual_invoice_checked": false,
+  "new_original_price_estimate_cny": 0.022975200000000005,
+  "global_acceptance_passed": false,
+  "independent_blind_review": false,
+  "blocked": {
+    "experiment": "scope_validation_v01",
+    "signature": "b73b2afdd312aaac675fc8167eac62a0b0004235d3b8e7357b546d65decb40fa",
+    "blocked": true,
+    "approved": false,
+    "reason": "C02-11澄清泄漏S02.F11，按预先冻结计划停止；剩余7次不继续，也不重问到通过。",
+    "calls_used": 26,
+    "cumulative_calls": 143,
+    "remaining_calls": 7
+  },
+  "display_failures": [
+    {
+      "id": "C02-11",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "underspecified_scope_control",
+      "question": "我还没说明是在问故事实际结尾，还是在问“咳嗽后已离屋且没回来”的假设：警方到场时他仍在屋里吗？",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "actual": {
+        "action": "clarify",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "你指的是故事实际结尾中警方找到他时的状态，还是‘咳嗽后已离屋且没回来’这一假设情境下的状态？"
+      },
+      "display": "你指的是故事实际结尾中警方找到他时的状态，还是‘咳嗽后已离屋且没回来’这一假设情境下的状态？",
+      "label_match": true,
+      "status": "reviewed_failure",
+      "semantic_review": "人工复核：动作正确，但澄清中的“故事实际结尾中警方找到他时”确认了未公开的警方找到人情节。玩家只提到警方到场，公开汤面只有报警。判为展示剧透，按预先计划停止后续调用。",
+      "display_review": {
+        "passed": false,
+        "issue": "hidden_fact_leak",
+        "leaked_fact": "S02.F11",
+        "excerpt": "故事实际结尾中警方找到他时",
+        "safe_alternative": "你问的是实际结尾，还是你提出的离屋假设？"
+      },
+      "estimated_cny": 0.0007934,
+      "request_sha256": "b593807510c52235f268c2ea52b8409b187e3e80e9494ddbc6d6c5af26e94a23"
+    }
+  ],
+  "credential_cleanup": {
+    "temporary_credential_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "platform_key_changed": false,
+    "at": 1792918727.928305
+  },
+  "conclusion": "明确实际/假设范围的24条问题均动作和标签匹配；两条范围控制均选择澄清，但其中一条澄清剧透。未解决上一轮自然省略假设标记的难例；不判整体通过。",
+  "limitations": [
+    "5条条件不清楚问题为刻意设计的范围控制题，不代表自然玩家问题分布。",
+    "S07两条假设直接规定发送者/知情状态，作为简单范围控制，不据此宣称复杂反事实推理通过。",
+    "与上一轮提示词及故事输入完全一致；不在看到输出后改预期或重问到通过。",
+    "这是一次独立诊断，不重开上一轮已停止主测试。标签偏差与澄清展示需人工复核后才继续后续独立用例；鉴权、未知费用、结构错误或泄漏则停止。",
+    "所有请求无跨用例会话；不能代替长对话、多人实测或完整上线验收。"
+  ],
+  "cases": [
+    {
+      "id": "C02-01",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "actual",
+      "question": "在这个故事实际结尾，警察确实在屋里找到那个咳嗽的人了吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F11"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0007764000000000001,
+      "request_sha256": "864b12c80bd0ad4bdfeda2d001fd3cef2cb8af514cb9a04036fc2f601de22756"
+    },
+    {
+      "id": "C06-01",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "actual",
+      "question": "天亮后的实际结局里，我的病痛已经自动退回女人身上了吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F06",
+          "F13"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009862,
+      "request_sha256": "c38f7bd024fb3c58564e7ea030e5cda4ecf4503545d146e06b84e9fab6caa0f3"
+    },
+    {
+      "id": "C07-01",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "actual",
+      "question": "实际那条出差消息的发送者，是控制妹妹的男人吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0008892,
+      "request_sha256": "e95bd0c6726d898752e10ab646a2d4291db419dac7538af1a870f89cc2bc2ab4"
+    },
+    {
+      "id": "C02-02",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "explicit_hypothesis",
+      "question": "另设一个情况：那个人咳嗽后已经离开屋子，警方到场前始终没有回来。在这个假设中，警方到场时他还藏在屋内吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F10",
+          "F11"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0007884000000000001,
+      "request_sha256": "4dbb5e791a6d1dd2c708c7840589ed25ca1e69e9ce7d58644f984a7e097f1b70"
+    },
+    {
+      "id": "C06-02",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "explicit_hypothesis",
+      "question": "如果暂时转移已经发生，但我直到天亮始终没有有效回应，病痛会在天亮退回女人身上吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F06"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009818000000000001,
+      "request_sha256": "a0e136c94e8b7a694bcc569f73db057663a76240d363ce2515ff150c6216854f"
+    },
+    {
+      "id": "C07-02",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "explicit_hypothesis",
+      "question": "只讨论一个与原剧情不同的假设：出差消息确实由妹妹本人亲手输入并发送，没有任何人代发。在这个假设中，发送者仍是那个男人吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0008932,
+      "request_sha256": "94488452d988ebeb5f953640f15716b1fbde58837dec7b021bfe19aeee660297"
+    },
+    {
+      "id": "C02-03",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "actual",
+      "question": "实际听到的那声咳嗽回声，原声来自屋内的活人吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F03",
+          "F10"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0007846000000000001,
+      "request_sha256": "9e580e49c366c20ec80e6cb50e0ed8059bf82fed06c135345e21b8c63819c83f"
+    },
+    {
+      "id": "C06-03",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "actual",
+      "question": "实际把我叫醒并呼唤我姓名的，是原来的女病人吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F12"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.000982,
+      "request_sha256": "bf6fdbd3492088b606eb83d979785eb2b675c6797b3a170884e82d3e50762707"
+    },
+    {
+      "id": "C07-03",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "actual",
+      "question": "第三晚抓门声响起时，实际的我仍不知道床下藏了人吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F08",
+          "F10"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0008974,
+      "request_sha256": "adadc3d5ae59c7605708f2dc44f2b563aae674dbfb6eb28f598f70117a5544b3"
+    },
+    {
+      "id": "C02-04",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "explicit_hypothesis",
+      "question": "如果屋内没有活人发声，只有手机播放了一段咳嗽录音，这段录音会触发同一种六十秒回声吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F05"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0007824,
+      "request_sha256": "81f76ea020ca25a46f1fc4fb4b6d25dab416b1204b11fd4ce24183b6bb4e6a46"
+    },
+    {
+      "id": "C06-04",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "explicit_hypothesis",
+      "question": "只作假设：午夜的暂时转移已发生，之后只有真正的护士叫我的名字，我清醒回应了她，没有回应女人。这样就能固定转移吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F07"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009866,
+      "request_sha256": "6ac5d096318ba5890cf0e6e366f86766dbf75fb8c04c8ef336ee95ce180d5684"
+    },
+    {
+      "id": "C07-04",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "explicit_hypothesis",
+      "question": "只作假设：第三晚我已经低头看清床下是男人，知道那里有人。在这个假设里，还能说我当时不知道床下有人吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F08"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0008926000000000001,
+      "request_sha256": "316a91b2e3ce4766fa62310b6aaa2b03a61618fa0919300e406a08d6e896e63a"
+    },
+    {
+      "id": "C02-05",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "actual",
+      "question": "按当晚实际经过，咳嗽回声的原声是我自己在屋内发出的吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F01",
+          "F08",
+          "F10"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.000786,
+      "request_sha256": "05a23a5dfc96b96efdd23f1c8e2ddbcf144488860e83dc01b67f26c1877a7561"
+    },
+    {
+      "id": "C06-05",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "actual",
+      "question": "按实际事件顺序，在我应答姓名之前，女人已恢复行动能力了吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F04",
+          "F11"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009896,
+      "request_sha256": "6964d1ef2279fab6c98484a957f0efd646ed52184d396c33b6d9e4afc744b9a8"
+    },
+    {
+      "id": "C07-05",
+      "repeat": 1,
+      "story_id": "S07",
+      "category": "underspecified_scope_control",
+      "question": "我没说是在问原故事的消息，还是在问“妹妹本人亲手输入发送、无人代发”的假设：发送者是男人吗？",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "actual": {
+        "action": "clarify",
+        "answer": "",
+        "fact_ids": [
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "你指的是‘发送者’这个动作的执行主体吗？请明确你的问题是针对原故事中实际发生的发送行为，还是假设妹妹本人操作手机时的情况。"
+      },
+      "display": "你指的是‘发送者’这个动作的执行主体吗？请明确你的问题是针对原故事中实际发生的发送行为，还是假设妹妹本人操作手机时的情况。",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：先询问实际/假设范围，未泄漏未公开情节；动作符合锁定预期。首句对发送主体的追问多余，澄清偏长，保留文案问题。",
+      "display_review": {
+        "passed": true,
+        "note": "澄清偏长，已记录"
+      },
+      "estimated_cny": 0.0009184000000000001,
+      "request_sha256": "7abb61b74c5eab31042444d51f2aad269ae0492dcd54c927a3a933f03ddf25c9"
+    },
+    {
+      "id": "C02-06",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "explicit_hypothesis",
+      "question": "只改发声者和地点：假设我本人在屋内咳嗽一次，其他人都没有发声。六十秒后那一次回声的原声会是我的吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F02",
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.000785,
+      "request_sha256": "86e2f0c5e57339718e85ce637b41bf29146c0422e80b03cb5bb4823a662b24bd"
+    },
+    {
+      "id": "C06-06",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "explicit_hypothesis",
+      "question": "如果午夜钟响时我并未睡在那张病床上，此后只回应了女人呼名，也能凭这次回应直接转移她的病痛吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F04",
+          "F06"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009916,
+      "request_sha256": "a37aab39ac6c8a0e7e31c82035bf1800f0ffd630ccc2d29ceb1f4ebdc45f35ba"
+    },
+    {
+      "id": "C02-07",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "actual",
+      "question": "按实际规则，仅听到咳嗽回声、还没有看到人，便足以证明他此刻绝不可能已离屋吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F08",
+          "F10",
+          "F11"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.000788,
+      "request_sha256": "f2eed71c057e8e149f501f35f2ee094806721033d1f11695c538a0a26c8be47f"
+    },
+    {
+      "id": "C06-07",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "actual",
+      "question": "故事实际发生的那次姓名应答，是我无意识的梦话吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F09",
+          "F12"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.000986,
+      "request_sha256": "ee94d91831f3911f37033ad45708290568d7b4583bfd28db7b4a03075065ebba"
+    },
+    {
+      "id": "C02-08",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "explicit_hypothesis",
+      "question": "假设活人在屋内咳嗽，三十秒后离屋，原声之后没有其他声音。到第六十秒，屋子仍会重播这次咳嗽吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F02"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.000783,
+      "request_sha256": "8987d0235b87553c770ce85eea4e093ceeb14215bd014fa55276ebd3d8a7eeb3"
+    },
+    {
+      "id": "C06-08",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "explicit_hypothesis",
+      "question": "假设暂时转移已经发生，天亮前我只在睡梦中无意识说出了回应，没有清醒应答，这样的梦话会固定转移吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F09"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009847999999999999,
+      "request_sha256": "437bb6a943993fea7a8f3fdfffc2c64cd918acff3a33a9d67a96138a85f46ad1"
+    },
+    {
+      "id": "C02-09",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "actual",
+      "question": "当晚实际听到的咳嗽回声，是在对应的原声发生之前出现的吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F02",
+          "F08"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.000782,
+      "request_sha256": "f8366a1cba0c696981da699c6d4554f9973af27a8ffa51bba91fda0658e904e1"
+    },
+    {
+      "id": "C06-09",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "actual",
+      "question": "按本局实际结尾，女人交给我呼叫铃的时候，我已经需要别人照料了吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F13"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009836,
+      "request_sha256": "e7072c01985a43f3ccbe008f8e460a409daf0fcb0d8a3b3f8a5c69b3930b2e4c"
+    },
+    {
+      "id": "C02-10",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "explicit_hypothesis",
+      "question": "假设屋内活人在二十一点整咳嗽一次，依旧遵守原规则，那么这一次回声会在二十一点零一分出现吗？",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "actual": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F02"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "是",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0007786000000000002,
+      "request_sha256": "d599b590392d7a1a7971a00b76c1e8dbbb4d394be70650bf87c619706454f561"
+    },
+    {
+      "id": "C06-10",
+      "repeat": 1,
+      "story_id": "S06",
+      "category": "explicit_hypothesis",
+      "question": "假设午夜转移已经发生，但当夜没有固定，直到天亮自行撤回。仅凭这一次已经撤回的转移，仍能断定我天亮后继续承受女人的病痛吗？",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "actual": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F06"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "display": "否",
+      "label_match": true,
+      "status": "done",
+      "semantic_review": "人工复核：按本题实际范围或玩家明确假设判定，动作与答案符合锁定预期；展示只含四词，未见隐藏信息外溢。内部引用不是独立盲审。",
+      "display_review": {
+        "passed": true
+      },
+      "estimated_cny": 0.0009844,
+      "request_sha256": "43ac545322ca56bd8045b159db1055e42903df6b83f3048c936b59db36361390"
+    },
+    {
+      "id": "C02-11",
+      "repeat": 1,
+      "story_id": "S02",
+      "category": "underspecified_scope_control",
+      "question": "我还没说明是在问故事实际结尾，还是在问“咳嗽后已离屋且没回来”的假设：警方到场时他仍在屋里吗？",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "actual": {
+        "action": "clarify",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "你指的是故事实际结尾中警方找到他时的状态，还是‘咳嗽后已离屋且没回来’这一假设情境下的状态？"
+      },
+      "display": "你指的是故事实际结尾中警方找到他时的状态，还是‘咳嗽后已离屋且没回来’这一假设情境下的状态？",
+      "label_match": true,
+      "status": "reviewed_failure",
+      "semantic_review": "人工复核：动作正确，但澄清中的“故事实际结尾中警方找到他时”确认了未公开的警方找到人情节。玩家只提到警方到场，公开汤面只有报警。判为展示剧透，按预先计划停止后续调用。",
+      "display_review": {
+        "passed": false,
+        "issue": "hidden_fact_leak",
+        "leaked_fact": "S02.F11",
+        "excerpt": "故事实际结尾中警方找到他时",
+        "safe_alternative": "你问的是实际结尾，还是你提出的离屋假设？"
+      },
+      "estimated_cny": 0.0007934,
+      "request_sha256": "b593807510c52235f268c2ea52b8409b187e3e80e9494ddbc6d6c5af26e94a23"
+    }
+  ]
+}

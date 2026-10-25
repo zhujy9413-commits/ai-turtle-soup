@@ -1,0 +1,59 @@
+{
+  "version": "夜汤字标与全界面V0.5",
+  "date": "2026-10-25",
+  "brand": "夜汤（暂定名称、第一版字标）",
+  "changes": [
+    "原创透明手写字标，页头与载入中展示",
+    "选题、推理、规则、教学和复盘统一字体层级",
+    "正文与按钮使用文楷阅读字体；标题与四词回答使用手写笔触",
+    "手机规则四种回答保持单行，不挤压不清楚"
+  ],
+  "checks": {
+    "program_tests": {
+      "passed": 22,
+      "total": 22
+    },
+    "javascript_syntax": "passed",
+    "browser_fonts_loaded": [
+      "Night Hand",
+      "Night Read"
+    ],
+    "home_widths_without_horizontal_overflow": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "game_and_review_widths_without_horizontal_overflow": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "mobile_rule_labels_without_overflow": [
+      320,
+      390
+    ],
+    "flows": [
+      "规则弹窗与Escape关闭",
+      "开始对局并提交预设示例",
+      "汤面弹窗关闭后草稿保留",
+      "主动揭晓二次确认、复盘完成与返回选题"
+    ]
+  },
+  "provider_calls": 0,
+  "logo": {
+    "asset": "public/art/yetang-logo.png",
+    "width": 2172,
+    "height": 724,
+    "transparent": true,
+    "format": "PNG 位图",
+    "sha256": "a03804cbaf564f2f5290abd08963e951b56d77299b3a7f5908d233482de30a90"
+  },
+  "notes": [
+    "浏览器存在已注入扩展的脚本警告；本轮所列页面和流程检查通过。",
+    "字体资源总计约4.56MB，本机原型直接加载；线上版本仍可按实际页面拆分优化。",
+    "未创建矢量Logo母版。原仓库、目录名和历史资料保持原名。"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "全界面文字V0.5",
+  "assets": [
+    {
+      "origin": "https://github.com/lxgw/LxgwWenKai-Lite",
+      "original": "wenkai-reading.ttf",
+      "web_asset": "public/fonts/night-reading.woff2",
+      "original_bytes": 13949472,
+      "web_bytes": 1624156,
+      "sha256": "77c124d188a3ef1a7707bfe04023cc218bb08db4ca8ee7d893e6acfc9439e61a",
+      "coverage": "通用GB2312字汇、拉丁字符、常用标点与箭头，不使用私有故事文本来选字",
+      "included_codepoints": 8126,
+      "modified_family": "Turtle Night Reading",
+      "license": "原SIL OFL随包保留，子集采用新家族名；原作者署名与版权信息保留"
+    },
+    {
+      "origin": "https://github.com/google/fonts/tree/main/ofl/longcang",
+      "original": "long-cang-ui.ttf",
+      "web_asset": "public/fonts/night-display.woff2",
+      "original_bytes": 5162508,
+      "web_bytes": 2931628,
+      "sha256": "0bad097a8e123dde1c88d1260392e81e53a598bfc23ff43544c5f5c3352a1f10",
+      "coverage": "通用GB2312字汇、拉丁字符、常用标点与箭头，不使用私有故事文本来选字",
+      "included_codepoints": 7002,
+      "modified_family": "Turtle Night Display",
+      "license": "原SIL OFL随包保留，子集采用新家族名；原作者署名与版权信息保留"
+    }
+  ],
+  "build_dependencies": {
+    "fonttools": "4.67.0",
+    "brotli": "1.2.1"
+  },
+  "runtime_dependencies": "无；仅加载本地woff2",
+  "fallback": "字汇之外的输入使用系统中文字体回退"
+}

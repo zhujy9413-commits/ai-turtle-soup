@@ -1,0 +1,9 @@
+{
+  "source_syntax": true,
+  "js_syntax_checked": true,
+  "provider_calls": 0,
+  "ledger_unchanged_162": true,
+  "tests_passed": 20,
+  "qa_database_not_in_delivery": true,
+  "live_mode_disabled": true
+}

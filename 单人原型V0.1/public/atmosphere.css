@@ -1,0 +1,244 @@
+/* 夜间视觉 V0.2：界面与玩法分开维护。场景仅表达氛围，不承载线索。 */
+:root{
+  --bg:#0c0c0d;--panel:#151516;--panel2:#202021;
+  --ink:#e6e6e7;--muted:#aaa6a0;--gold:#a1a1a8;--gold-dim:#5d5d64;
+  --rust:#9b9ba2;--line:#333130;--green:#b5b7ad;
+}
+html{scroll-padding-top:24px}
+body{background:var(--bg)}
+body:before{background:radial-gradient(ellipse at 85% 0,#38383c18,transparent 55%)}
+::selection{background:#73727b88;color:#f3f3f3}
+.shell{max-width:1440px;padding:0 64px}
+.topbar{min-height:90px;border-color:#ffffff14;position:relative;z-index:2}
+.brand-mark{border-radius:0;border-color:#7a7a8275;transform:rotate(-4deg);font-size:23px;color:#b0b0b5}
+.brand strong{font-size:22px;letter-spacing:.2em}
+.brand small{font-size:8px;letter-spacing:.23em;color:#95959c}
+.status-pill{color:#a7a7ad;font-size:10px}
+.status-pill:before{background:#8c8c94;box-shadow:0 0 8px #95949c55}
+.subtle-button{color:#aaaaaf}
+.subtle-button:hover{color:#eeeeef}
+.top-actions{gap:23px}
+.volume-wrap input{accent-color:#94939b}
+.night-hero{min-height:550px;padding:80px 0 86px;display:block;position:relative;isolation:isolate;gap:0}
+.hero-visual{position:absolute;inset:-90px -64px -30px;z-index:-2;background:url('/art/night-door-red.png') 64% 48%/cover no-repeat;pointer-events:none}
+.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0c0c0de0,transparent 65%),linear-gradient(0deg,var(--bg) 1%,transparent 29%,transparent 85%,#0c0c0d44)}
+.hero-content{position:relative;max-width:760px}
+.hero .eyebrow{color:#9c9ca2;font-size:11px;letter-spacing:.3em}
+.hero .eyebrow:before{background:#73727b;width:22px}
+.hero h1{font-size:clamp(38px,4.4vw,63px);line-height:1.48;letter-spacing:.08em;font-weight:400;margin:24px 0 22px;text-shadow:0 3px 35px #0009}
+.hero h1 em{font-style:normal;color:#bebec2}
+.hero .desc{max-width:540px;font-size:13px;line-height:2.1;color:#ababb1;letter-spacing:.08em}
+.hero-entry{display:flex;align-items:center;gap:28px;margin-top:31px}
+.hero-entry .primary{min-width:178px;min-height:49px;letter-spacing:.13em;justify-content:space-between;padding:13px 22px}
+.hero-entry .subtle-button{font-size:12px;gap:10px}
+.hero-note{margin-top:24px;letter-spacing:.12em;font-size:10px;color:#9c9ca3;gap:15px}
+.hero-note .line{background:#55545b}
+.hero-marginal{position:absolute;bottom:27px;left:0;right:0;display:flex;justify-content:space-between;gap:15px;font-size:9px;letter-spacing:.2em;color:#919199}
+.primary{background:#99999f;color:#111112;border:1px solid #b8b8bc33;border-radius:0;box-shadow:inset 0 0 22px #c7c7cb0c}
+.primary:hover{background:#b5b4ba;transform:translateY(-1px)}
+.primary:disabled{transform:none}
+.night-library{position:relative;padding-top:28px;scroll-margin-top:24px}
+.library-head{margin-bottom:24px;border-bottom:1px solid #ffffff14;padding-bottom:20px;align-items:center}
+.section-title{gap:19px}
+.section-title h2{font-size:27px;letter-spacing:.12em}
+.section-title small{font:10px/1.5 var(--sans);letter-spacing:.17em;color:#87878f}
+.filters{gap:5px}
+.filter{border-radius:0;color:#a0a0a6;font-size:11px;padding:6px 13px}
+.filter.active{background:#97979e0c;color:#a9a9ae;border-color:#64646b5e}
+.library-layout{grid-template-columns:minmax(0,1fr) 268px;gap:28px}
+.case-grid{gap:18px}
+.case-card{min-height:400px;background:#141415;border:1px solid #ffffff16;transition:transform .22s,border-color .22s}
+.case-card:hover{border-color:#76767f;transform:translateY(-5px)}
+.case-card.selected{border-color:#7a7a82}
+.case-card.selected:after{display:none}
+.case-art,.case-card[data-place] .case-art{height:190px;flex-shrink:0;background:#171717;border-bottom:1px solid #ffffff0e;isolation:isolate}
+.scene-image{position:absolute;inset:0;background-image:url('/art/story-scenes.png');background-repeat:no-repeat;background-size:300% auto;filter:saturate(.6);transition:filter .25s,transform .5s}
+.scene-S02{background-position:left center}
+.scene-S06{background-position:center center}
+.scene-S07{background-position:right center}
+.case-art:after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(0deg,#141415c7,transparent 65%),linear-gradient(180deg,#0004,transparent 30%)}
+.case-card:hover .scene-image{filter:saturate(.85) brightness(1.15);transform:scale(1.035)}
+.case-art .stamp{z-index:1;top:15px;left:17px;color:#d3d3d6bf;font-size:8px;letter-spacing:.15em;text-shadow:0 1px 4px #000}
+.case-art .number{z-index:1;bottom:10px;left:17px;font:43px/1 var(--serif);color:#e1e1e375;letter-spacing:-.04em}
+.case-open{position:absolute;bottom:14px;right:16px;color:#bdbdc1;font:8px/1.5 var(--sans);letter-spacing:.1em;z-index:1}
+.case-copy{padding:21px 18px 18px}
+.case-copy h3{font-size:24px;line-height:1.5;margin:10px 0 11px;letter-spacing:.07em}
+.case-copy p{font-size:11px;line-height:1.9;color:#9e9ea5;min-height:43px}
+.case-meta{color:#9d9da3;font-size:9px;letter-spacing:.04em}
+.case-meta span:last-child{color:#918c84}
+.case-bottom{border-color:#ffffff12;margin-top:19px;padding-top:13px;font-size:9px;color:#9999a0}
+.case-bottom strong{color:#a1a1a8}
+.config{border:1px solid #ffffff16;border-top-color:#696971;background:linear-gradient(135deg,#1e1e218c,#121213);padding:23px 22px}
+.config-label{font-size:9px;color:#a0a0a7;letter-spacing:.1em}
+.config h3{font-size:24px;margin:13px 0 10px}
+.config .notice{color:#a4a3aa;line-height:1.9}
+.field-row input{color:#d1d1d4;font-size:29px;border-color:#5c5c6377}
+.field-row .unit{font-size:9px;color:#97969e}
+.config .primary{min-height:47px}
+.random{border-color:#ffffff1f;color:#a6a6ac;font-size:11px;min-height:42px}
+.random:hover{background:#97979e0a}
+.mini-note{color:#97969e;font-size:10px}
+.prototype-note{color:#9c9ca3;font-size:10px;padding:22px 0 5px}
+.footer{border-color:#ffffff14;color:#8f897e;padding:25px 0 30px;margin-top:30px}
+.resume{position:relative;z-index:2;background:#151516e8;border-color:#5e5e64;margin-top:20px}
+/* 推理时收起大幅场景，以较亮的暖灰文字和安静的纸面层次承接阅读。 */
+.game-page:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 95% 10%,#5f5f6516,transparent 52%),linear-gradient(115deg,transparent 55%,#73727b05 65%,transparent 80%);pointer-events:none}
+.game-nav{background:#0c0c0df5;border-bottom:1px solid #ffffff15;margin-bottom:24px;padding:24px 0}
+.game-title small{color:#909097;font-size:9px;letter-spacing:.16em}
+.game-title h1{font-size:32px;letter-spacing:.1em;margin-top:5px}
+.game-title .back{margin-bottom:7px}
+.game-stats{gap:30px}
+.stat strong{font-size:30px;color:#c9c9cd}
+.stat small{color:#a7a7ac}
+.game-board{grid-template-columns:335px minmax(0,1fr);gap:27px}
+.case-sheet{background:#171616f2;border-color:#ffffff20;position:relative}
+.case-sheet:before{content:"";display:block;height:2px;background:linear-gradient(90deg,#88889088,transparent 80%)}
+.sheet-top{padding:16px 23px;color:#a9a9ae;border-color:#ffffff12}
+.surface{font-size:18px;line-height:2.05;color:#d3d2d6}
+.surface-details summary{color:#b0b0b6}
+.sheet-actions,.hint-log,.test-tools{border-color:#ffffff16}
+.hint-log p{color:#adadb3;font-size:13px}
+.test-tools{color:#9c9ca2}
+.conversation{background:#141415f5;border-color:#ffffff20;min-height:625px;max-height:850px}
+.conversation-head{border-color:#ffffff15;color:#acacb1;padding:19px 25px}
+.conversation-head small{color:#9b9ba2}
+.messages{padding:26px}
+.message{margin-bottom:27px}
+.message-label{color:#9b9ba2;font-size:10px}
+.message-body{background:#222225;border:1px solid #ffffff0a;color:#d8d8db;padding:13px 17px}
+.message.host .message-body{border:0}
+.message.answer .message-body{font-size:33px;color:#b6b6bb}
+.message.system .message-body{background:#1f1f20;border-color:#686159;color:#aeaeb3}
+.message.hint .message-body,.message.clarify .message-body{background:#1e1e20;border-color:#6d6d74;color:#b9b9bd}
+.chat-empty{padding:45px 15px 34px}
+.chat-empty:before{content:"";display:block;width:1px;height:38px;background:linear-gradient(transparent,#696970);margin:0 auto 24px}
+.chat-empty h3{font-size:24px;letter-spacing:.06em}
+.chat-empty svg{width:28px;height:28px;color:#909097}
+.chat-empty p{color:#9d9da3}
+.composer{background:#191818;border-color:#ffffff15;padding:19px 24px}
+.composer-top{color:#adadb3;font-size:11px}
+.input-row textarea,.feedback-box textarea,.dialog-body textarea{background:#0e0e0f;border-color:#56565c4d;color:#dfdfe1}
+textarea::placeholder{color:#9b9ba2}
+.input-row textarea:focus,.dialog-body textarea:focus{border-color:#8a8a91;outline:1px solid #8a8a9144}
+.chip{color:#acacb2;border-color:#5d5d6455;background:#ffffff02}
+.chip:hover{background:#98989f0a}
+.secondary{border-color:#67676e;color:#adadb3;background:#9b9ba105}
+.secondary:hover{background:#9b9ba10d}
+.composer-note{color:#98989f;font-size:10px}
+.waiting{background:#1d1c1f;color:#bababe;border-color:#ffffff12}
+.overlay{background:#171719;border-color:#6b6b72;box-shadow:0 30px 100px #000c}
+.overlay::backdrop{background:#030304d4;backdrop-filter:blur(8px)}
+.dialog-head{border-color:#ffffff15;background:#1e1e2044}
+.dialog-head h2{color:#dcdcdf;font-size:26px}
+.dialog-body p,.rule-list{color:#aeaeb4}
+.dialog-body .simulation-label{background:#89899108;border-color:#606067;color:#a9a9af}
+.result-panel{background:#161617;border-color:#ffffff18}
+.truth p{color:#ceced1}
+.cause-list li{border-color:#ffffff15;color:#ababb1}
+.danger{background:#6c6c73;color:#f1f1f2}
+.danger:hover{background:#7d7d85}
+.feedback-link{color:#919199}
+.empty,.boot{color:#9f9fa5}
+.boot{background:linear-gradient(#08080988,#080809d9),url('/art/night-door-red.png') 65% center/cover}
+.boot-mark{border-radius:0;border-color:#7b7b83}
+.boot p{color:#c8c8cb;letter-spacing:.08em}
+#toast{background:#ababb1;color:#121214}
+@media(min-width:1500px){.night-hero{padding-top:94px;min-height:610px}.case-art{height:205px}.case-card{min-height:415px}}
+@media(max-width:1200px){.shell{padding:0 36px}.hero-visual{left:-36px;right:-36px}.night-hero{min-height:520px;padding-top:70px}.hero h1{font-size:50px}.library-layout{grid-template-columns:minmax(0,1fr) 250px;gap:20px}.case-grid{gap:13px}.case-art{height:165px}.case-copy{padding:18px 14px}.case-copy h3{font-size:21px}.case-card{min-height:385px}.game-board{grid-template-columns:300px minmax(0,1fr)}}
+@media(max-width:950px){.library-layout{grid-template-columns:1fr}.config{grid-template-columns:1fr 1fr;gap:0 30px}.case-art{height:195px}.case-card{min-height:390px}.game-board{grid-template-columns:260px minmax(0,1fr)}.game-title h1{font-size:27px}.game-stats{gap:20px}.night-hero{min-height:530px}.hero h1{font-size:46px}.hero-visual{background-position:62% center}}
+@media(max-width:680px){
+ .shell{padding:0 21px}.topbar{min-height:76px}.brand strong{font-size:19px}.brand-mark{height:32px;width:32px;font-size:21px}.brand small{font-size:7px}.top-actions{gap:9px}.volume-wrap input{width:44px}.top-actions .subtle-button{color:#b7b7bc}
+ .night-hero{min-height:580px;padding:71px 0 62px}.hero-visual{inset:-76px -21px -15px;background-position:63% center;background-size:auto 100%}.hero-visual:after{background:linear-gradient(90deg,#0c0c0dbb,transparent 85%),linear-gradient(0deg,var(--bg) 0%,transparent 35%,#0c0c0d33)}
+ .hero-content{max-width:none}.hero h1{font-size:31px;line-height:1.65;letter-spacing:.065em;margin:24px 0 20px}.hero .eyebrow{font-size:10px}.hero .desc{font-size:12px;max-width:100%;letter-spacing:.02em;line-height:2.2;text-shadow:0 2px 8px #000}.hero-entry{margin-top:31px;gap:24px}.hero-entry .primary{min-width:155px;font-size:12px;min-height:47px}.hero-note{font-size:9px;gap:12px;margin-top:22px}.hero-marginal{bottom:25px;font-size:8px;letter-spacing:.1em}.hero-marginal span:first-child{max-width:160px}
+ .night-library{padding-top:13px}.library-head{align-items:start;gap:16px;padding-bottom:16px;margin-bottom:20px}.section-title h2{font-size:25px}.section-title small{font-size:9px}.filters{gap:4px}.filter{font-size:11px;padding:6px 12px}
+ .case-grid{gap:19px}.case-card{min-height:0;display:flex}.case-art,.case-card[data-place] .case-art{height:184px;border-right:0;border-bottom:1px solid #ffffff0e}.case-copy{padding:20px 21px}.case-copy h3{font-size:27px;margin:9px 0}.case-copy p{font-size:12px;min-height:0}.case-meta{font-size:10px}.case-bottom{font-size:10px;padding-top:14px;margin-top:18px}.case-art .stamp{top:17px;left:20px;font-size:9px}.case-art .number{font-size:48px;left:20px}.case-open{font-size:9px;right:20px}
+ .config{display:block;padding:24px;margin-top:2px}.config h3{font-size:25px}.config .field-row{margin-top:23px}.config-label{font-size:10px}.config .notice{font-size:12px}.field-row label{font-size:12px}.field-row .unit{font-size:10px}.mini-note{font-size:11px}.random{font-size:12px}.prototype-note{font-size:10px;line-height:1.9}.footer{font-size:9px;line-height:1.9;margin-top:18px}
+ .game-nav{padding:17px 0;margin-bottom:18px}.game-title h1{font-size:25px}.game-title small{font-size:8px;letter-spacing:.08em}.game-stats{gap:15px}.stat strong{font-size:25px}.stat small{font-size:9px}.game-board{display:flex;gap:18px}.surface{font-size:18px;line-height:2.05}.sheet-top{padding:14px 17px}.conversation{min-height:580px;max-height:none}.conversation-head{padding:16px 17px}.conversation-head small{font-size:9px}.messages{padding:22px 17px;max-height:470px}.composer{padding:18px 16px}.input-row textarea{font-size:16px}.chat-actions .secondary{font-size:12px;min-height:43px}.message-body{font-size:15px}.chat-empty h3{font-size:22px}.chat-empty p{font-size:12px}.dialog-head h2{font-size:25px}.overlay{width:calc(100% - 28px)}.result-panel{padding:23px 20px}.result-top h1{font-size:31px}
+}
+@media(max-width:380px){.shell{padding:0 17px}.hero-visual{left:-17px;right:-17px}.night-hero{padding-top:60px;min-height:540px}.hero h1{font-size:26px;letter-spacing:.03em}.hero .desc{font-size:11px}.hero .eyebrow{font-size:9px}.hero-entry{gap:20px}.hero-entry .primary{min-width:145px}.hero-note{gap:9px}.hero-marginal{font-size:7px}.brand small{display:none}.top-actions{gap:6px}.volume-wrap input{width:40px}.section-title{gap:10px}.section-title h2{font-size:24px}.section-title small{font-size:8px}.case-art,.case-card[data-place] .case-art{height:160px}.case-copy h3{font-size:24px}.game-title h1{font-size:22px}.game-stats{gap:12px}.stat strong{font-size:22px}.game-title small{font-size:7px}.stat .unit{font-size:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.case-card:hover,.case-card:hover .scene-image,.primary:hover{transform:none}}
+
+/* 已确认修订 V0.3：灰黑与暗血红，读文区域保持中性。 */
+:root{--bg:#0c0c0d;--panel:#161618;--panel2:#212124;--ink:#d0d0d3;--muted:#a8a8ae;--gold:#c18c95;--gold-dim:#6b3944;--rust:#cf8995;--line:#333336;--green:#b2b2b7;color-scheme:dark}
+html{scrollbar-gutter:stable}html.modal-open{overflow:hidden}
+body{color:var(--ink)}body:before{background:radial-gradient(ellipse at 85% 0%,#7d23300d,transparent 55%)}
+::selection{background:#793341;color:#eaeaec}
+.brand-mark{color:#bd8b95;border-color:#8b465659}.brand strong{color:#ccccd0}.brand small{color:#94949b}
+.status-pill{color:#9f9fa6}.status-pill:before{background:#9e475a;box-shadow:0 0 8px #86273c55}
+.subtle-button{color:#acacb2}.subtle-button:hover{color:#d8d8da}
+.hero .eyebrow{color:#b78b97}.hero .eyebrow:before{background:#6d3443}
+.hero h1{color:#cdcdd0}.hero h1 em{color:#b1b1b7}.hero .desc{color:#a4a3aa}.hero-note,.hero-marginal{color:#9c9ca2}.hero-note .line{background:#57343f}
+.primary{background:#642936;color:#dedee1;border-color:#a9596a55;box-shadow:inset 0 0 20px #ca738309}
+.primary:hover{background:#7c3545}.primary:focus-visible{outline-color:#c38a98}
+.secondary,.surface-trigger{border:1px solid #75414f;color:#cba4b0;background:#71304409}.secondary:hover,.surface-trigger:hover{background:#7c35451c}
+.filter.active{border-color:#88455666;color:#c797a6;background:#7d29380f}
+.case-card.selected,.case-card:hover{border-color:#925060}.case-meta{color:#a7a7ac}.case-bottom strong,.case-open{color:#c29ba7}
+.scene-image{filter:saturate(.12) brightness(.78)}.case-card:hover .scene-image{filter:saturate(.15) brightness(.9)}
+.config{border-top-color:#713d4c;background:linear-gradient(135deg,#1f1f218c,#131315)}.config-label{color:#b78e9c}.config h3{color:#c8c8cb}.config .notice{color:#a8a8ad}
+.field-row input{color:#c4c3c8;border-color:#5b3a495f}.field-row .unit,.mini-note,.config .mini-note{color:#9d9da4}
+.prototype-note,.footer{color:#9b9ba2}.random{color:#aaaab0;border-color:#59595f55}.random:hover{border-color:#97576b;color:#d0b1c0}
+.game-page:before{background:radial-gradient(ellipse at 98% 5%,#78273816,transparent 55%),linear-gradient(115deg,transparent 55%,#863c5305 65%,transparent 80%)}
+.game-nav{background:#0c0c0df7;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 20px;padding-bottom:16px}
+.game-tools{grid-column:1/-1;display:flex;align-items:center;gap:15px}.game-tools>span{font-size:10px;color:#9f9fa5}
+.surface-trigger{min-height:40px;padding:8px 15px;display:inline-flex;align-items:center;gap:8px;font-size:12px;white-space:nowrap}
+.game-title h1{color:#cdcdd1}.game-title small{color:#aa8b9b}.stat strong{color:#bababe}.stat.frozen strong{color:#d3a4b5}.stat small{color:#a9a9ae}
+.case-sheet{background:#171718f5}.case-sheet:before{background:linear-gradient(90deg,#aa5a6a66,transparent 80%)}
+.sheet-top,.surface-details summary{color:#c2a0b1}.surface{color:#cdcdd0}.conversation{background:#151517f5}.conversation-head{color:#c0a2b3}.conversation-head small{color:#a2a2a9}
+.composer{background:#1a1a1c}.composer-top{color:#b1b1b7}.input-row textarea,.dialog-body textarea,.feedback-box textarea{background:#0f0f10;color:#d2d1d5;border-color:#56414f88}textarea::placeholder{color:#9f9fa5}
+.input-row textarea:focus,.dialog-body textarea:focus{border-color:#ac687c;outline-color:#9a506455}
+.message-label{color:#a5a4ab}.message-body{background:#262629;color:#cfcfd3}.message.answer .message-body{color:#cba9bd}.message.host .message-body{color:#cfcfd3}
+.message.system .message-body{background:#212123;color:#b4b3b9;border-color:#5f5f66}.message.hint .message-body,.message.clarify .message-body{background:#202023;color:#bcbcc0;border-color:#8a4d67}
+.hint-log h3,.hint-log b{color:#c398ae}.hint-log p{color:#b8b8bd}.composer-note,.test-tools{color:#a1a1a8}.chip{color:#b7b7bc;border-color:#58585f55}.chip:hover{color:#d4b4cc;border-color:#9a637f;background:#8a496b0a}
+.waiting{background:#281a24;color:#d0a9c3}.pulse{background:#c38ba9;box-shadow:10px 0 #985d7c,20px 0 #653c50}.scope-tag{color:#d4a7c4;border-color:#7f4b67}
+.chat-empty:before{background:linear-gradient(transparent,#703a54)}.chat-empty svg{color:#ac7a95}.chat-empty p{color:#a9a9ae}
+.overlay{background:#19191b;border-color:#6f435a;box-shadow:0 30px 100px #000d}.overlay::backdrop{background:#020203df}.dialog-head{background:#2b1a2633}.dialog-head h2{color:#cfcfd2}.dialog-body p,.rule-list{color:#b8b8bd}.rule-list b{color:#ceced1}
+.rule-four span{color:#cba5bf;border-color:#5e3d52}.simulation-label,.dialog-body .simulation-label{background:#79264408;border-color:#714057;color:#c39ab3}
+.danger{background:#762c3e;color:#ebd5e1}.danger:hover{background:#8b374e}
+.blood-close{min-width:44px;min-height:44px;color:#bd4e66;position:relative;outline-offset:2px}.blood-close svg{width:25px;height:25px;stroke-width:.7;fill:currentColor;filter:drop-shadow(0 1px 2px #20000a)}.blood-close:hover{color:#dc7289;background:#7d29351a}.blood-close:focus-visible{outline:2px solid #d38d9f}
+.tutorial-progress{display:flex;align-items:center;gap:6px;margin-bottom:26px}.tutorial-progress>span{width:26px;height:2px;background:#4a3041}.tutorial-progress>span.current{background:#b7728d}.tutorial-progress b{margin-left:auto;font-size:10px;font-weight:400;color:#bca1b6}.dialog-body .tutorial-copy{font-size:16px;line-height:2;color:#c9c9cc}.tutorial-example{font-size:13px;color:#ababb1;border-left:2px solid #844761;padding:12px 15px;background:#232326;margin:22px 0 30px}.tutorial-actions{justify-content:space-between;align-items:center;gap:15px}.tutorial-actions>div{display:flex;gap:12px}.tutorial-actions .primary,.tutorial-actions .secondary{min-height:43px}
+.modal-surface{padding:0;line-height:2.1;font-size:19px}.dialog-body .surface-note{font-size:11px;color:#a2a2a8;margin:25px 0 0}.surface-note:before{content:"";display:block;height:1px;background:#52314566;margin-bottom:16px}
+.result-top h1,.result-panel h2{color:#cbcbcf}.result-panel{background:#181819f5}.truth p{color:#c9c9cc}.cause-list li{color:#b7b7bb}.cause-list li:before{color:#b987a6}.outcome-tag{color:#c8a0bb;border-color:#77475f}.result-top p,.review-note,.highlights{color:#aeaeb4}
+.resume{background:#1b1b1de8;border-color:#714057}.empty{color:#aeaeb3}.feedback-link{color:#9b9ba1}#toast{background:#6b314c;color:#e1e0e3;border:1px solid #ac6c8b}
+.boot{background:linear-gradient(#09090a88,#09090ad9),url('/art/night-door-red.png') 65% center/cover}.boot-mark{border-color:#864258;color:#c591a8}.boot p{color:#c2c2c6}.boot small{color:#9f9fa5}
+@media(max-width:680px){.game-nav{gap:8px 12px}.game-tools{gap:12px}.game-tools>span{font-size:9px}.game-title h1{overflow-wrap:anywhere}.tutorial-actions{flex-wrap:wrap}.tutorial-actions>div{gap:8px}.tutorial-actions .primary,.tutorial-actions .secondary{padding-left:12px;padding-right:12px;font-size:12px}.dialog-body .tutorial-copy{font-size:16px}.modal-surface{font-size:18px}.surface-trigger{min-height:42px}.top-actions .subtle-button{color:#b1b1b6}}
+@media(max-width:380px){.game-tools>span{max-width:135px}.game-tools{gap:10px}.tutorial-actions{gap:12px}.tutorial-actions .subtle-button{font-size:12px}}
+
+/* V0.4 主标题采用本地手写字形，阅读区维持清晰排印。 */
+@font-face{font-family:"Night Hand";src:url("/fonts/night-display.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+.hero h1{font-family:"Night Hand","Songti SC",serif;font-size:72px;line-height:1.42;font-weight:400;letter-spacing:.015em;margin:20px 0 24px;font-synthesis:none;text-shadow:0 2px 20px #0009}
+.title-preface{display:inline-block;font-size:.82em;letter-spacing:.045em;opacity:.88;margin-left:.045em}
+.title-main{display:inline-block;white-space:nowrap;transform:rotate(-.65deg);transform-origin:left center}
+.hero h1 em{color:#bcb7bf;font-style:normal}
+.hero .desc{letter-spacing:.025em;line-height:2.1}
+.hero-entry .primary{font-weight:500;letter-spacing:.075em}
+@media(max-width:1200px){.hero h1{font-size:60px}}
+@media(max-width:950px){.hero h1{font-size:52px}}
+@media(max-width:680px){.hero h1{font-size:clamp(24px,8.3vw,35px);line-height:1.65;letter-spacing:.008em;margin:23px 0 25px}.title-preface{font-size:.87em;letter-spacing:.04em}.hero .desc{letter-spacing:.015em}}
+@media(max-width:380px){.hero h1{font-size:clamp(24px,8.1vw,30px)}}
+@media(prefers-reduced-motion:reduce){.title-main{transform:none}}
+
+/* V0.5 全界面文字：标题笔触、阅读文楷、数字清晰。 */
+@font-face{font-family:"Night Read";src:url("/fonts/night-reading.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+:root{--sans:"Night Read","PingFang SC","Microsoft YaHei",sans-serif;--serif:"Night Read","Songti SC",serif;--display:"Night Hand","Night Read",serif}
+body,button,input,textarea,select{font-family:var(--sans);font-weight:400;font-synthesis:none}
+.brand strong,.case-copy h3,.config h3,.section-title h2,.game-title h1,.dialog-head h2,.result h1,.result-panel h2,.chat-empty h3{font-family:var(--display);font-weight:400;letter-spacing:.025em}
+.brand strong{font-size:28px;line-height:1.15}.brand-mark{font-family:var(--display);font-size:28px}
+.hero .desc{font-size:16px;line-height:1.95;letter-spacing:.025em}.hero-entry .primary{font-size:16px;font-weight:400}.hero-entry .subtle-button{font-size:15px}
+.hero-note{font-size:12px;letter-spacing:.06em}.hero .eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.18em}
+.section-title h2{font-size:31px}.case-copy h3{font-size:30px;line-height:1.35}.case-copy p{font-size:14px;line-height:1.85}.case-meta,.case-bottom{font-size:12px;letter-spacing:.015em}.case-open,.case-art .stamp{font-family:var(--sans);font-size:10px}
+.config h3{font-size:29px;line-height:1.4}.config-label{font-size:12px}.config .notice{font-size:14px}.field-row label{font-size:14px}.field-row input{font-family:var(--sans);font-size:30px}.field-row .unit,.mini-note{font-size:12px}.config .primary,.random{font-size:15px}.filter{font-size:14px}.prototype-note{font-size:12px}
+.game-title h1{font-size:34px;line-height:1.3}.back,.subtle-button{font-size:14px}.game-title small{font-family:var(--sans)}.game-tools>span{font-size:12px}.surface-trigger{font-size:15px}.stat strong{font-family:var(--sans);display:inline-block;min-width:3.6em}.stat small{font-size:12px}
+.surface,.modal-surface{font-family:var(--sans);font-size:20px;line-height:1.95}.surface-details summary,.sheet-top{font-size:14px}.sheet-actions .subtle-button{font-size:14px}
+.conversation-head{font-size:14px}.conversation-head small{font-size:12px}.composer-top{font-size:13px}.message-label{font-size:12px}.message-body{font-size:17px;line-height:1.85}.message.answer .message-body{font-family:var(--display);font-size:36px}.message.system .message-body{font-size:14px}.feedback-link{font-size:11px}.input-row textarea{font-size:16px}.input-row .primary{font-size:16px}.chip{font-size:12px}.secondary{font-size:15px}.composer-note{font-size:12px}.hint-log p{font-size:15px}.hint-log h3,.hint-log b{font-size:13px}
+.dialog-head h2{font-size:31px;line-height:1.35}.dialog-body p,.rule-list{font-size:16px;line-height:1.95}.rule-four span{font-family:var(--display);font-size:25px}.simulation-label,.dialog-body .simulation-label,.tutorial-example{font-size:14px}.tutorial-copy{font-family:var(--sans)}.tutorial-actions button,.dialog-actions button{font-size:15px}.dialog-body textarea{font-family:var(--sans);font-size:17px}.dialog-body .surface-note{font-size:13px}
+.truth p{font-family:var(--sans);font-size:20px;line-height:1.95}.cause-list li{font-family:var(--sans);font-size:16px;line-height:1.9}.review-note,.result-top p{font-size:15px;line-height:1.9}.result-panel h2{font-size:30px}.highlights{font-size:14px}.outcome-tag{font-size:13px}.result-history summary{font-size:15px}.footer{font-family:var(--sans);font-size:12px}
+@media(max-width:1120px){.case-copy h3{font-size:26px}.case-meta,.case-bottom{font-size:11px}.case-copy{padding:18px 14px}}
+@media(max-width:680px){.brand strong{font-size:25px}.brand-mark{font-size:25px}.hero .desc{font-size:14px;max-width:100%;line-height:1.95}.hero .eyebrow{font-size:11px}.hero-entry .primary{font-size:15px}.hero-entry .subtle-button{font-size:14px}.hero-note{font-size:11px;gap:11px}.section-title h2{font-size:29px}.case-copy h3{font-size:31px}.case-copy p{font-size:15px}.case-meta,.case-bottom{font-size:12px}.case-copy{padding:21px}.filter{font-size:14px;padding-left:11px;padding-right:11px}.config h3{font-size:29px}.config .notice{font-size:15px}.mini-note{font-size:13px}.config .primary,.random{font-size:15px}.game-title h1{font-size:27px}.stat strong{font-size:25px;min-width:3.15em}.stat small{font-size:11px}.game-stats{gap:10px}.game-nav{gap:10px}.surface,.modal-surface{font-size:19px}.game-tools>span{font-size:11px}.game-tools{gap:10px}.conversation-head{font-size:13px}.conversation-head small{font-size:11px}.message-body{font-size:17px}.chat-actions .secondary{font-size:14px}.chip{font-size:12px}.dialog-head h2{font-size:28px}.dialog-body p,.rule-list{font-size:16px}.truth p{font-size:19px}.result-top h1{font-size:34px}.result-panel h2{font-size:29px}.result-top .eyebrow{font-size:9px}.footer{font-size:11px}.prototype-note{font-size:12px}.tutorial-actions .primary,.tutorial-actions .secondary{font-size:14px}}
+@media(max-width:380px){.hero .desc{font-size:13px}.hero-entry{gap:17px}.hero-note{font-size:10px;gap:9px}.game-title h1{font-size:23px}.stat strong{font-size:22px}.stat small{font-size:10px}.game-stats{gap:8px}.section-title h2{font-size:27px}.case-copy{padding:18px}.case-copy h3{font-size:28px}.game-tools>span{font-size:10px;max-width:130px}.game-tools{gap:8px}}
+
+/* 夜汤第一版字标：保留原始透明素材，按比例展示。 */
+.brand{padding:4px 0;min-height:58px;flex-shrink:0}.brand-lockup{display:flex;flex-direction:column;align-items:center;gap:5px}.brand-logo{display:block;width:132px;height:44px;object-fit:contain}.brand .brand-lockup small{font-family:var(--sans);font-size:10px;letter-spacing:.16em;line-height:1.4}.boot-logo{width:240px;height:80px;object-fit:contain;margin-bottom:25px}
+.rule-four span{white-space:nowrap;min-width:0}
+@media(max-width:680px){.rule-four span{font-size:clamp(16px,5vw,20px);padding-left:0;padding-right:0}}
+@media(max-width:680px){.brand-logo{width:108px;height:36px}.brand .brand-lockup small{font-size:8px;letter-spacing:.12em}.brand{min-height:52px}.topbar{min-height:84px}.boot-logo{width:195px;height:65px}}
+@media(max-width:380px){.brand-logo{width:102px;height:34px}.brand .brand-lockup small{display:block;font-size:8px}.top-actions{gap:5px}}

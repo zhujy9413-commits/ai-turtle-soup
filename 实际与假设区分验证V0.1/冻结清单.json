@@ -1,0 +1,14 @@
+{
+  "signature": "b73b2afdd312aaac675fc8167eac62a0b0004235d3b8e7357b546d65decb40fa",
+  "sha256": {
+    "测试计划.json": "752f6b48e6b4143721268f311fc48bf033dc049b3067f0c090fb6888f6b5a22b",
+    "人工判分/预期结果.json": "aaae8aa7344372edb321d522a777f67e9d1e24a83de9dadfc15b1f9af2c96f3c",
+    "主持配置/系统指令.txt": "9b02f06d49ec4ad800ca20176be310b3837a63b6222e7a949f800144e8e35bef",
+    "主持配置/调用配置.json": "cbb5e4f0b20ec98c70bd9c7f59d1c6d848588b001c090db7c5de483ebd2ce2a3",
+    "模型输入/用例.json": "92af02c2062c99ee7883de7f3e30fddc73cdfe17fc9fee6ab8a9ac324862cffb",
+    "模型输入/故事/S02.json": "dc2f978fad23439d03477c9b7ef50267de73202a264ba109b14feed528d273b8",
+    "模型输入/故事/S06.json": "c34847cf8e940d52d31ce4494c74113ab9c1dca78158fa3dddda3d482b3734f2",
+    "模型输入/故事/S07.json": "7a634e15a557726dbbecb15e80c398946b11607fd21c721a7e55bf034fc27678"
+  },
+  "locked_before_api": true
+}

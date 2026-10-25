@@ -1,0 +1,101 @@
+{
+  "signature": "f8c71d2ffde5b0ae2b479d1705651b56f873f85e03e1606e568087e28ad1b066",
+  "cases": [
+    {
+      "id": "D-01",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "D-01-U",
+        "text": "假如这一晚我始终没有有意识地回应女人呼名，转移也没有被固定，到了天亮病痛会自动回到女人身上吗？"
+      }
+    },
+    {
+      "id": "D-02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "D-02-U",
+        "text": "只讨论一个与实际故事不同的假设：当夜没有有效应答，也没有固定。天亮会撤回暂时转移吗？"
+      }
+    },
+    {
+      "id": "D-03",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "D-03-U",
+        "text": "如果当夜没有固定，天亮后暂时转到我身上的病痛会撤回吗？"
+      }
+    },
+    {
+      "id": "D-04",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "D-04-U",
+        "text": "按故事实际经过，我已清醒回应女人呼名。到了天亮，病痛自动回到了女人身上吗？"
+      }
+    },
+    {
+      "id": "D-05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "D-05-U",
+        "text": "在本局实际结尾，转移已被固定，我仍需别人照料吗？"
+      }
+    },
+    {
+      "id": "D-06",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "D-06-U",
+        "text": "我有一个反事实推测：没回应就没有固定，因此天亮会恢复转移前的病痛归属。这符合规则吗？"
+      }
+    }
+  ],
+  "expected": {
+    "D-01": {
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": []
+    },
+    "D-02": {
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": []
+    },
+    "D-03": {
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": []
+    },
+    "D-04": {
+      "expected_action": "answer",
+      "expected_label": "否",
+      "required_audit_flags": []
+    },
+    "D-05": {
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": []
+    },
+    "D-06": {
+      "expected_action": "answer",
+      "expected_label": "是",
+      "required_audit_flags": []
+    }
+  },
+  "purpose": "主测试已经停止。仅区分显式假设与实际经过，不改变原评分或补算主测试通过。",
+  "max_new_calls": 6,
+  "planned_cumulative_attempts": 117,
+  "independent_review": false
+}

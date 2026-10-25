@@ -1,0 +1,16 @@
+{
+  "signature": "5e5d922b7bdf6be6b2d494e4df91f5f1964fe05e069ddfa08c6d8ee985666ebe",
+  "sha256": {
+    "测试计划.json": "1243831659b531609834c36d24c1a859b94ce519ec3354d5a75c2ab6bb836c9c",
+    "人工判分/预期结果.json": "f8bed9b31b1619b28eb137bcae7442837252a832a186934fd0d10bed73e7db32",
+    "主持配置/安全澄清模板.json": "f14b130159c399d2d3d6cc90e2fce6b61ebd36e877f776979362ff5f2bc49d02",
+    "主持配置/系统指令V0.1.7.txt": "586dea1aeb46595f9bf5e44e13648ed60017d24c8484d2566003eec48efec425",
+    "主持配置/调用配置.json": "23cefa9643a80108a7e53b90837345d86c224f638cbf176a16be43991f97c46c",
+    "模型输入/用例.json": "2b537d3871c55aab7e952fa7b8de526e70ec80799496fe865d5cb8db8db401e3",
+    "模型输入/故事/S02.json": "dc2f978fad23439d03477c9b7ef50267de73202a264ba109b14feed528d273b8",
+    "模型输入/故事/S06.json": "c34847cf8e940d52d31ce4494c74113ab9c1dca78158fa3dddda3d482b3734f2",
+    "模型输入/故事/S07.json": "7a634e15a557726dbbecb15e80c398946b11607fd21c721a7e55bf034fc27678",
+    "执行工具/运行澄清验证.py": "b5c4fafaac77dac96f13118e38e5f7d9b4390a58083616d451e881fea0fc2b1b"
+  },
+  "locked_before_api": true
+}

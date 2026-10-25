@@ -1,0 +1,203 @@
+{
+  "version": "0.1",
+  "cases": [
+    {
+      "id": "G01-1",
+      "group": "G01",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G01-1-U",
+        "text": "在我回应姓名之前，女人就已经暂时恢复了行动能力吗？"
+      }
+    },
+    {
+      "id": "G01-2",
+      "group": "G01",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G01-2-U",
+        "text": "我应答以前，女人就已经能行动了吗？"
+      }
+    },
+    {
+      "id": "G01-3",
+      "group": "G01",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G01-3-U",
+        "text": "女人必须等到我应答之后，才在当晚首次恢复行动吗？"
+      }
+    },
+    {
+      "id": "G02-1",
+      "group": "G02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G02-1-U",
+        "text": "我应答之前，病痛就已经暂时转到我身上了吗？"
+      }
+    },
+    {
+      "id": "G02-2",
+      "group": "G02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G02-2-U",
+        "text": "我还没回应她叫名字时，就已开始承受她的病痛了吗？"
+      }
+    },
+    {
+      "id": "G02-3",
+      "group": "G02",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G02-3-U",
+        "text": "必须等我应答后，病痛才第一次转到我身上吗？"
+      }
+    },
+    {
+      "id": "G03-1",
+      "group": "G03",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G03-1-U",
+        "text": "午夜钟铃响时，原病人已离床而我睡在这张特殊病床上，会先触发暂时转移吗？"
+      }
+    },
+    {
+      "id": "G03-2",
+      "group": "G03",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G03-2-U",
+        "text": "女人离开这张特殊病床，我在上面睡着，到了午夜钟响，病痛会先暂时转给我吗？"
+      }
+    },
+    {
+      "id": "G03-3",
+      "group": "G03",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G03-3-U",
+        "text": "睡在普通床上，也会触发同样的病痛转移吗？"
+      }
+    },
+    {
+      "id": "G04-1",
+      "group": "G04",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G04-1-U",
+        "text": "病痛已暂时转移后，原病人亲自叫我的名字，我在当夜天亮前清醒回应，会固定转移吗？"
+      }
+    },
+    {
+      "id": "G04-2",
+      "group": "G04",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G04-2-U",
+        "text": "在暂时转移期间，天亮前我有意识地应了原病人的呼名，病痛会因此留下来吗？"
+      }
+    },
+    {
+      "id": "G04-3",
+      "group": "G04",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G04-3-U",
+        "text": "用原病人呼名的录音代替她本人，我清醒回应也能固定转移吗？"
+      }
+    },
+    {
+      "id": "G05-1",
+      "group": "G05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G05-1-U",
+        "text": "假如当晚没有有效应答，转移没有固定，病痛会在天亮自行撤回吗？"
+      }
+    },
+    {
+      "id": "G05-2",
+      "group": "G05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G05-2-U",
+        "text": "如果我没有回应原病人叫名字，暂时转移会在天亮时自动解除吗？"
+      }
+    },
+    {
+      "id": "G05-3",
+      "group": "G05",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G05-3-U",
+        "text": "当晚没有有效应答固定，暂时病痛也会在天亮后继续留在我身上吗？"
+      }
+    },
+    {
+      "id": "G06-1",
+      "group": "G06",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G06-1-U",
+        "text": "本局我已回应原病人呼名并固定转移，天亮时病痛仍留在我身上吗？"
+      }
+    },
+    {
+      "id": "G06-2",
+      "group": "G06",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G06-2-U",
+        "text": "故事实际发生了清醒应答，所以到了天亮，病痛仍由我承受，对吗？"
+      }
+    },
+    {
+      "id": "G06-3",
+      "group": "G06",
+      "story_id": "S06",
+      "channel": "formal_question",
+      "history": [],
+      "current_message": {
+        "id": "G06-3-U",
+        "text": "本局我已经应答固定，病痛仍会在天亮自动撤回吗？"
+      }
+    }
+  ]
+}

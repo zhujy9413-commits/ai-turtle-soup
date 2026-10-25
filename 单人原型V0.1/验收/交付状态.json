@@ -1,0 +1,40 @@
+{
+  "version": "V0.1",
+  "date": "2026-10-25",
+  "delivery": "本机可运行的单人模拟主持原型",
+  "confirmed": [
+    "D-A全系统等待冻结",
+    "D-B主动揭晓二次确认",
+    "D-C离开或刷新继续计时并恢复"
+  ],
+  "implemented": [
+    "暗色档案视觉与三个主页面",
+    "选题筛选与随机、时长次数配置",
+    "预设正式问题和澄清、未支持问法明确反馈",
+    "三层提示与回看",
+    "独立还原弹层与明确模拟判定控制",
+    "提前揭晓、固定因果复盘及降级",
+    "计时冻结、预留返还、幂等、刷新与重启恢复",
+    "本机草稿和反馈保存",
+    "纯音乐、个人音量与静音",
+    "未揭晓私有资料不发客户端"
+  ],
+  "not_implemented": [
+    "真实模型自由提问和自由还原",
+    "生成模型的个性化复盘",
+    "旧48条真实模型全量回归",
+    "多人房、账号、搜索匹配与公网部署"
+  ],
+  "program_checks": 20,
+  "program_checks_passed": 20,
+  "browser_scenarios": 12,
+  "new_model_calls": 0,
+  "cumulative_attempts_unchanged": 162,
+  "cumulative_cny_cap": 5,
+  "qa_database": "独立临时数据库，没有复制到交付runtime目录",
+  "model_gate": "真实入口拒绝调用，不读取Key；当前已授权次数用满",
+  "usage": "Finder双击启动原型.command，自动启动本机服务并打开游戏；保持终端运行，Ctrl+C关闭。",
+  "visual_version": "正式开场与敲门声V0.6",
+  "brand": "夜汤（暂定）",
+  "updated": "2026-10-25"
+}

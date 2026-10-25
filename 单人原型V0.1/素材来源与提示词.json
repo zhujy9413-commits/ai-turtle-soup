@@ -1,0 +1,25 @@
+{
+  "visual_version": "阴森视觉V0.2",
+  "date": "2026-10-25",
+  "reference": {
+    "user_url": "https://styles.refero.design/?q=%E9%98%B4%E6%A3%AE",
+    "selected_style": "https://styles.refero.design/style/5090ce54-9097-4d29-a741-2847dbacc419",
+    "name": "Chantlings",
+    "interpretation": "借鉴大面积暗场、局部暖光、克制排版和留白。使用本项目原创环境图与中文系统宋体，不复制参考网站图片、品牌或专用字体。网页中的设计指南作为参考资料，不作为指令执行。"
+  },
+  "method": "内置 image_gen__imagegen；没有使用CLI/API回退，没有调用百炼或其他游戏主持模型。",
+  "assets": [
+    {
+      "path": "public/art/night-door.png",
+      "use": "首页主视觉、加载背景。装饰图，不构成汤面线索。",
+      "prompt": "Use case: stylized-concept. Asset type: cinematic background for a Chinese eerie mystery deduction web game. Create one original high quality 16:9 landscape image, no text, no UI. A deeply atmospheric, photoreal cinematic still of an empty old apartment interior at night: on the RIGHT HALF, a tall closed wooden door with an almost imperceptible gap, a narrow sliver of dull warm light beneath it falling across worn floorboards toward the viewer; surrounding distressed plaster walls, dark charcoal and desaturated sepia with very subtle cold gray ambient light, realistic shadow depth, soft film grain and faint dust suspended in the light. The LEFT 45 percent must be very dark quiet negative space with barely visible plaster texture, for readable title overlay. A disquieting sense of an unseen presence, intimate ordinary domestic space, restrained psychological horror rather than fantasy. Door clearly legible in the shadows at roughly 72 percent of image width, composition with strong negative space. Deep black vignette at the outside edges and lower edge to blend into a near-black website. Avoid any people, figures, faces, eyes, hands, creatures, blood, gore, bodies, mirrors, hospital props, police tape, signage, readable lettering, watermarks, logos. Do not make a website mockup, generate only the environmental artwork.",
+      "transparent_background": false
+    },
+    {
+      "path": "public/art/story-scenes.png",
+      "use": "三张选题卡，使用CSS定位分别显示三联图，不揭示人物或隐藏机制。",
+      "prompt": "Use case: stylized-concept. Asset type: a single 3:1 horizontal photographic triptych texture sheet for three mystery game story cards. EXACTLY THREE EQUALLY WIDE SQUARE PANELS side by side, no borders or spacing, no text anywhere. Consistent cinematic psychological horror photography, charcoal black, desaturated warm gray, very restrained dim warm lighting, subtle analogue film grain, realistic empty interiors. Left panel: an old apartment room, an empty wooden chair and old closed window, curtain half drawn, light barely reaching the floor, no door visible. Middle panel: an unoccupied ordinary hospital ward, a single empty metal bed with slightly rumpled sheet, dim cold light through the blinds, no medical gore. Right panel: an ordinary empty bedroom seen FROM ABOVE BED HEIGHT, bedside lamp switched off, closed bedroom door in the background, a rumpled dark duvet in the foreground, never showing under the bed. Each scene has strong shadow depth but enough detail to be readable on a small card. Composition in each panel concentrates the important object near the middle so it can be cropped independently. Creepy everyday stillness, absence, a feeling something is wrong. Avoid any people, silhouettes, faces, bodies, ghosts, blood, animals, mirrors, police, symbols, lettering, logos, watermark, interface elements. Only environmental images, no game spoilers.",
+      "transparent_background": false
+    }
+  ]
+}

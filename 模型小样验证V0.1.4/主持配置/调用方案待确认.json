@@ -1,0 +1,219 @@
+{
+  "status": "V0.1.6执行15/20条，14条动作答案符合，R06-03关键时序答反；停止，48条未启动。",
+  "account_status": {
+    "bailian": "当前北京业务空间地址与新本机密钥鉴权已成功；本轮结束，临时密钥已删除。",
+    "deepseek": "用户表示也有账号，具体API平台与模型未核对"
+  },
+  "primary_model": "qwen3.7-flash-2026-07-15",
+  "fallback_policy": "若账号不可用该快照，先报告可用项，不静默换版本",
+  "region_proposal": "华北2（北京）",
+  "api_host": "https://ws-6sartjfe1i7cpkgw.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "enable_thinking": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "turtle_host_verdict",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "answer",
+              "clarify",
+              "invalid",
+              "decline",
+              "incomplete",
+              "conflict",
+              "complete",
+              "content_gap"
+            ]
+          },
+          "answer": {
+            "type": "string",
+            "enum": [
+              "",
+              "是",
+              "否",
+              "无关",
+              "不清楚"
+            ]
+          },
+          "fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "covered_nodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "audit_flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "unsupported_detail",
+                "history_conflict",
+                "core_gap"
+              ]
+            }
+          },
+          "clarification": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "answer",
+          "clarification",
+          "fact_ids",
+          "covered_nodes",
+          "audit_flags"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "input_token_guard": 32000,
+  "output_token_limit_proposal": 512,
+  "sampling_parameters": "首测保持供应商默认并保存实际请求；对比时固定相同条件，不宣称完全确定性",
+  "network_tools": false,
+  "automatic_retries": 0,
+  "planned_model_runs": {
+    "targeted": 20,
+    "full_once": 48,
+    "full_second": 48,
+    "new_configuration_max_unique_case_repeats": 110,
+    "previous_responses": 8,
+    "planned_cumulative_responses": 118,
+    "all_versions_total_max_requests": 150,
+    "plan_status": "已因关键失败停止；原规划不是已执行结果。后续修订仍累计150次/5元。"
+  },
+  "smoke_cases": [
+    "S02-02",
+    "S02-05",
+    "S06-05",
+    "S06-13",
+    "S07-02",
+    "S07-10",
+    "R02-01",
+    "R02-02",
+    "R02-03",
+    "R02-04",
+    "R07-05",
+    "R02-06",
+    "R02-07",
+    "R06-01",
+    "R06-02",
+    "R06-03",
+    "R07-01",
+    "R07-02",
+    "R07-03",
+    "R07-04"
+  ],
+  "smoke_then_full": "先20条针对性复测并人工审阅；再跑原48条一次，复核后才开第二次。新版初测中与48条相同的6条计入新版第一次重复。旧版结果不抵新版通过。累计最多150次/5元。",
+  "budget_cap_cny_proposal": 5,
+  "budget_confirmed": true,
+  "reasoning": "先测选定主候选。DeepSeek作为后续对照选项，型号、能力、价格和预算另核对，尚未比较优劣。",
+  "api_key_policy": "优先读取DASHSCOPE_API_KEY；本机配置入口也可将密钥以0600权限暂存于私有系统临时目录，30分钟后不接受。密钥不进入聊天、交付目录或日志，测试完成后删除临时密钥。",
+  "budget_approval": {
+    "date": "2026-10-25",
+    "basis": "在已展示最多150次、封顶5元方案后，用户指示继续；随后明确选择华北2（北京）。",
+    "cap_cny": 5,
+    "max_requests": 150
+  },
+  "execution": {
+    "runner": "执行工具/运行小样.py",
+    "setup": "配置百炼密钥.command",
+    "automatic_retries": 0,
+    "max_completion_tokens": 512,
+    "single_request_reserve_cny": 2,
+    "input_guard_note": "未接入官方分词器。发送前用32KB请求字节线防止意外增长，成功响应按usage核对32K token范围，超出即停止后续；字节数不是token计数。成本保护按官方最大输入区间预留2元，不依赖字节估算。",
+    "smoke_review": "六条初测仍需人工检查澄清是否泄底、还原是否合理，之后才允许全量。",
+    "format_revision": "V0.1.2：模型不生成四词展示文案；answer直接用于展示，仅clarify单独提供澄清文字。",
+    "id_constraint": "V0.1.3：每次请求将fact_ids与covered_nodes的JSON Schema枚举限制为本题已有事实和节点编号。",
+    "state_path": "/Users/zhujiayi/Documents/ChatGPT/AI 海龟汤/work/model_api_execution_v014",
+    "clarification_revision": "V0.1.6：公开阅读和命题范围优先检查；禁止擅自补交换对象。"
+  },
+  "version": "0.1.6",
+  "full_cases": [
+    "S02-01",
+    "S02-02",
+    "S02-03",
+    "S02-04",
+    "S02-05",
+    "S02-06",
+    "S02-07",
+    "S02-08",
+    "S02-09",
+    "S02-10",
+    "S02-11",
+    "S02-12",
+    "S02-13",
+    "S02-14",
+    "S02-15",
+    "S02-16",
+    "S02-17",
+    "S02-18",
+    "S06-01",
+    "S06-02",
+    "S06-03",
+    "S06-04",
+    "S06-05",
+    "S06-06",
+    "S06-07",
+    "S06-08",
+    "S06-09",
+    "S06-10",
+    "S06-11",
+    "S06-12",
+    "S06-13",
+    "S06-14",
+    "S06-15",
+    "S06-16",
+    "S07-01",
+    "S07-02",
+    "S07-03",
+    "S07-04",
+    "S07-05",
+    "S07-06",
+    "S07-07",
+    "S07-08",
+    "S07-09",
+    "S07-10",
+    "S07-11",
+    "S07-12",
+    "S07-13",
+    "S07-14"
+  ],
+  "smoke_review": "自动检查不能代替语义审阅；逐条审阅澄清是否泄底、有无过度澄清、能否继续提问。",
+  "official_price_checked_at": "2026-10-25",
+  "endpoint_revision": {
+    "date": "2026-10-25",
+    "basis": "用户提供当前密钥对应API Host；已核对百炼北京业务空间域名迁移说明。",
+    "source": "https://help.aliyun.com/zh/model-studio/beijing-access-information",
+    "previous_request": "HTTP401，未返回usage，保留2元预留，不当作实付或模型结果。"
+  },
+  "material_folder_note": "沿用V0.1.4目录，当前主持指令版本V0.1.6；保留V0.1.4、V0.1.5失败。",
+  "excluded_scoring_cases": [
+    "R02-05"
+  ],
+  "case_review_note": "R02-05看过模型输出后因题目歧义排除计分；不算模型通过或失败。新增R07-05，主持指令未再调整。",
+  "latest_run": {
+    "version": "0.1.6",
+    "responses_current_configuration": 15,
+    "targeted_plan": 20,
+    "matches_action_answer": 14,
+    "critical_failure": "R06-03",
+    "full_started": false,
+    "cumulative_request_attempts": 41,
+    "cumulative_model_responses": 39,
+    "cumulative_original_price_estimate_cny": 0.02234,
+    "temporary_key_removed": true
+  }
+}

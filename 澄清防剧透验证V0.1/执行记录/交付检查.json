@@ -1,0 +1,11 @@
+{
+  "frozen_hashes_ok": true,
+  "source_syntax_ok": true,
+  "ended_gate_before_key_read": true,
+  "calls_150_remaining_0": true,
+  "known_failure_twice_identical_request_and_display": true,
+  "one_scope_failure_preserved": true,
+  "temporary_key_removed": true,
+  "no_key_pattern_in_deliverables": true,
+  "network_calls_in_check": 0
+}

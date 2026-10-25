@@ -1,0 +1,25 @@
+{
+  "experiment": "scope_validation_v01",
+  "model": "qwen3.7-flash-2026-07-15",
+  "endpoint": "https://ws-6sartjfe1i7cpkgw.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "prompt_version": "V0.1.6不变",
+  "new_call_limit": 33,
+  "initial_cumulative_calls": 117,
+  "cumulative_call_limit": 150,
+  "cumulative_cny_limit": 5,
+  "unique_cases": 29,
+  "exact_repeats": 4,
+  "categories": {
+    "actual": 12,
+    "explicit_hypothesis": 12,
+    "underspecified_scope_control": 5
+  },
+  "limits": [
+    "5条条件不清楚问题为刻意设计的范围控制题，不代表自然玩家问题分布。",
+    "S07两条假设直接规定发送者/知情状态，作为简单范围控制，不据此宣称复杂反事实推理通过。",
+    "与上一轮提示词及故事输入完全一致；不在看到输出后改预期或重问到通过。",
+    "这是一次独立诊断，不重开上一轮已停止主测试。标签偏差与澄清展示需人工复核后才继续后续独立用例；鉴权、未知费用、结构错误或泄漏则停止。",
+    "所有请求无跨用例会话；不能代替长对话、多人实测或完整上线验收。"
+  ],
+  "credential_policy": "本轮结束删除临时密钥，不存入交付材料。"
+}

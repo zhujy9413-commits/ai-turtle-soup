@@ -1,0 +1,354 @@
+{
+  "version": "0.1",
+  "status": "事前锁定；作者复核，非独立盲测。",
+  "cases": [
+    {
+      "id": "X02-01",
+      "category": "时序新表达",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F02",
+        "F08"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X02-02",
+      "category": "因果新表达",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F03",
+        "F10"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X02-03",
+      "category": "证据与结局分离",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X02-04",
+      "category": "条件边界",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F05"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X02-05",
+      "category": "知情时间",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F07"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X02-06",
+      "category": "来源边界",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F05"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X02-07",
+      "category": "公开旁白误读",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "evidence_reference": [],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "澄清仅可纠正公开旁白身份，不得透露回声来源或时间机制。",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X02-08",
+      "category": "正式还原新表达",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F05",
+        "F08",
+        "F10",
+        "F11"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-01",
+      "category": "具体事件定位",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-02",
+      "category": "误认与条件",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F07",
+        "F12"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-03",
+      "category": "清醒条件",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F09"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-04",
+      "category": "前置条件",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-05",
+      "category": "反事实分支",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-06",
+      "category": "代答边界",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F07",
+        "F09"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-07",
+      "category": "后果与触发分离",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F04",
+        "F13"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X06-08",
+      "category": "正式还原新表达",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F04",
+        "F06",
+        "F07",
+        "F10",
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-01",
+      "category": "设备与发送者",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F03"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-02",
+      "category": "角色知情范围",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-03",
+      "category": "旧习惯与本局分离",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-04",
+      "category": "主人公误认",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F10"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-05",
+      "category": "求救来源",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-06",
+      "category": "人与动物",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F13"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-07",
+      "category": "报警时序",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F12"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    },
+    {
+      "id": "X07-08",
+      "category": "正式还原新表达",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F10",
+        "F12"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "label_review": "锁定后执行，作者依据原汤底复核；非独立盲测。"
+    }
+  ]
+}

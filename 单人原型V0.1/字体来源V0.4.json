@@ -1,0 +1,12 @@
+{
+  "family": "Long Cang",
+  "author": "The Long Cang Project Authors",
+  "source": "https://github.com/google/fonts/tree/main/ofl/longcang",
+  "license": "SIL Open Font License 1.1",
+  "license_file": "public/fonts/LongCang-OFL.txt",
+  "local_asset": "public/fonts/long-cang-title.ttf",
+  "characters": "有些真相，藏在灯照不到的地方。",
+  "css_source": "https://fonts.googleapis.com/css2?family=Long+Cang&display=swap&text=%E6%9C%89%E4%BA%9B%E7%9C%9F%E7%9B%B8%EF%BC%8C%E8%97%8F%E5%9C%A8%E7%81%AF%E7%85%A7%E4%B8%8D%E5%88%B0%E7%9A%84%E5%9C%B0%E6%96%B9%E3%80%82",
+  "font_source": "https://fonts.gstatic.com/l/font?kit=LYjAdGP8kkgoTec8zkRgrWgCt19dvCw_E4wXWtA0ujWt4zFZFgWQn6-Oi0cCmxkWF0x3UFuNnfivNlsv1ejE&skey=429db178d90bd0ed&v=v21",
+  "usage": "仅首页主标题；正文、规则、按钮和局内阅读维持原有字体；运行时不请求外部字体服务"
+}

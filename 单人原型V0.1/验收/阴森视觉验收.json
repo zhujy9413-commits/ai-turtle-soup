@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-25",
+  "scope": "单人原型V0.1的阴森视觉V0.2修订；保持现有模拟主持流程",
+  "program_and_http_tests": {
+    "passed": 20,
+    "total": 20,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v",
+    "note": "初次运行受沙箱回环端口限制，获准后重跑全部通过。"
+  },
+  "javascript_syntax": "node --check public/app.js通过",
+  "assets": {
+    "night_door_http": 200,
+    "story_scenes_http": 200,
+    "theme_css_http": 200,
+    "png_mime": "image/png",
+    "private_routes": "沿用显式静态资源白名单，私有目录拒绝访问，既有接口测试通过"
+  },
+  "home_responsive": [
+    {
+      "width": 320,
+      "overflow": false,
+      "heading_font_px": 26,
+      "heading_height_px": 86
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "heading_font_px": 31,
+      "heading_height_px": 102
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "heading_font_px": 46,
+      "heading_height_px": 136
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "heading_font_px": 50,
+      "heading_height_px": 148
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "heading_font_px": 63,
+      "heading_height_px": 186
+    }
+  ],
+  "browser_flow": [
+    "首页挑选按钮滚动至题库",
+    "选择S06后配置标题同步",
+    "开局后正式提问启用",
+    "预设健康问题回答是、剩余次数39",
+    "点击提示后剩余层数2且已公开提示可回看",
+    "390px还原弹窗完整显示并可取消",
+    "查看汤底经过二次确认",
+    "固定复盘完成后返回按钮启用",
+    "返回选题成功",
+    "S02的咳嗽问题回答否"
+  ],
+  "dialog_390px": {
+    "x": 14,
+    "y": 174.07,
+    "width": 362,
+    "height": 495.85,
+    "viewport_height": 844
+  },
+  "visual_fixes": [
+    "手机标题避免单独尾字换行",
+    "三联场景图按比例裁切，避免挤压",
+    "推理正文提高至暖灰18px，背景低透明度",
+    "新增装饰图aria-hidden，保留按钮语义与减少动效偏好",
+    "按最新反馈去掉局内具象场景，保留统一色调、字体与局部暖光"
+  ],
+  "browser_note": "浏览器存在注入扩展悬浮入口与PAGE_SCRIPT_ERROR通用警告，未根据警告断言应用零错误；本轮交互验收均完成，截图保留浏览器实际状态。",
+  "provider_calls": 0,
+  "limitations": [
+    "仍为本机模拟主持",
+    "不是线上发布验收",
+    "未测试真实自由问答与AI个性化复盘",
+    "恐怖氛围是否符合用户偏好仍需用户体验反馈"
+  ],
+  "data": "本轮浏览器操作使用独立临时数据目录，不改用户runtime记录。",
+  "user_direction": "用户确认主视觉可用，进入后页面延续其风格，不要求具体物件；局内移除场景条与照片背景，采用抽象暖光、暗色表面和一致字体。"
+}

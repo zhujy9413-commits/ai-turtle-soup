@@ -1,0 +1,10 @@
+{
+  "source_syntax_ok": true,
+  "locked_material_hashes_ok": true,
+  "blocked_before_credential_read": true,
+  "network_calls_in_check": 0,
+  "cumulative_calls_143": true,
+  "remaining_7": true,
+  "temporary_key_removed": true,
+  "no_key_pattern_in_deliverables": true
+}

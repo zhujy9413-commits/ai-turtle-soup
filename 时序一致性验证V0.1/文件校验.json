@@ -1,0 +1,15 @@
+{
+  "version": "0.1",
+  "sha256": {
+    "index.html": "c9dc4cb46d2c03a19bc9108459f96ab2f9bf862313cbbd368b83a5670a7409dc",
+    "主持配置/固定系统指令.txt": "9b02f06d49ec4ad800ca20176be310b3837a63b6222e7a949f800144e8e35bef",
+    "主持配置/实验配置.json": "422cb4a3c67e1a281b70a72158cd16a1652168197fe5ac898b4b0af10439a16c",
+    "人工判分/预期结果.json": "34078e7af7855a595e8568a209cd601de0e94456f78d78ed060d98a58e0d4ca9",
+    "执行工具/基础调用工具.py": "1d94b685ea71af64bc585b3b2bc282a5dddf9037691dad972a842c11fcbc9f81",
+    "执行工具/时序验证.py": "ea6b09e1de8dd90e97574581bbeeba5a0fb458951a7e2bb5cdd1528997024e23",
+    "来源核对.json": "7c8a72050e85f3174e86eba513d58641f633bdf32193e2301b5c24fe9c6969dd",
+    "模型输入/S06原始故事.json": "97c8f96adb19df4a97793f8b2b1d3a09f2322453b47d35b7943017c8b0c30058",
+    "模型输入/事件与触发条件.json": "99b243556afe33f9f2496b818f5c2ffc714c1d0a9b995e61e104376cd6692cb3",
+    "模型输入/冻结用例.json": "27d116a1a6d33a8ad9a296dace86aec6a5da4b61f0f0c79ef02c29dccca48650"
+  }
+}

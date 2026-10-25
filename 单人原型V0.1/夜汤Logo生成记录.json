@@ -1,0 +1,11 @@
+{
+  "name": "夜汤",
+  "status": "第一版字标，暂定品牌",
+  "tool": "内置 imagegen",
+  "transparent_background": true,
+  "prompt": "Use case: logo-brand. Asset type: original Chinese wordmark logo for an eerie text-based mystery deduction game named 夜汤. Create a polished logo on a truly transparent background, horizontal composition, tightly framed around the actual lettering with only a small transparent safe margin. Text must be EXACTLY two simplified Chinese characters, left to right: 夜汤. Do not add any other text, letters, slogan, numbers or readable stamp characters. The wordmark should feel hand-lettered by a skilled contemporary Chinese brush artist: natural fluid strokes, gently irregular pressure and dry-ink edges, a few restrained broken fibers, asymmetrical but balanced rhythm. Atmospheric and unsettling, quiet psychological horror, not rigid printed type, not geometric, not a cheerful restaurant sign, not heavy traditional ceremonial calligraphy. Keep both characters immediately legible, especially the water radical of 汤, with enough stroke weight to read at small website-header size. Main strokes are cool pale gray / aged silver (#c8c4cb) for use on near-black backgrounds; keep their interiors predominantly solid, with subtle dry brush detail only along edges. Add a single very restrained deep oxblood-red accent, such as a tiny irregular vertical ink mark integrated near the lower-right of the lettering; this should suggest a faint red light or trace, never a pool of blood. No illustration, no door drawing, no bowl, no turtle, no skulls, no people, no faces, no frame, no plaque, no background, no glowing effects, no gradients, no mockup. The logo itself should fill most of a wide 3:1 canvas. Output only the standalone transparent wordmark asset.",
+  "source": "/Users/zhujiayi/.codex/generated_images/01a163b8-5aba-71e0-b015-578f97cf58cd/exec-f191040d-eb2b-4bde-833b-46bb1100f814.png",
+  "asset": "public/art/yetang-logo.png",
+  "format": "PNG，透明背景，2172×724",
+  "note": "生成式位图字标；未制作矢量母版。文件夹、仓库名保持原样。"
+}

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-25",
+  "version": "0.1.4",
+  "status": "blocked_invalid_api_key",
+  "endpoint_updated_from_user": true,
+  "attempted_requests": 2,
+  "new_model_verdicts": 0,
+  "last_http_status": 401,
+  "provider_error_code": "invalid_api_key",
+  "request_id": "639c47cb-d9b6-91ed-be64-00c9570b78ef",
+  "automatic_retry": false,
+  "failure_history": [
+    {
+      "http_status": 401,
+      "phase": "smoke",
+      "provider_error_code": null
+    },
+    {
+      "http_status": 401,
+      "phase": "probe",
+      "provider_error_code": "invalid_api_key"
+    }
+  ],
+  "retained_reservations_cny": 4,
+  "cost_note": "两次401未返回usage；4元为保守预留，不是实付。未清零累计预算。后续实际付费调用前需复核这些预留及预算保护。",
+  "local_key_cleanup": "temporary_file_and_pointer_removed; platform key unchanged",
+  "model_quality_verdict": "not_evaluated",
+  "required_cloud_checks": [
+    "Key启用状态",
+    "Key归属北京地域及用户提供的业务空间",
+    "是否从创建弹窗复制了完整明文密钥"
+  ],
+  "official_sources": [
+    "https://help.aliyun.com/zh/model-studio/beijing-access-information",
+    "https://help.aliyun.com/zh/model-studio/error-code/"
+  ]
+}

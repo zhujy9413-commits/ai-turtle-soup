@@ -1,0 +1,75 @@
+{
+  "independent_blind_review": false,
+  "cases": [
+    {
+      "id": "P-01",
+      "expected_route": "clarify",
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "expected_template": "scope",
+      "required_audit_flags": [],
+      "rationale": "R-03逐字回归，不改变预期。"
+    },
+    {
+      "id": "P-02",
+      "expected_route": "clarify",
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "expected_template": "scope",
+      "required_audit_flags": [],
+      "rationale": "两个范围尚未选定，必须先澄清。"
+    },
+    {
+      "id": "P-03",
+      "expected_route": "clarify",
+      "expected_scope": "unresolved",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "expected_template": "scope",
+      "required_audit_flags": [],
+      "rationale": "历史有两个范围，当前仍未选择。历史是测试构造的公开夹具，非真实玩家实录。"
+    },
+    {
+      "id": "P-04",
+      "expected_route": "judge",
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "expected_template": null,
+      "required_audit_flags": [],
+      "rationale": "明确实际结尾已固定，天亮未撤回。"
+    },
+    {
+      "id": "P-05",
+      "expected_route": "judge",
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "expected_template": null,
+      "required_audit_flags": [],
+      "rationale": "明确未固定的假设，依固定规则天亮撤回。"
+    },
+    {
+      "id": "P-06",
+      "expected_route": "judge",
+      "expected_scope": "hypothetical",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "expected_template": null,
+      "required_audit_flags": [],
+      "rationale": "已经从两个范围选定假设，不能反复澄清。假设明确给出发送主体，属简单范围控制。"
+    },
+    {
+      "id": "P-07",
+      "expected_route": "judge",
+      "expected_scope": "actual",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "expected_template": null,
+      "required_audit_flags": [],
+      "rationale": "错误猜测仍是清楚的是非命题，不应澄清。"
+    }
+  ]
+}

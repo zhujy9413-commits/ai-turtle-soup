@@ -1,0 +1,45 @@
+{
+  "experiment": "public_scope_gate_v01",
+  "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+  "candidate_host_version": "V0.1.8",
+  "new_api_attempts": 12,
+  "scope_api_attempts": 8,
+  "scope_matches": 8,
+  "judge_api_attempts": 4,
+  "judge_matches": 4,
+  "unique_questions_tested": 7,
+  "question_executions": 8,
+  "complete_executions": 8,
+  "matched_executions": 8,
+  "known_failure_retest": {
+    "tested": true,
+    "same_request": true,
+    "same_scope_output": true,
+    "same_player_display": true
+  },
+  "bounded_regression_passed": true,
+  "global_acceptance_passed": false,
+  "cumulative_attempts": 162,
+  "authorized_cumulative_call_limit": 162,
+  "remaining_calls": 0,
+  "new_original_price_estimate_cny": 0.0054226000000000005,
+  "cumulative_original_price_estimate_cny": 0.12470900000000001,
+  "actual_invoice_verified": false,
+  "limits": [
+    "7条独立问题和1次已知失败重复，不能估计全量自然玩家准确率。",
+    "测试夹具的公开历史不是线上真实对话，未覆盖所有省略假设词的自然歧义。",
+    "包含简单条件直接给出事实的控制题，不能据此证明复杂反事实推理。",
+    "不与旧版在全套同一题组做配对对照，不能报告提升百分比或单一根因。",
+    "范围识别看不到汤底可减少隐藏事实干扰，但不保证它在所有问题上都会选对范围。"
+  ],
+  "runtime_tradeoff": "明确范围的提问需要串行两次调用，增加费用与等待；未选定范围仅一次调用。本轮只验证判定，不作全游戏延迟承诺。",
+  "independent_blind_review": false,
+  "credential_cleanup": {
+    "temporary_credential_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "platform_key_changed": false,
+    "at": 1792919934.1297479
+  },
+  "conclusion": "只看公开上下文的范围模块正确处理本组未选定与已选定范围，原R-03两次回归均先澄清；四条范围明确的提问保留正常作答。仅在本组固定回归下通过，未宣称整体准确率。"
+}

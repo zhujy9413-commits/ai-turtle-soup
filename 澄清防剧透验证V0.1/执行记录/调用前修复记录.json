@@ -1,0 +1,7 @@
+{
+  "issue": "执行器读取非必填category元数据抛KeyError，发生在请求发送和账本新增之前",
+  "fix": "元数据缺省为clarification_regression",
+  "api_attempts_before_and_after_fix": 143,
+  "model_messages_unchanged": true,
+  "frozen_before_first_call": true
+}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-25",
+  "story_source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/模型小样验证V0.1.4/模型输入/故事/S06.json",
+  "source_story_sha256": "97c8f96adb19df4a97793f8b2b1d3a09f2322453b47d35b7943017c8b0c30058",
+  "copied_story_sha256": "97c8f96adb19df4a97793f8b2b1d3a09f2322453b47d35b7943017c8b0c30058",
+  "baseline_prompt_sha256": "9b02f06d49ec4ad800ca20176be310b3837a63b6222e7a949f800144e8e35bef",
+  "story_changed": false,
+  "labels_sent_to_model": false,
+  "added_information": "B仅重组原汤底既有事实，不增加剧情。",
+  "expected_source": "原始S06.F03/F04/F06/F07/F09/F11/F13和实际汤底；作者拟定、尚无独立复核。"
+}

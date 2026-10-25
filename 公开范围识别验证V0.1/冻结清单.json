@@ -1,0 +1,18 @@
+{
+  "signature": "a69af7da4f088f420be8c9cc557e1a00bf94fa58febda9164c998bfe8bdb2564",
+  "sha256": {
+    "测试计划.json": "a1b8f3f6d80a17c2a802debdf858230e8a641f250aae3a14ac4187fcdc6c25c5",
+    "执行工具/运行公开范围验证.py": "25416b520c936d06ddc9d71912ce5558f165b3924aec2561d9301c2be4a58112",
+    "人工判分/预期结果.json": "e8419a2e2652bfff18098874e51da4336c6a2860b1a9ea18e20408213341d74f",
+    "主持配置/安全澄清模板.json": "f14b130159c399d2d3d6cc90e2fce6b61ebd36e877f776979362ff5f2bc49d02",
+    "主持配置/主持调用配置.json": "2d802cfa9939bff4934762b954558ecfed7c4b321b99214d85eeafd5a0ffe25b",
+    "主持配置/主持指令V0.1.8.txt": "fa6081e1338dcba7e8925a914d378de50ede5fbab5ae40f6b8409c87a4b708f2",
+    "主持配置/公开范围识别指令.txt": "d37b06ca6e4dc6d4b175c1ef85ae7fc86f9697d257225a08522a540f4170c128",
+    "主持配置/范围输出结构.json": "1d233098f662876c36ebc0072dc63ae0e5876f475f3fdc97e2c75bfbe1eafd3a",
+    "模型输入/用例.json": "3f71cf8d368be1d9ff5bbe666082d10e6dd772ee3ec8cf105e0d53bdbbd0063e",
+    "模型输入/故事/S02.json": "dc2f978fad23439d03477c9b7ef50267de73202a264ba109b14feed528d273b8",
+    "模型输入/故事/S06.json": "c34847cf8e940d52d31ce4494c74113ab9c1dca78158fa3dddda3d482b3734f2",
+    "模型输入/故事/S07.json": "7a634e15a557726dbbecb15e80c398946b11607fd21c721a7e55bf034fc27678"
+  },
+  "locked_before_api": true
+}
