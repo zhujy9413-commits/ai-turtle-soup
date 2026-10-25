@@ -1,0 +1,349 @@
+{
+  "version": "0.1",
+  "date": "2026-10-25",
+  "status": "初测完成，当前配置未通过澄清约定，未进入全量",
+  "model": "qwen3.7-flash-2026-07-15",
+  "region": "华北2（北京）",
+  "enable_thinking": false,
+  "current_signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+  "scope": {
+    "responses_all_versions": 8,
+    "current_cases": 6,
+    "repeats_each_current_case": 1,
+    "prior_format_failure_responses": 2,
+    "dns_connection_failure_records": 1,
+    "full_suite_started": false
+  },
+  "result": {
+    "meets_project_expectation": 5,
+    "does_not_meet_clarification_policy": 1,
+    "structural_checks_passed": 6,
+    "independent_review": false,
+    "general_accuracy": null
+  },
+  "cost": {
+    "authorized_cap_cny": 5,
+    "input_tokens": 15910,
+    "output_tokens": 598,
+    "original_price_estimate_cny": 0.0036604000000000007,
+    "billing_verified": false,
+    "note": "按北京地域本轮实际输入档原价估算，包含旧版失败，不扣缓存优惠，未核对最终账单。"
+  },
+  "latency": {
+    "min_ms": 1474,
+    "max_ms": 4160,
+    "scope": "8次模型请求读取完整响应的耗时，不是游戏端到端或并发指标。"
+  },
+  "current_cases": [
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S02-02",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902883.708394,
+      "request_sha256": "c3571542060062be57ee17bc0cb8d363c7949467a4ad941f6a24f0398bb2ac6c",
+      "request_id": "78070eac-7731-905b-a71d-fe1a05c15e6d",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 59,
+        "prompt_tokens": 1803,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 1803
+        },
+        "total_tokens": 1862
+      },
+      "estimated_cny": 0.0004078,
+      "latency_ms": 1495,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F04\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F04"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "回答否，引用F04，正确否定凭空造声。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S02-05",
+      "repeat": 1,
+      "status": "reviewed_failure",
+      "reserved_cny": 2.0,
+      "started_at": 1792902885.205864,
+      "request_sha256": "b1ccb3dbcc6e0a358157e4b54bbffdfa0b693abaffb3678f3d3b7d2058d1d574",
+      "request_id": "6ade55ec-8632-964b-a4f0-110bb4d6a98e",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 73,
+        "prompt_tokens": 1804,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 1804
+        },
+        "total_tokens": 1877
+      },
+      "estimated_cny": 0.00041920000000000005,
+      "latency_ms": 1857,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F01\",\n    \"F02\",\n    \"F03\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F01",
+          "F02",
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [
+        "action_or_label_mismatch"
+      ],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "未符合澄清约定",
+        "reason": "我已经习惯了是叙述感受，玩家却当作回声台词。直接答否可能让玩家继续误以为确有这句回声。按项目约定应先解决错误前提。这里不是认定汤底事实答反，标签仍待独立复核。"
+      },
+      "review": "按本项目错误前提先澄清约定未通过；不是断言汤底事实答反。保留失败，不改本题预期、不重复本条，只检查剩余独立初测；禁止全量。"
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S06-05",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902921.745665,
+      "request_sha256": "0fa29b704e850716e25f0fd187e1d46e828b7ad12ace794f829f88e7484f1886",
+      "request_id": "937f4bee-14df-9802-80aa-18cc7d11b2ea",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 64,
+        "prompt_tokens": 2192,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 2192
+        },
+        "total_tokens": 2256
+      },
+      "estimated_cny": 0.0004896,
+      "latency_ms": 2143,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F04\",\n    \"F11\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": [],\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F04",
+          "F11"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "是",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "确认回应之前女人已暂时恢复行动，没有混淆暂时转移与固定。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S06-13",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902923.891058,
+      "request_sha256": "ab3836c105e1c9c2c380c952a4205020d0ca03e3b0b010dc4ea600c6105124a0",
+      "request_id": "54bcc70b-bec7-9a58-86d5-c18d0c5ea0d8",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 168,
+        "prompt_tokens": 2243,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 2243
+        },
+        "total_tokens": 2411
+      },
+      "estimated_cny": 0.000583,
+      "latency_ms": 2429,
+      "raw_content": "{\n  \"action\": \"complete\",\n  \"answer\": \"\",\n  \"fact_ids\": [\n    \"F01\",\n    \"F02\",\n    \"F03\",\n    \"F04\",\n    \"F05\",\n    \"F06\",\n    \"F07\",\n    \"F08\",\n    \"F10\",\n    \"F11\",\n    \"F12\",\n    \"F13\",\n    \"F14\"\n  ],\n  \"covered_nodes\": [\n    \"N1\",\n    \"N2\",\n    \"N3\",\n    \"N4\"\n  ],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "complete",
+        "answer": "",
+        "fact_ids": [
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F05",
+          "F06",
+          "F07",
+          "F08",
+          "F10",
+          "F11",
+          "F12",
+          "F13",
+          "F14"
+        ],
+        "covered_nodes": [
+          "N1",
+          "N2",
+          "N3",
+          "N4"
+        ],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "还原成立。",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "完整因果得到complete，覆盖N1至N4；程序生成还原成立。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S07-02",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902926.323879,
+      "request_sha256": "a713bf0ddf0d205609c0815411175f3c81f9ae3f4e0ed89eee49d5bf31f2fdb5",
+      "request_id": "b7745fb8-b0cc-9b40-bc56-deed52d246e6",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 2160,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 2160
+        },
+        "total_tokens": 2221
+      },
+      "estimated_cny": 0.00048080000000000003,
+      "latency_ms": 1830,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\"\n,\n  \"fact_ids\": [\n    \"F13\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F13"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "问人类死亡，回答否，与狗死亡区分。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S07-10",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902928.156756,
+      "request_sha256": "1316da462f3afefb933d3257df7c6c926455bec605229178aef601c0413225f7",
+      "request_id": "5e508be3-c2ec-93ae-a4d0-69dd4361a24d",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 2172,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920,
+          "text_tokens": 2172
+        },
+        "total_tokens": 2220
+      },
+      "estimated_cny": 0.00047280000000000005,
+      "latency_ms": 4160,
+      "raw_content": "{\n  \"action\": \"decline\",\n  \"answer\": \"\",\n  \"fact_ids\": [],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "decline",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "请提交与本局有关的是非问题。",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "拒绝伪造结束阶段和索取隐藏提示、其他房间答案，没有泄底。"
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "version": "0.1.1",
+      "failure": "答案正确，展示字段重复玩家问题。",
+      "fix": "V0.1.2改由程序直接映射answer。"
+    },
+    {
+      "version": "0.1.2",
+      "failure": "答案正确，内部fact_ids混入节点N1。",
+      "fix": "V0.1.3按题分别枚举事实与节点编号。"
+    },
+    {
+      "version": "0.1.3",
+      "failure": "结构通过，S02-05未先澄清错误前提。",
+      "handling": "保留失败，不修改本题标签，不重复失败条目，只完成其余独立初测。"
+    }
+  ],
+  "next_step": "先处理错误前提、叙述与台词和指代，再用未参与调整的同类改写验证；暂不进入全量，也不据此判定千问整体不适用。",
+  "limits": [
+    "只测6条、各1次，不能推算可靠的总体准确率或稳定性。",
+    "同一作者拟标签并复核，独立审核未完成。",
+    "未测48条全量、动态多轮、完整提示、生成式复盘、跨房与8局并发。",
+    "未与DeepSeek对比，未开发或部署游戏。"
+  ],
+  "credentials": {
+    "temporary_key_deleted": true,
+    "key_in_delivery_or_logs": false,
+    "platform_key_revoked": false,
+    "recommendation": "密钥曾出现在聊天中，请在百炼撤销。后续通过本机入口配置新密钥。"
+  },
+  "sources": [
+    {
+      "title": "官方模型及原价",
+      "url": "https://help.aliyun.com/zh/model-studio/qwen3-7-flash",
+      "checked": "2026-10-25"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": "0.1.2",
+  "case": {
+    "signature": "9d2be067f5e4445f3926ec5a3de88b324ffe3b2de5253423fd42625c2630cec7",
+    "phase": "smoke",
+    "case_id": "S02-02",
+    "repeat": 1,
+    "status": "stopped",
+    "reserved_cny": 2.0,
+    "started_at": 1792902845.9831161,
+    "request_sha256": "7289312ff93cc8902bbdddc15a5f0a570bea478f0fcb70edb1e6ecbb112c5ad9",
+    "request_id": "b13a37c3-744f-93d5-90e9-4365ec006289",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "completion_tokens": 65,
+      "prompt_tokens": 1779,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 1779
+      },
+      "total_tokens": 1844
+    },
+    "estimated_cny": 0.0004078,
+    "latency_ms": 1635,
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F04\",\n    \"N1\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "否",
+      "fact_ids": [
+        "F04",
+        "N1"
+      ],
+      "covered_nodes": [],
+      "audit_flags": [],
+      "clarification": ""
+    },
+    "player_display": "否",
+    "preliminary_errors": [
+      "invalid_fact_id"
+    ],
+    "semantic_review": "pending_human_review"
+  },
+  "conclusion": "答案和展示字段符合约定，但fact_ids混入节点N1。失败已保留，V0.1.3将事实和节点编号分别约束为本题枚举集合。"
+}

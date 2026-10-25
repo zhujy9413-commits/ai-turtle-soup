@@ -1,0 +1,23 @@
+{
+  "status": "模板，非实测结果",
+  "run_id": null,
+  "started_at": null,
+  "actual_model": null,
+  "api_region": null,
+  "prompt_sha256": null,
+  "schema_sha256": null,
+  "case_id": null,
+  "repeat": null,
+  "request_id": null,
+  "latency_ms": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "reasoning_tokens": null,
+  "billing_cny": null,
+  "raw_output": null,
+  "schema_valid": null,
+  "semantic_result": null,
+  "leakage": null,
+  "reviewer": null,
+  "failure_type": null
+}

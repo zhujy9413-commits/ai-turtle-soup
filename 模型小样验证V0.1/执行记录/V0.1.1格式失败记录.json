@@ -1,0 +1,41 @@
+{
+  "version": "0.1.1",
+  "case": {
+    "phase": "smoke",
+    "case_id": "S02-02",
+    "repeat": 0,
+    "status": "stopped",
+    "reserved_cny": 2.0,
+    "started_at": 1792902762.468132,
+    "request_sha256": "9863722a388f9512b15abc63314f9da36b83df0f2b52dd481c05c092aacf5693",
+    "request_id": "8f2dd3f0-4730-94d2-93b4-793376a6a2ec",
+    "actual_model": "qwen3.7-flash-2026-07-15",
+    "usage": {
+      "completion_tokens": 60,
+      "prompt_tokens": 1757,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 1757
+      },
+      "total_tokens": 1817
+    },
+    "estimated_cny": 0.00039940000000000006,
+    "latency_ms": 1474,
+    "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"player_text\": \"屋子会凭空造出从未有人发过的声音吗？\",\n  \"fact_ids\": [],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n}",
+    "finish_reason": "stop",
+    "verdict": {
+      "action": "answer",
+      "answer": "否",
+      "player_text": "屋子会凭空造出从未有人发过的声音吗？",
+      "fact_ids": [],
+      "covered_nodes": [],
+      "audit_flags": []
+    },
+    "preliminary_errors": [
+      "player_text_contract"
+    ],
+    "semantic_review": "pending_human_review"
+  },
+  "conclusion": "第一条是非判定正确，但模型展示字段重复玩家问题。初测未通过，停止后改为程序直接映射四词答案。",
+  "billing_note": "费用按返回usage原价估算，不是已核对的账单。"
+}

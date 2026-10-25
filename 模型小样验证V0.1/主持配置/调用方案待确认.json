@@ -1,0 +1,131 @@
+{
+  "status": "6条初测已执行，1条未符合澄清约定；未进入全量，本机临时密钥已清理。",
+  "account_status": {
+    "bailian": "北京地域与固定模型API已验证可调用；本轮临时密钥已删除，后续应配置新密钥。",
+    "deepseek": "用户表示也有账号，具体API平台与模型未核对"
+  },
+  "primary_model": "qwen3.7-flash-2026-07-15",
+  "fallback_policy": "若账号不可用该快照，先报告可用项，不静默换版本",
+  "region_proposal": "华北2（北京）",
+  "api_host": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "enable_thinking": false,
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "turtle_host_verdict",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "answer",
+              "clarify",
+              "invalid",
+              "decline",
+              "incomplete",
+              "conflict",
+              "complete",
+              "content_gap"
+            ]
+          },
+          "answer": {
+            "type": "string",
+            "enum": [
+              "",
+              "是",
+              "否",
+              "无关",
+              "不清楚"
+            ]
+          },
+          "fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "covered_nodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "audit_flags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "unsupported_detail",
+                "history_conflict",
+                "core_gap"
+              ]
+            }
+          },
+          "clarification": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "action",
+          "answer",
+          "clarification",
+          "fact_ids",
+          "covered_nodes",
+          "audit_flags"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "input_token_guard": 32000,
+  "output_token_limit_proposal": 512,
+  "sampling_parameters": "首测保持供应商默认并保存实际请求；对比时固定相同条件，不宣称完全确定性",
+  "network_tools": false,
+  "automatic_retries": 0,
+  "planned_model_runs": {
+    "smoke": 6,
+    "full_additional": 138,
+    "same_configuration_total": 144,
+    "all_versions_total_max_requests": 150
+  },
+  "smoke_cases": [
+    "S02-02",
+    "S02-05",
+    "S06-05",
+    "S06-13",
+    "S07-02",
+    "S07-10"
+  ],
+  "smoke_then_full": "先6条初测并人工复核；通过后同配置48条各3次，6条初测计入对应案例第一次重复，避免重复付费。此前旧配置失败另计，整轮仍最多150次。",
+  "budget_cap_cny_proposal": 5,
+  "budget_confirmed": true,
+  "reasoning": "先测选定主候选。DeepSeek作为后续对照选项，型号、能力、价格和预算另核对，尚未比较优劣。",
+  "api_key_policy": "优先读取DASHSCOPE_API_KEY；本机配置入口也可将密钥以0600权限暂存于私有系统临时目录，30分钟后不接受。密钥不进入聊天、交付目录或日志，测试完成后删除临时密钥。",
+  "budget_approval": {
+    "date": "2026-10-25",
+    "basis": "在已展示最多150次、封顶5元方案后，用户指示继续；随后明确选择华北2（北京）。",
+    "cap_cny": 5,
+    "max_requests": 150
+  },
+  "execution": {
+    "runner": "执行工具/运行小样.py",
+    "setup": "配置百炼密钥.command",
+    "automatic_retries": 0,
+    "max_completion_tokens": 512,
+    "single_request_reserve_cny": 2,
+    "input_guard_note": "未接入官方分词器。发送前用32KB请求字节线防止意外增长，成功响应按usage核对32K token范围，超出即停止后续；字节数不是token计数。成本保护按官方最大输入区间预留2元，不依赖字节估算。",
+    "smoke_review": "六条初测仍需人工检查澄清是否泄底、还原是否合理，之后才允许全量。",
+    "format_revision": "V0.1.2：模型不生成四词展示文案；answer直接用于展示，仅clarify单独提供澄清文字。",
+    "id_constraint": "V0.1.3：每次请求将fact_ids与covered_nodes的JSON Schema枚举限制为本题已有事实和节点编号。"
+  },
+  "latest_run": {
+    "date": "2026-10-25",
+    "responses": 8,
+    "current_cases": 6,
+    "meets_expectation": 5,
+    "full_started": false,
+    "original_price_estimate_cny": 0.0036604000000000007
+  }
+}

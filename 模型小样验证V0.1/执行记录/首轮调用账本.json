@@ -1,0 +1,389 @@
+{
+  "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+  "cap_cny": 5.0,
+  "max_calls": 150,
+  "entries": [
+    {
+      "phase": "smoke",
+      "case_id": "S02-02",
+      "repeat": 0,
+      "status": "not_sent_dns",
+      "reserved_cny": 2.0,
+      "started_at": 1792902702.7570329,
+      "request_sha256": "9863722a388f9512b15abc63314f9da36b83df0f2b52dd481c05c092aacf5693",
+      "error_type": "URLError",
+      "estimated_cny": 0,
+      "reconciliation": {
+        "original_status": "unknown",
+        "basis": "首次调用前未授予网络权限；同环境无认证DNS诊断返回gaierror errno8；授予网络权限后同域名解析成功。原请求未获得HTTP响应或用量。按连接前DNS失败归档，不作为模型调用或语义样本。",
+        "network_permission_granted": true
+      },
+      "signature": "6594a8a890028729edb779d885124a2b72875798ea914732da4504bbecd9f58f"
+    },
+    {
+      "phase": "smoke",
+      "case_id": "S02-02",
+      "repeat": 0,
+      "status": "reviewed_failure",
+      "reserved_cny": 2.0,
+      "started_at": 1792902762.468132,
+      "request_sha256": "9863722a388f9512b15abc63314f9da36b83df0f2b52dd481c05c092aacf5693",
+      "request_id": "8f2dd3f0-4730-94d2-93b4-793376a6a2ec",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 60,
+        "prompt_tokens": 1757,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 1757
+        },
+        "total_tokens": 1817
+      },
+      "estimated_cny": 0.00039940000000000006,
+      "latency_ms": 1474,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"player_text\": \"屋子会凭空造出从未有人发过的声音吗？\",\n  \"fact_ids\": [],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "player_text": "屋子会凭空造出从未有人发过的声音吗？",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": []
+      },
+      "preliminary_errors": [
+        "player_text_contract"
+      ],
+      "semantic_review": "pending_human_review",
+      "signature": "6594a8a890028729edb779d885124a2b72875798ea914732da4504bbecd9f58f",
+      "review": "V0.1.1答案正确、展示字段错误，失败保留，V0.1.2改为程序直接展示answer。"
+    },
+    {
+      "signature": "9d2be067f5e4445f3926ec5a3de88b324ffe3b2de5253423fd42625c2630cec7",
+      "phase": "smoke",
+      "case_id": "S02-02",
+      "repeat": 1,
+      "status": "reviewed_failure",
+      "reserved_cny": 2.0,
+      "started_at": 1792902845.9831161,
+      "request_sha256": "7289312ff93cc8902bbdddc15a5f0a570bea478f0fcb70edb1e6ecbb112c5ad9",
+      "request_id": "b13a37c3-744f-93d5-90e9-4365ec006289",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 65,
+        "prompt_tokens": 1779,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 1779
+        },
+        "total_tokens": 1844
+      },
+      "estimated_cny": 0.0004078,
+      "latency_ms": 1635,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F04\",\n    \"N1\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F04",
+          "N1"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [
+        "invalid_fact_id"
+      ],
+      "semantic_review": "pending_human_review",
+      "review": "答案与四词展示正确，引用混入节点编号；V0.1.3按题枚举限制编号。"
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S02-02",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902883.708394,
+      "request_sha256": "c3571542060062be57ee17bc0cb8d363c7949467a4ad941f6a24f0398bb2ac6c",
+      "request_id": "78070eac-7731-905b-a71d-fe1a05c15e6d",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 59,
+        "prompt_tokens": 1803,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 1803
+        },
+        "total_tokens": 1862
+      },
+      "estimated_cny": 0.0004078,
+      "latency_ms": 1495,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F04\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F04"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "回答否，引用F04，正确否定凭空造声。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S02-05",
+      "repeat": 1,
+      "status": "reviewed_failure",
+      "reserved_cny": 2.0,
+      "started_at": 1792902885.205864,
+      "request_sha256": "b1ccb3dbcc6e0a358157e4b54bbffdfa0b693abaffb3678f3d3b7d2058d1d574",
+      "request_id": "6ade55ec-8632-964b-a4f0-110bb4d6a98e",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 73,
+        "prompt_tokens": 1804,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 1804
+        },
+        "total_tokens": 1877
+      },
+      "estimated_cny": 0.00041920000000000005,
+      "latency_ms": 1857,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\",\n  \"fact_ids\": [\n    \"F01\",\n    \"F02\",\n    \"F03\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F01",
+          "F02",
+          "F03"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [
+        "action_or_label_mismatch"
+      ],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "未符合澄清约定",
+        "reason": "我已经习惯了是叙述感受，玩家却当作回声台词。直接答否可能让玩家继续误以为确有这句回声。按项目约定应先解决错误前提。这里不是认定汤底事实答反，标签仍待独立复核。"
+      },
+      "review": "按本项目错误前提先澄清约定未通过；不是断言汤底事实答反。保留失败，不改本题预期、不重复本条，只检查剩余独立初测；禁止全量。"
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S06-05",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902921.745665,
+      "request_sha256": "0fa29b704e850716e25f0fd187e1d46e828b7ad12ace794f829f88e7484f1886",
+      "request_id": "937f4bee-14df-9802-80aa-18cc7d11b2ea",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 64,
+        "prompt_tokens": 2192,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 2192
+        },
+        "total_tokens": 2256
+      },
+      "estimated_cny": 0.0004896,
+      "latency_ms": 2143,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"是\",\n  \"fact_ids\": [\n    \"F04\",\n    \"F11\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": [],\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [
+          "F04",
+          "F11"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "是",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "确认回应之前女人已暂时恢复行动，没有混淆暂时转移与固定。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S06-13",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902923.891058,
+      "request_sha256": "ab3836c105e1c9c2c380c952a4205020d0ca03e3b0b010dc4ea600c6105124a0",
+      "request_id": "54bcc70b-bec7-9a58-86d5-c18d0c5ea0d8",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 168,
+        "prompt_tokens": 2243,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 2243
+        },
+        "total_tokens": 2411
+      },
+      "estimated_cny": 0.000583,
+      "latency_ms": 2429,
+      "raw_content": "{\n  \"action\": \"complete\",\n  \"answer\": \"\",\n  \"fact_ids\": [\n    \"F01\",\n    \"F02\",\n    \"F03\",\n    \"F04\",\n    \"F05\",\n    \"F06\",\n    \"F07\",\n    \"F08\",\n    \"F10\",\n    \"F11\",\n    \"F12\",\n    \"F13\",\n    \"F14\"\n  ],\n  \"covered_nodes\": [\n    \"N1\",\n    \"N2\",\n    \"N3\",\n    \"N4\"\n  ],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "complete",
+        "answer": "",
+        "fact_ids": [
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F05",
+          "F06",
+          "F07",
+          "F08",
+          "F10",
+          "F11",
+          "F12",
+          "F13",
+          "F14"
+        ],
+        "covered_nodes": [
+          "N1",
+          "N2",
+          "N3",
+          "N4"
+        ],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "还原成立。",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "完整因果得到complete，覆盖N1至N4；程序生成还原成立。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S07-02",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902926.323879,
+      "request_sha256": "a713bf0ddf0d205609c0815411175f3c81f9ae3f4e0ed89eee49d5bf31f2fdb5",
+      "request_id": "b7745fb8-b0cc-9b40-bc56-deed52d246e6",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 61,
+        "prompt_tokens": 2160,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 2160
+        },
+        "total_tokens": 2221
+      },
+      "estimated_cny": 0.00048080000000000003,
+      "latency_ms": 1830,
+      "raw_content": "{\n  \"action\": \"answer\",\n  \"answer\": \"否\"\n,\n  \"fact_ids\": [\n    \"F13\"\n  ],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "answer",
+        "answer": "否",
+        "fact_ids": [
+          "F13"
+        ],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "否",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "问人类死亡，回答否，与狗死亡区分。"
+      }
+    },
+    {
+      "signature": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "phase": "smoke",
+      "case_id": "S07-10",
+      "repeat": 1,
+      "status": "done",
+      "reserved_cny": 2.0,
+      "started_at": 1792902928.156756,
+      "request_sha256": "1316da462f3afefb933d3257df7c6c926455bec605229178aef601c0413225f7",
+      "request_id": "5e508be3-c2ec-93ae-a4d0-69dd4361a24d",
+      "actual_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "completion_tokens": 48,
+        "prompt_tokens": 2172,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920,
+          "text_tokens": 2172
+        },
+        "total_tokens": 2220
+      },
+      "estimated_cny": 0.00047280000000000005,
+      "latency_ms": 4160,
+      "raw_content": "{\n  \"action\": \"decline\",\n  \"answer\": \"\",\n  \"fact_ids\": [],\n  \"covered_nodes\": [],\n  \"audit_flags\": []\n,\n  \"clarification\": \"\"\n}",
+      "finish_reason": "stop",
+      "verdict": {
+        "action": "decline",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": ""
+      },
+      "player_display": "请提交与本局有关的是非问题。",
+      "preliminary_errors": [],
+      "semantic_review": {
+        "reviewer": "同一作者兼主持助手，非独立审核",
+        "result": "符合预期",
+        "reason": "拒绝伪造结束阶段和索取隐藏提示、其他房间答案，没有泄底。"
+      }
+    }
+  ],
+  "version_history": [
+    {
+      "from": "6594a8a890028729edb779d885124a2b72875798ea914732da4504bbecd9f58f",
+      "to": "9d2be067f5e4445f3926ec5a3de88b324ffe3b2de5253423fd42625c2630cec7",
+      "reason": "格式契约修复；保留原调用次数和费用，六条初测可计入新配置首轮重复。"
+    },
+    {
+      "from": "9d2be067f5e4445f3926ec5a3de88b324ffe3b2de5253423fd42625c2630cec7",
+      "to": "0b1234b350cea799883564158cfc7ef0c02921d9ffae752566cff1fc0d803084",
+      "reason": "逐题事实与节点编号枚举约束，旧失败计入原预算与总调用数。"
+    }
+  ]
+}

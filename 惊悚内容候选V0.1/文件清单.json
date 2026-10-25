@@ -1,0 +1,21 @@
+{
+  "validation": {
+    "soup_id": "S07",
+    "question_cases": 20,
+    "solution_cases": 5,
+    "public_pages": 1,
+    "private_pages": 3,
+    "status": "人工辅助试玩及定性体验反馈已记录；用户正向惊悚反馈可能与题材偏好有关，无数字评分。首轮人工试玩收口，独立审核和模型实测待完成。",
+    "stage_followup": "试玩复盘后整理阶段结论。",
+    "revision": "0.1.2"
+  },
+  "sha256": {
+    "index.html": "380099e9fc3c30f6dd1ce8d793fbfe74d098e78a74a5f0b5f25d6fe4b9a0ffed",
+    "主持资料/S07主持稿.html": "df7dd9c390e3e0f4a11af8a7675862b8e866d9a404df7d78233bcb2f4a543738",
+    "主持资料/主持数据.json": "cd6a00ff377baee10af1f6a0e5f46913ad3e07b798379c636731d84208c5ef10",
+    "主持资料/设计结构与自检.html": "07fca8274d9e5d26dd8735f6b3ded3b8e3276a8e99d59007f9b08e5cc5a5bd26",
+    "使用说明.txt": "974f945781727fd841b0fcdd4558f3485e79a2ca09f41667ddf382bf88280fcb",
+    "汤面数据.json": "a54790c279f91b9a4e88dc05e5950ba82944d2e0dd72b7ef8bc9b8f3d8db0081",
+    "主持资料/S07试玩复盘.html": "0748d1df32db9bbe6bb6a3e10bc2b38ea329925dccad08bde50ca47defdda827"
+  }
+}

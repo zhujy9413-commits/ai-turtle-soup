@@ -5,22 +5,29 @@
     "solution_cases": 12,
     "format_cases": 6,
     "public_pages": 3,
-    "private_html": 3,
-    "status": "结构、引用及公开页面不载入私有材料检查通过；语义为作者自检，待用户评审与盲玩。",
-    "revision": "0.1.1",
-    "S05_difficulty": "入门候选，仅据用户读面初评暂定",
-    "setting_visibility": "分类只供内部使用；公开HTML与JSON不含分类值"
+    "private_html": 5,
+    "status": "S04与S05各有一次人工主持试玩记录，故事与评测标签保持；独立审题、更多试玩及候选模型实测待完成。",
+    "revision": "0.1.6",
+    "S05_difficulty": "保留入门候选；用户认为推理量小、汤面信息多且容易联想",
+    "setting_visibility": "分类只供内部使用；公开HTML与JSON不含分类值",
+    "S04_playtest": "2026-10-24，三层提示后结合上下文还原成功",
+    "S04_difficulty": "入门候选；用户认为推理内容较少，尚需更多试玩校准",
+    "S04_fear": "低恐怖；用户认为更像普通犯罪故事",
+    "S05_playtest": "2026-10-24，事前已猜方向；零预设提示，结合解答补充还原成功",
+    "S05_fear": "有一定惊悚感；单人试玩后暂定"
   },
   "sha256": {
-    "index.html": "9af80f7f468176cd40588c9b1b795de71f58053226662ec9b102f261c5fb88c3",
-    "主持资料/S04主持稿.html": "28c313ee6731a8be8d1b27f9839ea6108f8bc9587a47c11b3949edad0df14d6f",
-    "主持资料/S05主持稿.html": "3b2ca6a9f1eebcfc109e557350589c5457eef034a09fd17c518551856fff33b1",
-    "主持资料/主持数据.json": "33c41bcc0cbc04f044c2ed0175b7d947fcee53bdd9e37fa2a0932ba5bd0ee11d",
-    "主持资料/内容自检与待审项.html": "a4849cb2aa622271470a6a2e110d910242db7526192a41eaca6290e8f1c1b6cb",
+    "index.html": "4d788c6804ccc25515dfa7c2d4a3de6889b1894b429655d2a2e10ef63f887778",
+    "主持资料/S04主持稿.html": "7c87027b25030f237dfa80ce62a9b9650f6445ae372a69725c2e615205939895",
+    "主持资料/S05主持稿.html": "9806a7c5f193ad8d564f77d30e61429be071aae7277c8905338927e583f19a75",
+    "主持资料/主持数据.json": "33936f3a3904889e4ef7485e59e595fea98d34f7eacc933713148df4312b7a63",
+    "主持资料/内容自检与待审项.html": "8502a06f2ed4dbcc4c5e8870db028448db8e0968fd0dbd8121bc8bccaa5db1eb",
     "主持资料/判题对照草案.csv": "f95a5599bf3277d3f52423d74f628e1473f68e0c3973380cbb5b4681d4e13c4c",
-    "使用说明.txt": "a7fc87ab10c6bdd116429567a5b79f17dcee2d59d97f0363acbf62998c14ff02",
-    "单题汤面/S04.html": "1a0506048d276f56099d574bf59cef91ff9ba2b2e871addbab0e90d264bf2deb",
-    "单题汤面/S05.html": "1b8aa96167fa287435e3a76240dcd0298dced761bc2d3b859c6f0cdc3e2a65c6",
-    "汤面数据.json": "bd6619822f34586905526120aa029f9224b6d5248e40fa6afcff069912530d8d"
+    "使用说明.txt": "98a4a0ad451805832fd89c96c49e5fe99ddbf96e5784da56560cafdda62f00ad",
+    "单题汤面/S04.html": "ad691aa2bb2c79151bc5ac43a38a895ad2a772f2b7c811262b868efa01c1b444",
+    "单题汤面/S05.html": "bfeffba27f18a5a1b52c3ebdc4aaf6136027d259cc98dbb85dc90e427fb6ea84",
+    "汤面数据.json": "3bdd6710afbd359a664bf38f0488f2ef933f05ce7044e4993e95b76d7a45c526",
+    "主持资料/S04试玩复盘.html": "537400f90292716dc35f77924b95144451c8119a845293d500837092a6ff8a8d",
+    "主持资料/S05试玩复盘.html": "3424246f83bd3a56ef64faf0148fae62ab8bfce87b6c6300e4d35ffda747f101"
   }
 }

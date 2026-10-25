@@ -1,0 +1,32 @@
+{
+  "version": "0.1.3",
+  "sha256": {
+    "index.html": "a3f83f396b90aa633d893553cb35a17a848a7e3f7bd533cee5c26b327f0b5c94",
+    "主持配置/系统指令.txt": "eaa089bf705289f68649e816288ef2dd598d9a5ac83a6ad2cad06a9cfb0c5bb6",
+    "主持配置/调用方案待确认.json": "d4b87d556df595773eeba708ccc0e5c861dbe66e9ae29910dc073b3160f0435b",
+    "主持配置/输出结构.schema.json": "f951e758eaaa241abfa88e2d10fbaaabf1c51978e7f40bbcb203741c852b644a",
+    "人工判分/判分说明.txt": "01fb815ac0fd2c67a33b82237247f08c73bde2299111ba0fa29e04c1f3c00ef2",
+    "人工判分/用例核对.html": "dee0c846cfb25b553215a97d3654d2c62237bcdd38db13cc8dcdd65ae6982d9c",
+    "人工判分/用例核对表.csv": "092ee4ca72612cf03cc3ec13fe6091daea0a1d39d80459a1a02beaf8e9c134e8",
+    "人工判分/运行记录空模板.json": "aa821f8af433000b09dc69a8e99273962c6cf1768ac042eb5956867d5f559e79",
+    "人工判分/预期结果.json": "b5005ebdd7352ad0523f4919bcceec18ffd69ce889fb96cc9e3744f800f537fd",
+    "复核记录.json": "a4aa0b3def067805c1e83e1ce9badeab04bd248cfdbb2b9e3236b45109224de2",
+    "执行工具/本机配置说明.txt": "439c9dc8a27bd49e2262f0e8f47d2ce27affb70f1e9e1dc839a21433cd335249",
+    "执行工具/离线检查记录.json": "9357a57e2a6be962d310607642e1b9c437a3469604397e3450f7acb1cc73e5b3",
+    "执行工具/运行小样.py": "d155faf039dfdbbb98794f2856418f185d7f1c3902cb0fad9df93adb79e45ad0",
+    "执行工具/配置百炼密钥.py": "ad0f024b149e057d98390d93d8b55c88bf1a160517389c176c49cada87700fbd",
+    "执行记录/V0.1.1格式失败记录.json": "fa9a101aafbdf6a5ff9300bad7edd7fcc37e40a07e78c549f5b2a174a1e92d27",
+    "执行记录/V0.1.2编号失败记录.json": "f81f697a8d81fedd266c535786aaff900b10bfde1f42bd505fe98c883c56efc6",
+    "执行记录/首轮小样测试结果.html": "d13bb08306a51348cc6241bf38c83e8221ca1784dcfe3a1da65b1271c037dc75",
+    "执行记录/首轮小样测试结果.json": "774188d2400c6514c5406d63e4809bddb42fc093051b0ea0e5532846e7932615",
+    "执行记录/首轮调用账本.json": "2190d319d4eb733078ebacf2a6e8e4c6cabaea7b40f63f42a9ac44dd096ccdd5",
+    "控制规则/三层提示原文.json": "de6af16f56c1ed249a15a95ade9125ced749b3d1b958a04b7f75852adb9a6caa",
+    "控制规则/验收场景.json": "9df8d4cbcaf6280489d188b47ebbc2719e8ad18fec72b2cdc61ccaef192a1baa",
+    "来源锁定.json": "788b15f55d0d8eea938baa3697f1c60498706bcdf02febc6c605e57583f9ca08",
+    "模型输入/故事/S02.json": "d7968ce8b4ee136b0495c1b936825db04e269d9bcac58ce3a4fac3e25fcfa590",
+    "模型输入/故事/S06.json": "97c8f96adb19df4a97793f8b2b1d3a09f2322453b47d35b7943017c8b0c30058",
+    "模型输入/故事/S07.json": "e6813cbbae99ec852248136c695d2b606d5851cdf4a088595894bbd52f973973",
+    "模型输入/用例.json": "28aab16f5e433a0c910aeeac317afd2142dc20fb118910565880fdeace0e0f68",
+    "配置百炼密钥.command": "cb94b7af0d35b983d507253671bcca26f1453979a305629f9c2059553e7ce078"
+  }
+}

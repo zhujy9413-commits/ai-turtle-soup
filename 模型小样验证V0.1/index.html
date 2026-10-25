@@ -1,0 +1,28 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>海龟汤 · 模型小样验证 V0.1</title><style>body{margin:0;background:#f4f2ec;color:#222f32;font:16px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:1050px;margin:auto;padding:48px 24px 80px}h1{font-size:34px;line-height:1.35}h2{margin-top:42px;font-size:23px}h3{font-size:18px}a{color:#176c65}p,li{max-width:88ch}.lead{font-size:19px}.notice{padding:18px 22px;border-left:4px solid #b88c3a;background:#fff8e5}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{padding:18px;background:white;border:1px solid #deded5;border-radius:10px}.num{font-size:30px;color:#176c65;font-weight:700}.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;background:white;font-size:14px}th,td{padding:12px;border:1px solid #deded5;text-align:left;vertical-align:top}th{background:#e7eeeb}code{background:#e5e8e4;padding:2px 5px;overflow-wrap:anywhere}details{background:white;padding:12px 18px;margin:16px 0;border:1px solid #deded5}summary{cursor:pointer;font-weight:600}small{color:#5a6968}@media(max-width:650px){main{padding:26px 16px}.cards{grid-template-columns:1fr}h1{font-size:28px}}</style><main>
+<small>海龟汤项目 / 模型验证准备 / 2026年10月25日</small><h1>让AI主持先过这48关</h1>
+<p class="lead">把人工试玩中暴露的误答，变成可重复检查的案例。先验证固定故事下的问答与通关判定，再决定模型是否适合进入后续原型。</p>
+<p class="notice">6条初测已检查，当前配置未通过澄清约定。按用量原价估算全轮0.0036604元，未核对最终账单；未执行全量。三篇故事仍需独立复核；没有开始游戏开发或上线。</p>
+<div class="cards"><div class="card"><div class="num">3</div>已试玩故事<br>S02 回声里的咳嗽<br>S06 陪护须知<br>S07 出差的第三晚</div><div class="card"><div class="num">48</div>模型语义案例<br>33条开发、15条保留验证<br>包含12条正式还原</div><div class="card"><div class="num">8</div>外部控制验收场景<br>投票、提示上限、计时等<br>目前为规则设计，未执行</div></div>
+<h2>本次复核落实了什么</h2><div class="scroll"><table><thead><tr><th>对象</th><th>问题</th><th>本包处理</th><th>用例</th></tr></thead><tbody><tr><td>S02</td><td>把叙述误当回声台词；把上一次解释为最新一句</td><td>锁定叙述角色，遇到歧义先澄清；多个原声各自延迟一次</td><td>S02-05、06、08</td></tr><tr><td>S02</td><td>一分钟前有人，被误说成此刻绝不可能离开</td><td>区分确有近期原声与主角报警时有根据的怀疑</td><td>S02-09、14、16</td></tr><tr><td>S06</td><td>躺床、午夜、暂时转移与回应固定被混成一件事</td><td>明确事件先后，暂时好转早于回应；天亮撤回与起床动作分开</td><td>S06-03至09、13、15</td></tr><tr><td>S07</td><td>手机所有者与发送者混用；人死亡与狗死亡混用</td><td>按设备/实际操作者、人与动物、过去与三晚分别判定</td><td>S07-02至07</td></tr><tr><td>S07</td><td>四次临场提示偏离三层，警方收尾缺少可推线索</td><td>冻结三层提示；不要求猜出未在汤面铺垫的具体报警触发</td><td>C05、S07-11、13</td></tr><tr><td>通用</td><td>补充未设定枝节或只按词语命中通关</td><td>不知但无关答无关；合并上下文审因果，不把未设定细节升格为事实</td><td>S02-04、S06-10及全部还原案例</td></tr></tbody></table></div>
+<p>原题汤面、汤底和三层提示均保持原版本。这次新增的是明确的判定约束和回归样例。S06不要求玩家逐字背全规则，但正式问题中的过度概括不能被答成是；S07不强求玩家猜中缺少汤面铺垫的具体报警触发。</p>
+<h2>怎么判，而不提前泄底</h2>
+<p>正常单一是非题对玩家只回四个词。歧义先澄清，混合真假先拆问；不清楚只用于与核心有关的真实资料缺口，无关枝节不能借此把玩家带偏。</p>
+<p>正式还原合并已经确认的问答。核心因果成立即可，不要求关键词、前男友、病名或入侵路径。模型不替玩家补齐未表达的关键因果；未完成反馈不直接列出隐藏节点。自由讨论中猜中不结束对局。</p>
+<p>模型内部输出动作、事实编号和已覆盖节点。玩家仅看到受约束的文字；内部字段与完整快照不能下发到未揭晓的公开页面。模型不操作计时、投票和房间状态。</p>
+<h2>提示改为固定内容</h2>
+<p>三层原文已单列在控制规则目录。单人直接申请下一层，多人需有资格玩家过半同意，平票不公开。三层耗尽后不临场追加第四层；静默提醒只询问是否需要提示。提示发布期间冻结时间，投票期间继续计时。这里只定义验收要求，未实现程序。</p>
+<h2>当前实测进展</h2><p>已收到8次模型响应，包括2次旧版结构失败。当前配置6条初测，5条符合预期，1条没有按约定先澄清；未进入全量。本机临时密钥已清理。</p><p><a href="执行记录/首轮小样测试结果.html">阅读首轮真实小样结果</a> · <a href="执行记录/首轮小样测试结果.json">结构化复核</a></p><h2>首测模型与账号</h2>
+<p>你已说明有阿里云百炼和DeepSeek账号。仍待核对的是API权限、地域及所选模型可用性。首测建议沿用 <code>qwen3.7-flash-2026-07-15</code>，关闭思考，使用结构化输出，并记录真实模型标识。API Host从账号控制台核对，不能用不匹配地域的地址。</p>
+<p>DeepSeek保留为对照候选。本轮没有确认具体型号，也没有比较质量或费用；若千问表现不足，再在同一批材料上核对并测试对照模型。</p>
+<p>官方依据核对日期为2026年10月25日，实际调用前再次核对账号地域与计价。<a href="https://help.aliyun.com/zh/model-studio/qwen3-7-flash">模型与价格</a>列出所选快照及北京地域的文本输入、输出价格。<a href="https://help.aliyun.com/zh/model-studio/qwen-structured-output">结构化输出</a>列出该系列对JSON Schema的支持。<a href="https://help.aliyun.com/en/model-studio/deep-thinking">思考模式</a>说明该系列可关闭思考。结构正确不代表答案正确。</p>
+<h2>测试顺序与预算建议</h2>
+<ol><li>先人工复核标签，争议案例先标待定并排除计分，不能把题目缺陷算成模型错误。</li><li>确认API调用权限与本轮费用上限，在本机环境变量中配置密钥。密钥不粘贴到聊天、不写进文档或GitHub。</li><li>先跑6条冒烟案例。检查格式、歧义、阶段关系与泄底；失败先诊断，不重复扣费试运气。</li><li>通过后同配置48条各重复3次，共144条结果，已通过的6条初测计入第一次重复。旧版本失败另计，整轮最多150次；无自动重试。每条附带固定历史，跨案例不共享对话状态。</li><li>分故事、类别、首次与重复表现报告。修改提示词后另记版本；一旦使用保留组调优，这组不再作为未参与调优的验证。</li></ol>
+<p>本轮硬上限为<strong>5元人民币，已按继续指示确认</strong>。费用假设按北京地域、单次输入不超过32K tokens、输入0.2元/百万、输出0.8元/百万计算；不计免费额度、缓存或批量优惠。</p>
+<p>若每次恰好32,000输入、512输出，150次约 <strong>1.021元</strong>，即480万输入tokens计0.96元、76,800输出tokens计0.06144元。这是条件计算，未包含任何未列出的服务。实际以usage和账单为准；正式运行前需落实输入计数、单次费用预留及总额停止机制，超出范围不发送。5元为额外余量，不是预测一定会花完。现有300元/月技术预算目标也不等于本次调用授权。</p>
+<h2>什么结果才允许继续</h2>
+<div class="scroll"><table><thead><tr><th>检查</th><th>本轮建议门槛</th></tr></thead><tbody><tr><td>格式与四词输出</td><td>所有可评分结果符合结构；普通answer不带解释，非法格式不展示给玩家。</td></tr><tr><td>严重错误</td><td>任何泄底、关键事实答反、错误因果通关、正确核心还原被拒绝，都暂停该配置，定位并复测。</td></tr><tr><td>歧义和一般判定</td><td>逐类报告数量与错误，48条规模不设虚假的总体高精度承诺；未解决错误留在待办中。</td></tr><tr><td>成本与耗时</td><td>保存请求ID、真实用量、总费、失败和延迟；独立场景结果不代表8局并发能力。</td></tr><tr><td>内容与上线</td><td>通过只说明本批固定案例表现；更多玩家体验、题目审核、动态多轮、完整客户端和负载验收仍需后续完成。</td></tr></tbody></table></div>
+<p>当前未设置能证明群体准确率的统计门槛。作者与主持为同一助手，独立人工标签审核仍缺；不能把本包检查称为独立验收。</p>
+<h2>阅读与维护入口</h2>
+<ul><li><a href="人工判分/用例核对.html">48条用例快速核对</a> · <a href="人工判分/用例核对表.csv">CSV核对表</a></li><li><a href="主持配置/系统指令.txt">主持系统指令</a> · <a href="主持配置/输出结构.schema.json">内部输出结构</a></li><li><a href="主持配置/调用方案待确认.json">模型参数与预算建议</a> · <a href="控制规则/验收场景.json">8条控制验收场景</a></li><li><a href="模型输入/用例.json">只供模型的用例输入</a> · <a href="人工判分/预期结果.json">独立保存的预期判定</a> · <a href="人工判分/判分说明.txt">判分口径</a></li><li><a href="来源锁定.json">原文件版本与校验</a> · <a href="复核记录.json">本次复核与范围限制</a></li></ul>
+<p class="notice">本目录包含隐藏答案与模型输入，只用于项目内部。不得直接当作游戏前端静态资源发布。模型输入不含预期答案、评分说明或人工试玩记录。未试玩的S03没有进入本包。</p>
+<small>本地维护目录为且曼课堂笔记/海龟汤/模型小样验证V0.1。本次未同步飞书或GitHub。</small></main></html>

@@ -1,0 +1,26 @@
+{
+  "validation": {
+    "soup_id": "S06",
+    "question_cases": 18,
+    "solution_cases": 5,
+    "public_pages": 1,
+    "private_pages": 3,
+    "classification_visibility": "公开数据不含本格变格分类",
+    "status": "一次人工辅助试玩后，用户认可推理体验，个人惊悚评分3/10；更多试玩、独立审题和模型实测待完成。",
+    "revision": "0.1.2",
+    "fear_feedback": {
+      "score": 3,
+      "scale_max": 10,
+      "scope": "单次个人主观体验"
+    }
+  },
+  "sha256": {
+    "index.html": "c0800d889d89950e4146f7a4f483c9ca46d0f66b51f70658e2597b7300f8d23b",
+    "主持资料/S06主持稿.html": "8ef46368f2a2db2c6623edc165869c18e38e74f1ac316f0dfca7ef097b4a5c49",
+    "主持资料/主持数据.json": "922ee312608f988a1816b44483db62c3d223cc8a41d359159d0e1e18350824b0",
+    "主持资料/设计结构与自检.html": "428e330f9e8d904f35ede5b6fa0aee95d11f08b3e7a84afdbefd5036048efd31",
+    "使用说明.txt": "9c3e42e2b793f1eab5e1b22b59ede1ec3816b47042564390d55b383fdcbd2976",
+    "汤面数据.json": "1daf54a17d3efab61b19b18bfaa105ee70d27f5ac25ba331f24a0854fcee3fda",
+    "主持资料/S06试玩复盘.html": "96faf926f8ec162f0192eb24a10a8d4b1d823b128c0d40608b49963852380f67"
+  }
+}

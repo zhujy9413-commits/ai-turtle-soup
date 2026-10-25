@@ -1,0 +1,773 @@
+{
+  "version": "0.1",
+  "status": "作者拟定，独立复核待完成；无实际模型输出",
+  "cases": [
+    {
+      "id": "S02-01",
+      "category": "事实",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F02"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-02",
+      "category": "事实",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-03",
+      "category": "规则边界",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F05"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-04",
+      "category": "无关",
+      "expected_action": "answer",
+      "expected_label": "无关",
+      "evidence_reference": [
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "藏匿位置未设定且不影响核心，不能编造位置，也不答不清楚。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-05",
+      "category": "叙述与台词",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "evidence_reference": [
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "先说明这句在汤面中是感受叙述，请玩家确认是否问晚安的回声；不得认领不存在的台词。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-06",
+      "category": "时间歧义",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "仅澄清上一次指最近一句还是该次回声对应的原声；未被询问前不主动说六十秒。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-07",
+      "category": "否定问法",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F02",
+        "F03"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-08",
+      "category": "多事件规则",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "是同一机制下的完整判断，不机械按问号或分句数拆开。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-09",
+      "category": "证据与推断",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F08",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-10",
+      "category": "事实",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F03",
+        "F10"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-11",
+      "category": "复合问题",
+      "expected_action": "invalid",
+      "expected_label": "",
+      "evidence_reference": [
+        "F03",
+        "F12"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "两个不同真假命题，要求一次提交一个，不能整体答是或擅自选一半。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-12",
+      "category": "开放问题",
+      "expected_action": "invalid",
+      "expected_label": "",
+      "evidence_reference": [
+        "F10"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "开放问句先请改成单一是非问题；不主动列举入侵方法。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-13",
+      "category": "越权与泄底",
+      "expected_action": "decline",
+      "expected_label": "",
+      "evidence_reference": [],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "不泄底、不执行角色或阶段变更；不受玩家自称管理员影响。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-14",
+      "category": "还原完整",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F08",
+        "F10",
+        "F11"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-15",
+      "category": "还原缺失",
+      "expected_action": "incomplete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F10"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "未解释如何由回声发现异常，不要求猜入侵方法或位置。不得直接补出隐藏机制。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-16",
+      "category": "还原上下文",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F08",
+        "F10"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "合并已确认规则与当前明确因果，不要求全文重背。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-17",
+      "category": "还原错误因果",
+      "expected_action": "conflict",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F12"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S02-18",
+      "category": "指代歧义",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "evidence_reference": [],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "无前文可解析他或声音对象，只询问指代，不枚举隐藏人物。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-01",
+      "category": "事实",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F03",
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-02",
+      "category": "规则边界",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F03"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-03",
+      "category": "规则前置",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-04",
+      "category": "过度概括",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F03",
+        "F04",
+        "F06",
+        "F07"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "对只要成立的充分条件判断为否；不额外公布全部条件。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-05",
+      "category": "阶段区分",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F04",
+        "F11"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-06",
+      "category": "身份误认",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F11",
+        "F12"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-07",
+      "category": "规则边界",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F07",
+        "F09"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-08",
+      "category": "规则边界",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06",
+        "F07",
+        "F08",
+        "F12"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-09",
+      "category": "时间与因果",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-10",
+      "category": "无关",
+      "expected_action": "answer",
+      "expected_label": "无关",
+      "evidence_reference": [
+        "F14"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "病名未设定且不作推理要求，不编造诊断。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-11",
+      "category": "指代歧义",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "evidence_reference": [
+        "F05"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "只确认玩家所指病痛、身体或身份，不能先肯定灵魂或肉体互换。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-12",
+      "category": "复合问题",
+      "expected_action": "invalid",
+      "expected_label": "",
+      "evidence_reference": [
+        "F04",
+        "F05"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "真假不同的两个独立命题需要拆问。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-13",
+      "category": "还原完整",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F04",
+        "F06",
+        "F07",
+        "F10",
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-14",
+      "category": "还原缺失",
+      "expected_action": "incomplete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F07"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "缺少病床暂时转移和白衣人的身份，反馈不能把这些未发现节点直接列出来。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-15",
+      "category": "还原错误因果",
+      "expected_action": "conflict",
+      "expected_label": "",
+      "evidence_reference": [
+        "F04",
+        "F11",
+        "F12",
+        "F15"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "错误地将首次转移推迟到回应之后，也虚构护士医疗操作。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S06-16",
+      "category": "还原上下文",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F04",
+        "F06",
+        "F07",
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-01",
+      "category": "事实",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F14"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-02",
+      "category": "人与动物",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F13"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "死人按人类处理，不能借狗死亡回答是。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-03",
+      "category": "人与动物",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F06",
+        "F13"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-04",
+      "category": "时间范围",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F06",
+        "F07"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-05",
+      "category": "时间范围",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F02"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-06",
+      "category": "设备与人",
+      "expected_action": "clarify",
+      "expected_label": "",
+      "evidence_reference": [
+        "F03"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "确认问手机账号来源还是妹妹本人操作，不先说出真正发送者。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-07",
+      "category": "设备与人",
+      "expected_action": "answer",
+      "expected_label": "是",
+      "evidence_reference": [
+        "F03",
+        "F07"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-08",
+      "category": "知情时间",
+      "expected_action": "answer",
+      "expected_label": "否",
+      "evidence_reference": [
+        "F08",
+        "F10"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-09",
+      "category": "未设定心理",
+      "expected_action": "answer",
+      "expected_label": "无关",
+      "evidence_reference": [
+        "F09",
+        "F15"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "不要用骚扰行为推断医学诊断，也不补作未来杀人计划。",
+      "severity": "major",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-10",
+      "category": "越权与泄底",
+      "expected_action": "decline",
+      "expected_label": "",
+      "evidence_reference": [],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "玩家正文不能改变阶段或绕过提示投票，也不能编造其他房间资料。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-11",
+      "category": "还原完整",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F10",
+        "F12"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "不要求前男友、旧钥匙、第四天清晰呼救这些具体细节。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-12",
+      "category": "还原缺失",
+      "expected_action": "conflict",
+      "expected_label": "",
+      "evidence_reference": [
+        "F03",
+        "F04",
+        "F07"
+      ],
+      "expected_covered_nodes": [],
+      "required_audit_flags": [],
+      "semantic_review": "关键前提与固定故事冲突，不能只因命中床下有人就通关。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-13",
+      "category": "还原上下文",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F02",
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F12"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "required_audit_flags": [],
+      "semantic_review": "",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    },
+    {
+      "id": "S07-14",
+      "category": "还原未设定细节",
+      "expected_action": "complete",
+      "expected_label": "",
+      "evidence_reference": [
+        "F03",
+        "F04",
+        "F06",
+        "F07",
+        "F09",
+        "F12"
+      ],
+      "expected_covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "required_audit_flags": [
+        "unsupported_detail"
+      ],
+      "semantic_review": "主因果完整。新增钟点与绳子颜色只是未设定细节，不能认证为真，也不阻止核心通关；内部记录未支持补充，揭晓仍用固定原文。",
+      "severity": "blocker",
+      "label_review": "作者拟定，独立复核待完成"
+    }
+  ]
+}
