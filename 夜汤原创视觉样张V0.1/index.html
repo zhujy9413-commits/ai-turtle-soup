@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN" data-font="song">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
+  <title>夜汤 · 原创视觉样张</title>
+  <link rel="preload" href="assets/night-door-red.png" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="story-samples.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <aside class="preview-bar" aria-label="视觉样张控制">
+    <div class="preview-name">夜汤 <span>视觉样张</span></div>
+    <nav class="preview-pages" aria-label="样张页面">
+      <button data-page="home" aria-current="page">首页</button>
+      <button data-page="library">选题</button>
+      <button data-page="game">局内</button>
+    </nav>
+    <div class="preview-options"><span class="preview-scope">静音 · 预设交互</span><div class="font-options" role="group" aria-label="字体比较"><button data-font="song" aria-pressed="true">细宋</button><button data-font="kai" aria-pressed="false">楷体</button></div><button class="design-info" data-action="design" aria-label="样张说明">?</button></div>
+  </aside>
+  <div id="stage"></div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

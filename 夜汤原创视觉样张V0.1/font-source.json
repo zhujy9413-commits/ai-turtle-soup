@@ -1,0 +1,19 @@
+{
+  "downloaded": "2026-10-26",
+  "license": "SIL OFL 1.1",
+  "modified": false,
+  "files": [
+    {
+      "file": "fonts/night-song.ttf",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf",
+      "bytes": 25125512,
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9"
+    },
+    {
+      "file": "fonts/NotoSerifSC-OFL.txt",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/OFL.txt",
+      "bytes": 4350,
+      "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+    }
+  ]
+}

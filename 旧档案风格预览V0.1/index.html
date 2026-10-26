@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0c0b0b">
+<title>夜汤 · 旧档案风格预览</title><link rel="stylesheet" href="style.css?v=0.1.1"><script src="preview.js" defer></script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="./" aria-label="夜汤风格预览首页"><img src="assets/yetang-logo.png" alt="夜汤" width="2172" height="724"><span>灯灭之后，翻开一段故事。</span></a><span class="preview-label"><i></i> 旧档案风格 · 效果预览</span></header>
+<main>
+<div class="chapter"><div><p class="eyebrow">夜间档案室 <span>/</span> 未解故事</p><h1>出差的第三晚</h1></div><div class="utilities"><button id="read-button" type="button">放大阅读 <span>↗</span></button><button id="rules-button" type="button">规则 <span>☷</span></button></div></div>
+<div class="workspace">
+<section class="case-file" aria-label="故事汤面">
+<div class="paper-content"><div class="paper-top"><span>故事记录</span><span>NO. 007</span></div><div class="paper-title"><span class="tiny-label">汤面</span><h2>出差的第三晚</h2><span class="stamp" aria-hidden="true">待解</span></div>
+<div class="story-text" id="surface">
+<p>我怕黑，养狗后才敢一个人睡。</p>
+<p>我收到妹妹手机发来的消息，说她出差几天，叫我别进她的房间。</p>
+<p>那几晚，关灯以后，我照例把手垂到床下。熟悉的舔舐让我安心。</p>
+<p>第三晚，妹妹房间里又响起了抓门声。</p>
+<p>床下的触感还在，我便没有起身。</p>
+<p>天亮后，警察告诉我，那三晚，妹妹一直在家。</p>
+</div><div class="paper-bottom"><span>只看见了结局，尚未看见经过。</span><span>01 / 01</span></div></div>
+</section>
+<section class="inference" aria-label="推理区域样式">
+<header class="inference-header"><span class="red-dot"></span><h2>推理记录</h2><span class="session-label">尚未提问</span></header>
+<div class="empty-record"><div class="scratch-number" aria-hidden="true">?</div><p class="host-title">故事已经留下了痕迹。</p><p>从一个是非问题开始，<br>慢慢接近藏在里面的真相。</p><span class="ink-line" aria-hidden="true"></span><div class="answer-key"><span>是</span><span>否</span><span>无关</span><span>不清楚</span></div></div>
+<div class="composer"><label for="question">写下你的疑问</label><textarea id="question" rows="2" placeholder="例如：那三晚，屋里还有其他人吗？" maxlength="200"></textarea><div class="compose-actions"><span>一次一个问题</span><button type="button" id="preview-submit">提交问题 <span>↗</span></button></div><p id="preview-status" role="status">此页用于确认视觉风格，不进行主持判断。</p></div>
+<div class="secondary-actions"><button type="button" id="hint-button">寻求提示 <span>＋</span></button><button type="button" id="restore-button">还原故事 <span>↗</span></button></div>
+</section>
+</div>
+<footer class="page-footer"><span>有些声音，听见时已经太迟。</span><span>夜汤 · 视觉试作 01</span></footer>
+</main>
+<dialog id="reading-dialog" aria-labelledby="reading-title"><button class="close" data-close aria-label="关闭汤面">×</button><span class="dialog-kicker">故事记录 / NO. 007</span><h2 id="reading-title">出差的第三晚</h2><div class="dialog-story"></div></dialog>
+<dialog id="rules-dialog" aria-labelledby="rules-title"><button class="close" data-close aria-label="关闭规则">×</button><span class="dialog-kicker">在提问之前</span><h2 id="rules-title">推理规则</h2><p>汤面只展示情景，完整经过由你还原。</p><p>一次提交一个是非问题。主持人通常回答「是 / 否 / 无关 / 不清楚」。问法有歧义时，会先请你澄清。</p><p>卡住时可以申请提示；拼出关键因果后，提交完整故事。</p><p class="preview-note">当前为视觉效果稿，不会启动正式对局或调用模型。</p></dialog>
+</body></html>

@@ -1,0 +1,48 @@
+{
+  "release_version": "V0.8.2",
+  "date": "2026-10-26",
+  "delivery": "已实现的本机模拟主持原型，待用户体验验收",
+  "changes": [
+    "原三句开场保留，钥匙在中下方浮现，取消独立钥匙大框与标题",
+    "钥匙短暂微光、悬停与键盘反馈，等待后才短暂出现低对比轻触提示",
+    "门沿低透明呼吸手印与划痕，不新增惊吓声",
+    "提问与未通过还原共用次数在15、5各提醒一次，20不提醒"
+  ],
+  "quota_rules": {
+    "thresholds": [15, 5],
+    "initial_alert": false,
+    "processing_reserved_alert": false,
+    "repeat_after_refresh": false,
+    "sound": false,
+    "modal": false,
+    "auto_disappear_seconds": [6.5, 8.5],
+    "hints_are_separate": true
+  },
+  "checks": {
+    "python_existing": {"passed": 22, "failed": 0},
+    "quota_node": {"passed": 7, "failed": 0},
+    "javascript_syntax": "通过",
+    "browser": [
+      "跳过保留三句，钥匙点击前不自动进首页",
+      "1440×900、390×844、320×640、844×390无水平溢出",
+      "320×640文字与钥匙间距修正后21.4px",
+      "正常8.2秒开场前后文字框位置一致",
+      "键盘Enter进入，焦点无大框",
+      "减少动态时钥匙与手印动画关闭",
+      "音效请求仅钥匙点击后，重复点击只请求一次，失败仍进入",
+      "静音入口不请求音频",
+      "实扣至15、5出现对应提醒，中间不重复，刷新不重放",
+      "提醒消退不改变草稿、光标，不打开弹窗"
+    ],
+    "normal_quote_bbox_before_after": [64, 234.578125, 1000, 319.046875],
+    "audio_qa": "所有HTMLMediaElement.play均使用静音替身；没有扬声器试听，听感待用户主动确认"
+  },
+  "new_model_calls": 0,
+  "qa_data": "/private/tmp/yetang-intro-v082-qa，独立测试库，不复制到交付runtime",
+  "scope": "单人、三道汤、模拟主持；未新增账号、多人、上传头像、付费或真实模型能力",
+  "screenshots": [
+    "截图/开场与次数提醒V0.8.2/钥匙入口-电脑.png",
+    "截图/开场与次数提醒V0.8.2/钥匙入口-手机.png",
+    "截图/开场与次数提醒V0.8.2/剩15次提醒-电脑.png"
+  ]
+}

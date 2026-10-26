@@ -1,0 +1,10 @@
+{
+  "version": "V0.8",
+  "image_mode": "built-in image_gen",
+  "asset": "public/art/old-key.png",
+  "source": "/Users/zhujiayi/.codex/generated_images/01a163b8-5aba-71e0-b015-578f97cf58cd/exec-9169cf15-556e-40f2-86de-2b8813d6c700.png",
+  "prompt_file": "钥匙生成提示词V0.8.txt",
+  "alpha": "RGBA透明背景，保留原始生成文件",
+  "audio_record": "钥匙开锁音源V0.8.json",
+  "entry": "故事完成或跳过开场均进入钥匙阶段；点击钥匙并根据声音选择播放开锁声，随后淡入首页；开场不创建对局。"
+}

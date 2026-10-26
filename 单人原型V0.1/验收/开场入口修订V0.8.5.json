@@ -1,0 +1,16 @@
+{
+  "visibleSkipControls": 0,
+  "errors": [],
+  "keyEntryWorks": true,
+  "escapeStillStopsAtKey": true,
+  "naturalOpeningCompletes": true,
+  "audioCalls": [],
+  "viewport": [
+    390,
+    844
+  ],
+  "version": "V0.8.5",
+  "date": "2026-10-26",
+  "scope": "仅移除可见的跳过开场按钮，并修复相应焦点引用；演出时长、钥匙、音源、游戏和题库逻辑保持原样。",
+  "method": "Scratch browser page returned no current game through a mocked GET, preventing access to existing sessions. Audio play was stubbed; no audible playback."
+}

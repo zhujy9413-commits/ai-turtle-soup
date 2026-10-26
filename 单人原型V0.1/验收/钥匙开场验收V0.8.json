@@ -1,0 +1,46 @@
+{
+  "version": "V0.8",
+  "date": "2026-10-26",
+  "checks": {
+    "program_tests_passed": 22,
+    "syntax": true,
+    "skip_stops_at_key": true,
+    "story_completion_stops_at_key": true,
+    "escape_stops_at_key": true,
+    "no_text_enter_button": true,
+    "key_click_required": true,
+    "key_enter_and_space": true,
+    "key_click_once": true,
+    "mute_no_audio_requests": true,
+    "sound_enabled_requests_unlock_only_on_click": true,
+    "audio_failure_still_enters": true,
+    "quote_color": "rgb(180,70,59)",
+    "key_visible_no_overflow": [
+      [
+        320,
+        640
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "reduced_motion_animation": "none",
+    "volume_controls_match_state": true,
+    "unlock_file_decodable": 1.27625,
+    "audio_fade_volume_bounded": true,
+    "game_audio_errors_after_fix": []
+  },
+  "audio_test_method": "浏览器play使用静音替身记录调用；未向扬声器播放。文件通过原生metadata解码验证。",
+  "perceptual_status": "钥匙外观、开锁音色及完整主观体验待用户确认；没有把静音替身检查写成真实听感通过。",
+  "limits": "未在真实手机设备测试；浏览器扩展有注入脚本提示，游戏自身关键断言单独验证。",
+  "new_model_calls": 0
+}

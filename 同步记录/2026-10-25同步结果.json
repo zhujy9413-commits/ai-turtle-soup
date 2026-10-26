@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-25",
+  "github": {
+    "repository": "https://github.com/zhujy9413-commits/ai-turtle-soup",
+    "visibility": "private",
+    "branch": "main",
+    "commit": "0c6af3830bc415816c88be9af2d4fd9160aaad6a",
+    "push_verified": true,
+    "changed_files": 226
+  },
+  "feishu": {
+    "parent": "https://my.feishu.cn/wiki/FVm5wiCIDiaq9QkRg1Pc7uXknqb",
+    "progress": "https://my.feishu.cn/wiki/K5qxwAKX4iXuwpkadGgcgLjNngO",
+    "design": "https://my.feishu.cn/wiki/E1kEwl6Dyi9jwTksZ3echjHQnkG",
+    "navigation": "https://my.feishu.cn/wiki/WQRlwIORwiGWfek1FLQcuNgKnvf",
+    "saved_and_reload_verified": true
+  },
+  "local_source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤",
+  "excluded": [
+    "API密钥与临时凭证",
+    "runtime对局数据库",
+    "工作副本与缓存",
+    "本次未更新的历史ZIP"
+  ],
+  "note": "本结果文件在推送完成后生成，保存于本机；所列commit对应本次内容快照。下次从真实设备与完整单人流程验收继续。"
+}

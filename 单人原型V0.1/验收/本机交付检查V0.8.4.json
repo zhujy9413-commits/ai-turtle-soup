@@ -1,0 +1,26 @@
+{
+  "cssVersion": true,
+  "cssStatus": 200,
+  "fontBytes": 1383464,
+  "runtime": {
+    "remaining_authorized_provider_calls": 0,
+    "live_enabled": false,
+    "provider_calls": 0,
+    "mode": "fixture"
+  },
+  "errors": [],
+  "fontLoaded": true,
+  "audioCalls": [],
+  "fontStatus": 200,
+  "url": "http://127.0.0.1:8876/?v=0.8.4&quiet=1",
+  "version": "V0.8.4",
+  "date": "2026-10-26",
+  "existing_records_preserved": true,
+  "existing_record_count": 2,
+  "existing_statuses": [
+    "completed",
+    "interrupted"
+  ],
+  "live_deployment": false,
+  "game_service_ast_unchanged": true
+}

@@ -1,0 +1,386 @@
+{
+  "intro": {
+    "skipToKey": true,
+    "replayAndKeyboardEntry": true,
+    "keyRequired": true,
+    "quoteLines": 3,
+    "silentAudioCalls": 0
+  },
+  "font": {
+    "loaded": true,
+    "family": "\"Night Song\", \"Night Read\", \"Songti SC\", serif"
+  },
+  "version": "V0.8.4",
+  "library": {
+    "settingsSurviveRender": true,
+    "search": true,
+    "filters": true,
+    "selected": "S06",
+    "tutorial4Steps": true,
+    "scroll": {
+      "after": 641,
+      "before": 641
+    }
+  },
+  "homeLibraryResponsive": [
+    {
+      "home": {
+        "brand": "116px",
+        "headline": "\"Night Song\", \"Night Read\", \"Songti SC\", serif",
+        "overflow": false
+      },
+      "width": 1440,
+      "height": 1000,
+      "library": {
+        "y": 641,
+        "dockBottom": 1000,
+        "overflow": false
+      }
+    },
+    {
+      "home": {
+        "brand": "116px",
+        "headline": "\"Night Song\", \"Night Read\", \"Songti SC\", serif",
+        "overflow": false
+      },
+      "width": 768,
+      "height": 1024,
+      "library": {
+        "y": 375.5,
+        "dockBottom": 1024,
+        "overflow": false
+      }
+    },
+    {
+      "home": {
+        "brand": "102px",
+        "headline": "\"Night Song\", \"Night Read\", \"Songti SC\", serif",
+        "overflow": false
+      },
+      "width": 390,
+      "height": 844,
+      "library": {
+        "y": 588,
+        "dockBottom": 844,
+        "overflow": false
+      }
+    },
+    {
+      "home": {
+        "brand": "91px",
+        "headline": "\"Night Song\", \"Night Read\", \"Songti SC\", serif",
+        "overflow": false
+      },
+      "width": 320,
+      "height": 640,
+      "library": {
+        "y": 558,
+        "dockBottom": 640,
+        "overflow": false
+      }
+    }
+  ],
+  "previewToolsAbsent": true,
+  "paper": {
+    "modal": "280 170 240 fill",
+    "reducedMotion": true,
+    "reason": "Long sheets stretched the original edge over the text. Nine-slice keeps the edge at 24px for dialogs, in-game paper and full truth.",
+    "nineSlice": true,
+    "checks": {
+      "borderImage": "280 170 240 fill",
+      "backgroundSize": "auto"
+    },
+    "sheet": {
+      "borderImage": "280 170 240 fill",
+      "textPadding": "38px 33px 30px"
+    }
+  },
+  "runtime": {
+    "remaining_authorized_provider_calls": 0,
+    "live_enabled": false,
+    "provider_calls": 0,
+    "mode": "fixture"
+  },
+  "responsive": [
+    {
+      "height": 1000,
+      "submit": {
+        "y": 804.203125,
+        "bottom": 857.203125,
+        "right": 1360,
+        "x": 1270,
+        "width": 90,
+        "height": 53
+      },
+      "paper": "flex",
+      "game": {
+        "y": 0,
+        "bottom": 1000,
+        "right": 1440,
+        "x": 0,
+        "width": 1440,
+        "height": 1000
+      },
+      "messages": {
+        "y": 259.09375,
+        "bottom": 756.40625,
+        "right": 1383,
+        "x": 597.703125,
+        "width": 785.296875,
+        "height": 497.3125
+      },
+      "width": 1440,
+      "overflow": false,
+      "composer": {
+        "y": 756.40625,
+        "bottom": 975,
+        "right": 1383,
+        "x": 597.703125,
+        "width": 785.296875,
+        "height": 218.59375
+      }
+    },
+    {
+      "height": 1024,
+      "submit": {
+        "y": 805.40625,
+        "bottom": 858.40625,
+        "right": 719,
+        "x": 641,
+        "width": 78,
+        "height": 53
+      },
+      "paper": "flex",
+      "game": {
+        "y": 0,
+        "bottom": 1024,
+        "right": 768,
+        "x": 0,
+        "width": 768,
+        "height": 1024
+      },
+      "messages": {
+        "y": 268.09375,
+        "bottom": 759.609375,
+        "right": 737,
+        "x": 344,
+        "width": 393,
+        "height": 491.515625
+      },
+      "width": 768,
+      "overflow": false,
+      "composer": {
+        "y": 759.609375,
+        "bottom": 1003,
+        "right": 737,
+        "x": 344,
+        "width": 393,
+        "height": 243.390625
+      }
+    },
+    {
+      "height": 844,
+      "submit": {
+        "y": 655.140625,
+        "bottom": 702.140625,
+        "right": 358,
+        "x": 291,
+        "width": 67,
+        "height": 47
+      },
+      "paper": "none",
+      "game": {
+        "y": 0,
+        "bottom": 844,
+        "right": 390,
+        "x": 0,
+        "width": 390,
+        "height": 844
+      },
+      "messages": {
+        "y": 217.296875,
+        "bottom": 616.140625,
+        "right": 371,
+        "x": 19,
+        "width": 352,
+        "height": 398.84375
+      },
+      "width": 390,
+      "overflow": false,
+      "composer": {
+        "y": 616.140625,
+        "bottom": 830,
+        "right": 371,
+        "x": 19,
+        "width": 352,
+        "height": 213.859375
+      }
+    },
+    {
+      "height": 640,
+      "submit": {
+        "y": 454.140625,
+        "bottom": 501.140625,
+        "right": 294,
+        "x": 227,
+        "width": 67,
+        "height": 47
+      },
+      "paper": "none",
+      "game": {
+        "y": 0,
+        "bottom": 640,
+        "right": 320,
+        "x": 0,
+        "width": 320,
+        "height": 640
+      },
+      "messages": {
+        "y": 214.296875,
+        "bottom": 417.140625,
+        "right": 305,
+        "x": 15,
+        "width": 290,
+        "height": 202.84375
+      },
+      "width": 320,
+      "overflow": false,
+      "composer": {
+        "y": 417.140625,
+        "bottom": 628,
+        "right": 305,
+        "x": 15,
+        "width": 290,
+        "height": 210.859375
+      }
+    },
+    {
+      "height": 450,
+      "submit": {
+        "y": 347.3359375,
+        "bottom": 392.3359375,
+        "right": 360,
+        "x": 293,
+        "width": 67,
+        "height": 45
+      },
+      "paper": "none",
+      "game": {
+        "y": 0,
+        "bottom": 450,
+        "right": 390,
+        "x": 0,
+        "width": 390,
+        "height": 450
+      },
+      "messages": {
+        "y": 176.796875,
+        "bottom": 314.3359375,
+        "right": 371,
+        "x": 19,
+        "width": 352,
+        "height": 137.5390625
+      },
+      "width": 390,
+      "overflow": false,
+      "composer": {
+        "y": 314.3359375,
+        "bottom": 436,
+        "right": 371,
+        "x": 19,
+        "width": 352,
+        "height": 121.6640625
+      }
+    },
+    {
+      "height": 390,
+      "submit": {
+        "y": 265.3828125,
+        "bottom": 310.3828125,
+        "right": 798,
+        "x": 720,
+        "width": 78,
+        "height": 45
+      },
+      "messages": {
+        "y": 178.296875,
+        "bottom": 232.3828125,
+        "right": 813,
+        "x": 356.59375,
+        "width": 456.40625,
+        "height": 54.0859375
+      },
+      "game": {
+        "y": 0,
+        "bottom": 390,
+        "right": 844,
+        "x": 0,
+        "width": 844,
+        "height": 390
+      },
+      "width": 844,
+      "overflow": false,
+      "composer": {
+        "y": 232.3828125,
+        "bottom": 377,
+        "right": 813,
+        "x": 356.59375,
+        "width": 456.40625,
+        "height": 144.6171875
+      }
+    }
+  ],
+  "date": "2026-10-26",
+  "mobileSettings": {
+    "modal": true,
+    "savedAndUsed": true,
+    "story": "S07",
+    "quota5": true,
+    "attempts": 6
+  },
+  "game": {
+    "mobileSurfaceAndHints": true,
+    "draftRetainedAcrossDialogs": true,
+    "actualS02AfterPaperFix": true,
+    "configuredAttempts": 16,
+    "ruleDialogIndependent": true,
+    "timeoutNoCharge": true,
+    "focusTrap": true,
+    "mobileManualReveal": true,
+    "quotaRefreshNoRepeat": true,
+    "mobileTestTools": true,
+    "revealCancelReturnsFocus": true,
+    "solutionDraftRetained": true,
+    "startedSelectedS06": true,
+    "question": true,
+    "quota15": true,
+    "hint": true,
+    "hintNoCharge": "剩余次数15 / 16",
+    "refreshHistoryAndDraft": true
+  },
+  "result": {
+    "truthAfterReveal": true,
+    "successBranch": true,
+    "overflow": false,
+    "title": "真相，终于连了起来。",
+    "reviewLines": 4,
+    "returnToLibrary": true
+  },
+  "audioCalls": 0,
+  "errors": [],
+  "program_tests": {
+    "python_unittest": {
+      "passed": 22
+    },
+    "node_quota": {
+      "passed": 7
+    },
+    "node_syntax": "passed"
+  },
+  "limits": [
+    "Chromium viewport emulation, not physical mobile-device testing.",
+    "Still local single-player fixture host with three stories; no real model or online release.",
+    "Sound checks were silent; audio sources and intro audio logic unchanged.",
+    "Browser extension controls are outside the app. Generic PAGE_SCRIPT_ERROR warnings had no source; the app/intro/quota error listener recorded none. Taste tray intercepted two bottom-right clicks; keyboard equivalents passed."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "release_version": "V0.8.3",
+  "date": "2026-10-26",
+  "scope": "开场声音选择页标题样式微调",
+  "changes": [
+    "沿用Night Read字体，合成粗体600改为常规400并禁用字体合成",
+    "标题电脑最大48px、手机29px起，增加字距与行距",
+    "颜色调整为低亮度灰白#b8b3aa"
+  ],
+  "checks": {
+    "viewports": [
+      "1440x900",
+      "390x844",
+      "320x640",
+      "844x390"
+    ],
+    "horizontal_overflow": false,
+    "computed_weight": "400",
+    "computed_synthesis": "none",
+    "visual_inspection": "手机截图已查看，字形与背景协调，未遮挡操作",
+    "audio": "静音替身，不播放扬声器音频"
+  },
+  "new_model_calls": 0,
+  "game_logic_changed": false,
+  "runtime_copied": false,
+  "screenshot": "截图/开场标题V0.8.3/开场标题-手机.png"
+}

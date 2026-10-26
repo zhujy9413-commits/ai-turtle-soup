@@ -1,0 +1,26 @@
+{
+  "version": "V0.6.3",
+  "date": "2026-10-26",
+  "source_title": "Knocking on Wood or Door",
+  "author": "stephan",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Knocking_on_wood_or_door.ogg",
+  "license": "Public domain / PD-author, verified 2026-10-26",
+  "source_clip_seconds": [
+    0.25,
+    1.5
+  ],
+  "placement_seconds": 5.15,
+  "processing": "连续录音，保留原本节奏和动态；65Hz高通、3kHz低通、整体降低音量；切口淡化；无合成敲击或额外回声",
+  "music_gain_db": 12.04,
+  "music_rms_dbfs_before": -31.68,
+  "music_rms_dbfs_after": -19.64,
+  "music_peak": 0.46912,
+  "knock_peak": 0.41204,
+  "knock_duration_seconds": 8.2,
+  "files": {
+    "public/ambient.wav": "44abe099dd0e743fe46795e63639d22afaf0a25d7c83f7fdb2abed2d4f7faa3a",
+    "public/intro-knocks.wav": "d81de4e988410068ddb0488a11db6cc1974c49cd2fd8ce331ac9e112c9e69810",
+    "试听/敲门声V0.6.3.wav": "d0137fd8538b455415760658d0d82d73f006f8e0744e0eb12d02dfc6bd1ef8cd"
+  },
+  "perceptual_status": "待用户试听；信号检查不代表真实听感验收"
+}

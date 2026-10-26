@@ -1,0 +1,92 @@
+{
+  "title": "夜汤 · 同类产品与恐怖游戏参考",
+  "research_date": "2026-10-26",
+  "purpose": "为夜汤的整体视觉、阅读和操作建立真实产品依据，暂停零散修改，供下一轮设计确认使用。",
+  "method": "两款海龟汤实际浏览首页、选题和局内入口；三款恐怖游戏查看官方发布的游戏内画面。全程静音，没有注册、付费、提交AI问题或完整通关。",
+  "game_version_unchanged": "V0.8.3",
+  "cases": [
+    {
+      "id": "chuqian",
+      "name": "出前一汤",
+      "type": "直接同类 · AI海龟汤网页",
+      "evidence": "实际浏览首页、选题和匿名体验房",
+      "source": "https://haiguitang.net/",
+      "capture_page": "https://haiguitang.net/demo/92edb575-d996-4d50-8e72-971107b6f3bd",
+      "images": ["assets/chuqian-library.png", "assets/chuqian-room.png"],
+      "observed": "首页具备搜索、系列与难度筛选、排序；体验房把汤面和主持问答分栏，底部输入区独立固定。本次体验房显示5次提问，不能代表所有房间规则。",
+      "inference": "题库浏览、汤面回看和持续提问是应优先保证的操作；页面提供许多功能并不等于适合夜汤当前阶段。",
+      "borrow": "后续题库扩张时的搜索筛选；电脑端并行看汤面与问答；持续可用的提问入口。",
+      "avoid": "暂不照搬首页的任务、排行榜、积分活动和高密度彩色按钮；也不照搬会提前暴露本格/变格的筛选标签。",
+      "unknown": "未验证AI回答正确率、多人稳定性、付费规则或长局表现。"
+    },
+    {
+      "id": "tanghenre",
+      "name": "汤很热",
+      "type": "直接同类 · 单人AI海龟汤网页",
+      "evidence": "实际浏览首页、故事列表与故事局内页面",
+      "source": "https://tanghenre.com/",
+      "details_source": "https://tanghenre.com/about",
+      "capture_page": "https://tanghenre.com/tang/海龟汤的故事",
+      "images": ["assets/tanghenre-room.png"],
+      "observed": "所看故事页有插图、汤面和简短提问示例；底部固定剩余次数条与输入框。页面提示登录后可保存进度。",
+      "inference": "玩家不必先理解很多功能，便能找到下一步提问入口。但大幅插图也会占用手机阅读空间。",
+      "borrow": "简短且贴近任务的首次提问示例；次数紧邻输入区；主要动作始终容易找到。",
+      "avoid": "不照搬白底绿按钮的产品气质，也不直接照搬它的8问规则；夜汤仍以各故事已验证的推理路径定额度。",
+      "unknown": "没有发送AI问题，不能判断该产品实际主持质量；配乐资料已读，声音节奏没有试听。"
+    },
+    {
+      "id": "stories",
+      "name": "Stories Untold",
+      "type": "间接参考 · 恐怖文字冒险",
+      "evidence": "开发商官网说明与官方游戏内截图，未安装试玩",
+      "source": "https://screenburn.com/games-su",
+      "details_source": "https://store.steampowered.com/app/558420/Stories_Untold/",
+      "capture_page": "https://images.squarespace-cdn.com/content/v1/55d4644be4b0d900e229fa08/1538559107419-MF67S3AVD6A2KF0T1ZIN/SU_Screenshot_03.jpg",
+      "images": ["assets/stories-gameplay.png"],
+      "observed": "所看画面把文字和指令输入放在旧电脑屏幕内，周围是暗色房间；琥珀色文字与设备形态一致，没有满屏血字。",
+      "inference": "恐怖氛围可以由空间、媒介和阅读行为共同建立。文字的样式有明确来源，比泛用的恐怖装饰更完整。",
+      "borrow": "让夜汤的档案、记录、钥匙和门属于同一个场景；明确玩家正在阅读和操作什么。",
+      "avoid": "不照搬CRT像素字、扫描线、3D房间或英文指令输入。夜汤是中文长文推理，阅读成本不同。",
+      "unknown": "静态截图不能证明动态效果、声音触发和实际操作体验；未评估其完整流程。"
+    },
+    {
+      "id": "paper",
+      "name": "纸嫁衣系列",
+      "type": "间接参考 · 中式恐怖解谜",
+      "evidence": "官方系列页面及其场景截图，未安装试玩",
+      "source": "https://www.voidfancy.com/wjmj/Phone/index.html",
+      "details_source": "https://store.steampowered.com/app/1735950/Paper_Bride/",
+      "capture_page": "https://www.voidfancy.com/Web_Global/images/Zjy6/screenshot/cn/2.jpg",
+      "images": ["assets/paper-scene.png", "assets/paper-object.png"],
+      "observed": "所看场景通过石碑、旧物、积尘、阴影和低饱和色建立气氛；明亮的剪纸场景也存在。没有证据表明恐怖画面必须全部黑红。",
+      "inference": "材质和物件要与故事场景一致；红色的意义来自内容和位置，单纯扩大红色面积未必更有效。",
+      "borrow": "少量有叙事来源的痕迹和旧物质感；同一种材质、光线和色彩关系贯穿界面。",
+      "avoid": "不照搬婚俗、符纸、石像等具体文化符号；夜汤题材包含现代住宅与医院，不能全部套入民俗祭祀。",
+      "unknown": "本次选取的是官方场景图，不用于推断全文字体、菜单行为、提示收费或声音效果。"
+    },
+    {
+      "id": "para",
+      "name": "灵视异闻 FILE23 本所七大不可思议",
+      "type": "间接参考 · 恐怖视觉小说",
+      "evidence": "官方Steam展示的中文游戏内画面，未安装试玩",
+      "source": "https://store.steampowered.com/app/2106840/?l=schinese",
+      "details_source": "https://paranormasight.square-enix-games.com/en-us/",
+      "capture_page": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2106840/ss_4f66e5c3433cfbad4c358a2b6638d097fd7d6413.1920x1080.jpg?t=1776154854",
+      "images": ["assets/para-reading.png", "assets/para-actions.png"],
+      "observed": "所看中文画面中，角色名、底部对话、回想和菜单形成不同信息层；场景和人物表达气氛，文字保持稳定字形与较高对比。",
+      "inference": "统一风格可以通过色彩、排版和材质完成，不要求所有文本都做成夸张手写字。",
+      "borrow": "为标题、叙事正文、操作标签建立清楚层级；阅读区与气氛区分工，关键操作容易辨认。",
+      "avoid": "不照搬角色立绘、强烈色差或大规模分支剧情；也不能把视觉小说的逐句点击照搬成海龟汤的阅读阻碍。",
+      "unknown": "没有完整试玩，不推断其可用性、声音、保存、跳过和提示机制。"
+    }
+  ],
+  "recommendations": [
+    {"priority": "先确定", "topic": "同一个空间", "proposal": "以夜间旧档案室为整体方向：门是进入空间的入口，钥匙是进入动作，汤面是档案内容，问答是推理记录。首页、局内、弹窗和复盘使用同一组材质与色彩。", "basis": "Stories Untold的媒介一致性、纸嫁衣的场景材质，以及用户反复指出的封面与局内割裂。"},
+    {"priority": "先比较", "topic": "统一字体体系", "proposal": "保留已确认的夜汤字标。主体字体先用同一段汤面制作两个候选样张，统一背景和字号，只比较字形气质与长文可读性；选定后以一套主体字体建立标题、正文、按钮和数字层级。", "basis": "灵视异闻的中文阅读层级、用户要求基本统一字体，以及当前开场圆厚字形的反馈。"},
+    {"priority": "先验证", "topic": "提问入口与回看", "proposal": "手机优先保证输入区和剩余次数容易找到，回看汤面继续沿用固定入口；电脑保留汤面与记录并行阅读。用长对话、手机键盘和误触情景验收。", "basis": "两款直接同类的固定底部输入区，以及用户提出的长对话回看与选题误触问题。"},
+    {"priority": "再克制添加", "topic": "暗红与动态", "proposal": "暗红用于门缝、选中手印、关键回答和临近额度；普通正文保持可读。动态只服务进入、选题和回答，不让背景痕迹与长文争夺注意力。", "basis": "所看恐怖游戏没有共用一种黑红方案；此项是结合样本和夜汤任务提出的设计假设，仍需玩家确认。"},
+    {"priority": "单独试听", "topic": "声音", "proposal": "继续沿用玩家主动开启、可静音调节的边界。下一轮按进入前的安静、环境音铺垫、敲门和开锁的连续体验验证，不在研究或改页面时突然播放。", "basis": "用户曾被测试中的突然声响吓到。本轮静音，不能把这个方案包装成竞品音效实测结论。"}
+  ],
+  "next_step": "先审阅这份参考和整体方向，再制作覆盖首页、选题、局内的同一套视觉样张；样张确认后统一实施。",
+  "limits": "这是针对当前产品与视觉问题的一轮定向研究，不是完整竞品审计、AI评测或市场成功结论。未收集付费价格、用户量、营收和转化率。截图可能含浏览器扩展悬浮控件，扩展控件不属于游戏。所有他方画面仅用于内部研究，不并入夜汤游戏素材。"
+}

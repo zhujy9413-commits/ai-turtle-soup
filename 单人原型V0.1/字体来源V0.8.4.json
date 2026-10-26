@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-26",
+  "release_version": "V0.8.4",
+  "source": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
+  "source_file": "NotoSerifSC[wght].ttf",
+  "source_sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+  "source_bytes": 25125512,
+  "output": "public/fonts/night-song.woff2",
+  "sha256": "fcf6d1fa5efbdb0aca84a83e88592a4eafb3cf28f9cedc6d6f7cdccd3263c7cd",
+  "output_bytes": 1383464,
+  "family": "Yetang Archive Song",
+  "modified": true,
+  "build": "regular weight 400, GB2312 plus public interface text, WOFF2, renamed derivative family",
+  "private_story_data_used_for_subset": false,
+  "license": "SIL OFL 1.1",
+  "license_file": "public/fonts/NotoSerifSC-OFL.txt",
+  "build_tool": "tools/build_archive_font.py",
+  "build_dependencies": {
+    "fonttools": "4.67.0",
+    "brotli": "1.2.1"
+  },
+  "runtime_dependencies": "None; local WOFF2 only",
+  "fallback": "Existing Night Read and system Chinese serif for characters outside the subset.",
+  "brand": "Existing approved yetang-logo.png unchanged"
+}

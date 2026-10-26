@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-26",
+  "version": "V0.6.3",
+  "checks": {
+    "javascript_syntax": true,
+    "explicit_sound_starts_music_and_knocks": true,
+    "music_stays_on_after_opening": true,
+    "mute_matches_button": true,
+    "volume_zero_stops": true,
+    "positive_slider_volume_starts": true,
+    "refresh_restores_with_gesture_if_needed": true,
+    "silent_opening_does_not_load_knocks": true,
+    "full_opening_track_cleans_up": true,
+    "audio_pcm_no_clipping": true,
+    "new_model_calls": 0
+  },
+  "listening_acceptance": "待用户试听，不把程序播放成功视为音效逼真度通过",
+  "limits": "未在真实手机扬声器和耳机上实测；浏览器有扩展脚本提示，使用游戏DOM范围验证"
+}

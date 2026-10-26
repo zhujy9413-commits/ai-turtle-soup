@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-26",
+  "scope": "独立效果稿，不改正式原型",
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "horizontal_overflow": false,
+  "local_fonts_loaded": true,
+  "reading_dialog": true,
+  "rules_dialog_close_escape": true,
+  "draft_preserved_after_reading": true,
+  "preview_actions_no_model_calls": true,
+  "note": "视觉预览，不代表正式游戏完整流程验收；浏览器有注入脚本提示，单独检查来源。"
+}

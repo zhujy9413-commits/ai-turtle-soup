@@ -1,0 +1,11 @@
+'use strict';
+const reading = document.querySelector('#reading-dialog');
+const rules = document.querySelector('#rules-dialog');
+document.querySelector('.dialog-story').innerHTML = document.querySelector('#surface').innerHTML;
+document.querySelector('#read-button').addEventListener('click', () => reading.showModal());
+document.querySelector('#rules-button').addEventListener('click', () => rules.showModal());
+document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => button.closest('dialog').close()));
+const status = document.querySelector('#preview-status');
+document.querySelector('#preview-submit').addEventListener('click', () => {status.textContent = '这是视觉效果预览，问题不会发送，也不会消耗提问次数。';});
+document.querySelector('#hint-button').addEventListener('click', () => {status.textContent = '当前仅预览提示入口样式，不会公开故事提示。';});
+document.querySelector('#restore-button').addEventListener('click', () => {status.textContent = '当前仅预览还原入口样式，不会揭晓汤底。';});

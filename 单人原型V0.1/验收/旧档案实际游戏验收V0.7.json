@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-26",
+  "version": "V0.7",
+  "scope": "接入实际游戏，不再仅是独立效果稿",
+  "checks": {
+    "program_tests": 22,
+    "program_passed": 22,
+    "game_widths_no_overflow": [
+      320,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "result_widths_no_overflow": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "selection_dock_widths": [
+      320,
+      390,
+      768,
+      1440
+    ],
+    "selection_scroll_delta_px": 0,
+    "fixed_start_minimum_button_height_px": 48,
+    "correct_selected_story_started": true,
+    "reload_restored_session": true,
+    "question_answer": true,
+    "yes_color": "rgb(196,84,73)",
+    "yes_font": "Night Read",
+    "surface_dialog": true,
+    "rules_escape_close": true,
+    "draft_preserved": true,
+    "all_audio_muted_during_qa": true,
+    "new_model_calls": 0
+  },
+  "limits": "视觉为本机浏览器模拟屏宽验收；未声称真实手机验收或真实模型接入；浏览器扩展注入提示不计作游戏断言成功依据。"
+}

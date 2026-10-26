@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-26",
+  "sample_version": "V0.1",
+  "actual_game_version": "V0.8.3",
+  "scope": "独立静音三页视觉样张；不替换现有游戏；未调用模型。",
+  "assets": [
+    {
+      "file": "assets/archive-paper.png",
+      "source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1/public/art/archive-paper.png",
+      "sha256": "060a25189ea6b5465bffba65a97e0a3509c764f1c2260a740019f8b4ba516b98",
+      "unchanged_bitmap": true
+    },
+    {
+      "file": "assets/night-door-red.png",
+      "source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1/public/art/night-door-red.png",
+      "sha256": "a3b9d9690e2613246e0c010c24abced000539c3c848e70a3b78d56c8afafe9f2",
+      "unchanged_bitmap": true
+    },
+    {
+      "file": "assets/old-key.png",
+      "source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1/public/art/old-key.png",
+      "sha256": "b6c4d6aa55ff2864e3d5831fd421b676bbf58a7eb8635105a71e7e094fb77019",
+      "unchanged_bitmap": true
+    },
+    {
+      "file": "assets/selection-handprint.png",
+      "source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1/public/art/selection-handprint.png",
+      "sha256": "cd0fbb88527dbfcf846c3f0b7e88ec21372ca9e829607736724c7a9ce741e6fe",
+      "unchanged_bitmap": true
+    },
+    {
+      "file": "assets/story-scenes.png",
+      "source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1/public/art/story-scenes.png",
+      "sha256": "9e3a644c485ad7e7df0960641f566bff53d147c0742cae7083dd30f4512426e2",
+      "unchanged_bitmap": true
+    },
+    {
+      "file": "assets/yetang-logo.png",
+      "source": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1/public/art/yetang-logo.png",
+      "sha256": "14ce1a9e7c3a62589a6b6fd413d4c111b1ec9bf513deeeaf1f9d1f8cbe747b44",
+      "unchanged_bitmap": true
+    }
+  ],
+  "font_comparison": {
+    "细宋": "Noto Serif SC 原文件，见 font-source.json 和 NotoSerifSC-OFL.txt。",
+    "楷体": "复用既有 Turtle Night Reading 字体子集，未再次修改，保留 WenKai-OFL.txt。",
+    "kai_source": "https://github.com/lxgw/LxgwWenKai-Lite",
+    "brand": "已确认夜汤字标保持原样。"
+  },
+  "original_records": [
+    "暗红主视觉生成记录.json",
+    "夜汤Logo暗红修订记录.json",
+    "钥匙开场素材记录V0.8.json",
+    "视觉素材来源V0.7.json",
+    "素材来源与提示词.json"
+  ],
+  "records_location": "/Users/zhujiayi/Desktop/且曼课堂笔记/海龟汤/单人原型V0.1",
+  "story_data": "仅三题汤面、提示及每题三条预设问答；不包含汤底、事件库与完整主持数据。",
+  "references": "吸收固定输入、稳定层级等交互原则；未使用竞品图片、字体包或页面代码。",
+  "audio": false,
+  "model_requests": 0,
+  "persistent_sessions": false
+}

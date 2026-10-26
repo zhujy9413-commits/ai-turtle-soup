@@ -1,0 +1,18 @@
+{
+  "version": "V0.8",
+  "date": "2026-10-26",
+  "title": "Locking or unlocking door",
+  "author": "randbsoundbites / R&B Sound Bites",
+  "source_page": "https://freesound.org/people/randbsoundbites/sounds/791845/",
+  "public_preview_url": "https://cdn.freesound.org/previews/791/791845_16968183-hq.mp3",
+  "license": "CC0 1.0, verified source page 2026-10-26",
+  "original_download": "assets/audio-sources/locking-or-unlocking-door-791845.mp3",
+  "decoded_source": "assets/audio-sources/locking-or-unlocking-door-791845.wav",
+  "asset": "public/unlock.wav",
+  "duration_seconds": 1.27625,
+  "sample_rate": 24000,
+  "processing": "保留完整锁声；低通4.2kHz、峰值限制0.30、切口短淡化；未新增敲门或惊吓声",
+  "play_policy": "仅在玩家点击钥匙且声音开启后播放；视觉测试静音拦截输出",
+  "perceptual_acceptance": "待用户主动试听",
+  "sha256": "8ac9b360c6dc59fde898ee079a0c99f62e93ec3181fa2b508355c6efe1ef5c3b"
+}

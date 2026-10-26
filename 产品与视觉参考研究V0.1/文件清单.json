@@ -1,0 +1,16 @@
+{
+  "research_date": "2026-10-26",
+  "game_version_unchanged": "V0.8.3",
+  "files": {
+    "index.html": "fc892b06eb4e5eeeec61f3f77c33c6d08b275da93d983be649ce7a8f6fd6390f",
+    "research.json": "5737e5a658d26094b9a107a1f7208ffec5d9182a741064c5a84199312fd73a1b",
+    "assets/paper-scene.png": "ab88fbea6f049cbde479324146cfa8610dd17e466b29f1c8d82334fdbd48268e",
+    "assets/para-reading.png": "fafa1e156d6c0ed55811aa9f5546ca1d00bd32643203bff219411a6444ebe6e8",
+    "assets/chuqian-library.png": "1ca0e12d074af4594e70aa982e04d67229b59943429e515304070b42a74498c3",
+    "assets/stories-gameplay.png": "3e062e926be5719bfbf0f82d1870619604dbe4710dee96548ea9afc978f27b94",
+    "assets/para-actions.png": "d0a9b3d8c136f0d159562bb357339259b2d81b2a7bb2aeb8d00b9ea3a49a1f7b",
+    "assets/tanghenre-room.png": "4e9e7c0da1ca1df88bc8aded6234a996d1645335d30cb6fb1bdeed22bb58cc42",
+    "assets/chuqian-room.png": "dc64284787a6428b44ab931fff15a76f4a76e75bf08c62242bc2afaf68d0e1e4",
+    "assets/paper-object.png": "b3237f42ecebdc9899b9ef5d5418a6eb5267428207aeebf47c8220bbca456674"
+  }
+}

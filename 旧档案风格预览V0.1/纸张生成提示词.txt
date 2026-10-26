@@ -1,0 +1,6 @@
+Use case: stylized-concept
+Asset type: blank paper texture asset for a Chinese horror mystery game's readable story card.
+Primary request: An original flat scanned antique case-file sheet, portrait 2:3 aspect, isolated on transparent background. Full sheet fills 95% of image, nearly straight-on, NOT tilted. Inspired by worn archival horror ephemera rather than a fantasy scroll.
+Materials: cold pale ash-gray fibrous paper with subtly mottled dust, cracked charcoal rubbed edges, irregular tiny torn nicks and folded dog-eared lower-right corner. Dark charcoal scratches and a few dried deep oxblood red traces confined to outermost edges and upper-left corner. Small restrained partial wiped hand smear at lower-left very edge. No dripping wet blood. Center 75% extremely quiet, relatively even light grey for long black Chinese text to be added later.
+Lighting: flat scan, no directional environment lighting. Muted grayscale and very dark dried red. Avoid tan, cream, golden warmth.
+Constraints: Absolutely blank: no letters, no words, no glyphs, no symbols, no printed border, no logo, no watermark. No people, objects, skulls, weapons, tape or photographs. Preserve a clean large rectangular writing area. True transparent background outside torn paper silhouette. Detailed tactile material, restrained mature horror.

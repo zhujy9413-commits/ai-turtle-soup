@@ -1,0 +1,15 @@
+{
+  "mode": "built-in image_gen",
+  "paper": {
+    "file": "public/art/archive-paper.png",
+    "origin": "已确认旧档案风格预览V0.1纸张底纹",
+    "source": "/Users/zhujiayi/.codex/generated_images/01a163b8-5aba-71e0-b015-578f97cf58cd/exec-b0e39f91-1768-4840-b5da-ff1fca277f0e.png"
+  },
+  "handprint": {
+    "file": "public/art/selection-handprint.png",
+    "source": "/Users/zhujiayi/.codex/generated_images/01a163b8-5aba-71e0-b015-578f97cf58cd/exec-8dd7b22e-7a4e-4ba5-9943-89971cd14aa9.png",
+    "prompt_file": "手印生成提示词V0.7.txt",
+    "transparency": "RGBA，保留生成的alpha，未用图像脚本改色或抠图"
+  },
+  "font": "复用本地Night Read及原有OFL授权；字体文件未更改"
+}

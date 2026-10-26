@@ -1,0 +1,14 @@
+{
+  "version": "V0.1.1",
+  "status": "独立局内视觉效果稿，待用户确认；未替换正式原型",
+  "scope": "汤面卡及同屏推理区域；不调用模型、不产生正式对局、不展示汤底",
+  "story": "S07 出差的第三晚，逐字取自现有公开汤面，不增加提示",
+  "asset": {
+    "mode": "built-in image_gen",
+    "file": "assets/archive-paper.png",
+    "source": "/Users/zhujiayi/.codex/generated_images/01a163b8-5aba-71e0-b015-578f97cf58cd/exec-b0e39f91-1768-4840-b5da-ff1fca277f0e.png"
+  },
+  "brand": "复用已确认夜汤字标V0.2及现有本地授权字体，许可文件随附",
+  "design": "冷灰旧纸与炭黑交互区域；边缘磨损及少量暗红；正文不标红线索；无本格变格标签",
+  "typography_revision": "依据用户反馈，页面标题、纸上标题、弹窗及推理区标题统一使用现有NightRead字体，用字号和字重区分层级；夜汤字标不变。"
+}

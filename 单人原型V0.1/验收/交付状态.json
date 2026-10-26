@@ -17,7 +17,9 @@
     "计时冻结、预留返还、幂等、刷新与重启恢复",
     "本机草稿和反馈保存",
     "纯音乐、个人音量与静音",
-    "未揭晓私有资料不发客户端"
+    "未揭晓私有资料不发客户端",
+    "原开场画面浮现钥匙、低透明痕迹",
+    "剩余提问与还原次数15/5各一次轻提示"
   ],
   "not_implemented": [
     "真实模型自由提问和自由还原",
@@ -25,8 +27,8 @@
     "旧48条真实模型全量回归",
     "多人房、账号、搜索匹配与公网部署"
   ],
-  "program_checks": 20,
-  "program_checks_passed": 20,
+  "program_checks": 22,
+  "program_checks_passed": 22,
   "browser_scenarios": 12,
   "new_model_calls": 0,
   "cumulative_attempts_unchanged": 162,
@@ -34,7 +36,12 @@
   "qa_database": "独立临时数据库，没有复制到交付runtime目录",
   "model_gate": "真实入口拒绝调用，不读取Key；当前已授权次数用满",
   "usage": "Finder双击启动原型.command，自动启动本机服务并打开游戏；保持终端运行，Ctrl+C关闭。",
-  "visual_version": "正式开场与敲门声V0.6",
+  "visual_version": "旧档案与沉浸钥匙开场V0.8.3",
   "brand": "夜汤（暂定）",
-  "updated": "2026-10-25"
+  "updated": "2026-10-26",
+  "release_version": "V0.8.3",
+  "version_policy": "../项目版本约定.json",
+  "client_checks": 7,
+  "client_checks_passed": 7,
+  "latest_check": "验收/开场标题V0.8.3.json"
 }

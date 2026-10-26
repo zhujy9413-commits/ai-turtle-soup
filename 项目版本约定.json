@@ -1,0 +1,11 @@
+{
+  "project": "夜汤",
+  "confirmed_date": "2026-10-26",
+  "current_version": "V0.8.5",
+  "before_first_beta": "使用V0.x.x开发版本，不提前使用V1.0",
+  "small_updates": "文案、样式、音效微调和缺陷修复递增末位，如V0.8.1 → V0.8.2",
+  "larger_development_milestones": "需要区分的较大功能节点递增中间位，末位从0开始；不因每次小改动增加中间位",
+  "first_external_beta": "V1.0，保留给首次向获邀玩家开放内测的版本",
+  "history": "过去交付文档、素材来源和验收记录保留原版本编号；当前发布版本与历史素材版本可以不同",
+  "display": "版本号保存在维护记录中，不重新加入玩家沉浸界面的研发说明"
+}
