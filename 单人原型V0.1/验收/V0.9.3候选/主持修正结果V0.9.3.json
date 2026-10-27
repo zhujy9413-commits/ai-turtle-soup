@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "version": "V0.9.3",
+  "installed": true,
+  "core_cases_passed": 9,
+  "new_calls": 24,
+  "cumulative_estimated_cny": 0.1930508,
+  "remaining_in_original_round": 32,
+  "phase_remaining_calls": 0,
+  "python_checks": 127,
+  "maintenance_checks": 4,
+  "client_checks": 11,
+  "temporary_key_removed": true,
+  "unexecuted_cross_story_cases": [
+    "R10-S02-actual",
+    "R11-S06-hypothetical",
+    "R12-S07-forged-message"
+  ],
+  "evaluation_review": "R02原话解释了梦、消失与火灾，但未明确解释平时不叫醒的因果。允许只追问N2.2；不允许重复遗漏已确认危险或误报冲突。原始必通关预期及失败保留；R08明确补齐该关系，必须通关。",
+  "changes": [
+    "完整引用与省略引用均核对真实原文；无效重复引用排除并留痕，每个已满足条件仍须有有效引用。",
+    "证据覆盖、事实和条件由程序核验，矛盾的模型模式标签不覆盖已核验的证据；明确冲突可先指出错误句。",
+    "有效实际问答独立合并；通关、未完整及否定结论均至多一次独立核查，失败不自动重试。",
+    "还原反馈指出一个具体待连接关系；进度求助复用反馈，不扣游戏次数。",
+    "复盘显示更正后的有效答案，原始错误问答、更正记录和玩家反馈继续保留。"
+  ],
+  "limitations": [
+    "同一模型独立核查仍可能重复语义错误。",
+    "3个原计划跨题用例未执行，后续仍需新题自然盲测。",
+    "首轮证据拒绝没有保存字段，无法精确追溯。后续真实输出明确复现了省略引用、冗余引用、标签冲突与空进度冲突；这些输出已保存为测试夹具。"
+  ]
+}

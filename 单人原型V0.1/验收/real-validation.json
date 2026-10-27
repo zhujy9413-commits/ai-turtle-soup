@@ -1,0 +1,18 @@
+{
+  "status": "stopped_semantic_review",
+  "max_new_provider_calls": 16,
+  "baseline_calls": 22,
+  "cases": [
+    {
+      "id": "Q-frequency",
+      "passed": false,
+      "verdict": {
+        "action": "help",
+        "intent": "help_progress",
+        "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我每晚都能梦到女儿”——此前回答：是。\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+        "scope": "actual"
+      }
+    }
+  ],
+  "notes": "Separate adapter validation; no mutation of the player session, no retries or hidden truth in UI."
+}

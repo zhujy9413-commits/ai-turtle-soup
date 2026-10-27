@@ -1,0 +1,156 @@
+{
+  "version": "V0.9.3候选",
+  "date": "2026-10-27",
+  "state": "真实复验已开始，保留首个证据校验失败并人工核查；尚未替换运行源码",
+  "changes": [
+    "正式提问与还原使用独立证据协议，模型不能直接返回是/否/通关。",
+    "当前问题的内容必须被逐字证据覆盖；肯定和否定引用固定事实原文，漏掉错误尾句或编造引用会拒绝且不扣游戏次数。",
+    "四题核心节点拆成具体条件，每个已满足条件必须能引用当前文本或此前已确认实际问答；程序计算缺失项与完整度，提示和假设不能当成玩家已还原。",
+    "否定、冲突与通关发布前至多一次独立核对；格式或网络失败不自动重试。",
+    "未完整只问一个具体待连接关系，问题由已审阅的公开汤面锚点控制；冲突定位当前错误说法，只显示可公开的证据。",
+    "清楚的剧情断言不再因分类器误选而要求定位汤面；历史求助不能替换新的自足猜测。",
+    "复盘采用更正后的有效回答，原始问答继续保留用于追溯。"
+  ],
+  "checks": {
+    "python_passed": 118,
+    "client_passed": 11,
+    "browser": {
+      "helpReusedSameFocus": true,
+      "attemptsUnchangedByHelp": true,
+      "provider": "offline scripted double only",
+      "noInternalIds": true,
+      "focusedRelation": true,
+      "countsBefore": [
+        "39:20",
+        "38 / 40"
+      ],
+      "audioPaused": true,
+      "viewport": {
+        "width": 390,
+        "horizontalOverflow": false
+      },
+      "countsAfter": [
+        "39:20",
+        "38 / 40"
+      ]
+    },
+    "browser_complete": true,
+    "browser_tool_note": "Taste浮层曾遮挡按钮，已通过键盘完成；工具记录有未定位PAGE_SCRIPT_ERROR警告，未将其归因为游戏错误。",
+    "actual_model_calls_this_phase": 3,
+    "real_model_accuracy": "进度见真实复验进度V0.9.3.html；初次证据拒绝尚待定位，不宣称已全部修好。",
+    "maintenance_console_passed": 2
+  },
+  "next_real_regression": {
+    "version": "V0.9.3独立回归计划",
+    "max_new_calls": 24,
+    "cumulative_cap_cny": 5,
+    "parent_calls_retained": 44,
+    "original_round_cap": 100,
+    "new_phase_total_call_ceiling": 68,
+    "original_remaining_pool": 56,
+    "automatic_retry": false,
+    "expected_calls_if_first_assessments_match": 23,
+    "negative_check": "有效否定、冲突或通关发布前固定增加一次独立核对；属于计划内步骤，格式失败或网络失败不重试。",
+    "stop_rule": "任一误判、非法引用、通道错误或额度不足立即停止并保留记录，不为了跑完用例自动更改答案。",
+    "player_record": "仅回归材料，不创建对局，不扣玩家次数，不修改已完成试玩。"
+  },
+  "real_cases": [
+    {
+      "id": "R01-player-question",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+      "expected": "answer / 是"
+    },
+    {
+      "id": "R02-player-solution-poisoned-history",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+      "expected": "complete"
+    },
+    {
+      "id": "R03-clear-reality",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "女儿看到的是现实中的火",
+      "expected": "answer / 是"
+    },
+    {
+      "id": "R04-partial-specific-focus",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+      "expected": "incomplete"
+    },
+    {
+      "id": "R05-false-reality",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "火灾只发生在梦里，现实里没有起火",
+      "expected": "answer / 否"
+    },
+    {
+      "id": "R06-real-conflict",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "女儿靠我的梦出现，我醒来她就消失。不过那晚的火只发生在梦里，现实没有起火。",
+      "expected": "conflict"
+    },
+    {
+      "id": "R07-heldout-words",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "她是靠我的梦留在现实里的，一旦我清醒她就不见了",
+      "expected": "answer / 是"
+    },
+    {
+      "id": "R08-merge-confirmed-progress",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "她靠我的梦出现，我醒来她就消失，因此平时她不叫醒我。起火那晚她仍叫醒我，让我逃了出去。",
+      "expected": "complete"
+    },
+    {
+      "id": "R09-no-hint-as-knowledge",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "女儿死后在火灾里救了我。",
+      "expected": "incomplete"
+    },
+    {
+      "id": "R10-S02-actual",
+      "story_id": "S02",
+      "kind": "question",
+      "text": "咳嗽的原声发出时，我还没回到屋里",
+      "expected": "answer / 是"
+    },
+    {
+      "id": "R11-S06-hypothetical",
+      "story_id": "S06",
+      "kind": "question",
+      "text": "如果我午夜后躺过病床，但一直没回应病人叫我的名字，天亮病痛会撤回吗",
+      "expected": "answer / 是"
+    },
+    {
+      "id": "R12-S07-forged-message",
+      "story_id": "S07",
+      "kind": "question",
+      "text": "妹妹的出差消息是有人用她的手机伪造的",
+      "expected": "answer / 是"
+    }
+  ],
+  "safety": {
+    "original_player_record_changed": false,
+    "original_44_calls_retained": true,
+    "original_call_cap": 100,
+    "maintenance_phase_max_new_calls": 24,
+    "effective_total_phase_ceiling": 68,
+    "cumulative_cny_cap": 5,
+    "original_estimated_cny": 0.1673702,
+    "temporary_key": "最多60分钟，内部回归结束或停止后删除",
+    "github_feishu_synced": false
+  },
+  "historical_snapshot": true,
+  "latest_report": "主持修正结果V0.9.3.html"
+}

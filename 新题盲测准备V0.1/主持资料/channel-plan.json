@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-27",
+  "cases": [
+    {
+      "id": "S08-Q4",
+      "kind": "question",
+      "text": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "expected_scope": "hypothetical",
+      "fact_basis": [
+        "F03",
+        "F11",
+        "F17"
+      ],
+      "max_calls": 3
+    },
+    {
+      "id": "S08-R1",
+      "kind": "solution",
+      "text": "有人一直藏在房间里，夜里吃供饭，吃得太咸就喝了我床头的水。我闩门前他就藏好了，房东一直知道，并借供奉的说法给他送饭。",
+      "expected_action": "incomplete",
+      "must_missing": [
+        "N3.1"
+      ],
+      "forbid_action": "conflict",
+      "max_calls": 2
+    }
+  ],
+  "baseline_calls": 89,
+  "max_new_calls": 5,
+  "materials_sha256": "7724314b90bd9a417e28243f4cfbc03019779c7602d35e48adb938e7b53fa8eb",
+  "phase_ceiling": 94,
+  "operation_prefix": "s08-channel-reviewed-r5-",
+  "automatic_retries": 0,
+  "stop_on_first_failure": true,
+  "no_additional_authorization_requested": true,
+  "review": "普通提问不携带还原评分节点及不必猜到的细节；还原保留评分条件。S08中F16仅为评分说明，移入作者指导，不作为世界事实。两类信息混用可能导致无关误判，因果尚待模型验证。",
+  "unrun_after_this_plan": [
+    "S08-R2"
+  ],
+  "prior_result_sha256": "d6bf3d53a2424f15330417ef38bd5d116c35adb175a7395417029ad784c947f3"
+}

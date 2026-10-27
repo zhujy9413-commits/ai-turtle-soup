@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-27",
+  "data": "服务器端全部替换为合成占位故事；真实汤面、提示与汤底未传入浏览器",
+  "first_visible_lines": 1,
+  "final_visible_lines": 7,
+  "before_ready_clock": "40:00",
+  "persistent_surface_open": true,
+  "three_hint_limit": true,
+  "review_paragraphs": 4,
+  "desktop_width": 1221,
+  "desktop_scroll_width": 1221,
+  "mobile_width": 390,
+  "mobile_scroll_width": 390,
+  "audio_paused": true,
+  "warnings": "浏览器环境间歇报告无堆栈的Object脚本警告，未定位来源；主要显示流程已完成，不能据此宣称无所有脚本错误。",
+  "approval_review": "首次浏览器侧脱敏方案被自动审批拦截，未执行。改为服务端合成占位内容并经检查后完成浏览器流程。",
+  "real_model_answers_rendered_in_browser": false
+}

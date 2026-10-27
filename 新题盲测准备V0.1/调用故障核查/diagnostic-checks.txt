@@ -1,0 +1,18 @@
+test_audit_storage_failure_still_blocks_usage_without_retry (test_diagnostics.DiagnosticTests) ... ok
+test_envelope_model_and_usage_failures_have_different_phases (test_diagnostics.DiagnosticTests) ... ok
+test_expected_host_failure_codes_only_are_persisted (test_diagnostics.DiagnosticTests) ... ok
+test_http_status_is_preserved_without_headers_body_url_or_billing_assumption (test_diagnostics.DiagnosticTests) ... ok
+test_known_usage_but_malformed_content_is_settled_and_does_not_freeze_round (test_diagnostics.DiagnosticTests) ... ok
+test_missing_credential_does_not_reserve_a_paid_request (test_diagnostics.DiagnosticTests) ... ok
+test_nested_url_failures_are_classified_without_reading_reason_text (test_diagnostics.DiagnosticTests) ... ok
+test_non_json_response_is_distinct_from_invalid_usage (test_diagnostics.DiagnosticTests) ... ok
+test_reservation_excess_is_not_recorded_as_zero_or_released (test_diagnostics.DiagnosticTests) ... ok
+test_timeout_is_preserved_without_exception_text_or_retry (test_diagnostics.DiagnosticTests) ... ok
+test_tls_and_connection_errors_get_distinct_labels (test_diagnostics.DiagnosticTests) ... ok
+test_unclassified_exception_name_and_message_are_never_serialized (test_diagnostics.DiagnosticTests) ... ok
+test_valid_output_still_returns_normally_with_recorded_usage (test_diagnostics.DiagnosticTests) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.049s
+
+OK

@@ -1,0 +1,315 @@
+{
+  "status": "stopped_incomplete",
+  "cases": [
+    {
+      "id": "R01-player-question",
+      "passed": true,
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "clarification": "",
+        "fact_ids": [
+          "F10",
+          "F11",
+          "F03",
+          "F06",
+          "F12"
+        ],
+        "covered_nodes": [],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "scope": "actual"
+      }
+    },
+    {
+      "id": "R02-player-solution-poisoned-history",
+      "review_revision": 5,
+      "review_note": "Manually reviewed prior evidence rejection and added private diagnostic records. Recheck the unchanged player restoration once to locate the exact rejection; no automatic retry or budget increase.",
+      "operation": "v093-manual-r5-R02-player-solution-poisoned-history",
+      "passed": false,
+      "verdict": {
+        "action": "incomplete",
+        "answer": "",
+        "clarification": "",
+        "fact_ids": [],
+        "covered_nodes": [
+          "N1",
+          "N4"
+        ],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "missing_criteria": [
+          "N2.2",
+          "N3.2"
+        ],
+        "current_evidence": [
+          "女儿的出现依托于我的梦",
+          "我醒来了，女儿就消失了",
+          "那晚女儿看到现实中着火了",
+          "于是急忙把我叫醒",
+          "幸免于难"
+        ],
+        "scope": "actual"
+      },
+      "player_feedback": "你已经说明了“女儿的出现依托于我的梦”。\n还需要补上这一条关系：她平时为什么不叫醒“我”？把这件事与醒来后发生的变化连起来。\n已确认的内容不用重写，把这条关系补进还原即可。",
+      "audit": [
+        {
+          "stage": "judge",
+          "usage": {
+            "prompt_tokens": 6265,
+            "total_tokens": 6799,
+            "completion_tokens": 534,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 6265
+            }
+          },
+          "request_sha256": "f83b7b13e2e9d78a360120171f6f0c7fd8bd5e240a7a506012e95df50709e7d9",
+          "assessment": {
+            "mode": "assess",
+            "checks": [
+              {
+                "criterion_id": "N1.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                    "quote": "女儿早就死了"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N1.2",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "女儿的出现依托于我的梦"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N2.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "我醒来了，女儿就消失了"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N2.2",
+                "state": "missing",
+                "evidence": []
+              },
+              {
+                "criterion_id": "N3.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "那晚女儿看到现实中着火了"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N3.2",
+                "state": "missing",
+                "evidence": []
+              },
+              {
+                "criterion_id": "N4.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "于是急忙把我叫醒"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N4.2",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "幸免于难"
+                  }
+                ]
+              }
+            ],
+            "conflicts": [],
+            "clarification": "",
+            "review_refs": []
+          },
+          "assessment_validation": {
+            "status": "accepted"
+          }
+        }
+      ]
+    }
+  ],
+  "max_new_calls": 24,
+  "baseline_calls": 44,
+  "player_database_changed": false,
+  "new_calls": 24,
+  "budget": {
+    "mode": "live",
+    "live_enabled": true,
+    "provider_calls": 68,
+    "remaining_authorized_provider_calls": 0,
+    "remaining_in_original_round": 32,
+    "estimated_or_reserved_cny": 0.1930508,
+    "prior_estimated_cny": 0.1377942,
+    "cap_cny": 5,
+    "blocked": true,
+    "stop_reason": "round_completed"
+  },
+  "attempts": [
+    {
+      "id": "R02-player-solution-poisoned-history",
+      "outcome": "unsupported_assessment",
+      "diagnostic_missing": true,
+      "original_report": "real-regression-attempt01.json",
+      "provider_calls_after": 47
+    },
+    {
+      "id": "R02-player-solution-poisoned-history",
+      "review_revision": 5,
+      "review_note": "Manually reviewed prior evidence rejection and added private diagnostic records. Recheck the unchanged player restoration once to locate the exact rejection; no automatic retry or budget increase.",
+      "operation": "v093-manual-r5-R02-player-solution-poisoned-history",
+      "passed": false,
+      "verdict": {
+        "action": "incomplete",
+        "answer": "",
+        "clarification": "",
+        "fact_ids": [],
+        "covered_nodes": [
+          "N1",
+          "N4"
+        ],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "missing_criteria": [
+          "N2.2",
+          "N3.2"
+        ],
+        "current_evidence": [
+          "女儿的出现依托于我的梦",
+          "我醒来了，女儿就消失了",
+          "那晚女儿看到现实中着火了",
+          "于是急忙把我叫醒",
+          "幸免于难"
+        ],
+        "scope": "actual"
+      },
+      "player_feedback": "你已经说明了“女儿的出现依托于我的梦”。\n还需要补上这一条关系：她平时为什么不叫醒“我”？把这件事与醒来后发生的变化连起来。\n已确认的内容不用重写，把这条关系补进还原即可。",
+      "audit": [
+        {
+          "stage": "judge",
+          "usage": {
+            "prompt_tokens": 6265,
+            "total_tokens": 6799,
+            "completion_tokens": 534,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 6265
+            }
+          },
+          "request_sha256": "f83b7b13e2e9d78a360120171f6f0c7fd8bd5e240a7a506012e95df50709e7d9",
+          "assessment": {
+            "mode": "assess",
+            "checks": [
+              {
+                "criterion_id": "N1.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                    "quote": "女儿早就死了"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N1.2",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "女儿的出现依托于我的梦"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N2.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "我醒来了，女儿就消失了"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N2.2",
+                "state": "missing",
+                "evidence": []
+              },
+              {
+                "criterion_id": "N3.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "那晚女儿看到现实中着火了"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N3.2",
+                "state": "missing",
+                "evidence": []
+              },
+              {
+                "criterion_id": "N4.1",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "于是急忙把我叫醒"
+                  }
+                ]
+              },
+              {
+                "criterion_id": "N4.2",
+                "state": "met",
+                "evidence": [
+                  {
+                    "source_id": "current",
+                    "quote": "幸免于难"
+                  }
+                ]
+              }
+            ],
+            "conflicts": [],
+            "clarification": "",
+            "review_refs": []
+          },
+          "assessment_validation": {
+            "status": "accepted"
+          }
+        }
+      ]
+    }
+  ],
+  "cleanup": {
+    "temporary_key_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "cloud_key_revoked": false
+  }
+}

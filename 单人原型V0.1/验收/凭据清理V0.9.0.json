@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-26",
+  "temporary_key_removed": true,
+  "pointer_removed": true,
+  "round_stopped": true,
+  "provider_calls": 23,
+  "unused_authorized_calls": 1,
+  "keychain_used": false,
+  "cloud_key_revoked": false,
+  "note": "仅清理本机临时配置；不撤销百炼平台上的Key。"
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-27",
+  "version": "V0.9.3候选",
+  "state": "manual_review_in_progress",
+  "passed_cases": 1,
+  "planned_cases": 12,
+  "new_calls": 3,
+  "phase_remaining_calls": 21,
+  "cumulative_estimated_cny": 0.1707714,
+  "python_checks": 118,
+  "console_checks": 2,
+  "client_checks": 11,
+  "initial_failure": {
+    "case": "R02-player-solution-poisoned-history",
+    "code": "unsupported_assessment",
+    "exact_reason": "首轮未保存拒绝字段，不能据此确定为语义错误或引用错误；保留原失败记录，增加私有诊断后人工定向复查。"
+  },
+  "release_installed": false,
+  "player_record_replaced": false,
+  "temporary_key_removed": true,
+  "historical_snapshot": true,
+  "latest_report": "主持修正结果V0.9.3.html"
+}

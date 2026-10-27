@@ -1,0 +1,11 @@
+{
+  "live_service_running": true,
+  "session_status": "paused",
+  "remaining_seconds": 1627.1482934951782,
+  "attempts_left": 30,
+  "hints": 3,
+  "calls": 34,
+  "remaining_calls": 66,
+  "restored_messages": 30,
+  "new_paid_call_from_launch": false
+}

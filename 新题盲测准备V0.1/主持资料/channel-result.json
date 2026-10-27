@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-27",
+  "status": "stopped_review",
+  "cases": [
+    {
+      "id": "S08-Q4",
+      "kind": "question",
+      "text": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？",
+      "history": [],
+      "expected_action": "answer",
+      "operation": "s08-channel-reviewed-r5-S08-Q4",
+      "passed": false,
+      "error_code": "provider_usage_unknown",
+      "audit": [
+        {
+          "stage": "scope",
+          "request_sha256": "5fae7fd03a4ca84964113feaba48bad321f57c279d738647aa9a56ee2dd8dfbb"
+        }
+      ],
+      "new_calls": 1
+    }
+  ],
+  "baseline_calls": 89,
+  "max_new_calls": 5,
+  "materials_sha256": "7724314b90bd9a417e28243f4cfbc03019779c7602d35e48adb938e7b53fa8eb",
+  "player_session_created": false,
+  "canonical_release_modified": false,
+  "budget": {
+    "mode": "live",
+    "live_enabled": true,
+    "provider_calls": 90,
+    "remaining_authorized_provider_calls": 4,
+    "remaining_in_original_round": 10,
+    "estimated_or_reserved_cny": 2.2021602,
+    "prior_estimated_cny": 0.1377942,
+    "cap_cny": 5,
+    "blocked": true,
+    "stop_reason": "provider_usage_unknown"
+  },
+  "new_calls": 1,
+  "original_phase_new_calls": 16,
+  "cleanup": {
+    "temporary_key_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "cloud_key_revoked": false
+  }
+}

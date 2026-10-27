@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-27",
+  "status": "stopped_review",
+  "cases": [
+    {
+      "id": "S08-Q2",
+      "kind": "question",
+      "text": "吃供饭和喝床头水的是同一个人",
+      "history": [],
+      "expected_action": "answer",
+      "passed": false,
+      "error_code": "duplicate_provider_request",
+      "audit": [
+        {
+          "stage": "scope",
+          "usage": {
+            "prompt_tokens": 643,
+            "total_tokens": 650,
+            "completion_tokens": 7,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 643
+            }
+          },
+          "request_sha256": "8345e1e79fad316e2111b72e9c9a71d0d7833d0ce706136c13de8fdde007b514",
+          "assessment": {
+            "route": "judge_actual"
+          },
+          "assessment_validation": {
+            "status": "scope_received"
+          }
+        },
+        {
+          "stage": "judge",
+          "usage": {
+            "prompt_tokens": 3094,
+            "total_tokens": 3222,
+            "completion_tokens": 128,
+            "prompt_tokens_details": {
+              "cached_tokens": 2816,
+              "text_tokens": 3094
+            }
+          },
+          "request_sha256": "f1a8449910988d14d629bdfa4e0b6a82855f41fe8e4f2e9c92f50d654fc26c3e",
+          "assessment": {
+            "mode": "assess",
+            "claims": [
+              {
+                "quote": "吃供饭和喝床头水的是同一个人",
+                "status": "supported",
+                "facts": [
+                  {
+                    "fact_id": "F05",
+                    "quote": "供桌上那碗饭每天夜里由活着的丈夫吃掉。"
+                  },
+                  {
+                    "fact_id": "F09",
+                    "quote": "吃过咸饭的男人口渴，走到床边端起我的杯子喝水再放回"
+                  }
+                ]
+              }
+            ],
+            "clarification": ""
+          },
+          "assessment_validation": {
+            "status": "rejected",
+            "reason": "fact_quote_not_verbatim",
+            "path": "F09"
+          }
+        }
+      ],
+      "new_calls": 0
+    }
+  ],
+  "baseline_calls": 78,
+  "max_new_calls": 12,
+  "original_phase_baseline": 74,
+  "original_phase_max_calls": 16,
+  "canonical_release_modified": false,
+  "player_session_created": false,
+  "materials_sha256": "2d5a8637d827253935e66b8824b34022ed0bb2201670895b0be54a7c76e71d4c",
+  "budget": {
+    "mode": "live",
+    "live_enabled": true,
+    "provider_calls": 78,
+    "remaining_authorized_provider_calls": 12,
+    "remaining_in_original_round": 22,
+    "estimated_or_reserved_cny": 0.1974066,
+    "prior_estimated_cny": 0.1377942,
+    "cap_cny": 5,
+    "blocked": true,
+    "stop_reason": "integration_needs_review"
+  },
+  "new_calls": 0,
+  "original_phase_new_calls": 4,
+  "cleanup": {
+    "temporary_key_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "cloud_key_revoked": false
+  }
+}

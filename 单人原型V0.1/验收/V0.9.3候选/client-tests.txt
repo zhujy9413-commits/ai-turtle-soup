@@ -1,0 +1,19 @@
+✔ definite pre-submit rejection releases pending even for HTTP 503 (1.279375ms)
+✔ unknown transport is reconciled as cancelled without replaying submit (0.949ms)
+✔ accepted lost response clears matching draft without duplicate request (0.339375ms)
+✔ unreachable reconciliation keeps unknown request protected (0.323208ms)
+✔ 15 and 5 each notify once, with no 20 milestone (1.080542ms)
+✔ refresh and refunds cannot replay an announced milestone (0.134875ms)
+✔ starting at 15 or first restoring a low game gives no immediate alert (0.071458ms)
+✔ reserved processing counts and uncharged failures do not notify (0.05575ms)
+✔ skipped polling across both thresholds announces only the lower one (0.244334ms)
+✔ separate games track separately, and short games have no starting warning (0.468541ms)
+✔ malformed or unavailable storage falls back to the current page memory (0.110833ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 46.794917

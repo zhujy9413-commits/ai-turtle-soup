@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "reason": "同一假设因果问法两次被模型答成无关，输出结构合法，不能由引文格式校验发现语义错误。",
+  "change": "主持事实表明确门闩、柜体开口和屋内活动的空间边界；属于原故事已有行为的显式说明，不改汤面、汤底与通关条件。",
+  "retained_test_text": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？",
+  "new_fact_id": "F17",
+  "model_validation": "未执行",
+  "before_sha256": {
+    "story.json": "c1daf943199507040e6a5ada86618f326f8a31ed1221a4101400cb667bed998d",
+    "app/private/stories.json": "47e399724334d17296dd7a00dd20a97196176f8478f9964a0f2c2441ecc347d4"
+  },
+  "after_sha256": {
+    "story.json": "9fb899067c02a6b2d0e561f7cfc98803dd334cc96adbfd922ae6aa20395f9117",
+    "app/private/stories.json": "45986a5d00eb27892ef8e5e90353c2c24292beb6697d1a0e6d91bea600524220"
+  }
+}

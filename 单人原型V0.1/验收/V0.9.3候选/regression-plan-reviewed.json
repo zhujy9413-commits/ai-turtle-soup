@@ -1,0 +1,1926 @@
+{
+  "version": "V0.9.3独立回归计划",
+  "max_new_calls": 24,
+  "cumulative_cap_cny": 5,
+  "parent_calls_retained": 44,
+  "original_round_cap": 100,
+  "new_phase_total_call_ceiling": 68,
+  "original_remaining_pool": 56,
+  "automatic_retry": false,
+  "expected_calls_if_first_assessments_match": 23,
+  "negative_check": "有效否定、冲突或通关发布前固定增加一次独立核对；属于计划内步骤，格式失败或网络失败不重试。",
+  "stop_rule": "任一误判、非法引用、通道错误或额度不足立即停止并保留记录，不为了跑完用例自动更改答案。",
+  "player_record": "仅回归材料，不创建对局，不扣玩家次数，不修改已完成试玩。",
+  "cases": [
+    {
+      "id": "R01-player-question",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+      "history": [
+        {
+          "id": "0e0aa368f20249858497526c8f474880",
+          "role": "system",
+          "kind": "cold",
+          "text": "卡住了吗？需要时可以获取下一层提示。",
+          "at": 1793029154.649358
+        },
+        {
+          "id": "4008bc4305e649eb9bae042cf5a30b38",
+          "role": "player",
+          "kind": "question",
+          "text": "这里面有超自然元素吗",
+          "at": 1793029195.1247869,
+          "simulated_outcome": null
+        },
+        {
+          "id": "ff76974d3ebf47c39b472d3fbd338ce4",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029200.837048,
+          "question_id": "4008bc4305e649eb9bae042cf5a30b38",
+          "scope": "actual"
+        },
+        {
+          "id": "f1e66558c9cb4b63acb37ad775f55646",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿早就死了",
+          "at": 1793029214.748311,
+          "simulated_outcome": null
+        },
+        {
+          "id": "13545e8aebdf4f0496308d385ef89e25",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029221.7956748,
+          "question_id": "f1e66558c9cb4b63acb37ad775f55646",
+          "scope": "actual"
+        },
+        {
+          "id": "0a85ce66907146fba124d9010ad0b3bd",
+          "role": "player",
+          "kind": "question",
+          "text": "我每晚都能梦到女儿",
+          "at": 1793029234.978032,
+          "simulated_outcome": null
+        },
+        {
+          "id": "4b2e90bf9ccb4c198327a525e5dba69f",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029240.468939,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "scope": "actual",
+          "corrected_by": "753673fb38e54b0998ee3b8b3970bf63"
+        },
+        {
+          "id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿的鬼魂每晚都会回来看我",
+          "at": 1793029255.649556,
+          "simulated_outcome": null
+        },
+        {
+          "id": "f51a71312c7041579404326719870c5e",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029260.1391392,
+          "question_id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "scope": "actual"
+        },
+        {
+          "id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "role": "player",
+          "kind": "question",
+          "text": "我在睡梦中梦到女儿叫醒我",
+          "at": 1793029284.131701,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3dc4ad0f66524bd8823ef010c3cfdfc5",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029289.587753,
+          "question_id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "scope": "actual"
+        },
+        {
+          "id": "e4c63b128ef84232bea778cb7b8c503d",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿叫醒我是因为发生了火灾",
+          "at": 1793029310.687799,
+          "simulated_outcome": null
+        },
+        {
+          "id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029315.022783,
+          "question_id": "e4c63b128ef84232bea778cb7b8c503d",
+          "scope": "actual"
+        },
+        {
+          "id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿救了我",
+          "at": 1793029341.530872,
+          "simulated_outcome": null
+        },
+        {
+          "id": "8a22f523e49243a7967b27025c8d6b11",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029347.3197088,
+          "question_id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "scope": "actual"
+        },
+        {
+          "id": "b3a3d1e8c6a34d9888752a9517a0effb",
+          "role": "host",
+          "kind": "hint",
+          "text": "她平时避开你醒着的时候，那晚却主动把你叫醒。先想想这个变化。",
+          "at": 1793029352.272046,
+          "level": 1
+        },
+        {
+          "id": "a355b72d342d49afad1c5497da85b1f5",
+          "role": "player",
+          "kind": "question",
+          "text": "平时我没有危险，但是那晚有危险",
+          "at": 1793029365.482003,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029370.874371,
+          "question_id": "a355b72d342d49afad1c5497da85b1f5",
+          "scope": "actual"
+        },
+        {
+          "id": "1ed3542d73324f1ca947aee79309abae",
+          "role": "host",
+          "kind": "hint",
+          "text": "把她出现、你睡着和她消失、你醒来的时间放在一起看。",
+          "at": 1793029374.0755682,
+          "level": 2
+        },
+        {
+          "id": "bc7ed7b75270468bbe71801049658c76",
+          "role": "player",
+          "kind": "question",
+          "text": "我醒来了女儿就会消失",
+          "at": 1793029389.96895,
+          "simulated_outcome": null
+        },
+        {
+          "id": "c5aa919d4dab46c38dbade22876bc697",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029394.798483,
+          "question_id": "bc7ed7b75270468bbe71801049658c76",
+          "scope": "actual"
+        },
+        {
+          "id": "fb385757ef9d4a10ab0dca929f474710",
+          "role": "player",
+          "kind": "question",
+          "text": "发生火灾，所以女儿叫醒了我",
+          "at": 1793029409.884778,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029415.983275,
+          "question_id": "fb385757ef9d4a10ab0dca929f474710",
+          "scope": "actual"
+        },
+        {
+          "id": "4f2ed9fdd3334b5a99f4215e0151a520",
+          "role": "host",
+          "kind": "hint",
+          "text": "她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。",
+          "at": 1793029424.683818,
+          "level": 3
+        },
+        {
+          "id": "2f5b16df94d44f478038b32e0e739beb",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793029476.500628,
+          "simulated_outcome": null
+        },
+        {
+          "id": "98882cf7f51945a097742665d364c34a",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "尚未还原完整，可继续结合已确认的线索。",
+          "at": 1793029480.310967
+        },
+        {
+          "id": "501434ca89e74678adfe1b0b63be80ee",
+          "role": "player",
+          "kind": "question",
+          "text": "哪里尚未还原完整",
+          "at": 1793029499.5424929,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3c4942bc33534147888573df19c2ef75",
+          "role": "system",
+          "kind": "error",
+          "text": "这次未获得可靠判定，本次未扣次数。现场已保留，请先反馈这局。",
+          "at": 1793029502.539296
+        },
+        {
+          "id": "753673fb38e54b0998ee3b8b3970bf63",
+          "role": "host",
+          "kind": "correction",
+          "at": 1793086063.428261,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "answer": "是",
+          "scope": "actual",
+          "text": "更正一条先前回答：关于“我每晚都能梦到女儿”，应为“是”。此前回答不准确，已退回这次误判消耗的1次机会。"
+        },
+        {
+          "id": "d8931ba8ae7b415584c4eedd4bbea43a",
+          "role": "system",
+          "kind": "restored",
+          "at": 1793086063.428261,
+          "text": "现场已经恢复，计时继续暂停。准备好后，可以继续原来的推理。"
+        },
+        {
+          "id": "06f1dd1dd8144cd69bd9529409298e64",
+          "role": "player",
+          "kind": "question",
+          "text": "火灾发生在晚上",
+          "at": 1793088896.7883809,
+          "simulated_outcome": null
+        },
+        {
+          "id": "dce97886bd2149a9886351b88134193e",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793088903.771765,
+          "question_id": "06f1dd1dd8144cd69bd9529409298e64",
+          "scope": "actual"
+        },
+        {
+          "id": "5ef27391fe764b25b5e0bbd415958f3c",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793088923.404605,
+          "simulated_outcome": null
+        },
+        {
+          "id": "73bcf06a1ef94fe0b462691304486479",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我醒来了女儿就会消失”——此前回答：是。\n已公开提示：“她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。”\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+          "at": 1793088928.478067
+        }
+      ],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3
+    },
+    {
+      "id": "R02-player-solution-poisoned-history",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+      "history": [
+        {
+          "id": "0e0aa368f20249858497526c8f474880",
+          "role": "system",
+          "kind": "cold",
+          "text": "卡住了吗？需要时可以获取下一层提示。",
+          "at": 1793029154.649358
+        },
+        {
+          "id": "4008bc4305e649eb9bae042cf5a30b38",
+          "role": "player",
+          "kind": "question",
+          "text": "这里面有超自然元素吗",
+          "at": 1793029195.1247869,
+          "simulated_outcome": null
+        },
+        {
+          "id": "ff76974d3ebf47c39b472d3fbd338ce4",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029200.837048,
+          "question_id": "4008bc4305e649eb9bae042cf5a30b38",
+          "scope": "actual"
+        },
+        {
+          "id": "f1e66558c9cb4b63acb37ad775f55646",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿早就死了",
+          "at": 1793029214.748311,
+          "simulated_outcome": null
+        },
+        {
+          "id": "13545e8aebdf4f0496308d385ef89e25",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029221.7956748,
+          "question_id": "f1e66558c9cb4b63acb37ad775f55646",
+          "scope": "actual"
+        },
+        {
+          "id": "0a85ce66907146fba124d9010ad0b3bd",
+          "role": "player",
+          "kind": "question",
+          "text": "我每晚都能梦到女儿",
+          "at": 1793029234.978032,
+          "simulated_outcome": null
+        },
+        {
+          "id": "4b2e90bf9ccb4c198327a525e5dba69f",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029240.468939,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "scope": "actual",
+          "corrected_by": "753673fb38e54b0998ee3b8b3970bf63"
+        },
+        {
+          "id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿的鬼魂每晚都会回来看我",
+          "at": 1793029255.649556,
+          "simulated_outcome": null
+        },
+        {
+          "id": "f51a71312c7041579404326719870c5e",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029260.1391392,
+          "question_id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "scope": "actual"
+        },
+        {
+          "id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "role": "player",
+          "kind": "question",
+          "text": "我在睡梦中梦到女儿叫醒我",
+          "at": 1793029284.131701,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3dc4ad0f66524bd8823ef010c3cfdfc5",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029289.587753,
+          "question_id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "scope": "actual"
+        },
+        {
+          "id": "e4c63b128ef84232bea778cb7b8c503d",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿叫醒我是因为发生了火灾",
+          "at": 1793029310.687799,
+          "simulated_outcome": null
+        },
+        {
+          "id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029315.022783,
+          "question_id": "e4c63b128ef84232bea778cb7b8c503d",
+          "scope": "actual"
+        },
+        {
+          "id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿救了我",
+          "at": 1793029341.530872,
+          "simulated_outcome": null
+        },
+        {
+          "id": "8a22f523e49243a7967b27025c8d6b11",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029347.3197088,
+          "question_id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "scope": "actual"
+        },
+        {
+          "id": "b3a3d1e8c6a34d9888752a9517a0effb",
+          "role": "host",
+          "kind": "hint",
+          "text": "她平时避开你醒着的时候，那晚却主动把你叫醒。先想想这个变化。",
+          "at": 1793029352.272046,
+          "level": 1
+        },
+        {
+          "id": "a355b72d342d49afad1c5497da85b1f5",
+          "role": "player",
+          "kind": "question",
+          "text": "平时我没有危险，但是那晚有危险",
+          "at": 1793029365.482003,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029370.874371,
+          "question_id": "a355b72d342d49afad1c5497da85b1f5",
+          "scope": "actual"
+        },
+        {
+          "id": "1ed3542d73324f1ca947aee79309abae",
+          "role": "host",
+          "kind": "hint",
+          "text": "把她出现、你睡着和她消失、你醒来的时间放在一起看。",
+          "at": 1793029374.0755682,
+          "level": 2
+        },
+        {
+          "id": "bc7ed7b75270468bbe71801049658c76",
+          "role": "player",
+          "kind": "question",
+          "text": "我醒来了女儿就会消失",
+          "at": 1793029389.96895,
+          "simulated_outcome": null
+        },
+        {
+          "id": "c5aa919d4dab46c38dbade22876bc697",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029394.798483,
+          "question_id": "bc7ed7b75270468bbe71801049658c76",
+          "scope": "actual"
+        },
+        {
+          "id": "fb385757ef9d4a10ab0dca929f474710",
+          "role": "player",
+          "kind": "question",
+          "text": "发生火灾，所以女儿叫醒了我",
+          "at": 1793029409.884778,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029415.983275,
+          "question_id": "fb385757ef9d4a10ab0dca929f474710",
+          "scope": "actual"
+        },
+        {
+          "id": "4f2ed9fdd3334b5a99f4215e0151a520",
+          "role": "host",
+          "kind": "hint",
+          "text": "她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。",
+          "at": 1793029424.683818,
+          "level": 3
+        },
+        {
+          "id": "2f5b16df94d44f478038b32e0e739beb",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793029476.500628,
+          "simulated_outcome": null
+        },
+        {
+          "id": "98882cf7f51945a097742665d364c34a",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "尚未还原完整，可继续结合已确认的线索。",
+          "at": 1793029480.310967
+        },
+        {
+          "id": "501434ca89e74678adfe1b0b63be80ee",
+          "role": "player",
+          "kind": "question",
+          "text": "哪里尚未还原完整",
+          "at": 1793029499.5424929,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3c4942bc33534147888573df19c2ef75",
+          "role": "system",
+          "kind": "error",
+          "text": "这次未获得可靠判定，本次未扣次数。现场已保留，请先反馈这局。",
+          "at": 1793029502.539296
+        },
+        {
+          "id": "753673fb38e54b0998ee3b8b3970bf63",
+          "role": "host",
+          "kind": "correction",
+          "at": 1793086063.428261,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "answer": "是",
+          "scope": "actual",
+          "text": "更正一条先前回答：关于“我每晚都能梦到女儿”，应为“是”。此前回答不准确，已退回这次误判消耗的1次机会。"
+        },
+        {
+          "id": "d8931ba8ae7b415584c4eedd4bbea43a",
+          "role": "system",
+          "kind": "restored",
+          "at": 1793086063.428261,
+          "text": "现场已经恢复，计时继续暂停。准备好后，可以继续原来的推理。"
+        },
+        {
+          "id": "06f1dd1dd8144cd69bd9529409298e64",
+          "role": "player",
+          "kind": "question",
+          "text": "火灾发生在晚上",
+          "at": 1793088896.7883809,
+          "simulated_outcome": null
+        },
+        {
+          "id": "dce97886bd2149a9886351b88134193e",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793088903.771765,
+          "question_id": "06f1dd1dd8144cd69bd9529409298e64",
+          "scope": "actual"
+        },
+        {
+          "id": "5ef27391fe764b25b5e0bbd415958f3c",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793088923.404605,
+          "simulated_outcome": null
+        },
+        {
+          "id": "73bcf06a1ef94fe0b462691304486479",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我醒来了女儿就会消失”——此前回答：是。\n已公开提示：“她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。”\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+          "at": 1793088928.478067
+        },
+        {
+          "id": "c290a8bfecda46a4ab278764a0872f54",
+          "role": "player",
+          "kind": "question",
+          "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+          "at": 1793089009.785428,
+          "simulated_outcome": null
+        },
+        {
+          "id": "5e7ecaa49daf44b09db1117dfc2b159a",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793089015.395009,
+          "question_id": "c290a8bfecda46a4ab278764a0872f54",
+          "scope": "actual"
+        }
+      ],
+      "expected_action": "complete",
+      "expected_answer": "",
+      "max_calls": 2,
+      "original_expected_action": "complete",
+      "allowed_actions": [
+        "complete",
+        "incomplete"
+      ],
+      "expected_missing_if_incomplete": [
+        "N2.2"
+      ],
+      "evaluation_review": "原话没有明确连接平时不叫醒与醒来后消失；允许仅追问这一条关系，但不允许重复遗漏已确认的危险，也不允许事实冲突。原必通关预期保留在original_expected_action和原始计划。R08明确补齐该关系，仍必须通关。"
+    },
+    {
+      "id": "R03-clear-reality",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "女儿看到的是现实中的火",
+      "history": [
+        {
+          "id": "0e0aa368f20249858497526c8f474880",
+          "role": "system",
+          "kind": "cold",
+          "text": "卡住了吗？需要时可以获取下一层提示。",
+          "at": 1793029154.649358
+        },
+        {
+          "id": "4008bc4305e649eb9bae042cf5a30b38",
+          "role": "player",
+          "kind": "question",
+          "text": "这里面有超自然元素吗",
+          "at": 1793029195.1247869,
+          "simulated_outcome": null
+        },
+        {
+          "id": "ff76974d3ebf47c39b472d3fbd338ce4",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029200.837048,
+          "question_id": "4008bc4305e649eb9bae042cf5a30b38",
+          "scope": "actual"
+        },
+        {
+          "id": "f1e66558c9cb4b63acb37ad775f55646",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿早就死了",
+          "at": 1793029214.748311,
+          "simulated_outcome": null
+        },
+        {
+          "id": "13545e8aebdf4f0496308d385ef89e25",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029221.7956748,
+          "question_id": "f1e66558c9cb4b63acb37ad775f55646",
+          "scope": "actual"
+        },
+        {
+          "id": "0a85ce66907146fba124d9010ad0b3bd",
+          "role": "player",
+          "kind": "question",
+          "text": "我每晚都能梦到女儿",
+          "at": 1793029234.978032,
+          "simulated_outcome": null
+        },
+        {
+          "id": "4b2e90bf9ccb4c198327a525e5dba69f",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029240.468939,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "scope": "actual",
+          "corrected_by": "753673fb38e54b0998ee3b8b3970bf63"
+        },
+        {
+          "id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿的鬼魂每晚都会回来看我",
+          "at": 1793029255.649556,
+          "simulated_outcome": null
+        },
+        {
+          "id": "f51a71312c7041579404326719870c5e",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029260.1391392,
+          "question_id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "scope": "actual"
+        },
+        {
+          "id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "role": "player",
+          "kind": "question",
+          "text": "我在睡梦中梦到女儿叫醒我",
+          "at": 1793029284.131701,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3dc4ad0f66524bd8823ef010c3cfdfc5",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029289.587753,
+          "question_id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "scope": "actual"
+        },
+        {
+          "id": "e4c63b128ef84232bea778cb7b8c503d",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿叫醒我是因为发生了火灾",
+          "at": 1793029310.687799,
+          "simulated_outcome": null
+        },
+        {
+          "id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029315.022783,
+          "question_id": "e4c63b128ef84232bea778cb7b8c503d",
+          "scope": "actual"
+        },
+        {
+          "id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿救了我",
+          "at": 1793029341.530872,
+          "simulated_outcome": null
+        },
+        {
+          "id": "8a22f523e49243a7967b27025c8d6b11",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029347.3197088,
+          "question_id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "scope": "actual"
+        },
+        {
+          "id": "b3a3d1e8c6a34d9888752a9517a0effb",
+          "role": "host",
+          "kind": "hint",
+          "text": "她平时避开你醒着的时候，那晚却主动把你叫醒。先想想这个变化。",
+          "at": 1793029352.272046,
+          "level": 1
+        },
+        {
+          "id": "a355b72d342d49afad1c5497da85b1f5",
+          "role": "player",
+          "kind": "question",
+          "text": "平时我没有危险，但是那晚有危险",
+          "at": 1793029365.482003,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029370.874371,
+          "question_id": "a355b72d342d49afad1c5497da85b1f5",
+          "scope": "actual"
+        },
+        {
+          "id": "1ed3542d73324f1ca947aee79309abae",
+          "role": "host",
+          "kind": "hint",
+          "text": "把她出现、你睡着和她消失、你醒来的时间放在一起看。",
+          "at": 1793029374.0755682,
+          "level": 2
+        },
+        {
+          "id": "bc7ed7b75270468bbe71801049658c76",
+          "role": "player",
+          "kind": "question",
+          "text": "我醒来了女儿就会消失",
+          "at": 1793029389.96895,
+          "simulated_outcome": null
+        },
+        {
+          "id": "c5aa919d4dab46c38dbade22876bc697",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029394.798483,
+          "question_id": "bc7ed7b75270468bbe71801049658c76",
+          "scope": "actual"
+        },
+        {
+          "id": "fb385757ef9d4a10ab0dca929f474710",
+          "role": "player",
+          "kind": "question",
+          "text": "发生火灾，所以女儿叫醒了我",
+          "at": 1793029409.884778,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029415.983275,
+          "question_id": "fb385757ef9d4a10ab0dca929f474710",
+          "scope": "actual"
+        },
+        {
+          "id": "4f2ed9fdd3334b5a99f4215e0151a520",
+          "role": "host",
+          "kind": "hint",
+          "text": "她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。",
+          "at": 1793029424.683818,
+          "level": 3
+        },
+        {
+          "id": "2f5b16df94d44f478038b32e0e739beb",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793029476.500628,
+          "simulated_outcome": null
+        },
+        {
+          "id": "98882cf7f51945a097742665d364c34a",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "尚未还原完整，可继续结合已确认的线索。",
+          "at": 1793029480.310967
+        },
+        {
+          "id": "501434ca89e74678adfe1b0b63be80ee",
+          "role": "player",
+          "kind": "question",
+          "text": "哪里尚未还原完整",
+          "at": 1793029499.5424929,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3c4942bc33534147888573df19c2ef75",
+          "role": "system",
+          "kind": "error",
+          "text": "这次未获得可靠判定，本次未扣次数。现场已保留，请先反馈这局。",
+          "at": 1793029502.539296
+        },
+        {
+          "id": "753673fb38e54b0998ee3b8b3970bf63",
+          "role": "host",
+          "kind": "correction",
+          "at": 1793086063.428261,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "answer": "是",
+          "scope": "actual",
+          "text": "更正一条先前回答：关于“我每晚都能梦到女儿”，应为“是”。此前回答不准确，已退回这次误判消耗的1次机会。"
+        },
+        {
+          "id": "d8931ba8ae7b415584c4eedd4bbea43a",
+          "role": "system",
+          "kind": "restored",
+          "at": 1793086063.428261,
+          "text": "现场已经恢复，计时继续暂停。准备好后，可以继续原来的推理。"
+        },
+        {
+          "id": "06f1dd1dd8144cd69bd9529409298e64",
+          "role": "player",
+          "kind": "question",
+          "text": "火灾发生在晚上",
+          "at": 1793088896.7883809,
+          "simulated_outcome": null
+        },
+        {
+          "id": "dce97886bd2149a9886351b88134193e",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793088903.771765,
+          "question_id": "06f1dd1dd8144cd69bd9529409298e64",
+          "scope": "actual"
+        },
+        {
+          "id": "5ef27391fe764b25b5e0bbd415958f3c",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793088923.404605,
+          "simulated_outcome": null
+        },
+        {
+          "id": "73bcf06a1ef94fe0b462691304486479",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我醒来了女儿就会消失”——此前回答：是。\n已公开提示：“她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。”\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+          "at": 1793088928.478067
+        },
+        {
+          "id": "c290a8bfecda46a4ab278764a0872f54",
+          "role": "player",
+          "kind": "question",
+          "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+          "at": 1793089009.785428,
+          "simulated_outcome": null
+        },
+        {
+          "id": "5e7ecaa49daf44b09db1117dfc2b159a",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793089015.395009,
+          "question_id": "c290a8bfecda46a4ab278764a0872f54",
+          "scope": "actual"
+        }
+      ],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3
+    },
+    {
+      "id": "R04-partial-specific-focus",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+      "history": [
+        {
+          "id": "0e0aa368f20249858497526c8f474880",
+          "role": "system",
+          "kind": "cold",
+          "text": "卡住了吗？需要时可以获取下一层提示。",
+          "at": 1793029154.649358
+        },
+        {
+          "id": "4008bc4305e649eb9bae042cf5a30b38",
+          "role": "player",
+          "kind": "question",
+          "text": "这里面有超自然元素吗",
+          "at": 1793029195.1247869,
+          "simulated_outcome": null
+        },
+        {
+          "id": "ff76974d3ebf47c39b472d3fbd338ce4",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029200.837048,
+          "question_id": "4008bc4305e649eb9bae042cf5a30b38",
+          "scope": "actual"
+        },
+        {
+          "id": "f1e66558c9cb4b63acb37ad775f55646",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿早就死了",
+          "at": 1793029214.748311,
+          "simulated_outcome": null
+        },
+        {
+          "id": "13545e8aebdf4f0496308d385ef89e25",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029221.7956748,
+          "question_id": "f1e66558c9cb4b63acb37ad775f55646",
+          "scope": "actual"
+        },
+        {
+          "id": "0a85ce66907146fba124d9010ad0b3bd",
+          "role": "player",
+          "kind": "question",
+          "text": "我每晚都能梦到女儿",
+          "at": 1793029234.978032,
+          "simulated_outcome": null
+        },
+        {
+          "id": "4b2e90bf9ccb4c198327a525e5dba69f",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029240.468939,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "scope": "actual",
+          "corrected_by": "753673fb38e54b0998ee3b8b3970bf63"
+        },
+        {
+          "id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿的鬼魂每晚都会回来看我",
+          "at": 1793029255.649556,
+          "simulated_outcome": null
+        },
+        {
+          "id": "f51a71312c7041579404326719870c5e",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029260.1391392,
+          "question_id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "scope": "actual"
+        },
+        {
+          "id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "role": "player",
+          "kind": "question",
+          "text": "我在睡梦中梦到女儿叫醒我",
+          "at": 1793029284.131701,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3dc4ad0f66524bd8823ef010c3cfdfc5",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029289.587753,
+          "question_id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "scope": "actual"
+        },
+        {
+          "id": "e4c63b128ef84232bea778cb7b8c503d",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿叫醒我是因为发生了火灾",
+          "at": 1793029310.687799,
+          "simulated_outcome": null
+        },
+        {
+          "id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029315.022783,
+          "question_id": "e4c63b128ef84232bea778cb7b8c503d",
+          "scope": "actual"
+        },
+        {
+          "id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿救了我",
+          "at": 1793029341.530872,
+          "simulated_outcome": null
+        },
+        {
+          "id": "8a22f523e49243a7967b27025c8d6b11",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029347.3197088,
+          "question_id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "scope": "actual"
+        },
+        {
+          "id": "b3a3d1e8c6a34d9888752a9517a0effb",
+          "role": "host",
+          "kind": "hint",
+          "text": "她平时避开你醒着的时候，那晚却主动把你叫醒。先想想这个变化。",
+          "at": 1793029352.272046,
+          "level": 1
+        },
+        {
+          "id": "a355b72d342d49afad1c5497da85b1f5",
+          "role": "player",
+          "kind": "question",
+          "text": "平时我没有危险，但是那晚有危险",
+          "at": 1793029365.482003,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029370.874371,
+          "question_id": "a355b72d342d49afad1c5497da85b1f5",
+          "scope": "actual"
+        },
+        {
+          "id": "1ed3542d73324f1ca947aee79309abae",
+          "role": "host",
+          "kind": "hint",
+          "text": "把她出现、你睡着和她消失、你醒来的时间放在一起看。",
+          "at": 1793029374.0755682,
+          "level": 2
+        },
+        {
+          "id": "bc7ed7b75270468bbe71801049658c76",
+          "role": "player",
+          "kind": "question",
+          "text": "我醒来了女儿就会消失",
+          "at": 1793029389.96895,
+          "simulated_outcome": null
+        },
+        {
+          "id": "c5aa919d4dab46c38dbade22876bc697",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029394.798483,
+          "question_id": "bc7ed7b75270468bbe71801049658c76",
+          "scope": "actual"
+        },
+        {
+          "id": "fb385757ef9d4a10ab0dca929f474710",
+          "role": "player",
+          "kind": "question",
+          "text": "发生火灾，所以女儿叫醒了我",
+          "at": 1793029409.884778,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029415.983275,
+          "question_id": "fb385757ef9d4a10ab0dca929f474710",
+          "scope": "actual"
+        },
+        {
+          "id": "4f2ed9fdd3334b5a99f4215e0151a520",
+          "role": "host",
+          "kind": "hint",
+          "text": "她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。",
+          "at": 1793029424.683818,
+          "level": 3
+        },
+        {
+          "id": "2f5b16df94d44f478038b32e0e739beb",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793029476.500628,
+          "simulated_outcome": null
+        },
+        {
+          "id": "98882cf7f51945a097742665d364c34a",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "尚未还原完整，可继续结合已确认的线索。",
+          "at": 1793029480.310967
+        },
+        {
+          "id": "501434ca89e74678adfe1b0b63be80ee",
+          "role": "player",
+          "kind": "question",
+          "text": "哪里尚未还原完整",
+          "at": 1793029499.5424929,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3c4942bc33534147888573df19c2ef75",
+          "role": "system",
+          "kind": "error",
+          "text": "这次未获得可靠判定，本次未扣次数。现场已保留，请先反馈这局。",
+          "at": 1793029502.539296
+        },
+        {
+          "id": "753673fb38e54b0998ee3b8b3970bf63",
+          "role": "host",
+          "kind": "correction",
+          "at": 1793086063.428261,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "answer": "是",
+          "scope": "actual",
+          "text": "更正一条先前回答：关于“我每晚都能梦到女儿”，应为“是”。此前回答不准确，已退回这次误判消耗的1次机会。"
+        },
+        {
+          "id": "d8931ba8ae7b415584c4eedd4bbea43a",
+          "role": "system",
+          "kind": "restored",
+          "at": 1793086063.428261,
+          "text": "现场已经恢复，计时继续暂停。准备好后，可以继续原来的推理。"
+        },
+        {
+          "id": "06f1dd1dd8144cd69bd9529409298e64",
+          "role": "player",
+          "kind": "question",
+          "text": "火灾发生在晚上",
+          "at": 1793088896.7883809,
+          "simulated_outcome": null
+        },
+        {
+          "id": "dce97886bd2149a9886351b88134193e",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793088903.771765,
+          "question_id": "06f1dd1dd8144cd69bd9529409298e64",
+          "scope": "actual"
+        },
+        {
+          "id": "5ef27391fe764b25b5e0bbd415958f3c",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793088923.404605,
+          "simulated_outcome": null
+        },
+        {
+          "id": "73bcf06a1ef94fe0b462691304486479",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我醒来了女儿就会消失”——此前回答：是。\n已公开提示：“她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。”\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+          "at": 1793088928.478067
+        }
+      ],
+      "expected_action": "incomplete",
+      "expected_answer": "",
+      "max_calls": 2,
+      "must_missing": [
+        "N1.2"
+      ]
+    },
+    {
+      "id": "R05-false-reality",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "火灾只发生在梦里，现实里没有起火",
+      "history": [],
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "max_calls": 3,
+      "requires_verification": true
+    },
+    {
+      "id": "R06-real-conflict",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "女儿靠我的梦出现，我醒来她就消失。不过那晚的火只发生在梦里，现实没有起火。",
+      "history": [],
+      "expected_action": "conflict",
+      "expected_answer": "",
+      "max_calls": 2,
+      "requires_verification": true
+    },
+    {
+      "id": "R07-heldout-words",
+      "story_id": "S03",
+      "kind": "question",
+      "text": "她是靠我的梦留在现实里的，一旦我清醒她就不见了",
+      "history": [
+        {
+          "id": "0e0aa368f20249858497526c8f474880",
+          "role": "system",
+          "kind": "cold",
+          "text": "卡住了吗？需要时可以获取下一层提示。",
+          "at": 1793029154.649358
+        },
+        {
+          "id": "4008bc4305e649eb9bae042cf5a30b38",
+          "role": "player",
+          "kind": "question",
+          "text": "这里面有超自然元素吗",
+          "at": 1793029195.1247869,
+          "simulated_outcome": null
+        },
+        {
+          "id": "ff76974d3ebf47c39b472d3fbd338ce4",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029200.837048,
+          "question_id": "4008bc4305e649eb9bae042cf5a30b38",
+          "scope": "actual"
+        },
+        {
+          "id": "f1e66558c9cb4b63acb37ad775f55646",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿早就死了",
+          "at": 1793029214.748311,
+          "simulated_outcome": null
+        },
+        {
+          "id": "13545e8aebdf4f0496308d385ef89e25",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029221.7956748,
+          "question_id": "f1e66558c9cb4b63acb37ad775f55646",
+          "scope": "actual"
+        },
+        {
+          "id": "0a85ce66907146fba124d9010ad0b3bd",
+          "role": "player",
+          "kind": "question",
+          "text": "我每晚都能梦到女儿",
+          "at": 1793029234.978032,
+          "simulated_outcome": null
+        },
+        {
+          "id": "4b2e90bf9ccb4c198327a525e5dba69f",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029240.468939,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "scope": "actual",
+          "corrected_by": "753673fb38e54b0998ee3b8b3970bf63"
+        },
+        {
+          "id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿的鬼魂每晚都会回来看我",
+          "at": 1793029255.649556,
+          "simulated_outcome": null
+        },
+        {
+          "id": "f51a71312c7041579404326719870c5e",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029260.1391392,
+          "question_id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "scope": "actual"
+        },
+        {
+          "id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "role": "player",
+          "kind": "question",
+          "text": "我在睡梦中梦到女儿叫醒我",
+          "at": 1793029284.131701,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3dc4ad0f66524bd8823ef010c3cfdfc5",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029289.587753,
+          "question_id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "scope": "actual"
+        },
+        {
+          "id": "e4c63b128ef84232bea778cb7b8c503d",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿叫醒我是因为发生了火灾",
+          "at": 1793029310.687799,
+          "simulated_outcome": null
+        },
+        {
+          "id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029315.022783,
+          "question_id": "e4c63b128ef84232bea778cb7b8c503d",
+          "scope": "actual"
+        },
+        {
+          "id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿救了我",
+          "at": 1793029341.530872,
+          "simulated_outcome": null
+        },
+        {
+          "id": "8a22f523e49243a7967b27025c8d6b11",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029347.3197088,
+          "question_id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "scope": "actual"
+        },
+        {
+          "id": "b3a3d1e8c6a34d9888752a9517a0effb",
+          "role": "host",
+          "kind": "hint",
+          "text": "她平时避开你醒着的时候，那晚却主动把你叫醒。先想想这个变化。",
+          "at": 1793029352.272046,
+          "level": 1
+        },
+        {
+          "id": "a355b72d342d49afad1c5497da85b1f5",
+          "role": "player",
+          "kind": "question",
+          "text": "平时我没有危险，但是那晚有危险",
+          "at": 1793029365.482003,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029370.874371,
+          "question_id": "a355b72d342d49afad1c5497da85b1f5",
+          "scope": "actual"
+        },
+        {
+          "id": "1ed3542d73324f1ca947aee79309abae",
+          "role": "host",
+          "kind": "hint",
+          "text": "把她出现、你睡着和她消失、你醒来的时间放在一起看。",
+          "at": 1793029374.0755682,
+          "level": 2
+        },
+        {
+          "id": "bc7ed7b75270468bbe71801049658c76",
+          "role": "player",
+          "kind": "question",
+          "text": "我醒来了女儿就会消失",
+          "at": 1793029389.96895,
+          "simulated_outcome": null
+        },
+        {
+          "id": "c5aa919d4dab46c38dbade22876bc697",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029394.798483,
+          "question_id": "bc7ed7b75270468bbe71801049658c76",
+          "scope": "actual"
+        },
+        {
+          "id": "fb385757ef9d4a10ab0dca929f474710",
+          "role": "player",
+          "kind": "question",
+          "text": "发生火灾，所以女儿叫醒了我",
+          "at": 1793029409.884778,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029415.983275,
+          "question_id": "fb385757ef9d4a10ab0dca929f474710",
+          "scope": "actual"
+        },
+        {
+          "id": "4f2ed9fdd3334b5a99f4215e0151a520",
+          "role": "host",
+          "kind": "hint",
+          "text": "她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。",
+          "at": 1793029424.683818,
+          "level": 3
+        },
+        {
+          "id": "2f5b16df94d44f478038b32e0e739beb",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793029476.500628,
+          "simulated_outcome": null
+        },
+        {
+          "id": "98882cf7f51945a097742665d364c34a",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "尚未还原完整，可继续结合已确认的线索。",
+          "at": 1793029480.310967
+        },
+        {
+          "id": "501434ca89e74678adfe1b0b63be80ee",
+          "role": "player",
+          "kind": "question",
+          "text": "哪里尚未还原完整",
+          "at": 1793029499.5424929,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3c4942bc33534147888573df19c2ef75",
+          "role": "system",
+          "kind": "error",
+          "text": "这次未获得可靠判定，本次未扣次数。现场已保留，请先反馈这局。",
+          "at": 1793029502.539296
+        },
+        {
+          "id": "753673fb38e54b0998ee3b8b3970bf63",
+          "role": "host",
+          "kind": "correction",
+          "at": 1793086063.428261,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "answer": "是",
+          "scope": "actual",
+          "text": "更正一条先前回答：关于“我每晚都能梦到女儿”，应为“是”。此前回答不准确，已退回这次误判消耗的1次机会。"
+        },
+        {
+          "id": "d8931ba8ae7b415584c4eedd4bbea43a",
+          "role": "system",
+          "kind": "restored",
+          "at": 1793086063.428261,
+          "text": "现场已经恢复，计时继续暂停。准备好后，可以继续原来的推理。"
+        },
+        {
+          "id": "06f1dd1dd8144cd69bd9529409298e64",
+          "role": "player",
+          "kind": "question",
+          "text": "火灾发生在晚上",
+          "at": 1793088896.7883809,
+          "simulated_outcome": null
+        },
+        {
+          "id": "dce97886bd2149a9886351b88134193e",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793088903.771765,
+          "question_id": "06f1dd1dd8144cd69bd9529409298e64",
+          "scope": "actual"
+        },
+        {
+          "id": "5ef27391fe764b25b5e0bbd415958f3c",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793088923.404605,
+          "simulated_outcome": null
+        },
+        {
+          "id": "73bcf06a1ef94fe0b462691304486479",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我醒来了女儿就会消失”——此前回答：是。\n已公开提示：“她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。”\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+          "at": 1793088928.478067
+        },
+        {
+          "id": "c290a8bfecda46a4ab278764a0872f54",
+          "role": "player",
+          "kind": "question",
+          "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+          "at": 1793089009.785428,
+          "simulated_outcome": null
+        },
+        {
+          "id": "5e7ecaa49daf44b09db1117dfc2b159a",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793089015.395009,
+          "question_id": "c290a8bfecda46a4ab278764a0872f54",
+          "scope": "actual"
+        }
+      ],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3
+    },
+    {
+      "id": "R08-merge-confirmed-progress",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "她靠我的梦出现，我醒来她就消失，因此平时她不叫醒我。起火那晚她仍叫醒我，让我逃了出去。",
+      "history": [
+        {
+          "id": "0e0aa368f20249858497526c8f474880",
+          "role": "system",
+          "kind": "cold",
+          "text": "卡住了吗？需要时可以获取下一层提示。",
+          "at": 1793029154.649358
+        },
+        {
+          "id": "4008bc4305e649eb9bae042cf5a30b38",
+          "role": "player",
+          "kind": "question",
+          "text": "这里面有超自然元素吗",
+          "at": 1793029195.1247869,
+          "simulated_outcome": null
+        },
+        {
+          "id": "ff76974d3ebf47c39b472d3fbd338ce4",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029200.837048,
+          "question_id": "4008bc4305e649eb9bae042cf5a30b38",
+          "scope": "actual"
+        },
+        {
+          "id": "f1e66558c9cb4b63acb37ad775f55646",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿早就死了",
+          "at": 1793029214.748311,
+          "simulated_outcome": null
+        },
+        {
+          "id": "13545e8aebdf4f0496308d385ef89e25",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029221.7956748,
+          "question_id": "f1e66558c9cb4b63acb37ad775f55646",
+          "scope": "actual"
+        },
+        {
+          "id": "0a85ce66907146fba124d9010ad0b3bd",
+          "role": "player",
+          "kind": "question",
+          "text": "我每晚都能梦到女儿",
+          "at": 1793029234.978032,
+          "simulated_outcome": null
+        },
+        {
+          "id": "4b2e90bf9ccb4c198327a525e5dba69f",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029240.468939,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "scope": "actual",
+          "corrected_by": "753673fb38e54b0998ee3b8b3970bf63"
+        },
+        {
+          "id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿的鬼魂每晚都会回来看我",
+          "at": 1793029255.649556,
+          "simulated_outcome": null
+        },
+        {
+          "id": "f51a71312c7041579404326719870c5e",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793029260.1391392,
+          "question_id": "eb98ac6c74c14249b7bcb1f33763aac0",
+          "scope": "actual"
+        },
+        {
+          "id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "role": "player",
+          "kind": "question",
+          "text": "我在睡梦中梦到女儿叫醒我",
+          "at": 1793029284.131701,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3dc4ad0f66524bd8823ef010c3cfdfc5",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029289.587753,
+          "question_id": "80c9fe3ea65f419b9a7c339b1cd11abd",
+          "scope": "actual"
+        },
+        {
+          "id": "e4c63b128ef84232bea778cb7b8c503d",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿叫醒我是因为发生了火灾",
+          "at": 1793029310.687799,
+          "simulated_outcome": null
+        },
+        {
+          "id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029315.022783,
+          "question_id": "e4c63b128ef84232bea778cb7b8c503d",
+          "scope": "actual"
+        },
+        {
+          "id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "role": "player",
+          "kind": "question",
+          "text": "女儿救了我",
+          "at": 1793029341.530872,
+          "simulated_outcome": null
+        },
+        {
+          "id": "8a22f523e49243a7967b27025c8d6b11",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029347.3197088,
+          "question_id": "6ff4b1dcc8d94beeb0562a22b4f922aa",
+          "scope": "actual"
+        },
+        {
+          "id": "b3a3d1e8c6a34d9888752a9517a0effb",
+          "role": "host",
+          "kind": "hint",
+          "text": "她平时避开你醒着的时候，那晚却主动把你叫醒。先想想这个变化。",
+          "at": 1793029352.272046,
+          "level": 1
+        },
+        {
+          "id": "a355b72d342d49afad1c5497da85b1f5",
+          "role": "player",
+          "kind": "question",
+          "text": "平时我没有危险，但是那晚有危险",
+          "at": 1793029365.482003,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029370.874371,
+          "question_id": "a355b72d342d49afad1c5497da85b1f5",
+          "scope": "actual"
+        },
+        {
+          "id": "1ed3542d73324f1ca947aee79309abae",
+          "role": "host",
+          "kind": "hint",
+          "text": "把她出现、你睡着和她消失、你醒来的时间放在一起看。",
+          "at": 1793029374.0755682,
+          "level": 2
+        },
+        {
+          "id": "bc7ed7b75270468bbe71801049658c76",
+          "role": "player",
+          "kind": "question",
+          "text": "我醒来了女儿就会消失",
+          "at": 1793029389.96895,
+          "simulated_outcome": null
+        },
+        {
+          "id": "c5aa919d4dab46c38dbade22876bc697",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029394.798483,
+          "question_id": "bc7ed7b75270468bbe71801049658c76",
+          "scope": "actual"
+        },
+        {
+          "id": "fb385757ef9d4a10ab0dca929f474710",
+          "role": "player",
+          "kind": "question",
+          "text": "发生火灾，所以女儿叫醒了我",
+          "at": 1793029409.884778,
+          "simulated_outcome": null
+        },
+        {
+          "id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793029415.983275,
+          "question_id": "fb385757ef9d4a10ab0dca929f474710",
+          "scope": "actual"
+        },
+        {
+          "id": "4f2ed9fdd3334b5a99f4215e0151a520",
+          "role": "host",
+          "kind": "hint",
+          "text": "她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。",
+          "at": 1793029424.683818,
+          "level": 3
+        },
+        {
+          "id": "2f5b16df94d44f478038b32e0e739beb",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793029476.500628,
+          "simulated_outcome": null
+        },
+        {
+          "id": "98882cf7f51945a097742665d364c34a",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "尚未还原完整，可继续结合已确认的线索。",
+          "at": 1793029480.310967
+        },
+        {
+          "id": "501434ca89e74678adfe1b0b63be80ee",
+          "role": "player",
+          "kind": "question",
+          "text": "哪里尚未还原完整",
+          "at": 1793029499.5424929,
+          "simulated_outcome": null
+        },
+        {
+          "id": "3c4942bc33534147888573df19c2ef75",
+          "role": "system",
+          "kind": "error",
+          "text": "这次未获得可靠判定，本次未扣次数。现场已保留，请先反馈这局。",
+          "at": 1793029502.539296
+        },
+        {
+          "id": "753673fb38e54b0998ee3b8b3970bf63",
+          "role": "host",
+          "kind": "correction",
+          "at": 1793086063.428261,
+          "question_id": "0a85ce66907146fba124d9010ad0b3bd",
+          "answer": "是",
+          "scope": "actual",
+          "text": "更正一条先前回答：关于“我每晚都能梦到女儿”，应为“是”。此前回答不准确，已退回这次误判消耗的1次机会。"
+        },
+        {
+          "id": "d8931ba8ae7b415584c4eedd4bbea43a",
+          "role": "system",
+          "kind": "restored",
+          "at": 1793086063.428261,
+          "text": "现场已经恢复，计时继续暂停。准备好后，可以继续原来的推理。"
+        },
+        {
+          "id": "06f1dd1dd8144cd69bd9529409298e64",
+          "role": "player",
+          "kind": "question",
+          "text": "火灾发生在晚上",
+          "at": 1793088896.7883809,
+          "simulated_outcome": null
+        },
+        {
+          "id": "dce97886bd2149a9886351b88134193e",
+          "role": "host",
+          "kind": "answer",
+          "text": "是",
+          "at": 1793088903.771765,
+          "question_id": "06f1dd1dd8144cd69bd9529409298e64",
+          "scope": "actual"
+        },
+        {
+          "id": "5ef27391fe764b25b5e0bbd415958f3c",
+          "role": "player",
+          "kind": "solution",
+          "text": "女儿早就死了，但是她每晚还是会回来看我，但不打扰我。但那晚发生了火灾，女儿把我叫醒了，我被女儿救了。",
+          "at": 1793088923.404605,
+          "simulated_outcome": null
+        },
+        {
+          "id": "73bcf06a1ef94fe0b462691304486479",
+          "role": "host",
+          "kind": "solution_result",
+          "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我醒来了女儿就会消失”——此前回答：是。\n已公开提示：“她的出现依赖你的梦，醒来就会结束。那晚她看见的是现实中的火。”\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+          "at": 1793088928.478067
+        },
+        {
+          "id": "c290a8bfecda46a4ab278764a0872f54",
+          "role": "player",
+          "kind": "question",
+          "text": "那晚女儿看到现实中着火了，于是急忙把我叫醒，但是女儿的出现依托于我的梦，所以我醒来了，女儿就消失了。而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。",
+          "at": 1793089009.785428,
+          "simulated_outcome": null
+        },
+        {
+          "id": "5e7ecaa49daf44b09db1117dfc2b159a",
+          "role": "host",
+          "kind": "answer",
+          "text": "否",
+          "at": 1793089015.395009,
+          "question_id": "c290a8bfecda46a4ab278764a0872f54",
+          "scope": "actual"
+        }
+      ],
+      "expected_action": "complete",
+      "expected_answer": "",
+      "max_calls": 2
+    },
+    {
+      "id": "R09-no-hint-as-knowledge",
+      "story_id": "S03",
+      "kind": "solution",
+      "text": "女儿死后在火灾里救了我。",
+      "history": [],
+      "expected_action": "incomplete",
+      "expected_answer": "",
+      "max_calls": 2,
+      "must_missing": [
+        "N1.2"
+      ]
+    },
+    {
+      "id": "R10-S02-actual",
+      "story_id": "S02",
+      "kind": "question",
+      "text": "咳嗽的原声发出时，我还没回到屋里",
+      "history": [],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3
+    },
+    {
+      "id": "R11-S06-hypothetical",
+      "story_id": "S06",
+      "kind": "question",
+      "text": "如果我午夜后躺过病床，但一直没回应病人叫我的名字，天亮病痛会撤回吗",
+      "history": [],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3,
+      "expected_scope": "hypothetical"
+    },
+    {
+      "id": "R12-S07-forged-message",
+      "story_id": "S07",
+      "kind": "question",
+      "text": "妹妹的出差消息是有人用她的手机伪造的",
+      "history": [],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3
+    }
+  ],
+  "reviewed_priority_cases": [
+    "R01-player-question",
+    "R02-player-solution-poisoned-history",
+    "R03-clear-reality",
+    "R04-partial-specific-focus",
+    "R05-false-reality",
+    "R06-real-conflict",
+    "R07-heldout-words",
+    "R08-merge-confirmed-progress",
+    "R09-no-hint-as-knowledge"
+  ],
+  "reviewed_scope": "保留原计划和首轮失败。先验证9个核心场景；其余3个跨题场景按同一24次上限剩余额度安排，未执行不记通过。"
+}

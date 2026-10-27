@@ -1,0 +1,49 @@
+{
+  "status": "stopped_error",
+  "cases": [
+    {
+      "id": "R01-player-question",
+      "passed": true,
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "clarification": "",
+        "fact_ids": [
+          "F10",
+          "F11",
+          "F03",
+          "F06",
+          "F12"
+        ],
+        "covered_nodes": [],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "scope": "actual"
+      }
+    }
+  ],
+  "max_new_calls": 24,
+  "baseline_calls": 44,
+  "player_database_changed": false,
+  "new_calls": 3,
+  "budget": {
+    "mode": "live",
+    "live_enabled": true,
+    "provider_calls": 47,
+    "remaining_authorized_provider_calls": 21,
+    "remaining_in_original_round": 53,
+    "estimated_or_reserved_cny": 0.1707714,
+    "prior_estimated_cny": 0.1377942,
+    "cap_cny": 5,
+    "blocked": true,
+    "stop_reason": "round_completed"
+  },
+  "error_code": "unsupported_assessment",
+  "cleanup": {
+    "temporary_key_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "cloud_key_revoked": false
+  }
+}

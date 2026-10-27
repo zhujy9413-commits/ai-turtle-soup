@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-27",
+  "state": "新题验证尚未通过，盲测未开放",
+  "current_release": "V0.9.3",
+  "canonical_release_modified": false,
+  "isolated_entry_prepared": true,
+  "public_surface_shown": false,
+  "passed_cases": 3,
+  "planned_cases": 6,
+  "remaining_case_ids": [
+    "S08-Q4",
+    "S08-R1",
+    "S08-R2"
+  ],
+  "new_offline_checks": 24,
+  "host_regression_checks": 107,
+  "model_calls": 16,
+  "current_original_round_used": 90,
+  "current_original_round_remaining": 10,
+  "current_approved_phase_slots_left": 4,
+  "estimated_cumulative_cny": 0.2021602,
+  "unsettled_reserved_cny": 2.0,
+  "budget_estimated_or_reserved_cny": 2.2021602,
+  "usage_uncertain": true,
+  "available_calls_while_blocked": 0,
+  "cap_cny": 5,
+  "temporary_key_removed": true,
+  "ordinary_question_context_separated": true,
+  "latest_result": "channel-result.json",
+  "materials_sha256": "7724314b90bd9a417e28243f4cfbc03019779c7602d35e48adb938e7b53fa8eb",
+  "evidence_limit": "通过记录来自不同修订；结构和离线检查不证明语义准确率；完整自然盲测尚未执行。",
+  "diagnostic_followup": {
+    "date": "2026-10-27",
+    "offline_fix_complete": true,
+    "new_provider_calls": 0,
+    "new_diagnostic_checks": 13,
+    "old_failure_cause_still_unknown": true,
+    "pending_platform_log": false,
+    "report": "调用故障核查/index.html",
+    "console_review": {
+      "date": "2026-10-28",
+      "console_query_complete": true,
+      "original_request_found": false,
+      "query_windows_beijing": [
+        "2026-10-27 22:00–22:05",
+        "2026-10-27 21:55–22:10"
+      ],
+      "status_filter": "未限制，含成功、主动中断、4XX与5XX",
+      "model_filter": "目标模型及全部模型分别核对",
+      "api_key_filter": "全部API Key",
+      "nearby_success_rows": 2,
+      "nearby_usage_matches_local_ledger": true,
+      "absence_proves_zero_billing": false,
+      "root_cause_confirmed": false,
+      "reserved_cny_unchanged": 2.0,
+      "ledger_unblocked": false,
+      "new_provider_calls": 0,
+      "evidence": "console-audit-evidence.json"
+    },
+    "unsettled_usage_still_pending": true
+  }
+}

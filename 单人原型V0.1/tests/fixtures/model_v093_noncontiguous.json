@@ -1,0 +1,92 @@
+{
+  "mode": "assess",
+  "checks": [
+    {
+      "criterion_id": "N1.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "13545e8aebdf4f0496308d385ef89e25",
+          "quote": "女儿早就死了"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N1.2",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "她靠我的梦出现"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N2.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "我醒来她就消失"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N2.2",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "因此平时她不叫醒我"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N3.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "起火那晚"
+        },
+        {
+          "source_id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "quote": "女儿叫醒我是因为发生了火灾"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N3.2",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "quote": "平时我没有危险，但是那晚有危险"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N4.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "起火那晚她仍叫醒我，让我逃了出去"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N4.2",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "我醒来她就消失...让我逃了出去"
+        }
+      ]
+    }
+  ],
+  "conflicts": [],
+  "clarification": "",
+  "review_refs": []
+}

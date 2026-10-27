@@ -1,0 +1,17 @@
+{
+  "mode": "assess",
+  "checks": [],
+  "conflicts": [
+    {
+      "quote": "那晚的火只发生在梦里，现实没有起火",
+      "facts": [
+        {
+          "fact_id": "F10",
+          "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+        }
+      ]
+    }
+  ],
+  "clarification": "",
+  "review_refs": []
+}

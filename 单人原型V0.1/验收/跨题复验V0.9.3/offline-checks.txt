@@ -1,0 +1,18 @@
+test_correct_yes_in_the_wrong_scope_does_not_count_as_a_pass (test_cross_phase.CrossTests) ... ok
+test_expiry_is_checked_before_any_model_submission (test_cross_phase.CrossTests) ... ok
+test_provider_failure_is_recorded_once_and_never_retried (test_cross_phase.CrossTests) ... R10: stopped for review
+ok
+test_three_cases_use_six_calls_without_resetting_the_original_68 (test_cross_phase.CrossTests) ... R10: passed
+R11: passed
+R12: passed
+ok
+test_wrong_hypothesis_scope_stops_before_the_third_case (test_cross_phase.CrossTests) ... R10: passed
+R11: stopped for review
+ok
+test_failed_judgment_stops_once_and_still_cleans_key (test_cross_phase.LifecycleTests) ... ok
+test_success_preserves_ledger_and_cleans_key_without_a_replay (test_cross_phase.LifecycleTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.105s
+
+OK

@@ -1,0 +1,14 @@
+{
+  "version": "V0.9.3",
+  "source_files_matched": 58,
+  "four_story_facts_truth_surface_unchanged": true,
+  "default_service_mode": "fixture",
+  "story_count": 4,
+  "private_source_returns_404": true,
+  "archive_has_no_provider": true,
+  "archive_review_uses_corrected_answer": true,
+  "raw_player_record_unchanged": true,
+  "temporary_key_removed": true,
+  "request_maximum_bytes": 22158,
+  "new_model_calls_for_postcheck": 0
+}

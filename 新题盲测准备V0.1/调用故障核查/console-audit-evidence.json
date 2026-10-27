@@ -1,0 +1,75 @@
+{
+  "allModelsExact": {
+    "statusFilter": "all",
+    "modelFilter": "all",
+    "mainText": "审计日志\n推理日志\n审计日志仅记录调用元数据（如 Request ID、时间、模型、Token 用量、状态码等），不包含 Prompt 和 Response 内容。如需查看完整的请求和响应内容，请开启推理日志。\n2026-10-27 22:00:00 ~ 2026-10-27 22:05:00\n全部模型\n在线推理\n全部API Key\n日志投递配置\nRequest ID\t调用时间\t模型\t用量\t首包延迟\t调用时长\t\n状态\n\tAPI Key\t错误码\t操作\nRequest ID\n\t\n调用时间\n\t\n模型\n\t\n用量\n\t\n首包延迟\n\t\n调用时长\n\t\n状态\n\t\nAPI Key\n\t\n错误码\n\t\n操作\n\n\n暂无数据",
+    "apiKeyFilter": "all",
+    "observedAt": "2026-10-27T16:25:07.289Z"
+  },
+  "broadWindow": {
+    "mainText": "审计日志\n推理日志\n审计日志仅记录调用元数据（如 Request ID、时间、模型、Token 用量、状态码等），不包含 Prompt 和 Response 内容。如需查看完整的请求和响应内容，请开启推理日志。\n2026-10-27 21:55:00 ~ 2026-10-27 22:10:00\n全部模型\n在线推理\n全部API Key\n日志投递配置\nRequest ID\t调用时间\t模型\t用量\t首包延迟\t调用时长\t\n状态\n\tAPI Key\t错误码\t操作\nRequest ID\n\t\n调用时间\n\t\n模型\n\t\n用量\n\t\n首包延迟\n\t\n调用时长\n\t\n状态\n\t\nAPI Key\n\t\n错误码\n\t\n操作\n\n\nec872b29-77a0-98cf-929a-af8e0617b09b\n\t2026-10-27 21:57:38\t\nqwen3.7-flash-2026-07-15\n\t\n全部Tokens\n3121\n输出Tokens\n85...\n\t-\t\n1.35s\n\t200\t\n[key-omitted]\n111\n\t-\t\n详情\n\n\na00cb40e-239f-9b67-bb2e-377fa7a2e3bb\n\t2026-10-27 21:57:36\t\nqwen3.7-flash-2026-07-15\n\t\n全部Tokens\n669\n输出Tokens\n10...\n\t-\t\n1.13s\n\t200\t\n[key-omitted]\n111\n\t-\t\n详情\n共 2 条\n1\n10 条/页",
+    "startBeijing": "2026-10-27 21:55:00",
+    "statusFilter": "all",
+    "observedAt": "2026-10-27T16:25:25.454Z",
+    "modelFilter": "all",
+    "rows": [
+      [
+        "ec872b29-77a0-98cf-929a-af8e0617b09b",
+        "2026-10-27 21:57:38",
+        "qwen3.7-flash-2026-07-15",
+        "全部Tokens\n3121\n输出Tokens\n85...",
+        "-",
+        "1.35s",
+        "200",
+        "[API Key omitted]",
+        "[key-omitted]",
+        "详情"
+      ],
+      [
+        "a00cb40e-239f-9b67-bb2e-377fa7a2e3bb",
+        "2026-10-27 21:57:36",
+        "qwen3.7-flash-2026-07-15",
+        "全部Tokens\n669\n输出Tokens\n10...",
+        "-",
+        "1.13s",
+        "200",
+        "[API Key omitted]",
+        "[key-omitted]",
+        "详情"
+      ]
+    ],
+    "endBeijing": "2026-10-27 22:10:00",
+    "apiKeyFilter": "all"
+  },
+  "conclusion": "22:00至22:05全部模型/全部API Key/未限制状态的查询暂无数据；21:55至22:10共2条成功记录，与本地故障前已结算用量相符；原22:03请求未找到，不据此认定零费用或具体故障原因。",
+  "newModelCalls": 0,
+  "exactWindow": {
+    "region": "华北2（北京）",
+    "mainText": "审计日志\n推理日志\n审计日志仅记录调用元数据（如 Request ID、时间、模型、Token 用量、状态码等），不包含 Prompt 和 Response 内容。如需查看完整的请求和响应内容，请开启推理日志。\n2026-10-27 22:00:00 ~ 2026-10-27 22:05:00\nqwen3.7-flash-2026-07-15\n+ 1 ...\n在线推理\n全部API Key\n日志投递配置\nRequest ID\t调用时间\t模型\t用量\t首包延迟\t调用时长\t\n状态\n\tAPI Key\t错误码\t操作\nRequest ID\n\t\n调用时间\n\t\n模型\n\t\n用量\n\t\n首包延迟\n\t\n调用时长\n\t\n状态\n\t\nAPI Key\n\t\n错误码\n\t\n操作\n\n\n暂无数据",
+    "statusFilterOptions": [
+      {
+        "checked": false,
+        "text": "0 : 请求成功但用户主动中断"
+      },
+      {
+        "checked": false,
+        "text": "200 : 成功"
+      },
+      {
+        "checked": false,
+        "text": "4XX : 用户行为导致的异常"
+      },
+      {
+        "checked": false,
+        "text": "5XX : 服务不可用"
+      }
+    ],
+    "note": "审计日志，不是计费依据。页面地址保留旧查询参数；以界面已生效日期及空表为依据。",
+    "observedAt": "2026-10-27T16:24:19.153Z",
+    "model": "qwen3.7-flash-2026-07-15",
+    "workspace": "默认业务空间",
+    "queryStartBeijing": "2026-10-27 22:00:00",
+    "apiKeyFilter": "all",
+    "queryEndBeijing": "2026-10-27 22:05:00"
+  }
+}

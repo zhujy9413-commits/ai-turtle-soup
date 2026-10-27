@@ -1,0 +1,87 @@
+{
+  "mode": "offline_capture",
+  "provider_calls": 0,
+  "maximum_bytes": 22158,
+  "limit_bytes": 32000,
+  "cases": [
+    {
+      "id": "R01-player-question",
+      "request_bytes": [
+        9049,
+        20240
+      ]
+    },
+    {
+      "id": "R02-player-solution-poisoned-history",
+      "request_bytes": [
+        22158
+      ]
+    },
+    {
+      "id": "R03-clear-reality",
+      "request_bytes": [
+        9367,
+        20558
+      ]
+    },
+    {
+      "id": "R04-partial-specific-focus",
+      "request_bytes": [
+        21265
+      ]
+    },
+    {
+      "id": "R05-false-reality",
+      "request_bytes": [
+        3172,
+        15186
+      ]
+    },
+    {
+      "id": "R06-real-conflict",
+      "request_bytes": [
+        16676
+      ]
+    },
+    {
+      "id": "R07-heldout-words",
+      "request_bytes": [
+        9403,
+        20594
+      ]
+    },
+    {
+      "id": "R08-merge-confirmed-progress",
+      "request_bytes": [
+        21952
+      ]
+    },
+    {
+      "id": "R09-no-hint-as-knowledge",
+      "request_bytes": [
+        16533
+      ]
+    },
+    {
+      "id": "R10-S02-actual",
+      "request_bytes": [
+        3244,
+        14248
+      ]
+    },
+    {
+      "id": "R11-S06-hypothetical",
+      "request_bytes": [
+        3433,
+        18232
+      ]
+    },
+    {
+      "id": "R12-S07-forged-message",
+      "request_bytes": [
+        3348,
+        16528
+      ]
+    }
+  ]
+}

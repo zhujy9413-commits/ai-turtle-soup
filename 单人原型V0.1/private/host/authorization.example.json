@@ -1,0 +1,12 @@
+{
+  "approved": false,
+  "approval_basis": "待用户确认本轮调用次数与累计费用上限",
+  "round_id": "live-host-20261026",
+  "max_calls": 24,
+  "cap_cny": 5,
+  "model": "qwen3.7-flash-2026-07-15",
+  "base_url": "https://ws-6sartjfe1i7cpkgw.cn-beijing.maas.aliyuncs.com/compatible-mode/v1",
+  "materials_sha256": "4da5eeb092a55e0943772749b0f37922751fd95e836d932f3417638ed04ff89c",
+  "expires_at": 0,
+  "prior_estimated_cny": 0.1930508
+}

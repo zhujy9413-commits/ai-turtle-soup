@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-27",
+  "cases": [
+    {
+      "id": "S08-Q2",
+      "kind": "question",
+      "text": "吃供饭和喝床头水的是同一个人",
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "expected_scope": "actual",
+      "fact_basis": [
+        "F05",
+        "F09"
+      ],
+      "max_calls": 2
+    },
+    {
+      "id": "S08-Q3",
+      "kind": "question",
+      "text": "我闩好门以后，有人从外面撬锁进来喝水",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "expected_scope": "actual",
+      "fact_basis": [
+        "F11"
+      ],
+      "max_calls": 3
+    },
+    {
+      "id": "S08-Q4",
+      "kind": "question",
+      "text": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "expected_scope": "hypothetical",
+      "fact_basis": [
+        "F03",
+        "F11"
+      ],
+      "max_calls": 3
+    },
+    {
+      "id": "S08-R1",
+      "kind": "solution",
+      "text": "有人一直藏在房间里，夜里吃供饭，吃得太咸就喝了我床头的水。我闩门前他就藏好了，房东一直知道，并借供奉的说法给他送饭。",
+      "expected_action": "incomplete",
+      "must_missing": [
+        "N3.1"
+      ],
+      "forbid_action": "conflict",
+      "max_calls": 2
+    },
+    {
+      "id": "S08-R2",
+      "kind": "solution",
+      "text": "房东藏着活人，借给亡夫供饭的说法喂他，又在牛奶上动手脚，让我前几晚睡得很沉。他在我闩门前就藏在屋内，那晚吃了加盐的饭后口渴，到床头喝水。我没喝奶，清醒装睡，才察觉动静，意识到房东一直在配合，便照常出门离开。",
+      "expected_action": "complete",
+      "notes": "刻意未猜丈夫身份和具体藏身位置；这些不是通关必需。",
+      "max_calls": 2
+    }
+  ],
+  "baseline_calls": 78,
+  "max_new_calls": 12,
+  "original_phase_max_calls": 16,
+  "original_phase_baseline": 74,
+  "phase_ceiling": 90,
+  "materials_sha256": "2d5a8637d827253935e66b8824b34022ed0bb2201670895b0be54a7c76e71d4c",
+  "stop_on_first_failure": true,
+  "automatic_retries": 0,
+  "review": "原Q2方向正确，但引用了truth里的改写句而非F09原文；保留原失败，不放宽引文校验。隔离版判定输入只提供事实表，不重复提供供揭晓的叙述性汤底。剩余5项人工复核后定向执行，沿用同一16次阶段上限。",
+  "original_result_sha256": "e89d7da32e0d19db33d6f1e9ad473f26fdbbb9a55d6041fb483fbffe3d873e9f",
+  "retained_first_case": "S08-Q1仅在原输入版本通过；本修订不重复调用，报告保留版本差异。"
+}

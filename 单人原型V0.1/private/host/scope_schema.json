@@ -1,0 +1,30 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "night_route_v092",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "route": {
+          "type": "string",
+          "enum": [
+            "judge_actual",
+            "judge_hypothetical",
+            "clarify_scope",
+            "clarify_narration",
+            "clarify_public_text",
+            "help_progress",
+            "help_rules",
+            "request_hint",
+            "invalid"
+          ]
+        }
+      },
+      "required": [
+        "route"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

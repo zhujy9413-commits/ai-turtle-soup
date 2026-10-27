@@ -1,0 +1,136 @@
+{
+  "status": "passed",
+  "reviewed_followup": true,
+  "max_new_provider_calls": 16,
+  "baseline_calls": 22,
+  "cases": [
+    {
+      "id": "Q-frequency",
+      "passed": true,
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "",
+        "review_refs": [],
+        "scope": "actual"
+      }
+    },
+    {
+      "id": "Q-waking",
+      "passed": true,
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "",
+        "review_refs": [],
+        "scope": "actual"
+      }
+    },
+    {
+      "id": "Q-hypothesis",
+      "passed": true,
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [],
+        "clarification": "",
+        "review_refs": [],
+        "scope": "hypothetical"
+      }
+    },
+    {
+      "id": "S-partial",
+      "passed": true,
+      "verdict": {
+        "action": "incomplete",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [
+          "N1"
+        ],
+        "audit_flags": [],
+        "clarification": "",
+        "review_refs": [
+          "4f2ed9fdd3334b5a99f4215e0151a520",
+          "c5aa919d4dab46c38dbade22876bc697"
+        ],
+        "scope": "actual"
+      }
+    },
+    {
+      "id": "S-complete",
+      "passed": true,
+      "verdict": {
+        "action": "complete",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [
+          "N1",
+          "N2",
+          "N3",
+          "N4"
+        ],
+        "audit_flags": [],
+        "clarification": "",
+        "review_refs": [],
+        "scope": "actual"
+      }
+    },
+    {
+      "id": "S-conflict",
+      "passed": true,
+      "verdict": {
+        "action": "conflict",
+        "answer": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "audit_flags": [
+          "core_gap"
+        ],
+        "clarification": "",
+        "review_refs": [],
+        "scope": "actual"
+      }
+    },
+    {
+      "id": "H-progress",
+      "passed": true,
+      "verdict": {
+        "action": "help",
+        "intent": "help_progress",
+        "text": "还原中的因果还没有连完整。可以先回到这条已公开的信息：\n“我每晚都能梦到女儿”——此前回答：是。\n把这条信息与还原里的原因、经过连起来即可，不必重复无关细节。",
+        "scope": "actual"
+      }
+    },
+    {
+      "id": "H-hint",
+      "passed": true,
+      "verdict": {
+        "action": "request_hint",
+        "intent": "request_hint",
+        "scope": "actual"
+      }
+    }
+  ],
+  "notes": "Separate adapter validation; no mutation of the player session. Follow-up only after explicit material review; total ceiling includes the first failed call.",
+  "new_provider_calls": 12,
+  "budget": {
+    "mode": "live",
+    "live_enabled": true,
+    "provider_calls": 34,
+    "remaining_authorized_provider_calls": 66,
+    "estimated_or_reserved_cny": 0.1582648,
+    "prior_estimated_cny": 0.1377942,
+    "cap_cny": 5,
+    "blocked": false,
+    "stop_reason": null
+  }
+}

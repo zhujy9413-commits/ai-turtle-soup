@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-27",
+  "version": "V0.9.3",
+  "status": "passed",
+  "baseline_calls": 68,
+  "max_new_calls": 9,
+  "cases": [
+    {
+      "id": "R10-S02-actual",
+      "story_id": "S02",
+      "text": "咳嗽的原声发出时，我还没回到屋里",
+      "expected_scope": "actual",
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "clarification": "",
+        "fact_ids": [
+          "F08"
+        ],
+        "covered_nodes": [],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "scope": "actual"
+      },
+      "passed": true,
+      "audit": [
+        {
+          "stage": "scope",
+          "usage": {
+            "prompt_tokens": 586,
+            "total_tokens": 598,
+            "completion_tokens": 12,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 586
+            }
+          },
+          "request_sha256": "8adc754966de08d83e95d7b8dd191181372881edfbff4f1f27cdb2c7600c257c",
+          "assessment": {
+            "route": "judge_actual"
+          },
+          "assessment_validation": {
+            "status": "scope_received"
+          }
+        },
+        {
+          "stage": "judge",
+          "usage": {
+            "prompt_tokens": 2758,
+            "total_tokens": 2871,
+            "completion_tokens": 113,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 2758
+            }
+          },
+          "request_sha256": "c679aaefebfc0c795f6a2eb67c21b030a0fa265c4cb0934560379bea032b1b04",
+          "assessment": {
+            "mode": "assess",
+            "claims": [
+              {
+                "quote": "咳嗽的原声发出时，我还没回到屋里",
+                "status": "supported",
+                "facts": [
+                  {
+                    "fact_id": "F08",
+                    "quote": "我刚回家、尚未发声时听见了陌生男人咳嗽的回声；一分钟前我仍在屋外。"
+                  }
+                ]
+              }
+            ],
+            "clarification": ""
+          },
+          "assessment_validation": {
+            "status": "accepted"
+          }
+        }
+      ],
+      "new_calls": 2
+    },
+    {
+      "id": "R11-S06-hypothetical",
+      "story_id": "S06",
+      "text": "假如那晚午夜钟响时我已经睡在那张病床上，原病人也已离床，但我直到天亮都没回应她叫我的名字，天亮时暂时转给我的病痛会撤回吗？",
+      "expected_scope": "hypothetical",
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "clarification": "",
+        "fact_ids": [
+          "F06",
+          "F07"
+        ],
+        "covered_nodes": [],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "scope": "hypothetical"
+      },
+      "passed": true,
+      "audit": [
+        {
+          "stage": "scope",
+          "usage": {
+            "prompt_tokens": 646,
+            "total_tokens": 656,
+            "completion_tokens": 10,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 646
+            }
+          },
+          "request_sha256": "31db17556b744095560f89f43875e523eb482e5b4ba7586090c3811012e4cb71",
+          "assessment": {
+            "route": "judge_hypothetical"
+          },
+          "assessment_validation": {
+            "status": "scope_received"
+          }
+        },
+        {
+          "stage": "judge",
+          "usage": {
+            "prompt_tokens": 3635,
+            "total_tokens": 3828,
+            "completion_tokens": 193,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 3635
+            }
+          },
+          "request_sha256": "8fcb384692b422c9e6c7e57a65cbade767a9653f65432f125eaf26795d19afa6",
+          "assessment": {
+            "mode": "assess",
+            "claims": [
+              {
+                "quote": "假如那晚午夜钟响时我已经睡在那张病床上，原病人也已离床，但我直到天亮都没回应她叫我的名字，天亮时暂时转给我的病痛会撤回吗？",
+                "status": "supported",
+                "facts": [
+                  {
+                    "fact_id": "F06",
+                    "quote": "暂时转移若未固定，天亮自行撤回；唤名固定必须在当夜天亮之前完成。"
+                  },
+                  {
+                    "fact_id": "F07",
+                    "quote": "原病人本人呼唤新承受者的名字，对方清醒地向她应答，会固定转移；误认对方身份也会生效。"
+                  }
+                ]
+              }
+            ],
+            "clarification": ""
+          },
+          "assessment_validation": {
+            "status": "accepted"
+          }
+        }
+      ],
+      "new_calls": 2
+    },
+    {
+      "id": "R12-S07-forged-message",
+      "story_id": "S07",
+      "text": "妹妹的出差消息是有人用她的手机伪造的",
+      "expected_scope": "actual",
+      "verdict": {
+        "action": "answer",
+        "answer": "是",
+        "clarification": "",
+        "fact_ids": [
+          "F03"
+        ],
+        "covered_nodes": [],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "scope": "actual"
+      },
+      "passed": true,
+      "audit": [
+        {
+          "stage": "scope",
+          "usage": {
+            "prompt_tokens": 612,
+            "total_tokens": 624,
+            "completion_tokens": 12,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 612
+            }
+          },
+          "request_sha256": "d7cdbe1f370c9c7ce0711f4b11a8c825837324b6060992897d906af542b496b2",
+          "assessment": {
+            "route": "judge_actual"
+          },
+          "assessment_validation": {
+            "status": "scope_received"
+          }
+        },
+        {
+          "stage": "judge",
+          "usage": {
+            "prompt_tokens": 3284,
+            "total_tokens": 3394,
+            "completion_tokens": 110,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 3284
+            }
+          },
+          "request_sha256": "341c2ce5925bf8631cbde53625581cd943584e0c1366024132bb6437dd6d7764",
+          "assessment": {
+            "mode": "assess",
+            "claims": [
+              {
+                "quote": "妹妹的出差消息是有人用她的手机伪造的",
+                "status": "supported",
+                "facts": [
+                  {
+                    "fact_id": "F03",
+                    "quote": "妹妹没有出差，也没有主动发出那条假消息；手机属于妹妹，发送者是控制她的男人。"
+                  }
+                ]
+              }
+            ],
+            "clarification": ""
+          },
+          "assessment_validation": {
+            "status": "accepted"
+          }
+        }
+      ],
+      "new_calls": 2
+    }
+  ],
+  "player_session_created": false,
+  "materials_sha256": "4da5eeb092a55e0943772749b0f37922751fd95e836d932f3417638ed04ff89c",
+  "budget": {
+    "mode": "live",
+    "live_enabled": true,
+    "provider_calls": 74,
+    "remaining_authorized_provider_calls": 3,
+    "remaining_in_original_round": 26,
+    "estimated_or_reserved_cny": 0.195715,
+    "prior_estimated_cny": 0.1377942,
+    "cap_cny": 5,
+    "blocked": true,
+    "stop_reason": "round_completed"
+  },
+  "new_calls": 6,
+  "cleanup": {
+    "temporary_key_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "cloud_key_revoked": false
+  }
+}

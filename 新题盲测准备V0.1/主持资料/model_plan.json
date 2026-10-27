@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-27",
+  "story_id": "S08",
+  "state": "待配置实际执行方案，未调用模型",
+  "execution_authorized_by_this_file": false,
+  "maximum_calls_if_later_approved": 16,
+  "automatic_retries": 0,
+  "stop_on_first_failure": true,
+  "cases": [
+    {"id": "S08-Q1", "kind": "question", "text": "供桌上的饭是活人吃掉的", "expected_action": "answer", "expected_answer": "是", "expected_scope": "actual", "fact_basis": ["F05"], "max_calls": 3},
+    {"id": "S08-Q2", "kind": "question", "text": "吃供饭和喝床头水的是同一个人", "expected_action": "answer", "expected_answer": "是", "expected_scope": "actual", "fact_basis": ["F05", "F09"], "max_calls": 3},
+    {"id": "S08-Q3", "kind": "question", "text": "我闩好门以后，有人从外面撬锁进来喝水", "expected_action": "answer", "expected_answer": "否", "expected_scope": "actual", "fact_basis": ["F11"], "max_calls": 3},
+    {"id": "S08-Q4", "kind": "question", "text": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？", "expected_action": "answer", "expected_answer": "否", "expected_scope": "hypothetical", "fact_basis": ["F03", "F11"], "max_calls": 3},
+    {"id": "S08-R1", "kind": "solution", "text": "有人一直藏在房间里，夜里吃供饭，吃得太咸就喝了我床头的水。我闩门前他就藏好了，房东一直知道，并借供奉的说法给他送饭。", "expected_action": "incomplete", "must_missing": ["N3.1"], "forbid_action": "conflict", "max_calls": 2},
+    {"id": "S08-R2", "kind": "solution", "text": "房东藏着活人，借给亡夫供饭的说法喂他，又在牛奶上动手脚，让我前几晚睡得很沉。他在我闩门前就藏在屋内，那晚吃了加盐的饭后口渴，到床头喝水。我没喝奶，清醒装睡，才察觉动静，意识到房东一直在配合，便照常出门离开。", "expected_action": "complete", "notes": "刻意未猜丈夫身份和具体藏身位置；这些不是通关必需。", "max_calls": 2}
+  ]
+}

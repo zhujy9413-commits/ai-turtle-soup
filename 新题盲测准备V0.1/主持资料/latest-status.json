@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-27",
+  "state": "新题假设因果尚未通过，盲测未开放",
+  "current_release": "V0.9.3",
+  "canonical_release_modified": false,
+  "public_surface_shown": false,
+  "isolated_entry_prepared": true,
+  "model_calls": 13,
+  "passed_cases": 3,
+  "planned_cases": 6,
+  "unrun_solution_cases": 2,
+  "new_offline_checks": 23,
+  "host_regression_checks": 107,
+  "current_original_round_used": 87,
+  "current_original_round_remaining": 13,
+  "estimated_cumulative_cny": 0.2013452,
+  "cap_cny": 5,
+  "temporary_key_removed": true,
+  "latest_result": "next-result.json",
+  "materials_sha256": "a435eb12c5157041ad5032c7319def74197bc967d2b5cea0ce93dd9da6fc4fca",
+  "evidence_limit": "固定目标来自逐次修订，并非同一冻结版本全部重跑；离线检查不是模型准确率证明，尚未完成玩家自然盲测。"
+}

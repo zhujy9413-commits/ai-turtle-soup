@@ -1,0 +1,31 @@
+{
+  "rule_version": "V0.9.3证据标注与逐条件还原核对",
+  "copied_without_rule_edits": false,
+  "files": {
+    "scope_prompt.txt": {
+      "sha256": "bc0c2a57d0a1e4bf732d1ed0389a4d4a593b4ae6bcf0593120b621a5d23677fe",
+      "source": "V0.9.3维护修订；原始玩家失败历史单独保留。"
+    },
+    "scope_schema.json": {
+      "sha256": "da3c0b3c4a70ef44cec35c67e13f212c0013bc79343d1d0e976b285b38c19fa9",
+      "source": "V0.9.3维护修订；原始玩家失败历史单独保留。"
+    },
+    "safe_clarifications.json": {
+      "sha256": "f14b130159c399d2d3d6cc90e2fce6b61ebd36e877f776979362ff5f2bc49d02",
+      "source": "V0.9.3维护修订；原始玩家失败历史单独保留。"
+    },
+    "judge_format.json": {
+      "sha256": "fb78fef00da8e987421cffc24762e9f7a3501e7b8e420b410f0d4e50cf42ceed",
+      "source": "V0.9.3维护修订；原始玩家失败历史单独保留。"
+    },
+    "solution_format.json": {
+      "sha256": "7dab7f977639bab9bca8341dd22f4d0b7d71e468e0fee0ae2e2ea028b3591c71",
+      "source": "V0.9.3维护修订；原始玩家失败历史单独保留。"
+    },
+    "evidence_prompt.txt": {
+      "sha256": "35f99005d02f02cc38e53d46b48e57df7df71253053d13b584e38aae772c81d3",
+      "source": "V0.9.3维护修订；原始玩家失败历史单独保留。"
+    }
+  },
+  "revision_basis": "V0.9.2真实续玩PF-01至PF-04；不用自由判决字段，固定事实摘录、完整条件证据、一次否定复核和公开问题引导。"
+}

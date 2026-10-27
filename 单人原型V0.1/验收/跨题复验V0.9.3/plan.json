@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-27",
+  "version": "V0.9.3",
+  "cases": [
+    {
+      "id": "R10-S02-actual",
+      "story_id": "S02",
+      "kind": "question",
+      "text": "咳嗽的原声发出时，我还没回到屋里",
+      "history": [],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3,
+      "expected_scope": "actual"
+    },
+    {
+      "id": "R11-S06-hypothetical",
+      "story_id": "S06",
+      "kind": "question",
+      "text": "假如那晚午夜钟响时我已经睡在那张病床上，原病人也已离床，但我直到天亮都没回应她叫我的名字，天亮时暂时转给我的病痛会撤回吗？",
+      "history": [],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3,
+      "expected_scope": "hypothetical",
+      "original_text": "如果我午夜后躺过病床，但一直没回应病人叫我的名字，天亮病痛会撤回吗",
+      "wording_review": "原问法“午夜后躺过”未明确钟响触发点；实测前补齐暂时转移条件，只改变当夜是否回应。原文保留，不改变事实或预期。"
+    },
+    {
+      "id": "R12-S07-forged-message",
+      "story_id": "S07",
+      "kind": "question",
+      "text": "妹妹的出差消息是有人用她的手机伪造的",
+      "history": [],
+      "expected_action": "answer",
+      "expected_answer": "是",
+      "max_calls": 3,
+      "expected_scope": "actual"
+    }
+  ],
+  "max_new_calls": 9,
+  "baseline_calls": 68,
+  "original_max_calls": 100,
+  "phase_ceiling": 77,
+  "cap_cny": 5,
+  "materials_sha256": "4da5eeb092a55e0943772749b0f37922751fd95e836d932f3417638ed04ff89c",
+  "expected_calls": 6,
+  "stop_on_first_failure": true,
+  "automatic_retries": 0,
+  "player_session_created": false
+}

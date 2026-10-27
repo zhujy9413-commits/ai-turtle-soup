@@ -1,0 +1,2224 @@
+[
+  {
+    "id": "R02-player-solution-poisoned-history",
+    "operation": "v093-worker-r6-R02-player-solution-poisoned-history",
+    "review_note": "Reviewed captured missing-progress defect; actual confirmed history is now the primary evidence catalog and incomplete feedback gets one independent check. Same original gold and fixed story.",
+    "review_revision": 6,
+    "materials_sha256": "637ed37e2b944915626e03d7961d04b69d3f2e70737b6b1c2a63f7772e1c7900",
+    "passed": false,
+    "verdict": {
+      "action": "incomplete",
+      "answer": "",
+      "clarification": "",
+      "fact_ids": [],
+      "covered_nodes": [
+        "N1",
+        "N3",
+        "N4"
+      ],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [],
+      "missing_criteria": [
+        "N2.2"
+      ],
+      "current_evidence": [
+        "但是女儿的出现依托于我的梦",
+        "所以我醒来了，女儿就消失了",
+        "那晚女儿看到现实中着火了",
+        "于是急忙把我叫醒",
+        "于是急忙把我叫醒",
+        "而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。"
+      ],
+      "scope": "actual",
+      "verification": {
+        "performed": true,
+        "reason": "progress",
+        "initial_action": "incomplete",
+        "initial_answer": "",
+        "initial_evidence": []
+      }
+    },
+    "player_feedback": "你已经说明了“但是女儿的出现依托于我的梦”。\n还需要补上这一条关系：她平时为什么不叫醒“我”？把这件事与醒来后发生的变化连起来。\n已确认的内容不用重写，把这条关系补进还原即可。",
+    "audit": [
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 4522,
+          "total_tokens": 5141,
+          "completion_tokens": 619,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4522
+          }
+        },
+        "request_sha256": "3eae2dc481fdf0ee302ed285cf9e43fb4b773ce7c51d53bd4cfd2444917706c6",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                  "quote": "女儿早就死了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "但是女儿的出现依托于我的梦"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "所以我醒来了，女儿就消失了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "那晚女儿看到现实中着火了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+                  "quote": "平时我没有危险，但是那晚有危险"
+                },
+                {
+                  "source_id": "current",
+                  "quote": "于是急忙把我叫醒"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "于是急忙把我叫醒"
+                },
+                {
+                  "source_id": "8a22f523e49243a7967b27025c8d6b11",
+                  "quote": "女儿救了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来后发现了火灾，于是急忙跑到了外面，幸免于难"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      },
+      {
+        "stage": "verify",
+        "usage": {
+          "prompt_tokens": 4586,
+          "total_tokens": 5265,
+          "completion_tokens": 679,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4586
+          }
+        },
+        "request_sha256": "877953829c6137bd866e3afcdb1452bbe59772c797b7902024ab7764fd7fbf9f",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                  "quote": "女儿早就死了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "但是女儿的出现依托于我的梦"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "所以我醒来了，女儿就消失了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "那晚女儿看到现实中着火了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "于是急忙把我叫醒"
+                },
+                {
+                  "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+                  "quote": "平时我没有危险，但是那晚有危险"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "于是急忙把我叫醒"
+                },
+                {
+                  "source_id": "2bf3719f9edb4ef8871793c888a1d9f9",
+                  "quote": "女儿叫醒我是因为发生了火灾"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "而我醒来后发现了火灾，于是急忙跑到了外面，幸免于难。"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 2,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 50,
+      "remaining_authorized_provider_calls": 18,
+      "remaining_in_original_round": 50,
+      "estimated_or_reserved_cny": 0.1753116,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R08-merge-confirmed-progress",
+    "operation": "v093-worker-r6-R08-merge-confirmed-progress",
+    "review_note": "Paired completion control: explicitly connects ordinary non-waking with dream-dependent disappearance and fire rescue. Must complete with confirmed prior death; expectation unchanged.",
+    "review_revision": 6,
+    "materials_sha256": "637ed37e2b944915626e03d7961d04b69d3f2e70737b6b1c2a63f7772e1c7900",
+    "passed": false,
+    "error_code": "unsupported_assessment",
+    "audit": [
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 4488,
+          "total_tokens": 5171,
+          "completion_tokens": 683,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4488
+          }
+        },
+        "request_sha256": "9c81050ac2ae545c057c976bd2bb29d1a53e560e1cffdfb526ce34da5ea92062",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                  "quote": "女儿早就死了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "她靠我的梦出现"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来她就消失"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "因此平时她不叫醒我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "起火那晚"
+                },
+                {
+                  "source_id": "2bf3719f9edb4ef8871793c888a1d9f9",
+                  "quote": "女儿叫醒我是因为发生了火灾"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+                  "quote": "平时我没有危险，但是那晚有危险"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "起火那晚她仍叫醒我，让我逃了出去"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来她就消失...让我逃了出去"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "rejected",
+          "reason": "source_quote_not_verbatim",
+          "path": "N4.2/current"
+        }
+      }
+    ],
+    "new_calls_for_case": 1,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 51,
+      "remaining_authorized_provider_calls": 17,
+      "remaining_in_original_round": 49,
+      "estimated_or_reserved_cny": 0.1767556,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R08-merge-confirmed-progress",
+    "operation": "v093-worker-r7-R08-merge-confirmed-progress",
+    "review_note": "Reviewed exact captured noncontiguous citation failure and verified source-fragment fix offline. Re-evaluate explicit complete causal chain under unchanged complete expectation, including one independent completion check.",
+    "review_revision": 7,
+    "materials_sha256": "5072b93114ecb4cc5d1b319190be3410cb76aea189ce0e069c21b6d2c18c253c",
+    "passed": true,
+    "verdict": {
+      "action": "complete",
+      "answer": "",
+      "clarification": "",
+      "fact_ids": [],
+      "covered_nodes": [
+        "N1",
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [],
+      "missing_criteria": [],
+      "current_evidence": [
+        "她靠我的梦出现",
+        "我醒来她就消失",
+        "因此平时她不叫醒我",
+        "起火那晚",
+        "起火那晚她仍叫醒我，让我逃了出去",
+        "我醒来她就消失",
+        "让我逃了出去"
+      ],
+      "aligned_evidence": [
+        {
+          "criterion_id": "N1.1",
+          "source_id": "13545e8aebdf4f0496308d385ef89e25",
+          "quotes": [
+            "女儿早就死了"
+          ]
+        },
+        {
+          "criterion_id": "N1.2",
+          "source_id": "current",
+          "quotes": [
+            "她靠我的梦出现"
+          ]
+        },
+        {
+          "criterion_id": "N2.1",
+          "source_id": "current",
+          "quotes": [
+            "我醒来她就消失"
+          ]
+        },
+        {
+          "criterion_id": "N2.2",
+          "source_id": "current",
+          "quotes": [
+            "因此平时她不叫醒我"
+          ]
+        },
+        {
+          "criterion_id": "N3.1",
+          "source_id": "current",
+          "quotes": [
+            "起火那晚"
+          ]
+        },
+        {
+          "criterion_id": "N3.1",
+          "source_id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "quotes": [
+            "发生火灾，所以女儿叫醒了我"
+          ]
+        },
+        {
+          "criterion_id": "N3.2",
+          "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "quotes": [
+            "平时我没有危险，但是那晚有危险"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "current",
+          "quotes": [
+            "起火那晚她仍叫醒我，让我逃了出去"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "8a22f523e49243a7967b27025c8d6b11",
+          "quotes": [
+            "女儿救了我"
+          ]
+        },
+        {
+          "criterion_id": "N4.2",
+          "source_id": "current",
+          "quotes": [
+            "我醒来她就消失",
+            "让我逃了出去"
+          ]
+        }
+      ],
+      "scope": "actual",
+      "verification": {
+        "performed": true,
+        "reason": "completion",
+        "initial_action": "complete",
+        "initial_answer": "",
+        "initial_evidence": []
+      }
+    },
+    "audit": [
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 4537,
+          "total_tokens": 5182,
+          "completion_tokens": 645,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4537
+          }
+        },
+        "request_sha256": "a9025ca6a58b54614eb9ef8174f969848db6c0d348c088e673ce83e04e62627f",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                  "quote": "女儿早就死了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "她靠我的梦出现"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来她就消失"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "因此平时她不叫醒我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "起火那晚"
+                },
+                {
+                  "source_id": "a22cd6fe6aae466cabaf34e0f7b085df",
+                  "quote": "发生火灾，所以女儿叫醒了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+                  "quote": "平时我没有危险，但是那晚有危险"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "起火那晚她仍叫醒我，让我逃了出去"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来她就消失...让我逃了出去"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      },
+      {
+        "stage": "verify",
+        "usage": {
+          "prompt_tokens": 4600,
+          "total_tokens": 5346,
+          "completion_tokens": 746,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4600
+          }
+        },
+        "request_sha256": "afde497b062c75ff581ef5ba36408b7d409987810b5ae64c8d31f2df264a2f9d",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                  "quote": "女儿早就死了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "她靠我的梦出现"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来她就消失"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "因此平时她不叫醒我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "起火那晚"
+                },
+                {
+                  "source_id": "a22cd6fe6aae466cabaf34e0f7b085df",
+                  "quote": "发生火灾，所以女儿叫醒了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+                  "quote": "平时我没有危险，但是那晚有危险"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "起火那晚她仍叫醒我，让我逃了出去"
+                },
+                {
+                  "source_id": "8a22f523e49243a7967b27025c8d6b11",
+                  "quote": "女儿救了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来她就消失...让我逃了出去"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 2,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 53,
+      "remaining_authorized_provider_calls": 15,
+      "remaining_in_original_round": 47,
+      "estimated_or_reserved_cny": 0.1796958,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R03-clear-reality",
+    "operation": "v093-worker-r7-R03-clear-reality",
+    "review_note": "Check the exact clear factual question from the completed play: it must receive yes without an unnecessary public-text clarification.",
+    "review_revision": 7,
+    "materials_sha256": "5072b93114ecb4cc5d1b319190be3410cb76aea189ce0e069c21b6d2c18c253c",
+    "passed": false,
+    "error_code": "unsupported_assessment",
+    "audit": [
+      {
+        "stage": "scope",
+        "usage": {
+          "prompt_tokens": 2823,
+          "total_tokens": 2834,
+          "completion_tokens": 11,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 2823
+          }
+        },
+        "request_sha256": "bc10bb6ccf05f2a1742f2a2735201a4e6617a3e29ec3414fd4529248ee143fca"
+      },
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 4827,
+          "total_tokens": 4978,
+          "completion_tokens": 151,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4827
+          }
+        },
+        "request_sha256": "037d28c5f102fdbc32113e1c8021b0bbb5dea8b6318c34e04e3a35b3d66f759c",
+        "assessment": {
+          "mode": "decline",
+          "claims": [
+            {
+              "quote": "女儿看到的是现实中的火",
+              "status": "supported",
+              "facts": [
+                {
+                  "fact_id": "F10",
+                  "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+                },
+                {
+                  "fact_id": "F11",
+                  "quote": "梦中女儿发现现实烟火，主动叫喊并推我朝出口移动；动机是救我。"
+                }
+              ]
+            }
+          ],
+          "clarification": ""
+        },
+        "assessment_validation": {
+          "status": "rejected",
+          "reason": "invalid_shape",
+          "path": ""
+        }
+      }
+    ],
+    "new_calls_for_case": 2,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 55,
+      "remaining_authorized_provider_calls": 13,
+      "remaining_in_original_round": 45,
+      "estimated_or_reserved_cny": 0.1813554,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R03-clear-reality",
+    "operation": "v093-worker-r8-R03-clear-reality",
+    "review_note": "Manually verified captured routing-label inconsistency and its offline fixture; recheck clear actual fire question under program-derived evidence verdict, without automatic retry.",
+    "review_revision": 8,
+    "materials_sha256": "273ba22b6ab37f45509dcaddfe4da0d4ce337b9b7f209c58a10bbfa63817913e",
+    "passed": true,
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "clarification": "",
+      "fact_ids": [
+        "F10",
+        "F11"
+      ],
+      "covered_nodes": [],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [],
+      "scope": "actual"
+    },
+    "audit": [
+      {
+        "stage": "scope",
+        "usage": {
+          "prompt_tokens": 2823,
+          "total_tokens": 2834,
+          "completion_tokens": 11,
+          "prompt_tokens_details": {
+            "cached_tokens": 2560,
+            "text_tokens": 2823
+          }
+        },
+        "request_sha256": "bc10bb6ccf05f2a1742f2a2735201a4e6617a3e29ec3414fd4529248ee143fca"
+      },
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 4899,
+          "total_tokens": 5056,
+          "completion_tokens": 157,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4899
+          }
+        },
+        "request_sha256": "5aaa5e14baa303bb91769262038f3b5eb3c3ff5a65e6e1e10c78a195057fd4df",
+        "assessment": {
+          "mode": "assess",
+          "claims": [
+            {
+              "quote": "女儿看到的是现实中的火",
+              "status": "supported",
+              "facts": [
+                {
+                  "fact_id": "F10",
+                  "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+                },
+                {
+                  "fact_id": "F11",
+                  "quote": "梦中女儿发现现实烟火，主动叫喊并推我朝出口移动；动机是救我。"
+                }
+              ]
+            }
+          ],
+          "clarification": ""
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 2,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 57,
+      "remaining_authorized_provider_calls": 11,
+      "remaining_in_original_round": 43,
+      "estimated_or_reserved_cny": 0.1830342,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R04-partial-specific-focus",
+    "operation": "v093-worker-r8-R04-partial-specific-focus",
+    "review_note": "Negative completion control: an older partial restoration lacking the dream-dependent mechanism must remain incomplete and ask a specific safe relation even though hints were published.",
+    "review_revision": 8,
+    "materials_sha256": "273ba22b6ab37f45509dcaddfe4da0d4ce337b9b7f209c58a10bbfa63817913e",
+    "passed": false,
+    "error_code": "unsupported_assessment",
+    "audit": [
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 4440,
+          "total_tokens": 5282,
+          "completion_tokens": 842,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4440
+          }
+        },
+        "request_sha256": "13a5e1abeab23fe1b33e84626dc20ab33bacc186049670b098d4be308fc2a17c",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "女儿早就死了"
+                },
+                {
+                  "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                  "quote": "女儿早就死了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来了女儿就会消失"
+                },
+                {
+                  "source_id": "c5aa919d4dab46c38dbade22876bc697",
+                  "quote": "我醒来了女儿就会消失"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "但是她每晚还是会回来看我，但不打扰我"
+                },
+                {
+                  "source_id": "f51a71312c7041579404326719870c5e",
+                  "quote": "女儿的鬼魂每晚都会回来看我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "但那晚发生了火灾"
+                },
+                {
+                  "source_id": "a22cd6fe6aae466cabaf34e0f7b085df",
+                  "quote": "发生火灾，所以女儿叫醒了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "但我被女儿救了"
+                },
+                {
+                  "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+                  "quote": "平时我没有危险，但是那晚有危险"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "女儿把我叫醒了，我被女儿救了"
+                },
+                {
+                  "source_id": "8a22f523e49243a7967b27025c8d6b11",
+                  "quote": "女儿救了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "missing",
+              "evidence": []
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "rejected",
+          "reason": "source_quote_not_verbatim",
+          "path": "N2.1/current"
+        }
+      }
+    ],
+    "new_calls_for_case": 1,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 58,
+      "remaining_authorized_provider_calls": 10,
+      "remaining_in_original_round": 42,
+      "estimated_or_reserved_cny": 0.1845958,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R04-partial-specific-focus",
+    "operation": "v093-worker-r9-R04-partial-specific-focus",
+    "review_note": "The captured actual judge output now validates through exact usable historical citations; reuse it and send its single planned independent missing-progress review. Do not resend the initial assessment.",
+    "review_revision": 9,
+    "materials_sha256": "a8a211ed7d2f3b21b0dc177cea7c92158fb9868a1dd18f8391941efe7c65b05e",
+    "saved_judge_operation": "v093-worker-r8-R04-partial-specific-focus",
+    "replayed_initial_verdict": {
+      "action": "incomplete",
+      "answer": "",
+      "clarification": "",
+      "fact_ids": [],
+      "covered_nodes": [
+        "N2",
+        "N3"
+      ],
+      "review_refs": [],
+      "audit_flags": [
+        "unusable_citation_ignored"
+      ],
+      "negative_claims": [],
+      "missing_criteria": [
+        "N1.2",
+        "N4.2"
+      ],
+      "current_evidence": [
+        "女儿早就死了",
+        "但是她每晚还是会回来看我，但不打扰我",
+        "但那晚发生了火灾",
+        "女儿把我叫醒了，我被女儿救了"
+      ],
+      "aligned_evidence": [
+        {
+          "criterion_id": "N1.1",
+          "source_id": "current",
+          "quotes": [
+            "女儿早就死了"
+          ]
+        },
+        {
+          "criterion_id": "N1.1",
+          "source_id": "13545e8aebdf4f0496308d385ef89e25",
+          "quotes": [
+            "女儿早就死了"
+          ]
+        },
+        {
+          "criterion_id": "N2.1",
+          "source_id": "c5aa919d4dab46c38dbade22876bc697",
+          "quotes": [
+            "我醒来了女儿就会消失"
+          ]
+        },
+        {
+          "criterion_id": "N2.2",
+          "source_id": "current",
+          "quotes": [
+            "但是她每晚还是会回来看我，但不打扰我"
+          ]
+        },
+        {
+          "criterion_id": "N2.2",
+          "source_id": "f51a71312c7041579404326719870c5e",
+          "quotes": [
+            "女儿的鬼魂每晚都会回来看我"
+          ]
+        },
+        {
+          "criterion_id": "N3.1",
+          "source_id": "current",
+          "quotes": [
+            "但那晚发生了火灾"
+          ]
+        },
+        {
+          "criterion_id": "N3.1",
+          "source_id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "quotes": [
+            "发生火灾，所以女儿叫醒了我"
+          ]
+        },
+        {
+          "criterion_id": "N3.2",
+          "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "quotes": [
+            "平时我没有危险，但是那晚有危险"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "current",
+          "quotes": [
+            "女儿把我叫醒了，我被女儿救了"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "8a22f523e49243a7967b27025c8d6b11",
+          "quotes": [
+            "女儿救了我"
+          ]
+        }
+      ],
+      "rejected_evidence": [
+        {
+          "criterion_id": "N2.1",
+          "source_id": "current",
+          "quote": "我醒来了女儿就会消失",
+          "reason": "source_quote_not_verbatim"
+        },
+        {
+          "criterion_id": "N3.2",
+          "source_id": "current",
+          "quote": "但我被女儿救了",
+          "reason": "source_quote_not_verbatim"
+        }
+      ]
+    },
+    "passed": true,
+    "verdict": {
+      "action": "incomplete",
+      "answer": "",
+      "clarification": "",
+      "fact_ids": [],
+      "covered_nodes": [
+        "N2",
+        "N3",
+        "N4"
+      ],
+      "review_refs": [],
+      "audit_flags": [
+        "unusable_citation_ignored"
+      ],
+      "negative_claims": [],
+      "missing_criteria": [
+        "N1.2"
+      ],
+      "current_evidence": [
+        "女儿早就死了",
+        "但是她每晚还是会回来看我，但不打扰我",
+        "但那晚发生了火灾",
+        "我被女儿救了",
+        "女儿把我叫醒了，我被女儿救了",
+        "我被女儿救了"
+      ],
+      "aligned_evidence": [
+        {
+          "criterion_id": "N1.1",
+          "source_id": "current",
+          "quotes": [
+            "女儿早就死了"
+          ]
+        },
+        {
+          "criterion_id": "N1.1",
+          "source_id": "13545e8aebdf4f0496308d385ef89e25",
+          "quotes": [
+            "女儿早就死了"
+          ]
+        },
+        {
+          "criterion_id": "N2.1",
+          "source_id": "c5aa919d4dab46c38dbade22876bc697",
+          "quotes": [
+            "我醒来了女儿就会消失"
+          ]
+        },
+        {
+          "criterion_id": "N2.2",
+          "source_id": "current",
+          "quotes": [
+            "但是她每晚还是会回来看我，但不打扰我"
+          ]
+        },
+        {
+          "criterion_id": "N2.2",
+          "source_id": "f51a71312c7041579404326719870c5e",
+          "quotes": [
+            "女儿的鬼魂每晚都会回来看我"
+          ]
+        },
+        {
+          "criterion_id": "N3.1",
+          "source_id": "current",
+          "quotes": [
+            "但那晚发生了火灾"
+          ]
+        },
+        {
+          "criterion_id": "N3.1",
+          "source_id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "quotes": [
+            "女儿叫醒我是因为发生了火灾"
+          ]
+        },
+        {
+          "criterion_id": "N3.2",
+          "source_id": "current",
+          "quotes": [
+            "我被女儿救了"
+          ]
+        },
+        {
+          "criterion_id": "N3.2",
+          "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "quotes": [
+            "平时我没有危险，但是那晚有危险"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "current",
+          "quotes": [
+            "女儿把我叫醒了，我被女儿救了"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "2bf3719f9edb4ef8871793c888a1d9f9",
+          "quotes": [
+            "女儿叫醒我是因为发生了火灾"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "8a22f523e49243a7967b27025c8d6b11",
+          "quotes": [
+            "女儿救了我"
+          ]
+        },
+        {
+          "criterion_id": "N4.2",
+          "source_id": "current",
+          "quotes": [
+            "我被女儿救了"
+          ]
+        },
+        {
+          "criterion_id": "N4.2",
+          "source_id": "c5aa919d4dab46c38dbade22876bc697",
+          "quotes": [
+            "我醒来了女儿就会消失"
+          ]
+        }
+      ],
+      "rejected_evidence": [
+        {
+          "criterion_id": "N2.1",
+          "source_id": "current",
+          "quote": "我醒来了女儿就会消失",
+          "reason": "source_quote_not_verbatim"
+        },
+        {
+          "criterion_id": "N4.2",
+          "source_id": "current",
+          "quote": "我醒来了女儿就会消失",
+          "reason": "source_quote_not_verbatim"
+        }
+      ],
+      "scope": "actual",
+      "verification": {
+        "performed": true,
+        "reason": "progress",
+        "initial_action": "incomplete",
+        "initial_answer": "",
+        "initial_evidence": []
+      }
+    },
+    "player_feedback": "你已经说明了“女儿早就死了”。\n还需要补上这一条关系：为什么她只在“我”睡着后出现，睁眼时却消失？请把出现的条件说明白。\n已确认的内容不用重写，把这条关系补进还原即可。",
+    "audit": [
+      {
+        "stage": "verify",
+        "usage": {
+          "prompt_tokens": 4504,
+          "total_tokens": 5340,
+          "completion_tokens": 836,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4504
+          }
+        },
+        "request_sha256": "5673cd4e683e12116ca5380df04da6b734814574682c7d7f801c9f3de71b6543",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "女儿早就死了"
+                },
+                {
+                  "source_id": "13545e8aebdf4f0496308d385ef89e25",
+                  "quote": "女儿早就死了"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来了女儿就会消失"
+                },
+                {
+                  "source_id": "c5aa919d4dab46c38dbade22876bc697",
+                  "quote": "我醒来了女儿就会消失"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "但是她每晚还是会回来看我，但不打扰我"
+                },
+                {
+                  "source_id": "f51a71312c7041579404326719870c5e",
+                  "quote": "女儿的鬼魂每晚都会回来看我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "但那晚发生了火灾"
+                },
+                {
+                  "source_id": "2bf3719f9edb4ef8871793c888a1d9f9",
+                  "quote": "女儿叫醒我是因为发生了火灾"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我被女儿救了"
+                },
+                {
+                  "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+                  "quote": "平时我没有危险，但是那晚有危险"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "女儿把我叫醒了，我被女儿救了"
+                },
+                {
+                  "source_id": "2bf3719f9edb4ef8871793c888a1d9f9",
+                  "quote": "女儿叫醒我是因为发生了火灾"
+                },
+                {
+                  "source_id": "8a22f523e49243a7967b27025c8d6b11",
+                  "quote": "女儿救了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来了女儿就会消失"
+                },
+                {
+                  "source_id": "current",
+                  "quote": "我被女儿救了"
+                },
+                {
+                  "source_id": "c5aa919d4dab46c38dbade22876bc697",
+                  "quote": "我醒来了女儿就会消失"
+                }
+              ]
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 1,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 59,
+      "remaining_authorized_provider_calls": 9,
+      "remaining_in_original_round": 41,
+      "estimated_or_reserved_cny": 0.1861654,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R05-false-reality",
+    "operation": "v093-worker-r9-R05-false-reality",
+    "review_note": "Check a genuinely false actual claim: saying the fire existed only in a dream must yield no after one independent negative review. No semantic expectation changed.",
+    "review_revision": 9,
+    "materials_sha256": "a8a211ed7d2f3b21b0dc177cea7c92158fb9868a1dd18f8391941efe7c65b05e",
+    "passed": true,
+    "verdict": {
+      "action": "answer",
+      "answer": "否",
+      "clarification": "",
+      "fact_ids": [
+        "F10",
+        "F12"
+      ],
+      "covered_nodes": [],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [
+        {
+          "quote": "火灾只发生在梦里，现实里没有起火",
+          "status": "contradicted",
+          "facts": [
+            {
+              "fact_id": "F10",
+              "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+            },
+            {
+              "fact_id": "F12",
+              "quote": "我睁眼后该次实体消失，我自行逃出，事后活着取回遗照。"
+            }
+          ]
+        }
+      ],
+      "scope": "actual",
+      "verification": {
+        "performed": true,
+        "reason": "negative",
+        "initial_action": "answer",
+        "initial_answer": "否",
+        "initial_evidence": [
+          {
+            "quote": "火灾只发生在梦里，现实里没有起火",
+            "status": "contradicted",
+            "facts": [
+              {
+                "fact_id": "F10",
+                "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "audit": [
+      {
+        "stage": "scope",
+        "usage": {
+          "prompt_tokens": 569,
+          "total_tokens": 581,
+          "completion_tokens": 12,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 569
+          }
+        },
+        "request_sha256": "dd7bd84ae20e9bcc854498326b5a1663b4b154c976eac4d0ec8cd2fe265dd6ad"
+      },
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 2904,
+          "total_tokens": 3019,
+          "completion_tokens": 115,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 2904
+          }
+        },
+        "request_sha256": "bea3a42f3afad0083d4deab97f90de56afe8e61b58ccdfb12dd5daf6756f2512",
+        "assessment": {
+          "mode": "assess",
+          "claims": [
+            {
+              "quote": "火灾只发生在梦里，现实里没有起火",
+              "status": "contradicted",
+              "facts": [
+                {
+                  "fact_id": "F10",
+                  "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+                }
+              ]
+            }
+          ],
+          "clarification": ""
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      },
+      {
+        "stage": "verify",
+        "usage": {
+          "prompt_tokens": 2967,
+          "total_tokens": 3128,
+          "completion_tokens": 161,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 2967
+          }
+        },
+        "request_sha256": "5515645fcda63bd45d7e1e9c05dcdf8c72bd378be5bad1aafe2c9cf810cbf969",
+        "assessment": {
+          "mode": "assess",
+          "claims": [
+            {
+              "quote": "火灾只发生在梦里，现实里没有起火",
+              "status": "contradicted",
+              "facts": [
+                {
+                  "fact_id": "F10",
+                  "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+                },
+                {
+                  "fact_id": "F12",
+                  "quote": "我睁眼后该次实体消失，我自行逃出，事后活着取回遗照。"
+                }
+              ]
+            }
+          ],
+          "clarification": ""
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 3,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 62,
+      "remaining_authorized_provider_calls": 6,
+      "remaining_in_original_round": 38,
+      "estimated_or_reserved_cny": 0.1876838,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R06-real-conflict",
+    "operation": "v093-worker-r9-R06-real-conflict",
+    "review_note": "Solution conflict control: distinguish a stated false real-world fire claim from a merely missing relation. Conflict must quote the current false assertion and pass independent review.",
+    "review_revision": 9,
+    "materials_sha256": "a8a211ed7d2f3b21b0dc177cea7c92158fb9868a1dd18f8391941efe7c65b05e",
+    "passed": false,
+    "error_code": "unsupported_assessment",
+    "audit": [
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 3140,
+          "total_tokens": 3261,
+          "completion_tokens": 121,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 3140
+          }
+        },
+        "request_sha256": "a4ce1df6e3df580c314e94981125a7a49cafd7b83e8bbb66646d7df2f1833d5f",
+        "assessment": {
+          "mode": "assess",
+          "checks": [],
+          "conflicts": [
+            {
+              "quote": "那晚的火只发生在梦里，现实没有起火",
+              "facts": [
+                {
+                  "fact_id": "F10",
+                  "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+                }
+              ]
+            }
+          ],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "rejected",
+          "reason": "criterion_set_mismatch",
+          "path": "checks"
+        }
+      }
+    ],
+    "new_calls_for_case": 1,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 63,
+      "remaining_authorized_provider_calls": 5,
+      "remaining_in_original_round": 37,
+      "estimated_or_reserved_cny": 0.1884086,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R06-real-conflict",
+    "operation": "v093-worker-r10-R06-real-conflict",
+    "review_note": "Replay the captured exact conflict through the reviewed conflict-first parser, then perform its one planned independent negative review. No initial judgment is resent.",
+    "review_revision": 10,
+    "materials_sha256": "4da5eeb092a55e0943772749b0f37922751fd95e836d932f3417638ed04ff89c",
+    "saved_judge_operation": "v093-worker-r9-R06-real-conflict",
+    "replayed_initial_verdict": {
+      "action": "conflict",
+      "answer": "",
+      "clarification": "",
+      "fact_ids": [
+        "F10"
+      ],
+      "covered_nodes": [],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [
+        {
+          "quote": "那晚的火只发生在梦里，现实没有起火",
+          "facts": [
+            {
+              "fact_id": "F10",
+              "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+            }
+          ]
+        }
+      ],
+      "missing_criteria": [],
+      "current_evidence": [],
+      "aligned_evidence": [],
+      "rejected_evidence": [],
+      "progress_assessed": false
+    },
+    "passed": true,
+    "verdict": {
+      "action": "conflict",
+      "answer": "",
+      "clarification": "",
+      "fact_ids": [
+        "F10"
+      ],
+      "covered_nodes": [],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [
+        {
+          "quote": "那晚的火只发生在梦里，现实没有起火",
+          "facts": [
+            {
+              "fact_id": "F10",
+              "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+            }
+          ]
+        }
+      ],
+      "missing_criteria": [
+        "N1.1",
+        "N2.2",
+        "N3.1",
+        "N3.2",
+        "N4.1",
+        "N4.2"
+      ],
+      "current_evidence": [
+        "女儿靠我的梦出现",
+        "我醒来她就消失"
+      ],
+      "aligned_evidence": [
+        {
+          "criterion_id": "N1.2",
+          "source_id": "current",
+          "quotes": [
+            "女儿靠我的梦出现"
+          ]
+        },
+        {
+          "criterion_id": "N2.1",
+          "source_id": "current",
+          "quotes": [
+            "我醒来她就消失"
+          ]
+        }
+      ],
+      "rejected_evidence": [],
+      "scope": "actual",
+      "verification": {
+        "performed": true,
+        "reason": "negative",
+        "initial_action": "conflict",
+        "initial_answer": "",
+        "initial_evidence": [
+          {
+            "quote": "那晚的火只发生在梦里，现实没有起火",
+            "facts": [
+              {
+                "fact_id": "F10",
+                "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "player_feedback": "先核对你这次写的这一句：“那晚的火只发生在梦里，现实没有起火”。\n这句话与固定设定不符。可以先把这一点单独提问。\n其它已确认的部分保留。",
+    "audit": [
+      {
+        "stage": "verify",
+        "usage": {
+          "prompt_tokens": 3252,
+          "total_tokens": 3707,
+          "completion_tokens": 455,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 3252
+          }
+        },
+        "request_sha256": "ad27b8b3ff75bf14f65353eaa53a54ac1379c27a7ef243735884cb39a24ef6b6",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "女儿靠我的梦出现"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "我醒来她就消失"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "missing",
+              "evidence": []
+            }
+          ],
+          "conflicts": [
+            {
+              "quote": "那晚的火只发生在梦里，现实没有起火",
+              "facts": [
+                {
+                  "fact_id": "F10",
+                  "quote": "当晚现实住宅起火，烟火已经构成对仍在熟睡的我的危险，火灾不是梦境，也不是能力产生的。"
+                }
+              ]
+            }
+          ],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 1,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 64,
+      "remaining_authorized_provider_calls": 4,
+      "remaining_in_original_round": 36,
+      "estimated_or_reserved_cny": 0.189423,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R09-no-hint-as-knowledge",
+    "operation": "v093-worker-r10-R09-no-hint-as-knowledge",
+    "review_note": "Check that published hints never become player completion evidence: a one-sentence rescue claim without the dream mechanism must remain incomplete with a specific missing relation.",
+    "review_revision": 10,
+    "materials_sha256": "4da5eeb092a55e0943772749b0f37922751fd95e836d932f3417638ed04ff89c",
+    "passed": true,
+    "verdict": {
+      "action": "incomplete",
+      "answer": "",
+      "clarification": "",
+      "fact_ids": [],
+      "covered_nodes": [],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [],
+      "missing_criteria": [
+        "N1.2",
+        "N2.1",
+        "N2.2",
+        "N3.2",
+        "N4.2"
+      ],
+      "current_evidence": [
+        "女儿死后",
+        "火灾里",
+        "救了我"
+      ],
+      "aligned_evidence": [
+        {
+          "criterion_id": "N1.1",
+          "source_id": "current",
+          "quotes": [
+            "女儿死后"
+          ]
+        },
+        {
+          "criterion_id": "N3.1",
+          "source_id": "current",
+          "quotes": [
+            "火灾里"
+          ]
+        },
+        {
+          "criterion_id": "N4.1",
+          "source_id": "current",
+          "quotes": [
+            "救了我"
+          ]
+        }
+      ],
+      "rejected_evidence": [],
+      "scope": "actual",
+      "verification": {
+        "performed": true,
+        "reason": "progress",
+        "initial_action": "incomplete",
+        "initial_answer": "",
+        "initial_evidence": []
+      }
+    },
+    "player_feedback": "你已经说明了“女儿死后”。\n还需要补上这一条关系：为什么她只在“我”睡着后出现，睁眼时却消失？请把出现的条件说明白。\n已确认的内容不用重写，把这条关系补进还原即可。",
+    "audit": [
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 3162,
+          "total_tokens": 3569,
+          "completion_tokens": 407,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 3162
+          }
+        },
+        "request_sha256": "0835ff2c8a1503ea0c1dfcd4965a408f69ac07dc722f1ca29610a8e68ce58591",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "女儿死后"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "在火灾里救了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "在火灾里救了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "missing",
+              "evidence": []
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      },
+      {
+        "stage": "verify",
+        "usage": {
+          "prompt_tokens": 3226,
+          "total_tokens": 3618,
+          "completion_tokens": 392,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 3226
+          }
+        },
+        "request_sha256": "e5bf8e82ae1929317346757288ae94eba68716501ebcd7102ef462a2ec3b8229",
+        "assessment": {
+          "mode": "assess",
+          "checks": [
+            {
+              "criterion_id": "N1.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "女儿死后"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N1.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N2.1",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N2.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N3.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "火灾里"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N3.2",
+              "state": "missing",
+              "evidence": []
+            },
+            {
+              "criterion_id": "N4.1",
+              "state": "met",
+              "evidence": [
+                {
+                  "source_id": "current",
+                  "quote": "救了我"
+                }
+              ]
+            },
+            {
+              "criterion_id": "N4.2",
+              "state": "missing",
+              "evidence": []
+            }
+          ],
+          "conflicts": [],
+          "clarification": "",
+          "review_refs": []
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 2,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 66,
+      "remaining_authorized_provider_calls": 2,
+      "remaining_in_original_round": 34,
+      "estimated_or_reserved_cny": 0.1913398,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  },
+  {
+    "id": "R07-heldout-words",
+    "operation": "v093-worker-r10-R07-heldout-words",
+    "review_note": "Held-out colloquial dependency wording must yield yes consistently. This is the final planned core question within the original 24-call phase ceiling.",
+    "review_revision": 10,
+    "materials_sha256": "4da5eeb092a55e0943772749b0f37922751fd95e836d932f3417638ed04ff89c",
+    "passed": true,
+    "verdict": {
+      "action": "answer",
+      "answer": "是",
+      "clarification": "",
+      "fact_ids": [
+        "F03",
+        "F06"
+      ],
+      "covered_nodes": [],
+      "review_refs": [],
+      "audit_flags": [],
+      "negative_claims": [],
+      "scope": "actual"
+    },
+    "audit": [
+      {
+        "stage": "scope",
+        "usage": {
+          "prompt_tokens": 2833,
+          "total_tokens": 2844,
+          "completion_tokens": 11,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 2833
+          }
+        },
+        "request_sha256": "b77f2a522c371e93dcfd6987954dfcc2565630ccea7ffcef82b3be4164fc9fad"
+      },
+      {
+        "stage": "judge",
+        "usage": {
+          "prompt_tokens": 4958,
+          "total_tokens": 5138,
+          "completion_tokens": 180,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 4958
+          }
+        },
+        "request_sha256": "37bbb7d4f9dea681388011c04c0835d9889753b1bf9bf44aac0ec88656aee5c6",
+        "assessment": {
+          "mode": "assess",
+          "claims": [
+            {
+              "quote": "她是靠我的梦留在现实里的",
+              "status": "supported",
+              "facts": [
+                {
+                  "fact_id": "F03",
+                  "quote": "我熟睡并梦见已故女儿时，梦中的女儿会在我所在住宅的现实空间里暂时实体化。"
+                }
+              ]
+            },
+            {
+              "quote": "一旦我清醒她就不见了",
+              "status": "supported",
+              "facts": [
+                {
+                  "fact_id": "F06",
+                  "quote": "我一旦醒来或不再梦见女儿，该次实体化立即结束，女儿的身体及随身梦中衣物消失。"
+                }
+              ]
+            }
+          ],
+          "clarification": ""
+        },
+        "assessment_validation": {
+          "status": "accepted"
+        }
+      }
+    ],
+    "new_calls_for_case": 2,
+    "budget": {
+      "mode": "live",
+      "live_enabled": true,
+      "provider_calls": 68,
+      "remaining_authorized_provider_calls": 0,
+      "remaining_in_original_round": 32,
+      "estimated_or_reserved_cny": 0.1930508,
+      "prior_estimated_cny": 0.1377942,
+      "cap_cny": 5,
+      "blocked": false,
+      "stop_reason": null
+    }
+  }
+]

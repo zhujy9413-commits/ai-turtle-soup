@@ -1,0 +1,433 @@
+{
+  "date": "2026-10-26",
+  "round_id": "live-host-20261026",
+  "authorized_new_calls": 24,
+  "calls_used": 23,
+  "unused_calls": 1,
+  "cumulative_authorized_calls": 186,
+  "cumulative_calls_used": 185,
+  "cap_cny": 5,
+  "estimated_new_cny": 0.0130852,
+  "estimated_cumulative_cny": 0.1377942,
+  "invoice_verified": false,
+  "pricing_source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+  "calls": [
+    {
+      "sequence": 1,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.000123,
+      "usage": {
+        "prompt_tokens": 579,
+        "total_tokens": 588,
+        "completion_tokens": 9,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 579
+        }
+      },
+      "request_sha256": "86a505779bdbe3c03a3d569e93b456de7f412674ef09e2d39ee97fa6592a31d2"
+    },
+    {
+      "sequence": 2,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0008048,
+      "usage": {
+        "prompt_tokens": 3704,
+        "total_tokens": 3784,
+        "completion_tokens": 80,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 3704
+        }
+      },
+      "request_sha256": "b3050133d72280d4a0dd3e5bda15f3899f611e78ada53a0b5f576d390c8e2c6b"
+    },
+    {
+      "sequence": 3,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.00013859999999999998,
+      "usage": {
+        "prompt_tokens": 617,
+        "total_tokens": 636,
+        "completion_tokens": 19,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 617
+        }
+      },
+      "request_sha256": "684eaa729921f77f069a2431c557b76b5100ee17332eb80f2354a4bbd75bcfd4"
+    },
+    {
+      "sequence": 4,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0008132,
+      "usage": {
+        "prompt_tokens": 3742,
+        "total_tokens": 3823,
+        "completion_tokens": 81,
+        "prompt_tokens_details": {
+          "cached_tokens": 3456,
+          "text_tokens": 3742
+        }
+      },
+      "request_sha256": "ee6fd6b98363803660c060bdbce7204bc1b46e3b9f17149a1bedb5be8809638e"
+    },
+    {
+      "sequence": 5,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0001478,
+      "usage": {
+        "prompt_tokens": 663,
+        "total_tokens": 682,
+        "completion_tokens": 19,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 663
+        }
+      },
+      "request_sha256": "6588c802ca4222bfe703ad12da23b021bf0d782971d67ca769c4c56b8b4c00b1"
+    },
+    {
+      "sequence": 6,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0008032,
+      "usage": {
+        "prompt_tokens": 3708,
+        "total_tokens": 3785,
+        "completion_tokens": 77,
+        "prompt_tokens_details": {
+          "cached_tokens": 3456,
+          "text_tokens": 3708
+        }
+      },
+      "request_sha256": "6cd8b18d1ad08597053502111233aa3b4339254bcb2f3422e3bad45dfbb3263e"
+    },
+    {
+      "sequence": 7,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0001588,
+      "usage": {
+        "prompt_tokens": 698,
+        "total_tokens": 722,
+        "completion_tokens": 24,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 698
+        }
+      },
+      "request_sha256": "17e35522c2fe8bea251a574fb79807f48b1585a54707844ea73365216f1f299d"
+    },
+    {
+      "sequence": 8,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0007958,
+      "usage": {
+        "prompt_tokens": 3743,
+        "total_tokens": 3802,
+        "completion_tokens": 59,
+        "prompt_tokens_details": {
+          "cached_tokens": 3456,
+          "text_tokens": 3743
+        }
+      },
+      "request_sha256": "46eb4fbcccd006b347be4902e307f0a704f334537f6c0978588e2a9772fb30c6"
+    },
+    {
+      "sequence": 9,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.000803,
+      "usage": {
+        "prompt_tokens": 3751,
+        "total_tokens": 3817,
+        "completion_tokens": 66,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 3751
+        }
+      },
+      "request_sha256": "d0c637e4906b9b542dbb8008bb9d50e8e24539640ef960963e2ecb3fe689f667"
+    },
+    {
+      "sequence": 10,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0008158000000000001,
+      "usage": {
+        "prompt_tokens": 3851,
+        "total_tokens": 3908,
+        "completion_tokens": 57,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 3851
+        }
+      },
+      "request_sha256": "caea3cf3cdd6a2ec0fa047f9efeb6d218caf91f4813715049550f0da2d224efa"
+    },
+    {
+      "sequence": 11,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0008698,
+      "usage": {
+        "prompt_tokens": 3925,
+        "total_tokens": 4031,
+        "completion_tokens": 106,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 3925
+        }
+      },
+      "request_sha256": "6e1aaf22d3acac7a57947c39809c7b56a4546efe08f1e46ec7962139a9e5e05b"
+    },
+    {
+      "sequence": 12,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0001642,
+      "usage": {
+        "prompt_tokens": 697,
+        "total_tokens": 728,
+        "completion_tokens": 31,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 697
+        }
+      },
+      "request_sha256": "685489b59210926b3719cef442e54a4e5a4bd353d91096df66edcbd83c715fdd"
+    },
+    {
+      "sequence": 13,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0001622,
+      "usage": {
+        "prompt_tokens": 747,
+        "total_tokens": 763,
+        "completion_tokens": 16,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 747
+        }
+      },
+      "request_sha256": "5bf3bb2c71a7072405ed1b3ddc88c938aee533e86ce4869088471ec4b0f64bf4"
+    },
+    {
+      "sequence": 14,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0009612,
+      "usage": {
+        "prompt_tokens": 4582,
+        "total_tokens": 4638,
+        "completion_tokens": 56,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 4582
+        }
+      },
+      "request_sha256": "5d95fffaad3abc945d80d7a8e97b57d72ecbdd5533d452c0616df8effe5fcb33"
+    },
+    {
+      "sequence": 15,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.00017760000000000003,
+      "usage": {
+        "prompt_tokens": 792,
+        "total_tokens": 816,
+        "completion_tokens": 24,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 792
+        }
+      },
+      "request_sha256": "b28a1b0b9a9a2b371b3ff35e9ba323362a0031b4375802eb798a680f3cebf865"
+    },
+    {
+      "sequence": 16,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0009834,
+      "usage": {
+        "prompt_tokens": 4625,
+        "total_tokens": 4698,
+        "completion_tokens": 73,
+        "prompt_tokens_details": {
+          "cached_tokens": 4480,
+          "text_tokens": 4625
+        }
+      },
+      "request_sha256": "c45433a73b5a334bebf4ef0c3d76ffdce3e68ad1583930ede00b1145c12cbb3d"
+    },
+    {
+      "sequence": 17,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0011092,
+      "usage": {
+        "prompt_tokens": 4814,
+        "total_tokens": 4997,
+        "completion_tokens": 183,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 4814
+        }
+      },
+      "request_sha256": "a0ad35e914b7cb2191d5461de5c870945162da60e7a8990f89880f12ae8ba330"
+    },
+    {
+      "sequence": 18,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0001594,
+      "usage": {
+        "prompt_tokens": 689,
+        "total_tokens": 716,
+        "completion_tokens": 27,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 689
+        }
+      },
+      "request_sha256": "d6bc44c5ff65f7b85992822d1e1a62bdba5dca72b1272564844897ae688e53ea"
+    },
+    {
+      "sequence": 19,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0008902000000000001,
+      "usage": {
+        "prompt_tokens": 4215,
+        "total_tokens": 4274,
+        "completion_tokens": 59,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 4215
+        }
+      },
+      "request_sha256": "90058974abdae274ef47d00f48c64fd34a607cea4b8b2888794d3599403adc0c"
+    },
+    {
+      "sequence": 20,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0001656,
+      "usage": {
+        "prompt_tokens": 720,
+        "total_tokens": 747,
+        "completion_tokens": 27,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 720
+        }
+      },
+      "request_sha256": "090370188f45f5da38a395a8d94f1cd72bcc85137b3cd2aac079fd319914f72e"
+    },
+    {
+      "sequence": 21,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0008964000000000001,
+      "usage": {
+        "prompt_tokens": 4246,
+        "total_tokens": 4305,
+        "completion_tokens": 59,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 4246
+        }
+      },
+      "request_sha256": "fb3659984a1a508d5eca50ff0e67e812389aaa1aa1caffbc629aba2ad846d0bd"
+    },
+    {
+      "sequence": 22,
+      "stage": "scope",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.00016500000000000003,
+      "usage": {
+        "prompt_tokens": 761,
+        "total_tokens": 777,
+        "completion_tokens": 16,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 761
+        }
+      },
+      "request_sha256": "cf9657b24221808d4acb916cd3ec34bdf857eb39617b0d3a6d4e591f23a10458"
+    },
+    {
+      "sequence": 23,
+      "stage": "judge",
+      "status": "done",
+      "reserved_cny": 2.0,
+      "estimated_cny": 0.0009770000000000002,
+      "usage": {
+        "prompt_tokens": 4589,
+        "total_tokens": 4663,
+        "completion_tokens": 74,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 4589
+        }
+      },
+      "request_sha256": "0fac5bc2028b111049a542d0ea7837018b4ab986623e2323b01ef7d57bb02cbc"
+    }
+  ],
+  "reviewed_revisions": [
+    {
+      "old_signature": "8bf93e511f4540f9bab27ba6daabf89bc90ffe0e8e98a3abbad834ae287da381",
+      "new_signature": "497d3ff30c85169149f272d43e5b90660ca5c78abfddfb35222a0e9e4a2c4f91",
+      "review_note": "已人工复核L02-2为公开旁白阅读错误；将阅读检查前移，澄清只用安全模板且校验公开原文锚点。50项离线检查通过。保持原24次总调用与累计5元上限，前4次与费用全部保留。",
+      "at": 1793016623.8455381
+    },
+    {
+      "old_signature": "497d3ff30c85169149f272d43e5b90660ca5c78abfddfb35222a0e9e4a2c4f91",
+      "new_signature": "ff21843ff6443f3f2cb2631e382a14f0892726245b976db5fae0d00388613f75",
+      "review_note": "第二次同一旁白前提错误；新增只依据公开原文的窄前置校验，直接询问是否说出口或声音存在的清楚命题不拦截。51项离线检查通过。保留已用8次；余16次不扩额。",
+      "at": 1793016975.144713
+    },
+    {
+      "old_signature": "ff21843ff6443f3f2cb2631e382a14f0892726245b976db5fae0d00388613f75",
+      "new_signature": "74a6af0ab61138b0192e84f9eb425460a2e15a86a33488af7a626cb7282c8091",
+      "review_note": "L02-3正式还原返回了提问动作，程序拦截后未扣玩家次数；收窄每通道的输出动作枚举，并前置正式还原指令。51项检查通过，累计9次保留，剩15次不扩额。",
+      "at": 1793017179.774366
+    },
+    {
+      "old_signature": "74a6af0ab61138b0192e84f9eb425460a2e15a86a33488af7a626cb7282c8091",
+      "new_signature": "7e4e52def27f29524fbf286fe6b440a5a3c65c8104cdf2aad46e1207d9984e6f",
+      "review_note": "L07-3越权公布汤底请求导致范围组合无效，拦截后未扣玩家次数；此类明确揭晓请求前移为程序权限拒绝，不再委托模型。52项离线检查通过，保留已用22次，剩2次不扩额。",
+      "at": 1793017966.707387
+    }
+  ]
+}

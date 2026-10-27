@@ -169,3 +169,9 @@ button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-vi
 @media(prefers-reduced-motion:reduce){
  *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.case-select-mark{filter:brightness(1.25)}
 }
+
+/* S03 keeps the approved old-house artwork. */
+.scene-S03{background-image:url("/art/story-scenes.png");background-position:left center}
+
+/* V0.9.2: story first, explicit readiness, and recoverable system pause. */
+.opening-surface{padding:3px 0 5px;min-height:120px}.opening-surface .surface-line{font:19px/1.95 var(--serif);color:#30271f;margin:0 0 14px;white-space:pre-line;animation:surfaceLineArrive .65s ease both}.opening-surface .surface-line[hidden]{display:none}.session-pause{border:1px solid #624637;background:#221913b8;padding:17px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px;margin:4px 0 18px;flex-shrink:0}.session-pause strong{font-weight:400;color:#c6b19d}.session-pause p{font-size:13px;line-height:1.8;color:#a9947f;margin:4px 0}.session-pause button{white-space:nowrap}.corrected-answer{display:block;color:#b88b6d;font-size:12px;margin-bottom:8px}.message .message-body.superseded{text-decoration:line-through;opacity:.55}.message.correction .message-body{font-size:16px;line-height:1.9;color:#c5a58a}.message.help .message-body{font-size:16px;line-height:1.9}.game-page:has(.session-pause) .game-board{min-height:220px}@keyframes surfaceLineArrive{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}@media(max-width:760px){.session-pause{padding:11px 13px;gap:10px;margin-bottom:10px}.session-pause p{font-size:11px}.session-pause button{padding:11px;font-size:12px}.opening-surface .surface-line{font-size:17px;margin-bottom:13px}.message.help .message-body,.message.correction .message-body{font-size:14px}}@media(prefers-reduced-motion:reduce){.opening-surface .surface-line{animation:none}}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-27",
+  "execution_authorized": false,
+  "approval_needed_for_phase_increase": true,
+  "cases": [
+    {
+      "id": "S08-Q4",
+      "kind": "question",
+      "text": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？",
+      "expected_action": "answer",
+      "expected_answer": "否",
+      "expected_scope": "hypothetical",
+      "fact_basis": [
+        "F03",
+        "F11",
+        "F17"
+      ],
+      "max_calls": 3
+    },
+    {
+      "id": "S08-R1",
+      "kind": "solution",
+      "text": "有人一直藏在房间里，夜里吃供饭，吃得太咸就喝了我床头的水。我闩门前他就藏好了，房东一直知道，并借供奉的说法给他送饭。",
+      "expected_action": "incomplete",
+      "must_missing": [
+        "N3.1"
+      ],
+      "forbid_action": "conflict",
+      "max_calls": 2
+    },
+    {
+      "id": "S08-R2",
+      "kind": "solution",
+      "text": "房东藏着活人，借给亡夫供饭的说法喂他，又在牛奶上动手脚，让我前几晚睡得很沉。他在我闩门前就藏在屋内，那晚吃了加盐的饭后口渴，到床头喝水。我没喝奶，清醒装睡，才察觉动静，意识到房东一直在配合，便照常出门离开。",
+      "expected_action": "complete",
+      "notes": "刻意未猜丈夫身份和具体藏身位置；这些不是通关必需。",
+      "max_calls": 2
+    }
+  ],
+  "baseline_calls": 87,
+  "max_new_calls": 7,
+  "proposed_phase_ceiling": 94,
+  "original_max_calls": 100,
+  "original_remaining_calls": 13,
+  "phase_used": 13,
+  "original_phase_max_calls": 16,
+  "extra_above_previous_phase_maximum": 2,
+  "cap_cny": 5,
+  "current_estimated_cny": 0.2005422,
+  "materials_sha256": "a435eb12c5157041ad5032c7319def74197bc967d2b5cea0ce93dd9da6fc4fca",
+  "operation_prefix": "s08-spatial-reviewed-r4-",
+  "stop_on_first_failure": true,
+  "automatic_retries": 0,
+  "temporary_key_max_seconds": 3600,
+  "cleanup_at_stop_or_end": true,
+  "not_including_player_blind_round": true,
+  "current_phase_slots_left": 5,
+  "extra_above_current_phase_maximum": 2,
+  "reviewed_change": "将原故事已存在的房门、柜体开口与屋内行动关系明确写入F17；汤面、汤底、核心还原条件和原失败问题均保留。",
+  "predecessor_result_sha256": "f8094e893405f4d0749688f3c3ce950ff6d9e2df5dc04399b9a8848ba11aab7e"
+}

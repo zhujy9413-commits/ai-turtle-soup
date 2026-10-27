@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-27",
+  "status": "stopped_review",
+  "cases": [
+    {
+      "id": "S08-Q4",
+      "kind": "question",
+      "text": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？",
+      "history": [],
+      "expected_action": "answer",
+      "operation": "s08-reviewed-hypothesis-r3-S08-Q4",
+      "verdict": {
+        "action": "answer",
+        "answer": "无关",
+        "clarification": "",
+        "fact_ids": [],
+        "covered_nodes": [],
+        "review_refs": [],
+        "audit_flags": [],
+        "negative_claims": [],
+        "scope": "hypothetical"
+      },
+      "passed": false,
+      "audit": [
+        {
+          "stage": "scope",
+          "usage": {
+            "prompt_tokens": 659,
+            "total_tokens": 673,
+            "completion_tokens": 14,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 659
+            }
+          },
+          "request_sha256": "5fae7fd03a4ca84964113feaba48bad321f57c279d738647aa9a56ee2dd8dfbb",
+          "assessment": {
+            "route": "judge_hypothetical"
+          },
+          "assessment_validation": {
+            "status": "scope_received"
+          }
+        },
+        {
+          "stage": "judge",
+          "usage": {
+            "prompt_tokens": 2952,
+            "total_tokens": 3039,
+            "completion_tokens": 87,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "text_tokens": 2952
+            }
+          },
+          "request_sha256": "f454469051ffa4a0d8a01ec2be80cff7e74388dd28b9ffded83e94b4cc4655e9",
+          "assessment": {
+            "mode": "assess",
+            "claims": [
+              {
+                "quote": "假设他在我闩门前已经藏在屋内，我只把房门闩上，就能阻止他从柜子里出来活动吗？",
+                "status": "unrelated",
+                "facts": []
+              }
+            ],
+            "clarification": ""
+          },
+          "assessment_validation": {
+            "status": "accepted"
+          }
+        }
+      ],
+      "new_calls": 2
+    }
+  ],
+  "baseline_calls": 85,
+  "max_new_calls": 7,
+  "materials_sha256": "5e8dd4f8bdca49e78d3aa6b1254ddf2bc77c12048d339e6b5f9b5f7eb9b96512",
+  "canonical_release_modified": false,
+  "player_session_created": false,
+  "budget": {
+    "mode": "live",
+    "live_enabled": true,
+    "provider_calls": 87,
+    "remaining_authorized_provider_calls": 5,
+    "remaining_in_original_round": 13,
+    "estimated_or_reserved_cny": 0.2013452,
+    "prior_estimated_cny": 0.1377942,
+    "cap_cny": 5,
+    "blocked": true,
+    "stop_reason": "integration_needs_review"
+  },
+  "new_calls": 2,
+  "original_phase_new_calls": 13,
+  "cleanup": {
+    "temporary_key_removed": true,
+    "pointer_removed": true,
+    "keychain_used": false,
+    "cloud_key_revoked": false
+  }
+}

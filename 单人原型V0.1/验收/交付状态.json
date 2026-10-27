@@ -1,7 +1,7 @@
 {
   "version": "V0.1",
   "date": "2026-10-25",
-  "delivery": "本机可运行的单人模拟主持原型",
+  "delivery": "本机单人原型与受预算控制的真实主持联调入口",
   "confirmed": [
     "D-A全系统等待冻结",
     "D-B主动揭晓二次确认",
@@ -19,29 +19,169 @@
     "纯音乐、个人音量与静音",
     "未揭晓私有资料不发客户端",
     "原开场画面浮现钥匙、低透明痕迹",
-    "剩余提问与还原次数15/5各一次轻提示"
+    "剩余提问与还原次数15/5各一次轻提示",
+    "受预算控制的真实自由问答与正式还原适配器",
+    "按通道限制动作、安全澄清、公开阅读前置守卫",
+    "等待不占对局锁、失败返还与网络重试幂等",
+    "首次逐行汤面与显式开局计时",
+    "本地自然求助及公开证据还原反馈",
+    "单次输出隔离、暂停恢复与503待提交释放",
+    "处理中到期冻结并保留首个故障原因"
   ],
   "not_implemented": [
-    "真实模型自由提问和自由还原",
     "生成模型的个性化复盘",
     "旧48条真实模型全量回归",
-    "多人房、账号、搜索匹配与公网部署"
+    "多人房、账号、搜索匹配与公网部署",
+    "真实主持尚未经过大范围自然玩家验收，不作为已上线能力"
   ],
-  "program_checks": 22,
-  "program_checks_passed": 22,
+  "program_checks": 127,
+  "program_checks_passed": 127,
   "browser_scenarios": 12,
-  "new_model_calls": 0,
-  "cumulative_attempts_unchanged": 162,
+  "new_model_calls": 6,
   "cumulative_cny_cap": 5,
   "qa_database": "独立临时数据库，没有复制到交付runtime目录",
-  "model_gate": "真实入口拒绝调用，不读取Key；当前已授权次数用满",
+  "model_gate": "默认模拟主持；原局只回看。真实调用继续受已批准轮次、同一账本、临时配置与费用上限控制。",
   "usage": "Finder双击启动原型.command，自动启动本机服务并打开游戏；保持终端运行，Ctrl+C关闭。",
-  "visual_version": "旧档案与沉浸钥匙开场V0.8.3",
+  "visual_version": "沿用原创档案视觉V0.8.5",
   "brand": "夜汤（暂定）",
-  "updated": "2026-10-26",
-  "release_version": "V0.8.3",
+  "updated": "2026-10-27",
+  "release_version": "V0.9.3",
   "version_policy": "../项目版本约定.json",
-  "client_checks": 7,
-  "client_checks_passed": 7,
-  "latest_check": "验收/开场标题V0.8.3.json"
+  "client_checks": 11,
+  "client_checks_passed": 11,
+  "latest_check": "验收/跨题复验V0.9.3/index.html",
+  "cumulative_attempts_used": 275,
+  "cumulative_authorized_attempts": 286,
+  "remaining_authorized_attempts": 11,
+  "cumulative_estimated_cny": 0.2021602,
+  "real_round_status": "V0.9.3：9个核心场景及3个跨题固定用例完成复验；尚待新题自然盲测，原局仍为主动揭晓完成",
+  "current_round": {
+    "max_calls": 100,
+    "used": 90,
+    "remaining": 10,
+    "old_round_unused_not_merged": 1,
+    "real_revalidation": "9个核心场景＋3个跨题固定问法完成真实复验；陪护题问法在实测前补齐触发条件。",
+    "offline_paid_calls": 0,
+    "semantic_limit": "定向核心回归通过；同一模型独立核查仍可能重复出错，后续仍需新题自然盲测",
+    "status": "provider_usage_unknown",
+    "player_end_reason": "manual",
+    "player_acceptance": "原V0.9.2玩家验收未通过；本修正内部复验通过，尚待新一轮玩家验收",
+    "maintenance_regression": "9个核心场景通过；本次维护阶段结束；3个跨题场景未执行",
+    "player_acceptance_v092": "未通过；PF-01至PF-04待修正",
+    "previous_real_revalidation_v092": "8定向场景通过；共12次，含首轮1次误分",
+    "cross_story_regression": "passed"
+  },
+  "player_continuation_calls": 10,
+  "blocking_issues": [],
+  "candidate": {
+    "version": "V0.9.3",
+    "state": "9个核心场景完成真实复验并安装；3个跨题场景未执行",
+    "python_checks": 127,
+    "client_checks": 11,
+    "real_calls": 24,
+    "source": "/Users/zhujiayi/Documents/ChatGPT/AI 海龟汤/work/repair_v093/app",
+    "report": "验收/V0.9.3候选/主持修正结果V0.9.3.html",
+    "current_report": "验收/V0.9.3候选/主持修正结果V0.9.3.html",
+    "phase_remaining_calls": 0,
+    "original_candidate_report": "验收/V0.9.3候选/主持修正候选V0.9.3.html"
+  },
+  "resolved_in_v093": [
+    {
+      "id": "PF-01",
+      "priority": "P0",
+      "problem": "正确的因果陈述被回答为否"
+    },
+    {
+      "id": "PF-02",
+      "priority": "P0",
+      "problem": "还原错误判冲突，反馈没有说明具体差距"
+    },
+    {
+      "id": "PF-03",
+      "priority": "P1",
+      "problem": "清楚且已公开的事实被无谓澄清"
+    },
+    {
+      "id": "PF-04",
+      "priority": "P1",
+      "problem": "复盘再次展示已经更正的旧错误答案"
+    }
+  ],
+  "remaining_validation": "新题模型判定尚未通过；保留固定原题，先解决语义问题，再补齐还原用例并安排自然盲测。",
+  "cross_story_regression": {
+    "date": "2026-10-27",
+    "state": "passed",
+    "passed_cases": 3,
+    "planned_cases": 3,
+    "new_calls": 6,
+    "max_new_calls": 9,
+    "temporary_key_removed": true,
+    "report": "验收/跨题复验V0.9.3/index.html",
+    "source_changed": false
+  },
+  "new_blind_story": {
+    "date": "2026-10-27",
+    "state": "新题验证尚未通过，盲测未开放",
+    "current_release": "V0.9.3",
+    "canonical_release_modified": false,
+    "isolated_entry_prepared": true,
+    "public_surface_shown": false,
+    "passed_cases": 3,
+    "planned_cases": 6,
+    "remaining_case_ids": [
+      "S08-Q4",
+      "S08-R1",
+      "S08-R2"
+    ],
+    "new_offline_checks": 24,
+    "host_regression_checks": 107,
+    "model_calls": 16,
+    "current_original_round_used": 90,
+    "current_original_round_remaining": 10,
+    "current_approved_phase_slots_left": 4,
+    "estimated_cumulative_cny": 0.2021602,
+    "unsettled_reserved_cny": 2.0,
+    "budget_estimated_or_reserved_cny": 2.2021602,
+    "usage_uncertain": true,
+    "available_calls_while_blocked": 0,
+    "cap_cny": 5,
+    "temporary_key_removed": true,
+    "ordinary_question_context_separated": true,
+    "latest_result": "channel-result.json",
+    "materials_sha256": "7724314b90bd9a417e28243f4cfbc03019779c7602d35e48adb938e7b53fa8eb",
+    "evidence_limit": "通过记录来自不同修订；结构和离线检查不证明语义准确率；完整自然盲测尚未执行。",
+    "preparation_report": "../新题盲测准备V0.1/index.html",
+    "diagnostic_followup": {
+      "date": "2026-10-27",
+      "offline_fix_complete": true,
+      "new_provider_calls": 0,
+      "new_diagnostic_checks": 13,
+      "old_failure_cause_still_unknown": true,
+      "pending_platform_log": false,
+      "report": "调用故障核查/index.html",
+      "console_review": {
+        "date": "2026-10-28",
+        "console_query_complete": true,
+        "original_request_found": false,
+        "query_windows_beijing": [
+          "2026-10-27 22:00–22:05",
+          "2026-10-27 21:55–22:10"
+        ],
+        "status_filter": "未限制，含成功、主动中断、4XX与5XX",
+        "model_filter": "目标模型及全部模型分别核对",
+        "api_key_filter": "全部API Key",
+        "nearby_success_rows": 2,
+        "nearby_usage_matches_local_ledger": true,
+        "absence_proves_zero_billing": false,
+        "root_cause_confirmed": false,
+        "reserved_cny_unchanged": 2.0,
+        "ledger_unblocked": false,
+        "new_provider_calls": 0,
+        "evidence": "console-audit-evidence.json"
+      },
+      "unsettled_usage_still_pending": true
+    }
+  },
+  "cumulative_reserved_cny": 2.0,
+  "cumulative_estimated_or_reserved_cny": 2.2021602
 }

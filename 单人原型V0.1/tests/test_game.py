@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import json,sys,tempfile,unittest,uuid,threading,urllib.request,urllib.error,http.cookiejar
 from pathlib import Path
+from urllib.parse import quote
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from server import GameService,GameError,Handler,ThreadingHTTPServer
 from host_boundary import public_scope_input,private_judge_input,dispatch_provider,LiveHostUnavailable
@@ -118,12 +119,13 @@ class HTTPTests(unittest.TestCase):
   client=self.client()
   for path in ['/','/app.js','/styles.css','/ambient.wav']:
    with client.open(self.url+path) as r:self.assertEqual(r.status,200)
-  for path in ['/private/stories.json','/runtime/sessions.sqlite3','/server.py','/../private/stories.json']:
-   with self.assertRaises(urllib.error.HTTPError) as e:client.open(self.url+path)
+  for path in ['/private/stories.json','/runtime/sessions.sqlite3','/server.py','/../private/stories.json',
+               '/private/host/judge_prompt.txt','/private/host/authorization.example.json','/live_host.py','/tools/配置本轮百炼密钥.py']:
+   with self.assertRaises(urllib.error.HTTPError) as e:client.open(self.url+quote(path))
    self.assertEqual(e.exception.code,404)
  def test_session_cookie_and_live_mode_blocked(self):
   c=self.client()
-  with c.open(self.url+'/api/stories') as r:self.assertEqual(len(json.load(r)['stories']),3)
+  with c.open(self.url+'/api/stories') as r:self.assertEqual(len(json.load(r)['stories']),4)
   req=urllib.request.Request(self.url+'/api/sessions',data=json.dumps({'story_id':'S02','minutes':1,'attempts':2}).encode(),headers={'Content-Type':'application/json'})
   with c.open(req) as r:s=json.load(r)['session']
   with self.assertRaises(urllib.error.HTTPError) as e:self.client().open(self.url+'/api/sessions/'+s['id'])

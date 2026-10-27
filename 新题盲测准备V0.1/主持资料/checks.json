@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-27",
+  "state": "作者结构与因果复核完成，未做目标模型测试或玩家盲测",
+  "story_id": "S08",
+  "core_conditions": 5,
+  "surface_lines": 7,
+  "three_hints": true,
+  "public_anchors_valid": true,
+  "timeline_fact_references_valid": true,
+  "role_claim_is_explicitly_attributed": true,
+  "game_source_unchanged": true,
+  "model_calls": 0,
+  "installed": false
+}

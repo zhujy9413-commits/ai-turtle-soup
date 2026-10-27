@@ -1,0 +1,134 @@
+{
+  "version": "V0.9.2",
+  "date": "2026-10-27",
+  "status": "本地修正与8个定向真实场景复验完成；原局保持暂停，等待玩家主动继续",
+  "causes": [
+    "对局求助被送入剧情范围识别；旧范围输出字段允许不兼容组合，非法输出又触发整轮停止。",
+    "清理逻辑覆盖了首个停止原因；503拒绝没有清掉客户端待确认提交，后续新问题被挡住。",
+    "正式还原的内部覆盖判定没有转换为有用的公开反馈；手机首屏隐藏汤面、开局计时过早。",
+    "额外实测发现历史求助污染当前意图；资料核对发现S03第三人称转换留下的熟睡者与被救者指代不一致。"
+  ],
+  "repairs": [
+    "新局自动逐行展示完整汤面，读完并点击开始推理后计时；刷新或关闭阅读窗不偷跑计时。",
+    "自然对局求助独立分流；典型求助本地回应、不扣游戏次数；请求新提示仍受三层限制。",
+    "未完整和核心冲突分别反馈；只引用已公开问答或已领取提示，不公开缺失节点和未领取线索。",
+    "已知用量的单条格式错误只影响本次；连接、未知用量或内容缺口暂停现场，计时冻结、刷新保留、恢复不重放。",
+    "明确未受理的503释放待提交状态；未知传输先核对请求号并取消迟到请求，防止重复扣费。",
+    "保留第一个停止原因；临时密钥到期覆盖处理中的游戏，停止后不再自动走时。",
+    "S03频率设定与汤面统一，旧错误回答公开更正并返还一次游戏机会。",
+    "范围识别只分类current_message，历史用于消解指代，不沿用历史求助意图。",
+    "S03汤底、节点和示例的熟睡者、被唤醒者及被救者统一为第一人称母亲，保留原机制。"
+  ],
+  "verification": {
+    "python_passed": 88,
+    "client_passed": 11,
+    "client_breakdown": {
+      "quota": 7,
+      "pending_recovery": 4
+    },
+    "browser": {
+      "helpReplyVisible": true,
+      "audioPaused": true,
+      "pausedAcrossRefresh": true,
+      "note": "Offline scripted UI provider, no paid model calls; all screenshots and the earlier opening checks retained.",
+      "resumeEnabled": true,
+      "singleFailureAndLaterAnswer": true
+    },
+    "browser_other_scenarios": [
+      "逐行汤面与显式开局",
+      "手机首次阅读及刷新",
+      "关闭汤面不启动计时",
+      "部分还原引用已公开问答",
+      "完整替身还原后复盘",
+      "320/390/844/1440宽度与短屏可达"
+    ],
+    "screenshots": [
+      "desktop-opening.png",
+      "mobile-opening.png",
+      "paused-game.png"
+    ],
+    "real_model_new_calls": 12,
+    "real_accuracy_status": "8个定向场景动作与答案通过；首轮1次历史意图误分已保留并修正后复验",
+    "real_cases": [
+      {
+        "id": "Q-frequency",
+        "passed": true,
+        "action": "answer"
+      },
+      {
+        "id": "Q-waking",
+        "passed": true,
+        "action": "answer"
+      },
+      {
+        "id": "Q-hypothesis",
+        "passed": true,
+        "action": "answer"
+      },
+      {
+        "id": "S-partial",
+        "passed": true,
+        "action": "incomplete"
+      },
+      {
+        "id": "S-complete",
+        "passed": true,
+        "action": "complete"
+      },
+      {
+        "id": "S-conflict",
+        "passed": true,
+        "action": "conflict"
+      },
+      {
+        "id": "H-progress",
+        "passed": true,
+        "action": "help"
+      },
+      {
+        "id": "H-hint",
+        "passed": true,
+        "action": "request_hint"
+      }
+    ],
+    "real_evidence": [
+      "real-validation.json",
+      "real-validation-followup.json"
+    ],
+    "limits": [
+      "这是S03的定向复验，未宣称所有题目或任意自然问法都已稳定。",
+      "不完整还原的内部covered_nodes标注仍有遗漏与不充分覆盖；本次未将该字段认定为准确的进度指标。玩家只看到已公开线索引用。后续语义回归应继续核对。"
+    ]
+  },
+  "restoration": {
+    "source_preserved": true,
+    "target": "/Users/zhujiayi/Documents/ChatGPT/AI 海龟汤/work/repair_v092/restored-runtime",
+    "session_id": "58457cc634914879b367eb9b22861f0e",
+    "remaining_seconds": 1627.1482934951782,
+    "attempts_before": 29,
+    "attempts_after_refund": 30,
+    "hint_count": 3,
+    "original_messages_kept": 28,
+    "added_correction_and_resume_notice": 2,
+    "provider_calls_preserved": 22,
+    "remaining_authorized_provider_calls": 78,
+    "round_estimated_cny": 0.0114786,
+    "automatic_paid_replay": false
+  },
+  "budget": {
+    "approved_round_limit": 100,
+    "provider_calls_already_used": 34,
+    "remaining_approved_calls": 66,
+    "real_validation_max_new_calls": 16,
+    "cumulative_estimated_cny": 0.1582648,
+    "cumulative_cap_cny": 5,
+    "auto_retry": false,
+    "key_storage": "临时，最长60分钟；本局结束、停止或到期清理",
+    "real_validation_actual_new_calls": 12
+  },
+  "scope": "本机内部开发修正，尚未部署或开放V1.0内测；本轮未同步GitHub或飞书。",
+  "pending": [
+    "打开原局后由玩家点击“继续这一局”；不自动重发之前失败的问题。",
+    "继续收集实际问法与还原覆盖反馈；本次有限复验不等同于开放内测验收。"
+  ]
+}

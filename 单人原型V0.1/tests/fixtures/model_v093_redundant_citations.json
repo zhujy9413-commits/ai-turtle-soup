@@ -1,0 +1,102 @@
+{
+  "mode": "assess",
+  "checks": [
+    {
+      "criterion_id": "N1.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "女儿早就死了"
+        },
+        {
+          "source_id": "13545e8aebdf4f0496308d385ef89e25",
+          "quote": "女儿早就死了"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N1.2",
+      "state": "missing",
+      "evidence": []
+    },
+    {
+      "criterion_id": "N2.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "我醒来了女儿就会消失"
+        },
+        {
+          "source_id": "c5aa919d4dab46c38dbade22876bc697",
+          "quote": "我醒来了女儿就会消失"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N2.2",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "但是她每晚还是会回来看我，但不打扰我"
+        },
+        {
+          "source_id": "f51a71312c7041579404326719870c5e",
+          "quote": "女儿的鬼魂每晚都会回来看我"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N3.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "但那晚发生了火灾"
+        },
+        {
+          "source_id": "a22cd6fe6aae466cabaf34e0f7b085df",
+          "quote": "发生火灾，所以女儿叫醒了我"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N3.2",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "但我被女儿救了"
+        },
+        {
+          "source_id": "a357e2b7b2584c7dac1d5a1b153fc987",
+          "quote": "平时我没有危险，但是那晚有危险"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N4.1",
+      "state": "met",
+      "evidence": [
+        {
+          "source_id": "current",
+          "quote": "女儿把我叫醒了，我被女儿救了"
+        },
+        {
+          "source_id": "8a22f523e49243a7967b27025c8d6b11",
+          "quote": "女儿救了我"
+        }
+      ]
+    },
+    {
+      "criterion_id": "N4.2",
+      "state": "missing",
+      "evidence": []
+    }
+  ],
+  "conflicts": [],
+  "clarification": "",
+  "review_refs": []
+}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-26",
+  "version": "V0.8.5",
+  "github": {
+    "url": "https://github.com/zhujy9413-commits/ai-turtle-soup",
+    "visibility": "private",
+    "branch": "main",
+    "commit": "ec8a04f0374e95552394e13b6cbd5ca0e12fdf5d",
+    "remoteHeadVerified": true,
+    "changedFiles": 136,
+    "mirrorClean": true
+  },
+  "feishu": {
+    "documents": [
+      {
+        "slug": "15",
+        "url": "https://my.feishu.cn/wiki/K5qxwAKX4iXuwpkadGgcgLjNngO",
+        "title": "15 夜汤｜单人原型交付与最新进展（2026-10-26）",
+        "verifiedAfterReload": true
+      },
+      {
+        "slug": "16",
+        "url": "https://my.feishu.cn/wiki/E1kEwl6Dyi9jwTksZ3echjHQnkG",
+        "title": "16 夜汤｜视觉、字标与开场体验规范（V0.8.5）",
+        "verifiedAfterReload": true
+      },
+      {
+        "slug": "00",
+        "url": "https://my.feishu.cn/wiki/WQRlwIORwiGWfek1FLQcuNgKnvf",
+        "title": "00 AI海龟汤｜文档导航与决策基线",
+        "verifiedAfterReload": true
+      }
+    ],
+    "historyPreserved": true
+  },
+  "scope": [
+    "源码和当前素材",
+    "字体与音效来源许可",
+    "原创视觉样张和产品参考",
+    "验收记录",
+    "本地和飞书项目文档"
+  ],
+  "excluded": [
+    "API密钥和临时凭据",
+    "runtime及对局数据库",
+    "工作副本、缓存、日志"
+  ],
+  "checks": {
+    "credentialScanFiles": 459,
+    "credentialFindings": 0,
+    "sourceWhitespaceCheck": "通过；三份上游OFL原始许可中的行尾空格保持原样",
+    "browserTaskFinished": true,
+    "forcedCleanup": false
+  },
+  "modelCallsAdded": 0,
+  "deploymentPerformed": false,
+  "note": "同步结果在推送完成并核对远端后生成，本记录保存在本机；本次提交内容以GitHub commit为准。"
+}

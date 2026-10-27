@@ -1,0 +1,9 @@
+test_fixed_plan_alias_is_resolved_before_dispatch_and_unknown_input_is_rejected (test_phase_console.ConsoleTests) ... ok
+test_invalid_command_keeps_phase_open_and_finish_preserves_all_prior_calls (test_phase_console.ConsoleTests) ... ok
+test_explicit_causal_completion_and_true_missing_remain_distinct (test_case_acceptance.AcceptanceTests) ... ok
+test_original_wording_may_only_need_the_one_unstated_relation (test_case_acceptance.AcceptanceTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.048s
+
+OK

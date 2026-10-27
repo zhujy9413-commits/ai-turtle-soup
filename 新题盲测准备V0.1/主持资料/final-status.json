@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-27",
+  "state": "新题验证尚未通过，盲测未开放",
+  "current_release": "V0.9.3",
+  "canonical_release_modified": false,
+  "isolated_entry_prepared": true,
+  "public_surface_shown": false,
+  "passed_cases": 3,
+  "planned_cases": 6,
+  "remaining_case_ids": [
+    "S08-Q4",
+    "S08-R1",
+    "S08-R2"
+  ],
+  "new_offline_checks": 24,
+  "host_regression_checks": 107,
+  "model_calls": 16,
+  "current_original_round_used": 90,
+  "current_original_round_remaining": 10,
+  "current_approved_phase_slots_left": 4,
+  "estimated_cumulative_cny": 0.2021602,
+  "unsettled_reserved_cny": 2.0,
+  "budget_estimated_or_reserved_cny": 2.2021602,
+  "usage_uncertain": true,
+  "available_calls_while_blocked": 0,
+  "cap_cny": 5,
+  "temporary_key_removed": true,
+  "ordinary_question_context_separated": true,
+  "latest_result": "channel-result.json",
+  "materials_sha256": "7724314b90bd9a417e28243f4cfbc03019779c7602d35e48adb938e7b53fa8eb",
+  "evidence_limit": "通过记录来自不同修订；结构和离线检查不证明语义准确率；完整自然盲测尚未执行。"
+}

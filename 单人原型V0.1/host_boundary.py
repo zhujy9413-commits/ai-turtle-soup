@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Request-shape preparation only. Dispatch stays disabled until a new approved round."""
+"""Shared input shapes. Legacy dispatch stays disabled; live_host owns approved dispatch."""
 class LiveHostUnavailable(RuntimeError):pass
 
 def public_scope_input(story,history,message):
@@ -7,9 +7,16 @@ def public_scope_input(story,history,message):
 
 def private_judge_input(story,history,message,scope,channel='formal_question'):
  if scope not in ['actual','hypothetical']:raise ValueError('范围尚未确定，不能送入汤底判定')
- fields=['id','title','surface','truth','facts','nodes','not_required','irrelevant','narration_note','temporal_model']
+ fields=['id','title','surface','truth','facts','nodes','not_required','irrelevant','narration_note','temporal_model','node_requirements']
+ # Prior self-grades are not story evidence. Keep them in player/scope history, not the factual assessor.
+ context=[item for item in history if item.get('kind') not in ('solution_result','help') and not item.get('superseded')]
+ if channel=='formal_solution':
+  # Confirmed answers are provided once, in eligible_evidence_sources. Avoid mixing
+  # their authoritative progress with old guesses, corrections and host self-grades.
+  # One previous restoration remains as referential context, never as completion proof.
+  context=[item for item in context if item.get('channel')=='formal_solution'][-1:]
  return {'trusted_channel':channel,'story':{k:story[k] for k in fields if k in story},
-  'public_history':history,'current_message':message,'trusted_question_scope':'actual' if channel=='formal_solution' else scope}
+  'public_history':context,'current_message':message,'trusted_question_scope':'actual' if channel=='formal_solution' else scope}
 
 def dispatch_provider(*args,**kwargs):
  # No credentials are read and no HTTP request is constructed by this prototype.

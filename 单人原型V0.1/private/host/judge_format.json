@@ -1,0 +1,86 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "night_question_evidence_v093",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "assess",
+            "clarify",
+            "invalid",
+            "decline",
+            "content_gap"
+          ]
+        },
+        "claims": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "quote": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "supported",
+                  "contradicted",
+                  "unrelated",
+                  "unknown"
+                ]
+              },
+              "facts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "fact_id": {
+                      "type": "string"
+                    },
+                    "quote": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "fact_id",
+                    "quote"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "quote",
+              "status",
+              "facts"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "clarification": {
+          "type": "string",
+          "enum": [
+            "",
+            "你问的是故事实际发生的情况，还是假设条件下的情况？",
+            "你指的是哪方面的互换？",
+            "你指的是哪一个人或哪一个对象？",
+            "你指的是哪个时间段？",
+            "你想确认的是在什么条件下的情况？",
+            "这句在汤面中是旁白。你想确认哪一段实际发出的声音？",
+            "你指的是汤面中的哪一句或哪件事？"
+          ]
+        }
+      },
+      "required": [
+        "mode",
+        "claims",
+        "clarification"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

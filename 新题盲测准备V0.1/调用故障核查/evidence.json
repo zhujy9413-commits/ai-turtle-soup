@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-27",
+  "root_cause_of_original_provider_failure": "无法从现存记录确定",
+  "verified_local_issue": "旧包装器合并捕获多类异常，没有保留错误阶段、类别或HTTP状态码。",
+  "original_call": {
+    "operation": "s08-channel-reviewed-r5-S08-Q4",
+    "stage": "scope",
+    "status": "unknown",
+    "reserved_cny": 2.0,
+    "settled_cost": null,
+    "metadata": {
+      "request_sha256": "5fae7fd03a4ca84964113feaba48bad321f57c279d738647aa9a56ee2dd8dfbb"
+    }
+  },
+  "original_ledger_rows": 90,
+  "ledger_still_blocked": true,
+  "new_provider_calls": 0,
+  "known_cost_estimate_cny": 0.2021602,
+  "unsettled_reserved_cny": 2.0,
+  "budget_estimated_or_reserved_cny": 2.2021602,
+  "cap_cny": 5,
+  "estimated_log_search_window": "2026-10-27 22:00–22:05 Asia/Shanghai",
+  "search_window_basis": "本地本轮恢复修订时间为2026-10-27T22:03:10.367271+08:00；该时间是定位线索，不是服务方的调用时间证明。",
+  "offline_fix": {
+    "new_failure_categories": true,
+    "http_status_recorded_if_present": true,
+    "no_exception_text_headers_or_response_body_logged": true,
+    "uncertain_cost_reservation_retained": true,
+    "automatic_retries": 0,
+    "old_records_reconstructed_or_overwritten": false,
+    "candidate_before_sha256": "f8221e510bfc8a9238f99279c57a4d99dc48143556917669836ecd4508fe446f",
+    "candidate_after_sha256": "d1ca6461a4bb6f2ee19e07bcd7cd356c801b700bc1889b3cb15042c8c0bcb092"
+  },
+  "offline_checks": {
+    "diagnostic": 13,
+    "entry_regression": 24,
+    "host_regression": 107
+  },
+  "official_reference": "https://help.aliyun.com/zh/model-studio/model-telemetry/",
+  "console_entry": "https://bailian.console.aliyun.com/cn-beijing/model/telemetry",
+  "next_required_evidence": [
+    "如需结清旧未知请求，需要可匹配的服务方记录或计费用量依据；本次审计查询未找到该请求。"
+  ],
+  "billing_note": "审计日志用于排查；实际费用仍以费用中心账单为准。",
+  "no_key_requested_this_followup": true,
+  "canonical_game_source_changed": false,
+  "semantic_case_status": "假设因果仍未通过；输入拆分后的实测未完成；两类还原未测。",
+  "console_review": {
+    "date": "2026-10-28",
+    "console_query_complete": true,
+    "original_request_found": false,
+    "query_windows_beijing": [
+      "2026-10-27 22:00–22:05",
+      "2026-10-27 21:55–22:10"
+    ],
+    "status_filter": "未限制，含成功、主动中断、4XX与5XX",
+    "model_filter": "目标模型及全部模型分别核对",
+    "api_key_filter": "全部API Key",
+    "nearby_success_rows": 2,
+    "nearby_usage_matches_local_ledger": true,
+    "absence_proves_zero_billing": false,
+    "root_cause_confirmed": false,
+    "reserved_cny_unchanged": 2.0,
+    "ledger_unblocked": false,
+    "new_provider_calls": 0,
+    "evidence": "console-audit-evidence.json"
+  }
+}
