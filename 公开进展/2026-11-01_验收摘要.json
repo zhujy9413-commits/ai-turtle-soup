@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-01",
+  "scope": "public-code-and-redacted-progress-only",
+  "repository_visibility": "public",
+  "public_export_checks": 154,
+  "public_room_checks": 27,
+  "internal_maintenance_checks": 268,
+  "internal_checks_do_not_replace_public_export_checks": true,
+  "javascript_syntax": "passed",
+  "required_assets_match": true,
+  "model_calls_added": 0,
+  "new_unpublished_story_content_included": false,
+  "new_private_host_material_included": false,
+  "raw_player_data_included": false,
+  "credential_findings": 0,
+  "private_paths_changed": false,
+  "history_rewritten": false,
+  "deployment_performed": false,
+  "limitations": [
+    "Local fixture workflow only",
+    "Account login, live AI rooms, complete matchmaking and external deployment not delivered",
+    "Existing earlier repository materials and Git history have not been cleaned"
+  ]
+}
